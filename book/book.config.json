@@ -1,0 +1,214 @@
+{
+  "palette": "copilot",
+  "kicker": "AI at Work",
+  "titleLines": [
+    "AI for Workplace",
+    {
+      "highlight": "Advanced"
+    }
+  ],
+  "runningTitle": "AI for Workplace (Advanced)",
+  "subtitle": "Two-day participant guide",
+  "blurb": "Build one assistant on Day 1 and keep improving it: ground it in company policy, produce on-brand documents from templates, measure its accuracy, then rebuild it as an agent workflow with human approval. Works with Copilot, ChatGPT, Claude and Gemini.",
+  "coverIcons": [
+    "chat",
+    "doc",
+    "check",
+    "spark"
+  ],
+  "edition": "Participant edition",
+  "year": "2026",
+  "version": "0.1",
+  "author": "Asraf Jaafar Sidik",
+  "authorShort": "Asraf",
+  "credential": "Microsoft Certified Trainer",
+  "repoUrl": "https://github.com/Asraf-JS/AI-for-Workplace-Advanced",
+  "trademark": "Microsoft, Microsoft 365, Copilot, Word and PowerPoint are trademarks of the Microsoft group of companies. ChatGPT is a trademark of OpenAI. Claude is a trademark of Anthropic. Gemini and NotebookLM are trademarks of Google LLC. n8n is a trademark of n8n GmbH. This guide is independent training material and is not published or endorsed by any of them. All companies, people and documents in the course scenario are fictional.",
+  "output": "../AI-for-Workplace-Advanced-Book.pdf",
+  "front": [
+    {
+      "title": "About the author",
+      "file": "kit:front/about-the-author.md",
+      "class": "about"
+    }
+  ],
+  "intro": {
+    "title": "Before you begin",
+    "file": "front/introduction.md"
+  },
+  "chapters": [
+    {
+      "notes": "../01-how-llms-behave/README.md",
+      "exercises": "../01-how-llms-behave/prompts.md"
+    },
+    {
+      "notes": "../02-context-engineering/README.md",
+      "exercises": "../02-context-engineering/prompts.md"
+    },
+    {
+      "notes": "../03-custom-assistants/README.md",
+      "exercises": "../03-custom-assistants/prompts.md"
+    },
+    {
+      "notes": "../04-grounded-research/README.md",
+      "exercises": "../04-grounded-research/prompts.md"
+    },
+    {
+      "notes": "../05-data-analysis/README.md",
+      "exercises": "../05-data-analysis/prompts.md"
+    },
+    {
+      "notes": "../06-output-templates/README.md",
+      "exercises": "../06-output-templates/prompts.md"
+    },
+    {
+      "notes": "../07-evaluating-output/README.md",
+      "exercises": "../07-evaluating-output/prompts.md"
+    },
+    {
+      "notes": "../08-agents-connectors-mcp/README.md",
+      "exercises": "../08-agents-connectors-mcp/prompts.md"
+    },
+    {
+      "notes": "../09-rag-fundamentals/README.md",
+      "exercises": "../09-rag-fundamentals/prompts.md"
+    },
+    {
+      "notes": "../10-n8n-agent-workflow/README.md",
+      "exercises": "../10-n8n-agent-workflow/prompts.md"
+    },
+    {
+      "notes": "../11-ai-security/README.md",
+      "exercises": "../11-ai-security/prompts.md"
+    },
+    {
+      "notes": "../12-ai-governance/README.md",
+      "exercises": "../12-ai-governance/prompts.md"
+    },
+    {
+      "notes": "../13-capstone/README.md",
+      "exercises": "../13-capstone/prompts.md"
+    },
+    {
+      "notes": "../14-product-cards/README.md"
+    }
+  ],
+  "backCover": "This book accompanies the two-day AI for Workplace (Advanced) course, the continuation of AI for Workplace (Beginner). Participants build a Procurement Quotation Checker for the fictional company Sinar Maju Sdn Bhd and keep improving it: grounding it in company policy, producing on-brand documents from templates, measuring its accuracy, and rebuilding it as an agent workflow with human approval, before covering AI security and governance in the Malaysian context. Every lab works with Copilot, ChatGPT, Claude or Gemini.",
+  "programFlow": {
+    "title": "Your Advanced AI training journey",
+    "lead": "One assistant, built on Day 1 and improved on Day 2: grounded, tested, automated and governed.",
+    "foundations": [
+      {
+        "n": 1,
+        "name": "How LLMs Behave",
+        "desc": "Why the same question gets different answers"
+      },
+      {
+        "n": 2,
+        "name": "Context Engineering",
+        "desc": "Prompt chains and structured output"
+      }
+    ],
+    "steps": [
+      {
+        "n": 3,
+        "app": "Custom Assistant",
+        "icon": "spark",
+        "color": "#7b4be6",
+        "stage": "Build",
+        "desc": "Build the Procurement Quotation Checker",
+        "output": "Quotation Checker"
+      },
+      {
+        "n": 4,
+        "app": "Grounding",
+        "icon": "doc",
+        "color": "#2f7bec",
+        "stage": "Ground",
+        "desc": "Answer from company policy, with citations",
+        "output": "Policy notebook"
+      },
+      {
+        "n": 5,
+        "app": "Data Analysis",
+        "icon": "lines",
+        "color": "#077568",
+        "stage": "Analyse",
+        "desc": "Analyse the purchase history",
+        "output": "Spend analysis"
+      },
+      {
+        "n": 6,
+        "app": "Templates",
+        "icon": "W",
+        "color": "#185abd",
+        "stage": "Format",
+        "desc": "Memo and deck from the company templates",
+        "output": "Memo and deck"
+      },
+      {
+        "n": 7,
+        "app": "Evaluation",
+        "icon": "check",
+        "color": "#5b6cf0",
+        "stage": "Measure",
+        "desc": "Score the Checker on ten test cases",
+        "output": "Scorecard"
+      },
+      {
+        "n": 8,
+        "app": "Agents and MCP",
+        "icon": "nodes",
+        "color": "#6b4fbb",
+        "stage": "Connect",
+        "desc": "Map the systems an assistant needs to act",
+        "output": "Systems map"
+      },
+      {
+        "n": 9,
+        "app": "RAG",
+        "icon": "doc",
+        "color": "#0f6cbd",
+        "stage": "Diagnose",
+        "desc": "Find out why a citation went wrong",
+        "output": "Diagnosis"
+      },
+      {
+        "n": 10,
+        "app": "n8n Workflow",
+        "icon": "play",
+        "color": "#d9480f",
+        "stage": "Automate",
+        "desc": "Rebuild the Checker with human approval",
+        "output": "Approval workflow"
+      },
+      {
+        "n": 11,
+        "app": "AI Security",
+        "icon": "chat",
+        "color": "#c2410c",
+        "stage": "Attack",
+        "desc": "Break it with hidden instructions",
+        "output": "Break-it findings"
+      },
+      {
+        "n": 12,
+        "app": "Governance",
+        "icon": "lines",
+        "color": "#0e7490",
+        "stage": "Govern",
+        "desc": "Department AI rules and use-case register",
+        "output": "AI register"
+      },
+      {
+        "n": 13,
+        "app": "Capstone",
+        "icon": "check",
+        "color": "#7c3aed",
+        "stage": "Pitch",
+        "desc": "Design and pitch an AI workflow",
+        "output": "Workflow pitch"
+      }
+    ]
+  }
+}

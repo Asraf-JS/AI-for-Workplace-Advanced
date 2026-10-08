@@ -1,0 +1,189 @@
+<!doctype html>
+<!--
+  Source for program-flow.png, the banner on the workshop home page.
+  Edit the TOPICS list below, then run:  cd _design && npm install && npm run render
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Program flow banner</title>
+<style>
+  @font-face { font-family: "Figtree"; font-weight: 400; src: url("node_modules/@fontsource/figtree/files/figtree-latin-400-normal.woff2"); }
+  @font-face { font-family: "Figtree"; font-weight: 500; src: url("node_modules/@fontsource/figtree/files/figtree-latin-500-normal.woff2"); }
+  @font-face { font-family: "Figtree"; font-weight: 600; src: url("node_modules/@fontsource/figtree/files/figtree-latin-600-normal.woff2"); }
+  @font-face { font-family: "Figtree"; font-weight: 700; src: url("node_modules/@fontsource/figtree/files/figtree-latin-700-normal.woff2"); }
+  @font-face { font-family: "Figtree"; font-weight: 800; src: url("node_modules/@fontsource/figtree/files/figtree-latin-800-normal.woff2"); }
+
+  :root {
+    --bg: #0b1220;
+    --card-top: #152039;
+    --card-bottom: #111a2e;
+    --card-border: #24314f;
+    --white: #f3f6fb;
+    --muted: #9aa7c0;
+    --label: #6c7a96;
+    --cyan: #5ec8f2;
+    --violet: #8a7ef6;
+    --violet-soft: #a99cff;
+    --optional-border: #5b5f9a;
+    --pill: #c9c3ff;
+
+    --pad: 72px;
+    --found-w: 249px;
+    --card-w: 160px;
+    --gap: 14px;
+    --cards-top: 267px;
+    --card-h: 323px;
+    --line-y: 628px;
+  }
+
+  html, body { margin: 0; }
+  body {
+    width: var(--canvas-w);
+    height: 740px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Figtree", sans-serif;
+    color: var(--white);
+    background:
+      radial-gradient(circle at 92% 6%, rgba(40, 55, 130, 0.35), transparent 34%),
+      radial-gradient(circle at 2% 98%, rgba(20, 85, 110, 0.30), transparent 30%),
+      var(--bg);
+  }
+
+  .kicker { position: absolute; left: var(--pad); top: 66px; font-size: 13.5px; font-weight: 700; letter-spacing: 0.3em; color: var(--cyan); }
+  h1 { position: absolute; left: var(--pad); top: 92px; margin: 0; font-size: 56px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
+  h1 .grad { background: linear-gradient(90deg, var(--cyan), var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lead { position: absolute; left: var(--pad); top: 167px; margin: 0; font-size: 19.5px; color: var(--muted); }
+  .lead strong { color: var(--white); font-weight: 600; }
+
+  .label { position: absolute; top: 238px; font-size: 12px; font-weight: 700; letter-spacing: 0.3em; color: var(--label); }
+
+  .card {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    background: linear-gradient(180deg, var(--card-top), var(--card-bottom));
+  }
+  .card .num { position: absolute; left: 16px; top: 23px; font-size: 13.5px; font-weight: 800; letter-spacing: 0.08em; color: var(--cyan); }
+
+  .found { width: var(--found-w); background: var(--card-bottom); }
+  .found .num { left: 22px; top: 38px; }
+  .found .name { position: absolute; left: 22px; top: 56px; font-size: 19.5px; font-weight: 600; }
+  .found .desc { position: absolute; left: 22px; right: 26px; top: 85px; font-size: 14px; line-height: 20px; color: var(--muted); }
+
+  .step { top: var(--cards-top); width: var(--card-w); height: var(--card-h); }
+  .step .tile {
+    position: absolute; left: 16px; top: 52px; width: 52px; height: 52px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 25px; font-weight: 800; color: #fff;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  }
+  .step .tile svg { width: 26px; height: 26px; }
+  .step .name { position: absolute; left: 16px; right: 12px; top: 122px; font-size: 17.5px; font-weight: 600; white-space: nowrap; }
+  .step .desc { position: absolute; left: 16px; right: 22px; top: 175px; font-size: 14px; line-height: 21px; color: var(--muted); }
+  .step .rule { position: absolute; left: 16px; right: 16px; top: 252px; border-top: 1px solid var(--card-border); }
+  .step .out-label { position: absolute; left: 16px; top: 268px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.12em; color: var(--label); }
+  .step .out { position: absolute; left: 16px; right: 10px; top: 287px; font-size: 14px; font-weight: 700; white-space: nowrap; }
+
+  .step.optional { background: transparent; border: 1.5px dashed var(--optional-border); }
+  .step.optional .num { color: var(--violet-soft); }
+  .pill { position: absolute; right: 14px; top: 17px; font-size: 10.5px; font-weight: 800; letter-spacing: 0.12em; color: var(--pill); border: 1.5px solid var(--optional-border); border-radius: 999px; padding: 3px 10px; }
+
+  svg.timeline { position: absolute; left: 0; top: 0; overflow: visible; }
+
+  .trail { position: absolute; left: var(--pad); top: 688px; font-size: 14px; color: var(--muted); }
+  .trail b { color: var(--white); font-weight: 700; }
+  .url { position: absolute; right: var(--pad); top: 688px; font-size: 14px; color: var(--label); }
+</style>
+</head>
+<body>
+<script>
+// Each project step becomes one card, left to right. "optional" draws a dashed card
+// and a dashed stretch of the timeline. "icon" is a glyph name or a letter.
+const TOPICS = [
+  { n: "03", app: "Custom Assistant", icon: "spark", tile: "linear-gradient(135deg, #3b82f6, #8b5cf6 55%, #ec4899)", desc: "Build the Procurement Quotation Checker", out: "Quotation Checker", stage: "Build" },
+  { n: "04", app: "Grounding",        icon: "doc",   tile: "#2f7bec", desc: "Answer from company policy, with citations", out: "Policy notebook", stage: "Ground" },
+  { n: "05", app: "Data Analysis",    icon: "lines", tile: "#077568", desc: "Analyse the purchase history", out: "Spend analysis", stage: "Analyse" },
+  { n: "06", app: "Templates",        icon: "W",     tile: "#185abd", desc: "Memo and deck from the company templates", out: "Memo and deck", stage: "Format" },
+  { n: "07", app: "Evaluation",       icon: "check", tile: "#5b6cf0", desc: "Score the Checker on ten test cases", out: "Scorecard", stage: "Measure" },
+  { n: "08", app: "Agents and MCP",   icon: "nodes", tile: "#6b4fbb", desc: "Map the systems an assistant needs to act", out: "Systems map", stage: "Connect" },
+  { n: "09", app: "RAG",              icon: "doc",   tile: "#0f6cbd", desc: "Find out why a citation went wrong", out: "Diagnosis", stage: "Diagnose" },
+  { n: "10", app: "n8n Workflow",     icon: "play",  tile: "#d9480f", desc: "Rebuild the Checker with human approval", out: "Approval workflow", stage: "Automate" },
+  { n: "11", app: "AI Security",      icon: "chat",  tile: "#c2410c", desc: "Break it with hidden instructions", out: "Break-it findings", stage: "Attack" },
+  { n: "12", app: "Governance",       icon: "lines", tile: "#0e7490", desc: "Department AI rules and use-case register", out: "AI register", stage: "Govern" },
+  { n: "13", app: "Capstone",         icon: "check", tile: "#7c3aed", desc: "Design and pitch an AI workflow", out: "Workflow pitch", stage: "Pitch" },
+];
+const FOUNDATIONS = [
+  { n: "01", name: "How LLMs Behave", desc: "Why the same question gets different answers", stage: "Understand" },
+  { n: "02", name: "Context Engineering", desc: "Prompt chains and structured output", stage: "Instruct" },
+];
+
+const GLYPHS = {
+  chat: '<path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8l-5 4v-4h-1a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2z"/>',
+  play: '<path d="M8 5l11 7l-11 7z"/>',
+  check: '<path d="M5 12.5l4.5 4.5l9.5 -10"/>',
+  lines: '<path d="M5 7h14M5 12h14M5 17h9"/>',
+  spark: '<path d="M12 3l1.9 5.6l5.6 1.9l-5.6 1.9l-1.9 5.6l-1.9 -5.6l-5.6 -1.9l5.6 -1.9z"/>',
+  doc: '<path d="M7 3h7l5 5v13h-12z"/><path d="M14 3v5h5M9.5 13h5M9.5 17h5"/>',
+  nodes: '<rect x="9.5" y="3" width="5" height="5" rx="1"/><rect x="3" y="16" width="5" height="5" rx="1"/><rect x="16" y="16" width="5" height="5" rx="1"/><path d="M12 8v4M5.5 16v-4h13v4"/>',
+};
+
+const css = getComputedStyle(document.documentElement);
+const px = (v) => parseFloat(css.getPropertyValue(v));
+const pad = px("--pad"), foundW = px("--found-w"), cardW = px("--card-w"), gap = px("--gap"), lineY = px("--line-y");
+const startX = pad + foundW + 29;
+const canvasW = startX + TOPICS.length * cardW + (TOPICS.length - 1) * gap + pad;
+document.documentElement.style.setProperty("--canvas-w", canvasW + "px");
+
+const html = [];
+html.push(`<div class="kicker">COPILOT &nbsp;·&nbsp; CHATGPT &nbsp;·&nbsp; CLAUDE &nbsp;·&nbsp; GEMINI &nbsp;·&nbsp; 2 DAYS</div>`);
+html.push(`<h1>Your Advanced AI <span class="grad">Training Journey</span></h1>`);
+html.push(`<p class="lead">One assistant, built on Day 1 and improved on Day 2: <strong>grounded, tested, automated and governed</strong>.</p>`);
+html.push(`<div class="label" style="left:${pad}px">FOUNDATIONS</div>`);
+html.push(`<div class="label" style="left:${startX}px">DAY 1 AND DAY 2, STAGE BY STAGE</div>`);
+
+const foundTops = [267, 437], foundH = [154, 153];
+FOUNDATIONS.forEach((f, i) => html.push(
+  `<div class="card found" style="left:${pad}px;top:${foundTops[i]}px;height:${foundH[i]}px"><div class="num">${f.n}</div><div class="name">${f.name}</div><div class="desc">${f.desc}</div></div>`));
+
+const centers = [];
+TOPICS.forEach((t, i) => {
+  const x = startX + i * (cardW + gap);
+  centers.push(x + cardW / 2);
+  const glyph = GLYPHS[t.icon]
+    ? `<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${GLYPHS[t.icon]}</svg>`
+    : t.icon;
+  html.push(`<div class="card step${t.optional ? " optional" : ""}" style="left:${x}px">
+    <div class="num">${t.n}</div>${t.optional ? `<div class="pill">${t.pill || "OPTIONAL"}</div>` : ""}
+    <div class="tile" style="background:${t.tile}">${glyph}</div>
+    <div class="name">${t.app}</div><div class="desc">${t.desc}</div>
+    <div class="rule"></div><div class="out-label">OUTPUT</div><div class="out">${t.out}</div></div>`);
+});
+
+// Timeline: one segment per gap between cards. A segment touching an optional card is dashed.
+const lastX = centers.at(-1);
+let svg = `<svg class="timeline" width="${canvasW}" height="740">
+  <defs><linearGradient id="tl" gradientUnits="userSpaceOnUse" x1="${startX}" x2="${lastX}"><stop offset="0" stop-color="#5ec8f2"/><stop offset="1" stop-color="#8a7ef6"/></linearGradient></defs>`;
+const edges = [startX, ...centers.slice(0, -1).map((c, i) => (c + centers[i + 1]) / 2), lastX];
+centers.forEach((cx, i) => {
+  const dashed = TOPICS[i].optional;
+  [[edges[i], cx], [cx, edges[i + 1]]].forEach(([a, b]) => {
+    svg += dashed
+      ? `<line x1="${a}" y1="${lineY}" x2="${b}" y2="${lineY}" stroke="#5b5f9a" stroke-width="2.5" stroke-dasharray="5 5"/>`
+      : `<line x1="${a}" y1="${lineY}" x2="${b}" y2="${lineY}" stroke="url(#tl)" stroke-width="2.5"/>`;
+  });
+});
+centers.forEach((cx, i) => {
+  svg += `<circle cx="${cx}" cy="${lineY}" r="7.5" fill="#0b1220" stroke="${TOPICS[i].optional ? "#8a7ef6" : "#5ec8f2"}" stroke-width="3"/>`;
+});
+svg += `</svg>`;
+html.push(svg);
+
+html.push(`<div class="trail">${[...FOUNDATIONS, ...TOPICS].map((t, i) => (i === 0 ? `<b>${t.stage}</b>` : t.stage)).join(" → ")}</div>`);
+html.push(`<div class="url">asraf-js.github.io/AI-for-Workplace-Advanced</div>`);
+document.body.insertAdjacentHTML("beforeend", html.join("\n"));
+</script>
+</body>
+</html>

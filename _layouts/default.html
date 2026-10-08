@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" href="/AI-for-Workplace-Advanced/logo.png">
+<title>{{ page.title }} | AI for Workplace (Advanced)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+
+:root{
+  --navy:#1E2761;
+  --teal:#028090;
+  --teal-light:#E8F5F7;
+
+  --purple:#6B5DD3;
+  --purple-light:#F1EFFF;
+
+  --text-dark:#1A1A2E;
+  --text-mid:#4A5568;
+  --text-muted:#8A9BB0;
+
+  --bg:#FFFFFF;
+  --bg-side:#1E2761;
+  --bg-soft:#F8FAFB;
+  --border:#E2E6EA;
+
+  --code-bg:#F0F4F8;
+  --table-even:#F8FAFB;
+
+  --sidebar-w:240px;
+  --content-w:960px;
+  --layout-gap:48px;
+  --layout-w:calc(var(--sidebar-w) + var(--layout-gap) + var(--content-w));
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --navy:#DDE6FF;
+    --teal:#4DD4E3;
+    --teal-light:#12343A;
+
+    --purple:#A99CFF;
+    --purple-light:#2A2548;
+
+    --text-dark:#F3F4F6;
+    --text-mid:#CBD5E1;
+    --text-muted:#94A3B8;
+
+    --bg:#0B1020;
+    --bg-side:#111827;
+    --bg-soft:#111827;
+    --border:#2A3344;
+
+    --code-bg:#151E2E;
+    --table-even:#151E2E;
+  }
+}
+
+html,body{height:100%;}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--bg);
+  color:var(--text-dark);
+  display:flex;
+  min-height:100vh;
+  font-size:15px;
+  line-height:1.6;
+}
+
+.sidebar{
+  width:var(--sidebar-w);
+  flex-shrink:0;
+  background:var(--bg-side);
+  display:flex;
+  flex-direction:column;
+  position:fixed;
+  top:24px;
+  left:max(24px, calc((100vw - var(--layout-w)) / 2));
+  height:calc(100vh - 48px);
+  overflow-y:auto;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 18px 40px rgba(0,0,0,.18);
+}
+
+@media (prefers-color-scheme: dark){
+  .sidebar{
+    background:#111827;
+    border-color:#2A3344;
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
+  }
+}
+
+.sidebar::-webkit-scrollbar{width:3px;}
+.sidebar::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:2px;}
+
+.sidebar-header{
+  padding:24px 20px 20px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.sidebar-logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  margin-bottom:4px;
+}
+
+.sidebar-logo img{
+  width:32px;
+  height:32px;
+  border-radius:7px;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+.sidebar-logo-name{
+  font-size:16px;
+  font-weight:700;
+  color:#fff;
+  letter-spacing:-.01em;
+}
+
+.sidebar-subtitle{
+  font-size:10px;
+  color:rgba(255,255,255,.4);
+  margin-top:2px;
+  letter-spacing:.02em;
+}
+
+.sidebar-nav{flex:1;padding:16px 0;}
+
+.nav-section-label{
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.12em;
+  color:rgba(255,255,255,.3);
+  text-transform:uppercase;
+  padding:0 20px;
+  margin:0 0 6px;
+}
+
+.nav-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:7px 16px;
+  text-decoration:none;
+  transition:background .12s;
+  margin:1px 8px;
+  border-radius:6px;
+}
+
+.nav-item:hover{background:rgba(255,255,255,.08);}
+
+.nav-item.active{
+  background:linear-gradient(90deg,rgba(107,93,211,.30),rgba(2,128,144,.18));
+}
+
+.nav-num{
+  font-size:9px;
+  font-weight:700;
+  color:rgba(255,255,255,.35);
+  min-width:16px;
+  flex-shrink:0;
+}
+
+.nav-item.active .nav-num{color:rgba(255,255,255,.7);}
+
+.nav-name{
+  font-size:12px;
+  color:rgba(255,255,255,.6);
+  line-height:1.3;
+}
+
+.nav-item.active .nav-name{color:#fff;font-weight:600;}
+
+.sidebar-footer{
+  padding:16px 20px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.sidebar-footer a{
+  display:block;
+  font-size:11px;
+  color:rgba(255,255,255,.4);
+  text-decoration:none;
+  padding:3px 0;
+  transition:color .12s;
+}
+
+.sidebar-footer a:hover{color:rgba(255,255,255,.8);}
+
+/* Teal cloud: a light sidebar with a pale teal tint, in light mode only.
+   Dark mode keeps the dark sidebar above. */
+@media (prefers-color-scheme: light){
+  .sidebar{background:#F1F7F8;border:1px solid #DCEAEC;box-shadow:0 10px 30px rgba(30,39,97,.08);}
+  .sidebar::-webkit-scrollbar-thumb{background:rgba(30,39,97,.15);}
+  .sidebar-header,.sidebar-footer{border-color:#DCE9EC;}
+  .sidebar-logo-name{color:#1E2761;}
+  .sidebar-subtitle,.nav-section-label,.nav-num{color:#76869A;}
+  .nav-name{color:#34405C;}
+  .nav-item:hover{background:#E3F0F2;}
+  .nav-item.active{background:#D6ECEE;}
+  .nav-item.active .nav-num,.nav-item.active .nav-name{color:#027080;}
+  .sidebar-footer a{color:#76869A;}
+  .sidebar-footer a:hover{color:#027080;}
+}
+
+.main-wrap{
+  margin-left:calc(max(24px, calc((100vw - var(--layout-w)) / 2)) + var(--sidebar-w) + var(--layout-gap));
+  flex:1;
+  min-width:0;
+  background:var(--bg);
+}
+
+.main-inner{
+  max-width:var(--content-w);
+  margin:0;
+  padding:52px 60px 80px 0;
+}
+
+.breadcrumb{
+  font-size:12px;
+  color:var(--text-muted);
+  margin-bottom:28px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.breadcrumb a{color:var(--teal);text-decoration:none;}
+.breadcrumb a:hover{text-decoration:underline;}
+.breadcrumb-sep{color:var(--border);}
+
+.main-inner h1{
+  font-size:28px;
+  font-weight:700;
+  color:var(--navy);
+  line-height:1.2;
+  margin-bottom:6px;
+  letter-spacing:-.02em;
+}
+
+.main-inner .page-intro{
+  font-size:15px;
+  color:var(--text-mid);
+  line-height:1.7;
+  margin-bottom:32px;
+  padding-bottom:24px;
+  border-bottom:1px solid var(--border);
+}
+
+.main-inner h2{
+  font-size:18px;
+  font-weight:700;
+  color:var(--navy);
+  margin:36px 0 12px;
+  letter-spacing:-.01em;
+  border-left:4px solid var(--purple);
+  padding-left:10px;
+}
+
+.main-inner h3{
+  font-size:14px;
+  font-weight:700;
+  color:var(--text-mid);
+  margin:20px 0 8px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+.main-inner p{
+  font-size:14.5px;
+  color:var(--text-dark);
+  line-height:1.8;
+  margin-bottom:14px;
+}
+
+.main-inner ul,
+.main-inner ol{
+  font-size:14.5px;
+  color:var(--text-dark);
+  line-height:1.8;
+  margin:0 0 14px 22px;
+}
+
+.main-inner li{margin-bottom:5px;}
+
+.main-inner a{color:var(--teal);text-decoration:none;}
+.main-inner a:hover{text-decoration:underline;}
+
+.main-inner strong{font-weight:600;color:var(--text-dark);}
+.main-inner em{font-style:italic;}
+
+.main-inner hr{
+  border:none;
+  border-top:1px solid var(--border);
+  margin:32px 0;
+}
+
+.main-inner blockquote{
+  background:var(--teal-light);
+  border-left:3px solid var(--teal);
+  border-radius:0 8px 8px 0;
+  padding:14px 18px;
+  margin:18px 0;
+}
+
+.main-inner blockquote p{
+  font-size:13.5px;
+  margin:0;
+  color:var(--text-dark);
+}
+
+.main-inner blockquote strong{color:var(--teal);}
+.main-inner blockquote.warn{
+  position:relative;
+  background:#fdecec;
+  border-left-color:#d13438;
+  padding-left:52px;
+}
+.main-inner blockquote.warn::before{
+  content:"!";
+  position:absolute;
+  left:14px;
+  top:14px;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  background:#d13438;
+  color:#fff;
+  font-weight:700;
+  font-size:15px;
+  line-height:24px;
+  text-align:center;
+}
+.main-inner blockquote.warn strong{color:#a4262c;}
+
+.main-inner table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  margin:18px 0;
+  font-size:13.5px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+  background:var(--bg);
+}
+
+.main-inner th{
+  background:linear-gradient(90deg,#1E2761,#2A347A);
+  color:#fff;
+  font-weight:600;
+  padding:10px 14px;
+  text-align:left;
+  font-size:12px;
+  letter-spacing:.02em;
+}
+
+.main-inner td{
+  padding:9px 14px;
+  border-bottom:1px solid var(--border);
+  vertical-align:top;
+  color:var(--text-dark);
+}
+
+.main-inner tr:nth-child(even) td{background:var(--table-even);}
+.main-inner tr:last-child td{border-bottom:none;}
+
+.main-inner img{
+  max-width:100%;
+  border-radius:8px;
+  border:1px solid var(--border);
+  margin:16px 0;
+  display:block;
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+@media (prefers-color-scheme: dark){
+  .main-inner img{box-shadow:0 2px 8px rgba(0,0,0,.35);}
+}
+
+.main-inner code{
+  background:var(--code-bg);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:2px 6px;
+  font-size:12.5px;
+  font-family:'Cascadia Code','Fira Code','Courier New',monospace;
+  color:var(--navy);
+}
+
+.main-inner code.click-copy{
+  cursor:pointer;
+  position:relative;
+  transition:background .15s, border-color .15s;
+}
+.main-inner code.click-copy:hover{
+  border-color:var(--teal);
+  background:var(--teal-light);
+}
+.main-inner code.click-copy.copied{
+  border-color:var(--teal);
+  background:var(--teal);
+  color:#fff;
+}
+.main-inner code.click-copy.copied::after{
+  content:"Copied";
+  position:absolute;
+  left:50%;
+  bottom:calc(100% + 6px);
+  transform:translateX(-50%);
+  background:var(--navy);
+  color:#fff;
+  font-family:inherit;
+  font-size:11px;
+  padding:2px 8px;
+  border-radius:4px;
+  white-space:nowrap;
+  pointer-events:none;
+}
+
+.pre-wrap{
+  position:relative;
+  margin:12px 0 22px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:var(--code-bg);
+}
+
+.main-inner pre{
+  background:transparent;
+  border:none;
+  border-radius:12px;
+  padding:42px 20px 18px;
+  font-family:'Cascadia Code','Fira Code','Courier New',monospace;
+  font-size:12.5px;
+  line-height:1.7;
+  overflow-x:auto;
+  margin:0;
+  position:static;
+  color:var(--text-dark);
+}
+
+.main-inner pre code{background:none;border:none;padding:0;color:var(--text-dark);}
+
+.copy-code-btn{
+  position:absolute;
+  top:10px;
+  right:10px;
+  border:1px solid var(--border);
+  background:var(--bg);
+  color:var(--teal);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  padding:4px 8px;
+  border-radius:6px;
+  cursor:pointer;
+  opacity:.75;
+  z-index:1;
+  transition:opacity .15s, background .15s, color .15s, border-color .15s;
+}
+
+.copy-code-btn:hover{opacity:1;background:var(--teal-light);}
+.copy-code-btn.copied{color:#fff;background:var(--teal);border-color:var(--teal);}
+
+@media (prefers-color-scheme: dark){
+  .copy-code-btn{background:#111827;color:var(--teal);border-color:var(--border);}
+  .copy-code-btn:hover{background:#12343A;}
+  .copy-code-btn.copied{color:#0B1020;background:var(--teal);border-color:var(--teal);}
+}
+
+.home-scenario{
+  background:var(--teal-light);
+  border-left:3px solid var(--teal);
+  border-radius:0 8px 8px 0;
+  padding:14px 18px;
+  margin:0 0 32px;
+}
+
+.home-scenario p{
+  font-size:14px;
+  color:var(--text-dark);
+  line-height:1.75;
+  margin:0;
+}
+
+.section-sublabel{
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.1em;
+  color:var(--text-muted);
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+.home-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.topic-card{
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:14px 16px;
+  text-decoration:none;
+  transition:border-color .15s,box-shadow .15s;
+  display:block;
+}
+
+.topic-card:hover{
+  border-color:var(--teal);
+  box-shadow:0 4px 14px rgba(2,128,144,.12);
+}
+
+@media (prefers-color-scheme: dark){
+  .topic-card:hover{box-shadow:0 4px 14px rgba(77,212,227,.10);}
+}
+
+.tc-num{
+  font-size:9px;
+  font-weight:700;
+  color:var(--purple);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:2px;
+}
+
+.tc-title{
+  font-size:13px;
+  font-weight:600;
+  color:var(--navy);
+  margin-bottom:3px;
+}
+
+.tc-desc{
+  font-size:11px;
+  color:var(--text-muted);
+  line-height:1.4;
+  margin-bottom:8px;
+}
+
+.tc-links{display:flex;gap:6px;}
+
+.tc-notes{
+  font-size:10px;
+  font-weight:600;
+  color:#fff;
+  background:#1E2761;
+  padding:3px 9px;
+  border-radius:4px;
+}
+
+.tc-prompts{
+  font-size:10px;
+  font-weight:600;
+  color:var(--teal);
+  border:1px solid var(--teal);
+  padding:3px 9px;
+  border-radius:4px;
+  text-decoration:none;
+}
+
+.tc-prompts:hover{background:var(--teal-light);}
+
+@media(max-width:1100px){
+  .sidebar{top:16px;left:16px;height:calc(100vh - 32px);}
+  .main-wrap{margin-left:calc(var(--sidebar-w) + 40px);}
+  .main-inner{max-width:900px;margin:0;padding:44px 36px 72px 0;}
+}
+
+@media(max-width:768px){
+  .sidebar{display:none;}
+  .main-wrap{margin-left:0;}
+  .main-inner{max-width:100%;margin:0;padding:28px 20px 60px;}
+  .home-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <a class="sidebar-logo" href="/AI-for-Workplace-Advanced/">
+      <img src="/AI-for-Workplace-Advanced/logo.png" alt="Asraf">
+      <span class="sidebar-logo-name">Asraf JS</span>
+    </a>
+    <div class="sidebar-subtitle">AI for Workplace (Advanced) &nbsp;·&nbsp; 2026</div>
+  </div>
+
+ <div class="sidebar-nav">
+    <div class="nav-section-label">Day 1</div>
+    <a class="nav-item{% if page.url contains '01-how-llms-behave' %} active{% endif %}" href="/AI-for-Workplace-Advanced/01-how-llms-behave/"><span class="nav-num">01</span><span class="nav-name">How LLMs Behave</span></a>
+    <a class="nav-item{% if page.url contains '02-context-engineering' %} active{% endif %}" href="/AI-for-Workplace-Advanced/02-context-engineering/"><span class="nav-num">02</span><span class="nav-name">Context Engineering</span></a>
+    <a class="nav-item{% if page.url contains '03-custom-assistants' %} active{% endif %}" href="/AI-for-Workplace-Advanced/03-custom-assistants/"><span class="nav-num">03</span><span class="nav-name">Custom Assistants</span></a>
+    <a class="nav-item{% if page.url contains '04-grounded-research' %} active{% endif %}" href="/AI-for-Workplace-Advanced/04-grounded-research/"><span class="nav-num">04</span><span class="nav-name">Grounded Research</span></a>
+    <a class="nav-item{% if page.url contains '05-data-analysis' %} active{% endif %}" href="/AI-for-Workplace-Advanced/05-data-analysis/"><span class="nav-num">05</span><span class="nav-name">Data Analysis</span></a>
+    <a class="nav-item{% if page.url contains '06-output-templates' %} active{% endif %}" href="/AI-for-Workplace-Advanced/06-output-templates/"><span class="nav-num">06</span><span class="nav-name">Output Templates</span></a>
+    <a class="nav-item{% if page.url contains '07-evaluating-output' %} active{% endif %}" href="/AI-for-Workplace-Advanced/07-evaluating-output/"><span class="nav-num">07</span><span class="nav-name">Evaluating Output</span></a>
+    <div class="nav-section-label">Day 2</div>
+    <a class="nav-item{% if page.url contains '08-agents-connectors-mcp' %} active{% endif %}" href="/AI-for-Workplace-Advanced/08-agents-connectors-mcp/"><span class="nav-num">08</span><span class="nav-name">Agents, Connectors and MCP</span></a>
+    <a class="nav-item{% if page.url contains '09-rag-fundamentals' %} active{% endif %}" href="/AI-for-Workplace-Advanced/09-rag-fundamentals/"><span class="nav-num">09</span><span class="nav-name">RAG Fundamentals</span></a>
+    <a class="nav-item{% if page.url contains '10-n8n-agent-workflow' %} active{% endif %}" href="/AI-for-Workplace-Advanced/10-n8n-agent-workflow/"><span class="nav-num">10</span><span class="nav-name">Agent Workflow in n8n</span></a>
+    <a class="nav-item{% if page.url contains '11-ai-security' %} active{% endif %}" href="/AI-for-Workplace-Advanced/11-ai-security/"><span class="nav-num">11</span><span class="nav-name">AI Security</span></a>
+    <a class="nav-item{% if page.url contains '12-ai-governance' %} active{% endif %}" href="/AI-for-Workplace-Advanced/12-ai-governance/"><span class="nav-num">12</span><span class="nav-name">AI Governance</span></a>
+    <a class="nav-item{% if page.url contains '13-capstone' %} active{% endif %}" href="/AI-for-Workplace-Advanced/13-capstone/"><span class="nav-num">13</span><span class="nav-name">Capstone</span></a>
+    <div class="nav-section-label">Reference</div>
+    <a class="nav-item{% if page.url contains '14-product-cards' %} active{% endif %}" href="/AI-for-Workplace-Advanced/14-product-cards/"><span class="nav-num">14</span><span class="nav-name">Product Cards</span></a>
+  </div>
+
+  <div class="sidebar-footer">
+    <a href="/AI-for-Workplace-Advanced/">Home</a>
+    <a href="https://github.com/Asraf-JS/AI-for-Workplace-Advanced" target="_blank">GitHub Repo</a>
+  </div>
+</div>
+
+<div class="main-wrap">
+  <div class="main-inner">
+    {% unless page.url == "/" or page.url == "/AI-for-Workplace-Advanced/" %}
+    <div class="breadcrumb">
+      <a href="/AI-for-Workplace-Advanced/">Course Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>{{ page.title }}</span>
+    </div>
+    {% endunless %}
+    {{ content }}
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // A blockquote that starts with a bold "Warning", "Stop" or "Caution" label gets the red style.
+  document.querySelectorAll(".main-inner blockquote").forEach(function (q) {
+    const first = q.querySelector("p > strong:first-child");
+    if (first && /^(warning|stop|caution)/i.test(first.textContent.trim())) q.classList.add("warn");
+  });
+
+  const codeBlocks = document.querySelectorAll(".main-inner pre");
+
+  codeBlocks.forEach(function (pre) {
+    const code = pre.querySelector("code");
+    if (!code) return;
+    if (pre.parentNode.classList.contains("pre-wrap")) return;
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "pre-wrap";
+    pre.parentNode.insertBefore(wrapper, pre);
+    wrapper.appendChild(pre);
+
+    const button = document.createElement("button");
+    button.className = "copy-code-btn";
+    button.type = "button";
+    button.textContent = "Copy";
+
+    button.addEventListener("click", async function () {
+      const text = code.innerText;
+      try {
+        await navigator.clipboard.writeText(text);
+        button.textContent = "Copied";
+        button.classList.add("copied");
+        setTimeout(function () {
+          button.textContent = "Copy";
+          button.classList.remove("copied");
+        }, 1500);
+      } catch (err) {
+        button.textContent = "Failed";
+        setTimeout(function () { button.textContent = "Copy"; }, 1500);
+      }
+    });
+
+    wrapper.appendChild(button);
+  });
+
+  // Inline values (the short code spans in steps and tables) copy when clicked.
+  document.querySelectorAll(".main-inner code").forEach(function (code) {
+    if (code.closest("pre")) return;
+    code.classList.add("click-copy");
+    code.title = "Click to copy";
+    code.addEventListener("click", async function () {
+      try {
+        await navigator.clipboard.writeText(code.textContent);
+        code.classList.add("copied");
+        setTimeout(function () { code.classList.remove("copied"); }, 1200);
+      } catch (err) { /* clipboard blocked: the value can still be selected by hand */ }
+    });
+  });
+});
+</script>
+
+<!-- Image lightbox for course sites. Paste this whole block into _layouts/default.html,
+     just before </body>. Click (or Enter on) any screenshot in .main-inner to open it
+     in its own window, sized to the image, to put beside the work or on a second
+     screen. If the browser blocks pop-ups, the image enlarges in the page instead,
+     with its alt text as the caption (click anywhere or press Esc to go back).
+     No libraries, works in light and dark mode. -->
+<style>
+.main-inner img.zoomable{cursor:zoom-in;}
+.main-inner img.zoomable:focus-visible{outline:3px solid #0078D4;outline-offset:3px;}
+.lightbox{
+  position:fixed;inset:0;z-index:1000;
+  display:none;flex-direction:column;align-items:center;justify-content:center;
+  padding:56px 24px 24px;
+  background:rgba(0,0,0,.86);
+  cursor:zoom-out;
+}
+.lightbox.open{display:flex;}
+.lightbox img{
+  max-width:100%;max-height:calc(100vh - 140px);
+  border-radius:6px;background:#fff;
+  box-shadow:0 12px 40px rgba(0,0,0,.5);
+}
+.lightbox-caption{
+  color:#fff;font-size:14px;line-height:1.5;text-align:center;
+  max-width:900px;margin-top:14px;
+}
+.lightbox-close{
+  position:absolute;top:14px;right:18px;
+  width:40px;height:40px;border:none;border-radius:50%;
+  background:rgba(255,255,255,.14);color:#fff;
+  font-size:26px;line-height:40px;cursor:pointer;
+}
+.lightbox-close:hover,.lightbox-close:focus-visible{background:rgba(255,255,255,.28);outline:none;}
+.lightbox-popout{
+  position:absolute;top:14px;right:68px;
+  height:40px;padding:0 16px;border:none;border-radius:20px;
+  background:rgba(255,255,255,.14);color:#fff;
+  font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+}
+.lightbox-popout:hover,.lightbox-popout:focus-visible{background:rgba(255,255,255,.28);outline:none;}
+body.lightbox-lock{overflow:hidden;}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.setAttribute("role", "dialog");
+  box.setAttribute("aria-modal", "true");
+  box.setAttribute("aria-label", "Enlarged image");
+  box.innerHTML = '<button type="button" class="lightbox-popout" title="Open the image in its own window, to move beside your work or to another screen">Open in new window &#8599;</button>' +
+                  '<button type="button" class="lightbox-close" aria-label="Close">&times;</button>' +
+                  '<img alt=""><div class="lightbox-caption"></div>';
+  document.body.appendChild(box);
+  const big = box.querySelector("img");
+  const caption = box.querySelector(".lightbox-caption");
+  const closeBtn = box.querySelector(".lightbox-close");
+  const popBtn = box.querySelector(".lightbox-popout");
+  let opener = null;
+
+  function open(img) {
+    opener = img;
+    big.src = img.currentSrc || img.src;
+    big.alt = img.alt;
+    caption.textContent = img.alt;
+    box.classList.add("open");
+    document.body.classList.add("lightbox-lock");
+    closeBtn.focus();
+  }
+  function close() {
+    box.classList.remove("open");
+    document.body.classList.remove("lightbox-lock");
+    big.removeAttribute("src");
+    if (opener) opener.focus();
+  }
+
+  // Opens an image in its own window, sized to fit the image and the screen.
+  // `from` is the window the click happened in (the page, or a side window).
+  // Returns false if the browser blocked the pop-up.
+  function popOut(src, alt, natW, natH, from) {
+    const scr = from.screen;
+    const w = Math.min(natW || 1280, scr.availWidth - 40);
+    const h = Math.min(natH || 720, scr.availHeight - 80);
+    const win = from.open("", "_blank", "popup,width=" + w + ",height=" + h);
+    if (!win) return false;
+    win.document.title = alt || "Screenshot";
+    win.document.body.style.cssText = "margin:0;background:#111;display:flex;align-items:center;justify-content:center;min-height:100vh;";
+    const pic = win.document.createElement("img");
+    pic.src = src;
+    pic.alt = alt;
+    pic.style.cssText = "max-width:100%;max-height:100vh;";
+    win.document.body.appendChild(pic);
+    return true;
+  }
+
+  // Screenshots only: images that are links (badges, logos) keep their link.
+  // One click opens the image in its own window; if that's blocked, it enlarges in the page.
+  document.querySelectorAll(".main-inner img").forEach(function (img) {
+    if (img.closest("a")) return;
+    img.classList.add("zoomable");
+    img.tabIndex = 0;
+    img.title = "Click to open in a new window";
+    function show() {
+      const from = img.ownerDocument.defaultView || window;
+      if (!popOut(img.currentSrc || img.src, img.alt, img.naturalWidth, img.naturalHeight, from)) open(img);
+    }
+    img.addEventListener("click", show);
+    img.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(); }
+    });
+  });
+
+  // In the enlarged view, the button tries the pop-up again (or opens a tab).
+  popBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    if (!popOut(big.src, big.alt, big.naturalWidth, big.naturalHeight, window)) window.open(big.src, "_blank");
+    close();
+  });
+
+  box.addEventListener("click", close);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && box.classList.contains("open")) close();
+  });
+});
+</script>
+
+<!-- Previous / next chapter links for course sites. Paste this whole block into
+     _layouts/default.html, just before </body>. It reads the chapter list from the
+     sidebar (.sidebar-nav a.nav-item), so it needs no per-course setup, and it still
+     works when the sidebar is hidden on narrow or split-screen windows. -->
+<style>
+.page-nav{
+  display:flex;justify-content:space-between;gap:16px;
+  margin-top:48px;padding-top:20px;border-top:1px solid var(--border);
+}
+.page-nav a{
+  flex:1 1 0;max-width:48%;
+  display:block;padding:12px 16px;
+  border:1px solid var(--border);border-radius:8px;
+  font-size:14px;line-height:1.4;color:var(--text-dark);text-decoration:none;
+  transition:border-color .15s,background .15s;
+}
+.page-nav a:hover{border-color:var(--teal);background:var(--teal-light);text-decoration:none;}
+.page-nav a.next{margin-left:auto;text-align:right;}
+.page-nav .page-nav-label{color:var(--text-muted);}
+.page-nav .page-nav-topic{font-weight:600;color:var(--teal);}
+@media(max-width:600px){
+  .page-nav{flex-direction:column;}
+  .page-nav a,.page-nav a.next{max-width:100%;margin-left:0;}
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const main = document.querySelector(".main-inner");
+  const items = Array.from(document.querySelectorAll(".sidebar-nav a.nav-item"));
+  if (!main || !items.length) return;
+
+  const here = location.pathname;
+  const path = function (a) { return new URL(a.href, location.href).pathname; };
+  const name = function (a) {
+    const n = a.querySelector(".nav-name");
+    return (n ? n.textContent : a.textContent).trim();
+  };
+  // The current chapter is the sidebar link whose address starts this page's address.
+  let current = -1;
+  items.forEach(function (a, i) { if (here.indexOf(path(a)) === 0) current = i; });
+
+  const prev = current > 0 ? items[current - 1] : null;
+  const next = current < 0 ? items[0] : items[current + 1] || null;
+  if (!prev && !next) return;
+
+  const nav = document.createElement("nav");
+  nav.className = "page-nav";
+  nav.setAttribute("aria-label", "Chapter navigation");
+  function link(a, cls, label, topic) {
+    const el = document.createElement("a");
+    el.className = cls;
+    el.href = a.href;
+    el.innerHTML = '<span class="page-nav-label"></span><span class="page-nav-topic"></span>';
+    el.querySelector(".page-nav-label").textContent = label;
+    el.querySelector(".page-nav-topic").textContent = topic;
+    nav.appendChild(el);
+  }
+  if (prev) link(prev, "prev", "← Previous chapter: ", name(prev));
+  if (next) link(next, "next", current < 0 ? "Start with: " : "Next chapter: ", name(next) + " →");
+  main.appendChild(nav);
+});
+</script>
+
+<!-- "What should you see?" boxes for course sites. Paste this block into
+     _layouts/default.html, just before the closing body tag. It styles the collapsible
+     <details markdown="1"><summary>What should you see?</summary> ... </details> blocks
+     that chapter notes use for expected results. The book prints them open. -->
+<style>
+.main-inner details{
+  margin:14px 0 22px;padding:0 18px;
+  border:1px solid var(--border);border-radius:10px;
+  background:var(--bg-soft);
+}
+.main-inner details > summary{
+  list-style:none;cursor:pointer;
+  margin:0 -18px;padding:11px 18px;
+  font-size:14px;font-weight:600;color:var(--teal);
+  border-radius:10px;
+}
+.main-inner details > summary::-webkit-details-marker{display:none;}
+.main-inner details > summary::before{
+  content:"\25B8";display:inline-block;width:1.1em;
+  transition:transform .15s;
+}
+.main-inner details[open] > summary::before{transform:rotate(90deg);}
+.main-inner details > summary:hover{background:var(--teal-light);}
+.main-inner details[open] > summary{
+  border-bottom:1px solid var(--border);
+  border-radius:10px 10px 0 0;margin-bottom:14px;
+}
+.main-inner details[open]{padding-bottom:4px;}
+.main-inner details table{background:var(--bg);}
+</style>
+
+<!-- "Pop out" side window for course sites. Paste this whole block into
+     _layouts/default.html, just before the closing body tag (after the lightbox).
+
+     Every chapter page (notes and prompts) gets a Pop out button above its title.
+     In Edge and Chrome it moves the page into a Picture-in-Picture window, which
+     stays on top of other windows, a quarter of the screen wide and full height,
+     so participants can follow the steps while they work in the app. Copy buttons,
+     What should you see? boxes and screenshots keep working in it. A link opens in
+     the main window. Other browsers get an ordinary window on the right quarter of
+     the screen, which isn't always on top. -->
+<style>
+.side-pop{
+  display:inline-flex;align-items:center;gap:6px;
+  margin:0 0 18px;padding:7px 14px;
+  border:1px solid var(--teal);border-radius:999px;
+  background:var(--bg);color:var(--teal);
+  font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+}
+.side-pop:hover,.side-pop:focus-visible{background:var(--teal-light);outline:none;}
+.side-away{
+  margin:0 0 24px;padding:16px 18px;
+  border:1px dashed var(--border);border-radius:10px;
+  color:var(--text-mid);font-size:14px;
+}
+.side-away button{
+  margin-left:8px;padding:5px 12px;border:1px solid var(--teal);border-radius:999px;
+  background:var(--bg);color:var(--teal);font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const main = document.querySelector(".main-inner");
+  if (!main) return;
+  // Chapter pages only: this page sits under one of the sidebar's chapters.
+  const here = location.pathname;
+  const inChapter = Array.from(document.querySelectorAll(".sidebar-nav a.nav-item")).some(function (a) {
+    return here.indexOf(new URL(a.href, location.href).pathname) === 0;
+  });
+  if (!inChapter) return;
+
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "side-pop";
+  btn.title = "Open this page in a narrow window on the right, to follow while you work";
+  btn.textContent = "Pop out ↗";
+  const h1 = main.querySelector("h1");
+  main.insertBefore(btn, h1 || main.firstChild);
+
+  btn.addEventListener("click", async function () {
+    const scr = window.screen;
+    const w = Math.round(scr.availWidth * 0.25);
+    const h = scr.availHeight;
+
+    if ("documentPictureInPicture" in window) {
+      try {
+        const pip = await documentPictureInPicture.requestWindow({ width: w, height: h });
+        const doc = pip.document;
+        doc.title = document.title;
+        // Same styles as the page, with stylesheet links made absolute.
+        document.querySelectorAll("style, link[rel=stylesheet]").forEach(function (n) {
+          const c = n.cloneNode(true);
+          if (c.tagName === "LINK") c.href = n.href;
+          doc.head.appendChild(c);
+        });
+        const fit = doc.createElement("style");
+        fit.textContent = "body{display:block;min-height:0;} .main-inner{padding:20px 18px 40px !important;max-width:none;} .side-pop,.breadcrumb{display:none;}";
+        doc.head.appendChild(fit);
+
+        // Links and images keep working once moved: make their addresses absolute.
+        main.querySelectorAll("a[href]").forEach(function (a) { a.setAttribute("href", a.href); });
+        main.querySelectorAll("img[src]").forEach(function (i) { i.setAttribute("src", i.src); });
+
+        // Leave a note in the page, then move the content (with its buttons) to the side window.
+        const away = document.createElement("div");
+        away.className = "side-away";
+        away.innerHTML = 'This page is open in the side window. <button type="button">Bring it back</button>';
+        main.parentNode.insertBefore(away, main);
+        doc.body.appendChild(main);
+
+        // Copy buttons write through the window that was clicked.
+        Object.defineProperty(navigator, "clipboard", { configurable: true, get: function () { return pip.navigator.clipboard; } });
+
+        // A link opens in the main window; the side window closes.
+        doc.addEventListener("click", function (e) {
+          const a = e.target.closest("a[href]");
+          if (!a || a.target === "_blank" || a.getAttribute("href").indexOf("#") === 0) return;
+          e.preventDefault();
+          location.href = a.href;
+          pip.close();
+        });
+        away.querySelector("button").addEventListener("click", function () { pip.close(); });
+        pip.addEventListener("pagehide", function () {
+          delete navigator.clipboard;
+          away.replaceWith(main);
+        });
+        return;
+      } catch (err) { /* not allowed here: fall back to an ordinary window */ }
+    }
+
+    const left = (scr.availLeft || 0) + scr.availWidth - w;
+    const top = scr.availTop || 0;
+    window.open(location.href, "course-side-window", "popup,left=" + left + ",top=" + top + ",width=" + w + ",height=" + h);
+  });
+});
+</script>
+
+</body>
+</html>
