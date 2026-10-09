@@ -43,7 +43,7 @@ Every lab is written as a tool-neutral task, with product notes for:
 | Claude | Free and paid plans |
 | Gemini | Free and Google Workspace |
 
-Labs that need extra tools use free options: NotebookLM (Google account) and n8n (trial account). The [product cards](./14-product-cards/) explain how to do each lab in your tool.
+Labs that need extra tools use free options: Gemini Notebook, formerly NotebookLM (Google account), and n8n (trial account). The [product cards](./14-product-cards/) explain how to do each lab in your tool.
 
 ---
 
@@ -78,7 +78,7 @@ Please do not upload real company, customer or personal data into any AI tool du
 
 ## Before You Start
 
-You will need a laptop with desktop Word and PowerPoint, access to at least one of the AI tools above, and a Google account for NotebookLM. Your trainer will share n8n access details before Day 2.
+You will need a laptop with desktop Word and PowerPoint, access to at least one of the AI tools above, and a Google account for Gemini Notebook (formerly NotebookLM). Your trainer will share n8n access details before Day 2.
 
 ---
 

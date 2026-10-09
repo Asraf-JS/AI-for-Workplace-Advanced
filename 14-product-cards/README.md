@@ -15,4 +15,4 @@ Every lab in this course is written as a tool-neutral task. These cards show how
 | [Claude](./claude.md) | Free and paid plans |
 | [Gemini](./gemini.md) | Free and Google Workspace |
 
-<!-- Planned files, not written yet: copilot.md, chatgpt.md, claude.md, gemini.md. -->
+> **Note:** the cards were checked in October 2026. These tools change every month, so a menu may have moved by the time you read this. Tell your trainer if something doesn't match your screen.
