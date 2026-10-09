@@ -58,7 +58,19 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
 ## 3.1 Create the Assistant
 
 1. Open your AI tool and create a new custom assistant (Project, agent, Gem or skill). The [product card](../14-product-cards/) for your tool has the clicks.
+
+   <!-- Screenshot still to capture: 03-01-open-ai-tool-create.png. Remove this comment wrapper when the image is added.
+   ![Step 3.1.1: Open your AI tool and create a new custom assistant (Project, agent, Gem or skill). The product card for your tool has the clicks](./images/03-01-open-ai-tool-create.png)
+
+   *Caption to write after capture.*
+   -->
 2. Name it `Quotation Checker`.
+
+   <!-- Screenshot still to capture: 03-02-name-quotation-checker.png. Remove this comment wrapper when the image is added.
+   ![Step 3.1.2: Name it Quotation Checker](./images/03-02-name-quotation-checker.png)
+
+   *Caption to write after capture.*
+   -->
 3. Paste these instructions into the instructions box:
 
    ```
@@ -89,7 +101,19 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
    - If you can't read part of a file, say so instead of guessing.
    ```
 
+   <!-- Screenshot still to capture: 03-03-paste-these-instructions-into.png. Remove this comment wrapper when the image is added.
+   ![Step 3.1.3: Paste these instructions into the instructions box](./images/03-03-paste-these-instructions-into.png)
+
+   *Caption to write after capture.*
+   -->
+
 4. Save the assistant.
+
+   <!-- Screenshot still to capture: 03-04-save-assistant.png. Remove this comment wrapper when the image is added.
+   ![Step 3.1.4: Save the assistant](./images/03-04-save-assistant.png)
+
+   *Caption to write after capture.*
+   -->
 
 > **Note:** Copilot agents allow a limited number of characters in the instructions. If yours is cut off, remove the "Reply in this format" examples last, not the checks.
 
@@ -107,14 +131,38 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
 ## 3.3 Check One Quotation at a Time
 
 1. Start a new chat with your Quotation Checker. If your assistant has no files, upload the policy and the vendor list first.
+
+   <!-- Screenshot still to capture: 03-05-start-new-chat-quotation.png. Remove this comment wrapper when the image is added.
+   ![Step 3.3.1: Start a new chat with your Quotation Checker. If your assistant has no files, upload the policy and the vendor list first](./images/03-05-start-new-chat-quotation.png)
+
+   *Caption to write after capture.*
+   -->
 2. Upload `rfq-2026-118.pdf` and `quotation-duduk-selesa.pdf`, then send:
 
    ```
    Check this quotation against RFQ-2026-118.
    ```
 
+   <!-- Screenshot still to capture: 03-06-upload-rfq-2026-118.png. Remove this comment wrapper when the image is added.
+   ![Step 3.3.2: Upload rfq-2026-118.pdf and quotation-duduk-selesa.pdf, then send](./images/03-06-upload-rfq-2026-118.png)
+
+   *Caption to write after capture.*
+   -->
+
 3. Read the report. For the arithmetic row, check one line yourself with a calculator.
+
+   <!-- Screenshot still to capture: 03-07-read-report-arithmetic-row.png. Remove this comment wrapper when the image is added.
+   ![Step 3.3.3: Read the report. For the arithmetic row, check one line yourself with a calculator](./images/03-07-read-report-arithmetic-row.png)
+
+   *Caption to write after capture.*
+   -->
 4. Repeat steps 1 to 3 for `quotation-kerusi-nadira.pdf` and `quotation-ergoluma.pdf`, each in a **new chat** with the assistant.
+
+   <!-- Screenshot still to capture: 03-08-repeat-steps-1-3.png. Remove this comment wrapper when the image is added.
+   ![Step 3.3.4: Repeat steps 1 to 3 for quotation-kerusi-nadira.pdf and quotation-ergoluma.pdf, each in a new chat with the assistant](./images/03-08-repeat-steps-1-3.png)
+
+   *Caption to write after capture.*
+   -->
 5. Note each verdict and the clause behind it.
 
 > **Tip:** a new chat for each quotation stops one quotation's figures from leaking into the next report.
@@ -124,11 +172,23 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
 ## 3.4 Compare the Three
 
 1. Start a new chat with the assistant, and upload the RFQ and all three quotations (with Copilot, send the RFQ first, then the three quotations in a second message).
+
+   <!-- Screenshot still to capture: 03-09-start-new-chat-assistant.png. Remove this comment wrapper when the image is added.
+   ![Step 3.4.1: Start a new chat with the assistant, and upload the RFQ and all three quotations (with Copilot, send the RFQ first, then the three quotations in a s...](./images/03-09-start-new-chat-assistant.png)
+
+   *Caption to write after capture.*
+   -->
 2. Send:
 
    ```
    Build a side-by-side comparison of the three quotations, one column per supplier. Rows: quotation number, date, valid until, unit price, delivery charge, subtotal, tax, grand total, warranty, payment terms and delivery lead time. Show every figure exactly as printed in the quotation, even if it's wrong.
    ```
+
+   <!-- Screenshot still to capture: 03-10-send.png. Remove this comment wrapper when the image is added.
+   ![Step 3.4.2: Send](./images/03-10-send.png)
+
+   *Caption to write after capture.*
+   -->
 
 <details markdown="1">
 <summary>What should you see?</summary>
@@ -163,7 +223,19 @@ Duduk Selesa's total must show **RM46,548.00**, the printed figure. If your Chec
    Using your checks, recommend one supplier. Give the correct total including tax, the verdict and the clause for each supplier, what must happen before we can issue a purchase order, and who must approve it under Clause 3.1.
    ```
 
+   <!-- Screenshot still to capture: 03-11-same-chat-send.png. Remove this comment wrapper when the image is added.
+   ![Step 3.5.1: In the same chat, send](./images/03-11-same-chat-send.png)
+
+   *Caption to write after capture.*
+   -->
+
 2. Before you accept the recommendation, check two things yourself: the arithmetic you found in 3.3, and the warranty and payment terms against the RFQ and the policy.
+
+   <!-- Screenshot still to capture: 03-12-before-accept-recommendation-check.png. Remove this comment wrapper when the image is added.
+   ![Step 3.5.2: Before you accept the recommendation, check two things yourself: the arithmetic you found in 3.3, and the warranty and payment terms against the RFQ...](./images/03-12-before-accept-recommendation-check.png)
+
+   *Caption to write after capture.*
+   -->
 
 <details markdown="1">
 <summary>Show the answers</summary>

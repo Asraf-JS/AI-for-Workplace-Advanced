@@ -43,6 +43,12 @@ No files to download. Open your AI tool, and the [product card](../14-product-ca
 ## 8.1 Describe the Process Today
 
 1. Start a new chat in your AI tool.
+
+   <!-- Screenshot still to capture: 08-01-start-new-chat-ai.png. Remove this comment wrapper when the image is added.
+   ![Step 8.1.1: Start a new chat in your AI tool](./images/08-01-start-new-chat-ai.png)
+
+   *Caption to write after capture.*
+   -->
 2. Send:
 
    ```
@@ -58,6 +64,12 @@ No files to download. Open your AI tool, and the [product card](../14-product-ca
    Turn this into a Markdown table with one row per step and these columns: Step, Who does it today, System, Data used.
    ```
 
+   <!-- Screenshot still to capture: 08-02-send.png. Remove this comment wrapper when the image is added.
+   ![Step 8.1.2: Send](./images/08-02-send.png)
+
+   *Caption to write after capture.*
+   -->
+
 3. Check the table against the seven steps. Fix anything the AI added or changed.
 
 ---
@@ -70,6 +82,12 @@ In the same chat, send:
 Add four columns to the table: Could an agent do this? (Yes, Partly or No), Read or write?, What could go wrong if the agent got it wrong?, Must a person approve first? (Yes or No). For any step that sends something outside the company, or commits money, the answer to the last column must be Yes.
 ```
 
+<!-- Screenshot still to capture: 08-03-mark-read-write-approval.png. Remove this comment wrapper when the image is added.
+![Section 8.2: Mark Read, Write and Approval](./images/08-03-mark-read-write-approval.png)
+
+*Caption to write after capture.*
+-->
+
 Now go through the table yourself and change anything you disagree with. This is where your judgement matters more than the AI's.
 
 ---
@@ -77,11 +95,23 @@ Now go through the table yourself and change anything you disagree with. This is
 ## 8.3 Name the Connectors
 
 1. Open your AI tool's connector list (see the [product card](../14-product-cards/)) and look at what it can connect to today.
+
+   <!-- Screenshot still to capture: 08-04-open-ai-tool-s.png. Remove this comment wrapper when the image is added.
+   ![Step 8.3.1: Open your AI tool's connector list (see the product card) and look at what it can connect to today](./images/08-04-open-ai-tool-s.png)
+
+   *Caption to write after capture.*
+   -->
 2. In the same chat, send:
 
    ```
    Add a last column, Connector needed. For each step, name the kind of connector the agent would need (for example "mailbox: read", "shared drive: write", "procurement system: read via MCP server"). Then list, under the table, every connector the agent would need, and whether it needs read access, write access or both.
    ```
+
+   <!-- Screenshot still to capture: 08-05-same-chat-send.png. Remove this comment wrapper when the image is added.
+   ![Step 8.3.2: In the same chat, send](./images/08-05-same-chat-send.png)
+
+   *Caption to write after capture.*
+   -->
 
 3. Compare the list with what your tool actually offers. Which connectors exist? Which would IT have to build, for example as an MCP server for the procurement system?
 

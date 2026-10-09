@@ -47,13 +47,31 @@ Have Excel open too. You'll use it to check one figure.
 ## 5.1 First Look at the Data
 
 1. Start a new chat and upload `purchase-history.xlsx`.
+
+   <!-- Screenshot still to capture: 05-01-start-new-chat-upload.png. Remove this comment wrapper when the image is added.
+   ![Step 5.1.1: Start a new chat and upload purchase-history.xlsx](./images/05-01-start-new-chat-upload.png)
+
+   *Caption to write after capture.*
+   -->
 2. Send:
 
    ```
    This is Sinar Maju Sdn Bhd's purchase order export, January 2025 to September 2026. Read both sheets. Tell me how many rows and columns there are, the date range, and what each column means. Don't analyse anything yet.
    ```
 
+   <!-- Screenshot still to capture: 05-02-send.png. Remove this comment wrapper when the image is added.
+   ![Step 5.1.2: Send](./images/05-02-send.png)
+
+   *Caption to write after capture.*
+   -->
+
 3. Check the row count against Excel: select the PO No. column and read **Count** at the bottom of the window. It includes the header row, so subtract one.
+
+   <!-- Screenshot still to capture: 05-03-check-row-count-against.png. Remove this comment wrapper when the image is added.
+   ![Step 5.1.3: Check the row count against Excel: select the PO No. column and read Count at the bottom of the window. It includes the header row, so subtract one](./images/05-03-check-row-count-against.png)
+
+   *Caption to write after capture.*
+   -->
 
 ---
 
@@ -64,6 +82,12 @@ In the same chat, send:
 ```
 Before any analysis, check the data quality. Look for: rows that are exact duplicates, rows with a blank Department, the same supplier spelled in different ways, and cancelled orders. For each problem, tell me how many rows and list the PO numbers. Don't change anything yet.
 ```
+
+<!-- Screenshot still to capture: 05-04-find-data-problems.png. Remove this comment wrapper when the image is added.
+![Section 5.2: Find the Data Problems](./images/05-04-find-data-problems.png)
+
+*Caption to write after capture.*
+-->
 
 <details markdown="1">
 <summary>What should you see?</summary>
@@ -90,8 +114,26 @@ Now clean the data: count each duplicated row once, group suppliers by Vendor ID
 Then check one figure yourself:
 
 1. In Excel, select the data and choose **Insert** > **PivotTable**.
+
+   <!-- Screenshot still to capture: 05-05-excel-select-data-choose.png. Remove this comment wrapper when the image is added.
+   ![Step 5.3.1: In Excel, select the data and choose Insert > PivotTable](./images/05-05-excel-select-data-choose.png)
+
+   *Caption to write after capture.*
+   -->
 2. Put **Vendor ID** in Rows and **Total (RM)** in Values.
+
+   <!-- Screenshot still to capture: 05-06-put-vendor-id-rows.png. Remove this comment wrapper when the image is added.
+   ![Step 5.3.2: Put Vendor ID in Rows and Total (RM) in Values](./images/05-06-put-vendor-id-rows.png)
+
+   *Caption to write after capture.*
+   -->
 3. Filter **Status** to leave out Cancelled.
+
+   <!-- Screenshot still to capture: 05-07-filter-status-leave-out.png. Remove this comment wrapper when the image is added.
+   ![Step 5.3.3: Filter Status to leave out Cancelled](./images/05-07-filter-status-leave-out.png)
+
+   *Caption to write after capture.*
+   -->
 4. Compare the total for **V003** with the AI's figure. They should match exactly.
 5. Now compare **V005**. Your PivotTable is higher, because one V005 order appears twice in the file and Excel counts both. That's why you clean before you sum.
 
@@ -135,6 +177,12 @@ Look for anything the Finance Director should know about. In particular:
 For each finding, list the PO numbers and the figures.
 ```
 
+<!-- Screenshot still to capture: 05-08-look-patterns.png. Remove this comment wrapper when the image is added.
+![Section 5.4: Look for Patterns](./images/05-08-look-patterns.png)
+
+*Caption to write after capture.*
+-->
+
 Check at least one finding yourself: filter the spreadsheet to the PO numbers the AI lists.
 
 <details markdown="1">
@@ -157,6 +205,12 @@ In the same chat, send:
 ```
 Make a column chart of monthly spend with Kilat Merbok Express (V014), January 2025 to September 2026. Title it with what the chart shows, and label the axes.
 ```
+
+<!-- Screenshot still to capture: 05-09-make-chart.png. Remove this comment wrapper when the image is added.
+![Section 5.5: Make One Chart](./images/05-09-make-chart.png)
+
+*Caption to write after capture.*
+-->
 
 Check that the chart's jump matches the month in your finding. Download the chart or take a screenshot for your notes.
 
