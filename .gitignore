@@ -6,3 +6,5 @@ Thumbs.db
 node_modules/
 .env
 _trainer/
+.capture-profile/
+_design/shots/debug-run.png

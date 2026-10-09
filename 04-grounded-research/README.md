@@ -45,12 +45,30 @@ This lab works best in **Gemini Notebook** (formerly NotebookLM), which is free 
 ## 4.1 Set Up the Policy Notebook
 
 1. Open your notebook tool and create a new notebook (or Project) called `Sinar Maju procurement policy`.
+
+   <!-- Screenshot still to capture: 04-01-open-notebook-tool-create.png. Remove this comment wrapper when the image is added.
+   ![Step 4.1.1: Open your notebook tool and create a new notebook (or Project) called Sinar Maju procurement policy](./images/04-01-open-notebook-tool-create.png)
+
+   *Caption to write after capture.*
+   -->
 2. Add `procurement-policy-v3.0.pdf` and `approved-vendor-list.pdf` as sources.
+
+   <!-- Screenshot still to capture: 04-02-add-procurement-policy-v3.png. Remove this comment wrapper when the image is added.
+   ![Step 4.1.2: Add procurement-policy-v3.0.pdf and approved-vendor-list.pdf as sources](./images/04-02-add-procurement-policy-v3.png)
+
+   *Caption to write after capture.*
+   -->
 3. Ask:
 
    ```
    In three bullets, what do these sources cover? Name each document and its version or date.
    ```
+
+   <!-- Screenshot still to capture: 04-03-ask.png. Remove this comment wrapper when the image is added.
+   ![Step 4.1.3: Ask](./images/04-03-ask.png)
+
+   *Caption to write after capture.*
+   -->
 
 4. Check that both documents are named, and that the policy is shown as Version 3.0.
 
@@ -80,6 +98,12 @@ Does a quotation have to show the supplier's SST registration number?
 What happens if one department places several small orders with the same supplier in the same month?
 ```
 
+<!-- Screenshot still to capture: 04-04-ask-five-policy-questions.png. Remove this comment wrapper when the image is added.
+![Section 4.2: Ask Five Policy Questions](./images/04-04-ask-five-policy-questions.png)
+
+*Caption to write after capture.*
+-->
+
 > **Tip:** the first question sets the pattern (answer only from the sources, give the clause, quote the sentence). If later answers drop the quote, say `Quote the exact sentence for that too.`
 
 ---
@@ -87,6 +111,12 @@ What happens if one department places several small orders with the same supplie
 ## 4.3 Check Every Citation
 
 1. For each answer, open the policy PDF and find the clause it names.
+
+   <!-- Screenshot still to capture: 04-05-answer-open-policy-pdf.png. Remove this comment wrapper when the image is added.
+   ![Step 4.3.1: For each answer, open the policy PDF and find the clause it names](./images/04-05-answer-open-policy-pdf.png)
+
+   *Caption to write after capture.*
+   -->
 2. Read the quoted sentence in the PDF. Does it say the same thing as the answer?
 3. Mark each answer **Correct**, **Wrong clause** or **Doesn't support the answer**.
 
@@ -116,6 +146,12 @@ Send:
 ```
 Answer only from the sources. What is our policy on buying from suppliers outside Malaysia?
 ```
+
+<!-- Screenshot still to capture: 04-06-ask-something-policy-doesn.png. Remove this comment wrapper when the image is added.
+![Section 4.4: Ask Something the Policy Doesn't Cover](./images/04-06-ask-something-policy-doesn.png)
+
+*Caption to write after capture.*
+-->
 
 <details markdown="1">
 <summary>What should you see?</summary>

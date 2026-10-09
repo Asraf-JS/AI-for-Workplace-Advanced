@@ -73,11 +73,23 @@ The Checker's verdict **PASS** counts as Pass. **REVISE**, **REJECT** and **ESCA
 For each case, 01 to 10:
 
 1. Start a **new chat** with your Quotation Checker. If it has no files of its own, upload the policy and the vendor list first.
+
+   <!-- Screenshot still to capture: 07-01-start-new-chat-quotation.png. Remove this comment wrapper when the image is added.
+   ![Step 7.2.1: Start a new chat with your Quotation Checker. If it has no files of its own, upload the policy and the vendor list first](./images/07-01-start-new-chat-quotation.png)
+
+   *Caption to write after capture.*
+   -->
 2. Upload `open-rfqs.pdf` and the case's quotation, and send:
 
    ```
    Check this quotation against the matching RFQ in open-rfqs.pdf. The RFQ number is in the quotation's "Your reference".
    ```
+
+   <!-- Screenshot still to capture: 07-02-upload-open-rfqs-pdf.png. Remove this comment wrapper when the image is added.
+   ![Step 7.2.2: Upload open-rfqs.pdf and the case's quotation, and send](./images/07-02-upload-open-rfqs-pdf.png)
+
+   *Caption to write after capture.*
+   -->
 
 3. Fill in the Checker verdict, Pass or Fail, and the clause it gives.
 
@@ -132,7 +144,19 @@ Then answer:
    An advance of exactly 30% is within the limit. Only more than 30% fails Clause 6.2.
    ```
 
+   <!-- Screenshot still to capture: 07-03-open-quotation-checker-s.png. Remove this comment wrapper when the image is added.
+   ![Step 7.4.2: Open your Quotation Checker's instructions and change one thing. For example, add a rule](./images/07-03-open-quotation-checker-s.png)
+
+   *Caption to write after capture.*
+   -->
+
 3. Save the instructions.
+
+   <!-- Screenshot still to capture: 07-04-save-instructions.png. Remove this comment wrapper when the image is added.
+   ![Step 7.4.3: Save the instructions](./images/07-04-save-instructions.png)
+
+   *Caption to write after capture.*
+   -->
 4. Re-run **all ten** cases and score them again.
 
 Did your score go up? Did any case that was right before go wrong? Keep the better version of the instructions: you'll use it in Modules 10 and 11.

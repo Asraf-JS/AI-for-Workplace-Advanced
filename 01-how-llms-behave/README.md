@@ -51,13 +51,31 @@ Download both at once with **[sample-files.zip](./sample-files.zip)**, then righ
 ## 1.1 Ask the Same Question Twice
 
 1. Open your AI tool and start a new chat.
+
+   <!-- Screenshot still to capture: 01-01-open-ai-tool-start.png. Remove this comment wrapper when the image is added.
+   ![Step 1.1.1: Open your AI tool and start a new chat](./images/01-01-open-ai-tool-start.png)
+
+   *Caption to write after capture.*
+   -->
 2. Send this prompt:
 
    ```
    Write a one-line email subject asking a supplier to send a revised quotation. Give me only the subject line.
    ```
 
+   <!-- Screenshot still to capture: 01-02-send-prompt.png. Remove this comment wrapper when the image is added.
+   ![Step 1.1.2: Send this prompt](./images/01-02-send-prompt.png)
+
+   *Caption to write after capture.*
+   -->
+
 3. Start another new chat and send exactly the same prompt.
+
+   <!-- Screenshot still to capture: 01-03-start-another-new-chat.png. Remove this comment wrapper when the image is added.
+   ![Step 1.1.3: Start another new chat and send exactly the same prompt](./images/01-03-start-another-new-chat.png)
+
+   *Caption to write after capture.*
+   -->
 4. Compare the two subject lines.
 
 The wording is almost certainly different. Neither is wrong: the model picked different likely words. Keep that in mind when you need an exact figure.
@@ -67,12 +85,30 @@ The wording is almost certainly different. Neither is wrong: the model picked di
 ## 1.2 Check the Quotation with a Fast Model
 
 1. Start a new chat and choose a fast model (the [product cards](../14-product-cards/) show where).
+
+   <!-- Screenshot still to capture: 01-04-start-new-chat-choose.png. Remove this comment wrapper when the image is added.
+   ![Step 1.2.1: Start a new chat and choose a fast model (the product cards show where)](./images/01-04-start-new-chat-choose.png)
+
+   *Caption to write after capture.*
+   -->
 2. Upload `rfq-2026-118.pdf` and `quotation-duduk-selesa.pdf`.
+
+   <!-- Screenshot still to capture: 01-05-upload-rfq-2026-118.png. Remove this comment wrapper when the image is added.
+   ![Step 1.2.2: Upload rfq-2026-118.pdf and quotation-duduk-selesa.pdf](./images/01-05-upload-rfq-2026-118.png)
+
+   *Caption to write after capture.*
+   -->
 3. Send this prompt:
 
    ```
    I work in procurement at Sinar Maju Sdn Bhd. I've uploaded our request for quotation (RFQ-2026-118) and one supplier's quotation. Summarise the quotation in five bullets: supplier, grand total, validity, warranty and payment terms. Then tell me in one sentence whether it meets the RFQ.
    ```
+
+   <!-- Screenshot still to capture: 01-06-send-prompt.png. Remove this comment wrapper when the image is added.
+   ![Step 1.2.3: Send this prompt](./images/01-06-send-prompt.png)
+
+   *Caption to write after capture.*
+   -->
 
 4. Write down the grand total the model gives you, and whether it says the quotation meets the RFQ.
 
@@ -81,12 +117,30 @@ The wording is almost certainly different. Neither is wrong: the model picked di
 ## 1.3 Check It Again with a Reasoning Model
 
 1. Start a new chat and switch to a reasoning (thinking) model.
+
+   <!-- Screenshot still to capture: 01-07-start-new-chat-switch.png. Remove this comment wrapper when the image is added.
+   ![Step 1.3.1: Start a new chat and switch to a reasoning (thinking) model](./images/01-07-start-new-chat-switch.png)
+
+   *Caption to write after capture.*
+   -->
 2. Upload the same two files.
+
+   <!-- Screenshot still to capture: 01-08-upload-same-two-files.png. Remove this comment wrapper when the image is added.
+   ![Step 1.3.2: Upload the same two files](./images/01-08-upload-same-two-files.png)
+
+   *Caption to write after capture.*
+   -->
 3. Send the same prompt as in 1.2, then send this one:
 
    ```
    Now check the arithmetic. Recalculate every line amount as quantity x unit price, then the subtotal, the tax and the grand total. Show your working in a table and compare each figure with the one printed in the quotation.
    ```
+
+   <!-- Screenshot still to capture: 01-09-send-same-prompt-1.png. Remove this comment wrapper when the image is added.
+   ![Step 1.3.3: Send the same prompt as in 1.2, then send this one](./images/01-09-send-same-prompt-1.png)
+
+   *Caption to write after capture.*
+   -->
 
 4. Compare what the reasoning model found with your notes from 1.2.
 

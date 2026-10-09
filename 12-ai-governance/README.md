@@ -57,6 +57,12 @@ No files to download. Bring your notes from Day 1 and this morning: you'll list 
 ## 12.1 List the Department's AI Uses
 
 1. Start a new chat in your AI tool.
+
+   <!-- Screenshot still to capture: 12-01-start-new-chat-ai.png. Remove this comment wrapper when the image is added.
+   ![Step 12.1.1: Start a new chat in your AI tool](./images/12-01-start-new-chat-ai.png)
+
+   *Caption to write after capture.*
+   -->
 2. Send:
 
    ```
@@ -70,6 +76,12 @@ No files to download. Bring your notes from Day 1 and this morning: you'll list 
 
    Make a Markdown table with these columns: Use case, AI tool, Data used, Personal data? (Yes or No), Who sees the output, Human check before use, Owner. Fill in what you can from the list, and write "To confirm" where you're guessing.
    ```
+
+   <!-- Screenshot still to capture: 12-02-send.png. Remove this comment wrapper when the image is added.
+   ![Step 12.1.2: Send](./images/12-02-send.png)
+
+   *Caption to write after capture.*
+   -->
 
 3. Replace every "To confirm" with your own answer. You know the process; the AI is guessing.
 
@@ -86,6 +98,12 @@ Add a Risk column (Low, Medium or High) using these rules:
 - Low: uses public or fictional data, and a person always checks the output
 Give one sentence explaining each rating. Then sort the table from High to Low.
 ```
+
+<!-- Screenshot still to capture: 12-03-rate-risk.png. Remove this comment wrapper when the image is added.
+![Section 12.2: Rate the Risk](./images/12-03-rate-risk.png)
+
+*Caption to write after capture.*
+-->
 
 Check every rating yourself, and change any you disagree with.
 
@@ -117,6 +135,12 @@ In the same chat, send:
 Now draft one page of AI rules for the Procurement Department. Use these six headings: Approved tools; Data you may use; Checking AI output; Being open about AI use; The use-case register; Reporting problems. Write in plain, direct language, with no more than four short rules under each heading. Take account of Malaysia's Personal Data Protection Act 2010 and its 2024 amendments (Data Protection Officer, breach notification), and the risk ratings in the table above. Don't invent laws or deadlines: if you're unsure, write "Check with our DPO".
 ```
 
+<!-- Screenshot still to capture: 12-04-write-department-s-ai.png. Remove this comment wrapper when the image is added.
+![Section 12.3: Write the Department's AI Rules](./images/12-04-write-department-s-ai.png)
+
+*Caption to write after capture.*
+-->
+
 Edit the draft until you'd be happy to put your name to it. Cut anything vague, such as "use AI responsibly", and replace it with something a person can actually do.
 
 ---
@@ -128,6 +152,12 @@ In the same chat, send:
 ```
 Map each rule to the principle it supports from Malaysia's National Guidelines on AI Governance and Ethics: fairness; reliability, safety and control; privacy and security; inclusiveness; transparency; accountability; pursuit of human benefit and happiness. Then tell me which principles none of our rules cover, and suggest one rule for each gap.
 ```
+
+<!-- Screenshot still to capture: 12-05-check-against-national-principles.png. Remove this comment wrapper when the image is added.
+![Section 12.4: Check It Against the National Principles](./images/12-05-check-against-national-principles.png)
+
+*Caption to write after capture.*
+-->
 
 Decide whether each suggested rule belongs in a one-page set of rules for your department, or somewhere else.
 

@@ -50,9 +50,33 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
 ## 6.1 Look Under the Hood of the Two Decks
 
 1. Open `sinar-maju-deck.pptx` in PowerPoint. Select **Home** > **Layout** and look at the list of layouts.
+
+   <!-- Screenshot still to capture: 06-01-open-sinar-maju-deck.png. Remove this comment wrapper when the image is added.
+   ![Step 6.1.1: Open sinar-maju-deck.pptx in PowerPoint. Select Home > Layout and look at the list of layouts](./images/06-01-open-sinar-maju-deck.png)
+
+   *Caption to write after capture.*
+   -->
 2. Select **View** > **Outline View**. Every slide's title shows in the outline.
+
+   <!-- Screenshot still to capture: 06-02-select-view-outline-view.png. Remove this comment wrapper when the image is added.
+   ![Step 6.1.2: Select View > Outline View. Every slide's title shows in the outline](./images/06-02-select-view-outline-view.png)
+
+   *Caption to write after capture.*
+   -->
 3. Select **Review** > **Check Accessibility**.
+
+   <!-- Screenshot still to capture: 06-03-select-review-check-accessibility.png. Remove this comment wrapper when the image is added.
+   ![Step 6.1.3: Select Review > Check Accessibility](./images/06-03-select-review-check-accessibility.png)
+
+   *Caption to write after capture.*
+   -->
 4. Close it and do the same three things with `sinar-maju-deck-bad.pptx`.
+
+   <!-- Screenshot still to capture: 06-04-close-do-same-three.png. Remove this comment wrapper when the image is added.
+   ![Step 6.1.4: Close it and do the same three things with sinar-maju-deck-bad.pptx](./images/06-04-close-do-same-three.png)
+
+   *Caption to write after capture.*
+   -->
 5. Note what's different. On screen, the two decks look almost the same.
 
 <!-- VERIFY: the Check Accessibility command location in current PowerPoint for Windows, and that it reports missing slide titles for the bad deck. -->
@@ -62,14 +86,38 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
 ## 6.2 Look at the Memo's Styles
 
 1. Open `sinar-maju-memo.docx` in Word.
+
+   <!-- Screenshot still to capture: 06-05-open-sinar-maju-memo.png. Remove this comment wrapper when the image is added.
+   ![Step 6.2.1: Open sinar-maju-memo.docx in Word](./images/06-05-open-sinar-maju-memo.png)
+
+   *Caption to write after capture.*
+   -->
 2. Select **View** > **Navigation Pane**. The numbered headings are there because they use the **Heading 1** style.
+
+   <!-- Screenshot still to capture: 06-06-select-view-navigation-pane.png. Remove this comment wrapper when the image is added.
+   ![Step 6.2.2: Select View > Navigation Pane. The numbered headings are there because they use the Heading 1 style](./images/06-06-select-view-navigation-pane.png)
+
+   *Caption to write after capture.*
+   -->
 3. Click into the grey text in square brackets. Those are placeholders: everything the AI (or you) must replace.
+
+   <!-- Screenshot still to capture: 06-07-click-into-grey-text.png. Remove this comment wrapper when the image is added.
+   ![Step 6.2.3: Click into the grey text in square brackets. Those are placeholders: everything the AI (or you) must replace](./images/06-07-click-into-grey-text.png)
+
+   *Caption to write after capture.*
+   -->
 
 ---
 
 ## 6.3 Fill the Memo
 
 1. Start a new chat in your AI tool and upload `sinar-maju-memo.docx`.
+
+   <!-- Screenshot still to capture: 06-08-start-new-chat-ai.png. Remove this comment wrapper when the image is added.
+   ![Step 6.3.1: Start a new chat in your AI tool and upload sinar-maju-memo.docx](./images/06-08-start-new-chat-ai.png)
+
+   *Caption to write after capture.*
+   -->
 2. Copy the prompt below, replace `[your name]` with your own name, and send it. It includes the facts from Module 03, so it works even if you don't have that chat any more.
 
    ```
@@ -87,7 +135,19 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
    Give me the finished memo as a Word file I can download.
    ```
 
+   <!-- Screenshot still to capture: 06-09-copy-prompt-below-replace.png. Remove this comment wrapper when the image is added.
+   ![Step 6.3.2: Copy the prompt below, replace your name with your own name, and send it. It includes the facts from Module 03, so it works even if you don't have...](./images/06-09-copy-prompt-below-replace.png)
+
+   *Caption to write after capture.*
+   -->
+
 3. Download the file and open it in Word. Check the Navigation Pane still shows the six headings, and that no grey placeholder text is left.
+
+   <!-- Screenshot still to capture: 06-10-download-file-open-word.png. Remove this comment wrapper when the image is added.
+   ![Step 6.3.3: Download the file and open it in Word. Check the Navigation Pane still shows the six headings, and that no grey placeholder text is left](./images/06-10-download-file-open-word.png)
+
+   *Caption to write after capture.*
+   -->
 
 > **If you don't see this:** if your tool can't return a Word file, ask for the memo text section by section, and paste each section into the template yourself with **Paste** > **Keep Text Only**. That keeps the template's styles.
 
@@ -96,6 +156,12 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
 ## 6.4 Make the Deck from the Good Template
 
 1. Start a new chat and upload `sinar-maju-deck.pptx`.
+
+   <!-- Screenshot still to capture: 06-11-start-new-chat-upload.png. Remove this comment wrapper when the image is added.
+   ![Step 6.4.1: Start a new chat and upload sinar-maju-deck.pptx](./images/06-11-start-new-chat-upload.png)
+
+   *Caption to write after capture.*
+   -->
 2. Send:
 
    ```
@@ -107,13 +173,31 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
    Remove the template's example slides. Give me the finished deck as a PowerPoint file.
    ```
 
+   <!-- Screenshot still to capture: 06-12-send.png. Remove this comment wrapper when the image is added.
+   ![Step 6.4.2: Send](./images/06-12-send.png)
+
+   *Caption to write after capture.*
+   -->
+
 3. Download it and open it in PowerPoint. Check each slide's layout (**Home** > **Layout**), the figures, and that nothing spills off a slide.
+
+   <!-- Screenshot still to capture: 06-13-download-open-powerpoint-check.png. Remove this comment wrapper when the image is added.
+   ![Step 6.4.3: Download it and open it in PowerPoint. Check each slide's layout (Home > Layout), the figures, and that nothing spills off a slide](./images/06-13-download-open-powerpoint-check.png)
+
+   *Caption to write after capture.*
+   -->
 
 ---
 
 ## 6.5 Do It Again with the Bad Template
 
 1. Start a new chat, upload `sinar-maju-deck-bad.pptx`, and send the same prompt as in 6.4 (it still names the layouts, which this file doesn't have).
+
+   <!-- Screenshot still to capture: 06-14-start-new-chat-upload.png. Remove this comment wrapper when the image is added.
+   ![Step 6.5.1: Start a new chat, upload sinar-maju-deck-bad.pptx, and send the same prompt as in 6.4 (it still names the layouts, which this file doesn't have)](./images/06-14-start-new-chat-upload.png)
+
+   *Caption to write after capture.*
+   -->
 2. Open the result next to the deck from 6.4. Compare the titles, fonts, positions and the table.
 
 <details markdown="1">

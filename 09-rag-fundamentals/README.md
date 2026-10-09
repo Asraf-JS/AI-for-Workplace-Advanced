@@ -52,8 +52,26 @@ Use a source-grounded notebook, as in Module 04. Gemini Notebook (formerly Noteb
 ## 9.1 Add Both Versions to a Notebook
 
 1. Create a new notebook called `Procurement policy, both versions`.
+
+   <!-- Screenshot still to capture: 09-01-create-new-notebook-called.png. Remove this comment wrapper when the image is added.
+   ![Step 9.1.1: Create a new notebook called Procurement policy, both versions](./images/09-01-create-new-notebook-called.png)
+
+   *Caption to write after capture.*
+   -->
 2. Add `procurement-policy-v3.0.pdf` and `procurement-policy-v2.1.pdf` as sources.
+
+   <!-- Screenshot still to capture: 09-02-add-procurement-policy-v3.png. Remove this comment wrapper when the image is added.
+   ![Step 9.1.2: Add procurement-policy-v3.0.pdf and procurement-policy-v2.1.pdf as sources](./images/09-02-add-procurement-policy-v3.png)
+
+   *Caption to write after capture.*
+   -->
 3. Look at page 1 of each PDF. Only the old one has a red **SUPERSEDED** box. Now look at page 2 of the old one.
+
+   <!-- Screenshot still to capture: 09-03-look-page-1-pdf.png. Remove this comment wrapper when the image is added.
+   ![Step 9.1.3: Look at page 1 of each PDF. Only the old one has a red SUPERSEDED box. Now look at page 2 of the old one](./images/09-03-look-page-1-pdf.png)
+
+   *Caption to write after capture.*
+   -->
 
 ---
 
@@ -77,11 +95,23 @@ Who has to approve a purchase of RM80,000 including tax? Give the clause and the
 Does a quotation have to show the supplier's SST registration number? Give the clause and the policy version.
 ```
 
+<!-- Screenshot still to capture: 09-04-ask-four-questions.png. Remove this comment wrapper when the image is added.
+![Section 9.2: Ask Four Questions](./images/09-04-ask-four-questions.png)
+
+*Caption to write after capture.*
+-->
+
 ---
 
 ## 9.3 Find the Wrong Citations
 
 1. For each answer, click or open the citation and find the page it points to.
+
+   <!-- Screenshot still to capture: 09-05-answer-click-or-open.png. Remove this comment wrapper when the image is added.
+   ![Step 9.3.1: For each answer, click or open the citation and find the page it points to](./images/09-05-answer-click-or-open.png)
+
+   *Caption to write after capture.*
+   -->
 2. Check the version in the page header: **Version 3.0** or **Version 2.1**.
 3. Mark each answer **Right** (from v3.0) or **Wrong** (from v2.1, or a mix of both).
 
@@ -113,6 +143,12 @@ In the same notebook, send:
 For your answer about advance payments, list every passage you retrieved from the sources, with the document name, page and clause for each. Then explain why a passage from Version 2.1 could look relevant to the question.
 ```
 
+<!-- Screenshot still to capture: 09-06-diagnose-why.png. Remove this comment wrapper when the image is added.
+![Section 9.4: Diagnose Why](./images/09-06-diagnose-why.png)
+
+*Caption to write after capture.*
+-->
+
 Then, with the person next to you, write one sentence for each:
 
 1. Which step of RAG (split, index, retrieve, answer) let the old clause in?
@@ -127,6 +163,12 @@ Then, with the person next to you, write one sentence for each:
 ```
 From now on, use only the Procurement Policy Version 3.0, effective 1 July 2026. Version 2.1 is superseded: ignore it unless I ask about it by name. Now answer again: what is the most we can pay in advance before the Finance Director has to approve it?
 ```
+
+<!-- Screenshot still to capture: 09-07-fix-two-ways.png. Remove this comment wrapper when the image is added.
+![Section 9.5: Fix It Two Ways](./images/09-07-fix-two-ways.png)
+
+*Caption to write after capture.*
+-->
 
 **Fix B: curate the sources.** Remove `procurement-policy-v2.1.pdf` from the notebook's sources, and ask the four questions again.
 

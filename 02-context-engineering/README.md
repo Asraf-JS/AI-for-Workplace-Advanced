@@ -43,7 +43,19 @@ You need `rfq-2026-118.pdf` from Module 01. If you don't have it, download **[Mo
 ## 2.1 Step 1: Extract the Requirements
 
 1. Start a new chat in your AI tool.
+
+   <!-- Screenshot still to capture: 02-01-start-new-chat-ai.png. Remove this comment wrapper when the image is added.
+   ![Step 2.1.1: Start a new chat in your AI tool](./images/02-01-start-new-chat-ai.png)
+
+   *Caption to write after capture.*
+   -->
 2. Upload `rfq-2026-118.pdf`.
+
+   <!-- Screenshot still to capture: 02-02-upload-rfq-2026-118.png. Remove this comment wrapper when the image is added.
+   ![Step 2.1.2: Upload rfq-2026-118.pdf](./images/02-02-upload-rfq-2026-118.png)
+
+   *Caption to write after capture.*
+   -->
 3. Send this prompt:
 
    ```
@@ -52,6 +64,12 @@ You need `rfq-2026-118.pdf` from Module 01. If you don't have it, download **[Mo
    Source: use only the attached RFQ. If something isn't stated in it, don't add it.
    Expectations: a Markdown table with three columns: Requirement, Exact wording from the RFQ, How to check it in a quotation. Include the requirements for what a quotation must contain, not only the product.
    ```
+
+   <!-- Screenshot still to capture: 02-03-send-prompt.png. Remove this comment wrapper when the image is added.
+   ![Step 2.1.3: Send this prompt](./images/02-03-send-prompt.png)
+
+   *Caption to write after capture.*
+   -->
 
 4. Check the table against the RFQ. Every row should come from the document, word for word in the second column.
 
@@ -67,6 +85,12 @@ In the same chat, send:
 Using only the requirements table above, make a blank comparison table in Markdown for three supplier quotations. One row per requirement. Columns: Requirement, Supplier A, Supplier B, Supplier C, Meets the RFQ? Leave the supplier cells empty. Add rows at the bottom for Grand total (RM), Valid until and Payment terms.
 ```
 
+<!-- Screenshot still to capture: 02-04-step-2-turn-into.png. Remove this comment wrapper when the image is added.
+![Section 2.2: Step 2: Turn It into a Comparison Table](./images/02-04-step-2-turn-into.png)
+
+*Caption to write after capture.*
+-->
+
 Copy the table into Word or Excel to see that it pastes cleanly. You'll fill a table like this with real quotations in Module 03.
 
 ---
@@ -79,6 +103,12 @@ In the same chat, send:
 Now give me the same requirements as JSON, so another system can read them. Use a list of objects, each with these fields: "id" (R1, R2 and so on), "requirement", "rfq_wording" and "how_to_check". Return only the JSON, with no explanation before or after it.
 ```
 
+<!-- Screenshot still to capture: 02-05-step-3-turn-into.png. Remove this comment wrapper when the image is added.
+![Section 2.3: Step 3: Turn It into JSON](./images/02-05-step-3-turn-into.png)
+
+*Caption to write after capture.*
+-->
+
 Check that each object matches a row of your Step 1 table. On Day 2, your n8n workflow will ask the AI for a JSON answer in the same way.
 
 > **Note:** the exact JSON will differ from one person to the next, as you saw in Module 01. What should match is the content: the same requirements, in fields with the names you asked for.
@@ -88,11 +118,23 @@ Check that each object matches a row of your Step 1 table. On Day 2, your n8n wo
 ## 2.4 Compare with One Big Prompt
 
 1. Start a **new chat** and upload `rfq-2026-118.pdf` again.
+
+   <!-- Screenshot still to capture: 02-06-start-new-chat-upload.png. Remove this comment wrapper when the image is added.
+   ![Step 2.4.1: Start a new chat and upload rfq-2026-118.pdf again](./images/02-06-start-new-chat-upload.png)
+
+   *Caption to write after capture.*
+   -->
 2. Send everything at once:
 
    ```
    Read the attached RFQ, list all the requirements, make a blank comparison table for three suppliers, and give me the requirements as JSON.
    ```
+
+   <!-- Screenshot still to capture: 02-07-send-everything-once.png. Remove this comment wrapper when the image is added.
+   ![Step 2.4.2: Send everything at once](./images/02-07-send-everything-once.png)
+
+   *Caption to write after capture.*
+   -->
 
 3. Compare the result with your three-step chain. Which one missed a requirement, or mixed the formats up? Which would you trust to build on?
 
