@@ -34,6 +34,24 @@ _To be added_
 
 _Steps to be added._
 
+<!-- Move each box below to sit after the step it checks once the steps are written. Figures come from the answer keys in _trainer/: if a figure changes, rebuild the sample files and update these boxes in the same pull request. -->
+
+<details markdown="1">
+<summary>Show the answers</summary>
+
+The wrong answers come from Version 2.1, which says SUPERSEDED only on its first page.
+
+| Question | Right answer (v3.0) | Wrong answer (from v2.1) | Clause |
+|---|---|---|---|
+| Most you can pay in advance without extra approval? | 30% | 50% | 6.2 |
+| How long must a quotation be valid? | At least 30 days | At least 14 days | 4.2 |
+| Who approves a RM80,000 purchase? | Finance Director | HOD and Head of Procurement | 3.1 |
+| Must a quotation show an SST number? | Yes, if SST is charged | A clause about the lowest price | 4.5 |
+
+The clause numbers are the same in both versions, which is why a wrong citation looks right. Open the cited page and check the version in its header.
+
+</details>
+
 ---
 
 ## Product Notes

@@ -1187,6 +1187,11 @@ def chair_key(results):
              md_table([["Vendor", "Printed total (RM)", "Correct total (RM)", "Valid until", "Problem", "Clause"]] + [
                  [v["name"], rm(f["p_grand"]), rm(f["grand"]), d(v["valid_until"]), v["problem"], v["clause"]]
                  for v, f in results]),
+             "", "## As printed", "",
+             md_table([["Vendor", "Unit price (RM)", "Delivery (RM)", "Subtotal (RM)", "Tax (RM)", "Grand total (RM)"]] + [
+                 [v["name"], rm(v["items"][0][3]), rm(v["items"][1][3]), rm(f["p_sub"]), rm(f["p_tax"]), rm(f["p_grand"])]
+                 for v, f in results]),
+             "", f"Line 1 gap for Duduk Selesa: RM{rm(results[0][1]['lines'][0] - results[0][1]['p_lines'][0])}.",
              "", "## The seeded problems", ""]
     a, fa = results[0]
     lines += [
