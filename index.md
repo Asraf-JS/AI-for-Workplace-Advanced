@@ -56,13 +56,13 @@ Labs that need extra tools use free options: Gemini Notebook, formerly NotebookL
 
 | Day | # | Module | Prompts | Lab | Time |
 |---|---|---|---|---|---|
-| 1 | 01 | [How Large Language Models Really Behave](./01-how-llms-behave/) | [Prompts](./01-how-llms-behave/prompts.md) | Compare a quotation analysis on two model types | TBA |
-| 1 | 02 | [Context Engineering and Structured Output](./02-context-engineering/) | [Prompts](./02-context-engineering/prompts.md) | Three-step prompt chain with Markdown output | TBA |
-| 1 | 03 | [Building Custom AI Assistants](./03-custom-assistants/) | [Prompts](./03-custom-assistants/prompts.md) | Procurement Quotation Checker | TBA |
-| 1 | 04 | [Grounded Research and Source-Based Answers](./04-grounded-research/) | [Prompts](./04-grounded-research/prompts.md) | Policy knowledge notebook with citation checks | TBA |
-| 1 | 05 | [Advanced Data Analysis with AI](./05-data-analysis/) | [Prompts](./05-data-analysis/prompts.md) | Purchase history analysis | TBA |
-| 1 | 06 | [Controlling Output with Word and PowerPoint Templates](./06-output-templates/) | [Prompts](./06-output-templates/prompts.md) | Approval memo and deck from company templates | TBA |
-| 1 | 07 | [Evaluating AI Output](./07-evaluating-output/) | [Prompts](./07-evaluating-output/prompts.md) | Score the Quotation Checker on ten test cases | TBA |
+| 1 | 01 | [How Large Language Models Really Behave](./01-how-llms-behave/) | [Prompts](./01-how-llms-behave/prompts.md) | Compare a quotation analysis on two model types | 40 min |
+| 1 | 02 | [Context Engineering and Structured Output](./02-context-engineering/) | [Prompts](./02-context-engineering/prompts.md) | Three-step prompt chain with Markdown output | 50 min |
+| 1 | 03 | [Building Custom AI Assistants](./03-custom-assistants/) | [Prompts](./03-custom-assistants/prompts.md) | Procurement Quotation Checker | 70 min |
+| 1 | 04 | [Grounded Research and Source-Based Answers](./04-grounded-research/) | [Prompts](./04-grounded-research/prompts.md) | Policy knowledge notebook with citation checks | 55 min |
+| 1 | 05 | [Advanced Data Analysis with AI](./05-data-analysis/) | [Prompts](./05-data-analysis/prompts.md) | Purchase history analysis | 55 min |
+| 1 | 06 | [Controlling Output with Word and PowerPoint Templates](./06-output-templates/) | [Prompts](./06-output-templates/prompts.md) | Approval memo and deck from company templates | 60 min |
+| 1 | 07 | [Evaluating AI Output](./07-evaluating-output/) | [Prompts](./07-evaluating-output/prompts.md) | Score the Quotation Checker on ten test cases | 45 min |
 | 2 | 08 | [AI Agents, Connectors and MCP](./08-agents-connectors-mcp/) | [Prompts](./08-agents-connectors-mcp/prompts.md) | Map the systems an assistant needs to act | TBA |
 | 2 | 09 | [Retrieval-Augmented Generation (RAG) Fundamentals](./09-rag-fundamentals/) | [Prompts](./09-rag-fundamentals/prompts.md) | Diagnose a wrong citation | TBA |
 | 2 | 10 | [Building an AI Agent Workflow in n8n](./10-n8n-agent-workflow/) | [Prompts](./10-n8n-agent-workflow/prompts.md) | Quotation approval workflow with human approval | TBA |
