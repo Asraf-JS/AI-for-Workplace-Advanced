@@ -23,7 +23,7 @@
   "authorShort": "Asraf",
   "credential": "Microsoft Certified Trainer",
   "repoUrl": "https://github.com/Asraf-JS/AI-for-Workplace-Advanced",
-  "trademark": "Microsoft, Microsoft 365, Copilot, Word and PowerPoint are trademarks of the Microsoft group of companies. ChatGPT is a trademark of OpenAI. Claude is a trademark of Anthropic. Gemini and NotebookLM are trademarks of Google LLC. n8n is a trademark of n8n GmbH. This guide is independent training material and is not published or endorsed by any of them. All companies, people and documents in the course scenario are fictional.",
+  "trademark": "Microsoft, Microsoft 365, Copilot, Word and PowerPoint are trademarks of the Microsoft group of companies. ChatGPT is a trademark of OpenAI. Claude is a trademark of Anthropic. Gemini, Gemini Notebook and Google Workspace are trademarks of Google LLC. n8n is a trademark of n8n GmbH. This guide is independent training material and is not published or endorsed by any of them. All companies, people and documents in the course scenario are fictional.",
   "output": "../AI-for-Workplace-Advanced-Book.pdf",
   "front": [
     {
@@ -91,6 +91,18 @@
     },
     {
       "notes": "../14-product-cards/README.md"
+    },
+    {
+      "notes": "../14-product-cards/copilot.md"
+    },
+    {
+      "notes": "../14-product-cards/chatgpt.md"
+    },
+    {
+      "notes": "../14-product-cards/claude.md"
+    },
+    {
+      "notes": "../14-product-cards/gemini.md"
     }
   ],
   "backCover": "This book accompanies the two-day AI for Workplace (Advanced) course, the continuation of AI for Workplace (Beginner). Participants build a Procurement Quotation Checker for the fictional company Sinar Maju Sdn Bhd and keep improving it: grounding it in company policy, producing on-brand documents from templates, measuring its accuracy, and rebuilding it as an agent workflow with human approval, before covering AI security and governance in the Malaysian context. Every lab works with Copilot, ChatGPT, Claude or Gemini.",
