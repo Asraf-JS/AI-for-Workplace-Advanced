@@ -45,10 +45,12 @@ Look for the green shield at the top right of the chat. Hover over it: it should
 ## Pick a Model (Module 01)
 
 1. Start a new chat.
-2. At the top of the chat, open the model menu (it shows **Auto** by default).
-3. Send the same prompt with a quick option, then with a deeper reasoning option.
+2. At the top of the chat, open the model menu. It shows **Auto** (decides how long to think) by default.
+3. Choose **Quick response** (answers right away) for the fast model, or **Think deeper** (thinks longer for better answers) for the reasoning model.
 
-<!-- VERIFY: the options in the model menu in October 2026, on Basic and Premium. -->
+The menu may also list other models, such as GPT (OpenAI). You don't need them for this course.
+
+<!-- VERIFY: the options in the model menu on Premium. Basic confirmed in the Module 01 capture, October 2026. -->
 
 ---
 

@@ -1,5 +1,108 @@
 {
  "raw": "raw",
  "repoRoot": "../..",
- "shots": {}
+ "shots": {
+  "01-01-open-ai-tool-start.png": {
+   "boxes": [
+    [
+     8,
+     52,
+     238,
+     84
+    ]
+   ]
+  },
+  "01-02-send-prompt.png": {
+   "boxes": [
+    [
+     536,
+     206,
+     964,
+     236
+    ]
+   ]
+  },
+  "01-03-start-another-new-chat.png": {
+   "boxes": [
+    [
+     536,
+     206,
+     978,
+     236
+    ]
+   ]
+  },
+  "01-04-start-new-chat-choose.png": {
+   "boxes": [
+    [
+     268,
+     10,
+     392,
+     38
+    ]
+   ]
+  },
+  "01-05-upload-rfq-2026-118.png": {
+   "boxes": [
+    [
+     558,
+     294,
+     796,
+     326
+    ],
+    [
+     564,
+     536,
+     946,
+     586
+    ]
+   ]
+  },
+  "01-06-send-prompt.png": {
+   "boxes": [
+    [
+     564,
+     152,
+     1012,
+     180
+    ]
+   ]
+  },
+  "01-07-start-new-chat-switch.png": {
+   "boxes": [
+    [
+     268,
+     10,
+     378,
+     38
+    ]
+   ]
+  },
+  "01-08-upload-same-two-files.png": {
+   "boxes": [
+    [
+     564,
+     536,
+     946,
+     586
+    ]
+   ]
+  },
+  "01-09-send-same-prompt-1.png": {
+   "boxes": [
+    [
+     268,
+     10,
+     378,
+     38
+    ],
+    [
+     536,
+     68,
+     710,
+     98
+    ]
+   ]
+  }
+ }
 }
