@@ -1,0 +1,8 @@
+﻿Rule,Value,Clause,Meaning
+one_quotation_below_rm,5000,3.1,"Below this total (including tax), one written quotation is enough"
+finance_director_above_rm,50000,3.1,"Above this total, the Finance Director approves"
+open_tender_above_rm,250000,3.1,"Above this total, an open tender is needed"
+min_validity_days,30,4.2,A quotation must be valid for at least this many days from its date
+max_advance_percent,30,6.2,A higher deposit needs the Finance Director's written approval
+tax_rate_percent,8,,Training rate used on every quotation
+evaluation_date,2026-11-10,2.3,The date quotations are judged against

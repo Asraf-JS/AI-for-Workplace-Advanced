@@ -1,0 +1,223 @@
+{
+  "name": "Quotation approval (starter)",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Sinar Maju: check a quotation",
+        "formDescription": "Upload one supplier quotation (PDF) for RFQ-2026-131.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Quotation PDF",
+              "fieldType": "file",
+              "multipleFiles": false,
+              "acceptFileTypes": ".pdf",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "RFQ number",
+              "placeholder": "RFQ-2026-131",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "e2f874c5-382c-55e6-878c-acbe9ec37a73",
+      "name": "Upload quotation",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "093fe47b-d68d-5085-8110-7d9bdc8a9ab8"
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "binaryPropertyName": "Quotation_PDF",
+        "options": {}
+      },
+      "id": "167be0bf-2a70-5618-9e90-603b1a113296",
+      "name": "Read the PDF text",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "manual",
+        "assignments": {
+          "assignments": [
+            {
+              "id": "0523cb3a-7fb3-57dc-a48e-ae2484c4c591",
+              "name": "one_quotation_below_rm",
+              "value": 5000,
+              "type": "number"
+            },
+            {
+              "id": "684cdfbb-e0a5-597f-a6af-f05e94727247",
+              "name": "finance_director_above_rm",
+              "value": 50000,
+              "type": "number"
+            },
+            {
+              "id": "3608a6bf-142b-5153-8fdc-c8ec0763784f",
+              "name": "open_tender_above_rm",
+              "value": 250000,
+              "type": "number"
+            },
+            {
+              "id": "85b292f5-33f6-5887-8c07-23172ca3fd04",
+              "name": "min_validity_days",
+              "value": 30,
+              "type": "number"
+            },
+            {
+              "id": "6b78b618-2c0f-5c3a-81c2-f46b8e9c1c10",
+              "name": "max_advance_percent",
+              "value": 30,
+              "type": "number"
+            },
+            {
+              "id": "dbac27e9-ea2c-5f7c-8ca3-1e5f16ec749a",
+              "name": "tax_rate_percent",
+              "value": 8,
+              "type": "number"
+            },
+            {
+              "id": "3e54662c-bfa0-5372-865e-1f1d29581ee5",
+              "name": "evaluation_date",
+              "value": "2026-11-10",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "d008626b-d022-5b25-95e4-9b393d7b559c",
+      "name": "Policy limits",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        480,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Built for you\nA person uploads one quotation PDF. **Read the PDF text** turns it into text, and **Policy limits** adds the limits from the Procurement Policy (v3.0) so later steps can use them.",
+        "height": 200,
+        "width": 640,
+        "color": 7
+      },
+      "id": "16bb0d12-e74d-5df3-b175-e8a81ce49eb6",
+      "name": "Note: built",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -60,
+        -220
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Step 1: Check the quotation\nAdd an AI node here (**Basic LLM Chain** or **AI Agent**) and connect it to **Policy limits**. Use your Quotation Checker instructions from Module 03. Ask it to reply in JSON with: supplier, total_incl_tax, valid_until, advance_percent, problems (with clause numbers) and verdict (pass, revise, reject or escalate).",
+        "height": 400,
+        "width": 420,
+        "color": 5
+      },
+      "id": "e2299195-7328-53f8-a422-4dd3404d5b3b",
+      "name": "Note: step1",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        720,
+        -220
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Step 2: Check the supplier\nLook the supplier up in `approved-vendors.csv` (a Google Sheet, or a Code node with the list pasted in). Not on the list means **reject**, whatever the AI said.",
+        "height": 400,
+        "width": 400,
+        "color": 5
+      },
+      "id": "812c200c-1fa2-5194-8e75-89d5d2713447",
+      "name": "Note: step2",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1180,
+        -220
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Step 3: Route it\nAdd a **Switch** node on the verdict: pass goes to approval, revise drafts an email to the supplier, reject is logged, escalate goes to the Finance Director.",
+        "height": 400,
+        "width": 400,
+        "color": 5
+      },
+      "id": "6b3cef5e-7cc2-57e9-9a55-0b47c139f407",
+      "name": "Note: step3",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1620,
+        -220
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Step 4: A person approves\nUse a **Send and Wait for Response** step (Gmail or Outlook) so the Head of Procurement approves or rejects before anything is sent. Nothing reaches a supplier without a person's approval.",
+        "height": 400,
+        "width": 420,
+        "color": 3
+      },
+      "id": "98f41140-a654-5d3e-835e-9b6837162ae9",
+      "name": "Note: step4",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2060,
+        -220
+      ]
+    }
+  ],
+  "connections": {
+    "Upload quotation": {
+      "main": [
+        [
+          {
+            "node": "Read the PDF text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read the PDF text": {
+      "main": [
+        [
+          {
+            "node": "Policy limits",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "tags": []
+}

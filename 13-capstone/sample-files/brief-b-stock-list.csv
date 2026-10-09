@@ -1,0 +1,13 @@
+﻿SKU,Product,Unit,Price (RM),In Stock,Lead Time If Out of Stock (days)
+SM-1001,"A4 copier paper, 80 gsm",ream,13.90,4200,7
+SM-1002,"A3 copier paper, 80 gsm",ream,27.50,650,7
+SM-1101,LaserPro 26X black toner cartridge,unit,289.00,140,10
+SM-1102,LaserPro 85A black toner cartridge,unit,209.00,0,10
+SM-1201,"Ballpoint pens, blue, box of 50",box,36.00,900,5
+SM-1202,"Lever arch file, A4, 75 mm",unit,3.20,5200,5
+SM-1203,Heavy-duty stapler,unit,24.50,310,5
+SM-1301,Ergonomic mesh chair (Selesa ErgoMesh 500),unit,489.00,85,21
+SM-1302,"Executive office desk, 1.6 m",unit,799.00,12,28
+SM-1401,"Cross-cut paper shredder, P-4",unit,829.00,0,14
+SM-1402,Thermal label printer,unit,2490.00,9,14
+SM-1501,"Whiteboard, 4 x 3 ft",unit,185.00,44,10
