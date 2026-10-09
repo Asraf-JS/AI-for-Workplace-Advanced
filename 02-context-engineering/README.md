@@ -44,18 +44,14 @@ You need `rfq-2026-118.pdf` from Module 01. If you don't have it, download **[Mo
 
 1. Start a new chat in your AI tool.
 
-   <!-- Screenshot still to capture: 02-01-start-new-chat-ai.png. Remove this comment wrapper when the image is added.
-   ![Step 2.1.1: Start a new chat in your AI tool](./images/02-01-start-new-chat-ai.png)
+   ![A new chat in the Microsoft 365 Copilot app, with New chat highlighted](./images/02-01-start-new-chat-ai.png)
 
-   *Caption to write after capture.*
-   -->
+   *Start from an empty chat so nothing from earlier work gets in.*
 2. Upload `rfq-2026-118.pdf`.
 
-   <!-- Screenshot still to capture: 02-02-upload-rfq-2026-118.png. Remove this comment wrapper when the image is added.
-   ![Step 2.1.2: Upload rfq-2026-118.pdf](./images/02-02-upload-rfq-2026-118.png)
+   ![rfq-2026-118.pdf attached in the Copilot message box](./images/02-02-upload-rfq-2026-118.png)
 
-   *Caption to write after capture.*
-   -->
+   *The RFQ attached and ready to send with the prompt.*
 3. Send this prompt:
 
    ```
@@ -65,11 +61,9 @@ You need `rfq-2026-118.pdf` from Module 01. If you don't have it, download **[Mo
    Expectations: a Markdown table with three columns: Requirement, Exact wording from the RFQ, How to check it in a quotation. Include the requirements for what a quotation must contain, not only the product.
    ```
 
-   <!-- Screenshot still to capture: 02-03-send-prompt.png. Remove this comment wrapper when the image is added.
-   ![Step 2.1.3: Send this prompt](./images/02-03-send-prompt.png)
+   ![Copilot's requirements table, with its three columns highlighted: Requirement, Exact wording from the RFQ, How to check it in a quotation](./images/02-03-send-prompt.png)
 
-   *Caption to write after capture.*
-   -->
+   *Step 1's table. Check every quote in the middle column against the RFQ.*
 
 4. Check the table against the RFQ. Every row should come from the document, word for word in the second column.
 
@@ -85,11 +79,11 @@ In the same chat, send:
 Using only the requirements table above, make a blank comparison table in Markdown for three supplier quotations. One row per requirement. Columns: Requirement, Supplier A, Supplier B, Supplier C, Meets the RFQ? Leave the supplier cells empty. Add rows at the bottom for Grand total (RM), Valid until and Payment terms.
 ```
 
-<!-- Screenshot still to capture: 02-04-step-2-turn-into.png. Remove this comment wrapper when the image is added.
-![Section 2.2: Step 2: Turn It into a Comparison Table](./images/02-04-step-2-turn-into.png)
+![The blank comparison table in a Markdown box, with the Markdown label and the copy button highlighted](./images/02-04-step-2-turn-into.png)
 
-*Caption to write after capture.*
--->
+*Copilot puts the table in a **Markdown** box. Use its copy button to paste it into Word or Excel.*
+
+Some tools split a combined requirement into several rows, for example "Breathable mesh, with adjustable lumbar support" into two. That's fine, as long as every row still comes from your Step 1 table.
 
 Copy the table into Word or Excel to see that it pastes cleanly. You'll fill a table like this with real quotations in Module 03.
 
@@ -103,11 +97,9 @@ In the same chat, send:
 Now give me the same requirements as JSON, so another system can read them. Use a list of objects, each with these fields: "id" (R1, R2 and so on), "requirement", "rfq_wording" and "how_to_check". Return only the JSON, with no explanation before or after it.
 ```
 
-<!-- Screenshot still to capture: 02-05-step-3-turn-into.png. Remove this comment wrapper when the image is added.
-![Section 2.3: Step 3: Turn It into JSON](./images/02-05-step-3-turn-into.png)
+![The requirements as JSON in a code box, with the JSON label and the copy button highlighted](./images/02-05-step-3-turn-into.png)
 
-*Caption to write after capture.*
--->
+*Step 3's JSON: one object per requirement, with the four fields you asked for.*
 
 Check that each object matches a row of your Step 1 table. On Day 2, your n8n workflow will ask the AI for a JSON answer in the same way.
 
@@ -119,22 +111,18 @@ Check that each object matches a row of your Step 1 table. On Day 2, your n8n wo
 
 1. Start a **new chat** and upload `rfq-2026-118.pdf` again.
 
-   <!-- Screenshot still to capture: 02-06-start-new-chat-upload.png. Remove this comment wrapper when the image is added.
-   ![Step 2.4.1: Start a new chat and upload rfq-2026-118.pdf again](./images/02-06-start-new-chat-upload.png)
+   ![A new Copilot chat with rfq-2026-118.pdf attached](./images/02-06-start-new-chat-upload.png)
 
-   *Caption to write after capture.*
-   -->
+   *A fresh chat for the one big prompt, so it can't build on the chain.*
 2. Send everything at once:
 
    ```
    Read the attached RFQ, list all the requirements, make a blank comparison table for three suppliers, and give me the requirements as JSON.
    ```
 
-   <!-- Screenshot still to capture: 02-07-send-everything-once.png. Remove this comment wrapper when the image is added.
-   ![Step 2.4.2: Send everything at once](./images/02-07-send-everything-once.png)
+   ![The one-prompt answer: a requirements table with only two columns, highlighted](./images/02-07-send-everything-once.png)
 
-   *Caption to write after capture.*
-   -->
+   *The one big prompt. Compare its columns and rows with your chain.*
 
 3. Compare the result with your three-step chain. Which one missed a requirement, or mixed the formats up? Which would you trust to build on?
 
@@ -144,9 +132,9 @@ Check that each object matches a row of your Step 1 table. On Day 2, your n8n wo
 
 | Copilot Chat (Basic) | M365 Copilot (Premium) | ChatGPT | Claude | Gemini |
 |---|---|---|---|---|
-| Upload the RFQ with **+**. Copy a table with the Copy button under the answer | Same as Basic | Tables and JSON show in formatted boxes with a copy button | Long JSON may open in a side panel; copy from there | Use **Export to Sheets** under a table to send it to Google Sheets |
+| Upload the RFQ with **+**. Copilot may show a table or JSON in a **Markdown** or **JSON** box: copy it with the box's own copy button | Same as Basic | Tables and JSON show in formatted boxes with a copy button | Long JSON may open in a side panel; copy from there | Use **Export to Sheets** under a table to send it to Google Sheets |
 
-<!-- VERIFY: Gemini's Export to Sheets option and Claude's side panel for long code, October 2026. -->
+<!-- VERIFY: Gemini's Export to Sheets option and Claude's side panel for long code, October 2026. The Module 02 capture used Copilot only, so neither was checked. -->
 
 ---
 
