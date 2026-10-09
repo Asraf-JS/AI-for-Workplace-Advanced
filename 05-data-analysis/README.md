@@ -1,40 +1,69 @@
 # 05 - Advanced Data Analysis with AI
 
-_One short paragraph on where this module sits in the course, to be added._
+The Finance Director wants to know where Sinar Maju's money goes, and whether anyone is getting round the procurement rules. You have 21 months of purchase orders in one spreadsheet. In this module you use AI to clean the data, summarise the spend and find the patterns a person would take a day to spot, and then you check its figures.
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
 **Day:** 1
 
-**Estimated time:** _TBA_
+**Estimated time:** 55 minutes
 
-**Your result:** _To be added_
+**Your result:** A cleaned view of the purchase history, a spend summary you've checked in Excel, a list of findings for the Finance Director, and one chart.
 
 ---
 
 ## What You Will Learn
 
-_To be added_
+- Explain how AI tools analyse data: by running code, or by reading the text
+- Find and deal with data problems before you analyse
+- Define your measures so the AI calculates what you mean
+- Ask for the method as well as the answer
+- Check an AI figure against Excel in under a minute
 
 ---
 
 ## Before You Begin
 
-_To be added_
+Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds the same data twice: `purchase-history.xlsx` (two sheets: the data, and **About this file**) and `purchase-history.csv`. Use the `.xlsx` unless your tool asks for CSV.
+
+Have Excel open too. You'll use it to check one figure.
+
+> **Important:** the data is fictional. At work, check your organisation allows the AI tool you're using to read financial data before you upload any.
 
 ---
 
 ## Topics
 
-_To be added_
+**Two ways to analyse.** Some tools write and run code (usually Python) on your file, then report the result: ChatGPT, Claude, Gemini and Copilot's Analyst work this way. Others read the file as text and estimate. Code is far more reliable for sums and counts. If your tool shows its code or working, it ran code.
+
+**Clean first.** Real exports have duplicate rows, blanks, spelling variations and cancelled orders. Totals calculated on dirty data are wrong, however confident they look.
+
+**Say exactly what to measure.** "Total spend" could mean before or after tax, with or without cancelled orders. Tell the AI which column to use and what to leave out. The **About this file** sheet tells you what each column means.
+
+**Check one figure.** Pick one number and check it yourself in Excel with a filter or a PivotTable. If it matches, trust the method more. If it doesn't, ask the AI to explain the difference.
 
 ---
 
-## 5.1 Lab: Purchase history analysis
+## 5.1 First Look at the Data
 
-_Steps to be added._
+1. Start a new chat and upload `purchase-history.xlsx`.
+2. Send:
 
-<!-- Move each box below to sit after the step it checks once the steps are written. Figures come from the answer keys in _trainer/: if a figure changes, rebuild the sample files and update these boxes in the same pull request. -->
+   ```
+   This is Sinar Maju Sdn Bhd's purchase order export, January 2025 to September 2026. Read both sheets. Tell me how many rows and columns there are, the date range, and what each column means. Don't analyse anything yet.
+   ```
+
+3. Check the row count against Excel: select the PO No. column and read **Count** at the bottom of the window. It includes the header row, so subtract one.
+
+---
+
+## 5.2 Find the Data Problems
+
+In the same chat, send:
+
+```
+Before any analysis, check the data quality. Look for: rows that are exact duplicates, rows with a blank Department, the same supplier spelled in different ways, and cancelled orders. For each problem, tell me how many rows and list the PO numbers. Don't change anything yet.
+```
 
 <details markdown="1">
 <summary>What should you see?</summary>
@@ -47,6 +76,24 @@ Before you analyse, the file needs cleaning:
 - **Cancelled orders:** 8 rows. Leave them out of spend.
 
 </details>
+
+---
+
+## 5.3 Summarise the Spend
+
+In the same chat, send:
+
+```
+Now clean the data: count each duplicated row once, group suppliers by Vendor ID, and leave out cancelled orders. Using Total (RM), give me: the number of unique purchase orders, total spend, spend in 2025, spend from January to September 2026, the top five suppliers by spend, and spend by category with each category's share. Show the method you used.
+```
+
+Then check one figure yourself:
+
+1. In Excel, select the data and choose **Insert** > **PivotTable**.
+2. Put **Vendor ID** in Rows and **Total (RM)** in Values.
+3. Filter **Status** to leave out Cancelled.
+4. Compare the total for **V003** with the AI's figure. They should match exactly.
+5. Now compare **V005**. Your PivotTable is higher, because one V005 order appears twice in the file and Excel counts both. That's why you clean before you sum.
 
 <details markdown="1">
 <summary>What should you see?</summary>
@@ -72,6 +119,24 @@ The biggest category is Stock: Toner and Ink (RM966,183.56, 29.4%), then Stock: 
 
 </details>
 
+---
+
+## 5.4 Look for Patterns
+
+In the same chat, send:
+
+```
+Look for anything the Finance Director should know about. In particular:
+1. Any supplier whose monthly spend changed sharply. When did it change, and by how much?
+2. Orders from the same department to the same supplier within 30 days that are each below RM5,000 but add up to RM5,000 or more.
+3. Orders of RM5,000 or more (Total) with fewer than 3 quotations and no Contract Ref.
+4. Orders of RM5,000 or more approved only by a department head, not the Head of Procurement.
+5. Any seasonal pattern in paper purchases.
+For each finding, list the PO numbers and the figures.
+```
+
+Check at least one finding yourself: filter the spreadsheet to the PO numbers the AI lists.
+
 <details markdown="1">
 <summary>Show the answers</summary>
 
@@ -85,17 +150,31 @@ The biggest category is Stock: Toner and Ink (RM966,183.56, 29.4%), then Stock: 
 
 ---
 
+## 5.5 Make One Chart
+
+In the same chat, send:
+
+```
+Make a column chart of monthly spend with Kilat Merbok Express (V014), January 2025 to September 2026. Title it with what the chart shows, and label the axes.
+```
+
+Check that the chart's jump matches the month in your finding. Download the chart or take a screenshot for your notes.
+
+---
+
 ## Product Notes
 
 | Copilot Chat (Basic) | M365 Copilot (Premium) | ChatGPT | Claude | Gemini |
 |---|---|---|---|---|
-| _TBA_ | _TBA_ | _TBA_ | _TBA_ | _TBA_ |
+| Upload the `.xlsx` in a chat. Copilot reads the file, so ask it to show its calculation and check figures carefully | **Analyst** runs code on the file. Or open it in Excel and use Copilot there | Runs code on the file and can draw charts. Free has a data analysis limit | Turn on file creation (code execution) under **Settings** > **Capabilities** first. Runs code and draws charts | Upload the file in a chat. Ask it to show its working |
+
+<!-- VERIFY: whether Copilot Chat (Basic) runs code on an uploaded spreadsheet, and whether Gemini shows its code, October 2026. -->
 
 ---
 
 ## Independent Practice
 
-_To be added_
+Ask one more question you'd want answered about this data, such as "Which department spends most on stationery?" Then check the answer with a PivotTable before you believe it.
 
 ---
 
@@ -103,10 +182,16 @@ _To be added_
 
 | Symptom | What to check |
 |---|---|
-| _TBA_ | _TBA_ |
+| The totals don't match your PivotTable | Ask the AI which rows it included, and whether it removed duplicates and cancelled orders |
+| It finds no duplicates | Ask it to compare complete rows, all 17 columns, not only the PO number |
+| It can't open the `.xlsx` | Upload `purchase-history.csv` instead |
+| It reports a pattern but no PO numbers | Ask: "List the PO numbers behind that finding." A finding you can't trace isn't a finding |
+| It stops partway through | The analysis hit a limit. Ask for one part at a time |
 
 ---
 
 ## Lesson Summary
 
-_To be added_
+AI can clean, summarise and search a spreadsheet in minutes, especially when it runs code. It only calculates what you ask for, so define your measures and ask it to clean first. And one quick check in Excel tells you whether to trust the rest.
+
+**Check yourself:** The AI says total spend is higher than your cleaned figure. Name two things in this file that could explain it.
