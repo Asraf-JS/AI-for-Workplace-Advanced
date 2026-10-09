@@ -1,0 +1,11 @@
+{
+  "name": "sinar-maju-templates",
+  "private": true,
+  "description": "Builds the Module 06 Word and PowerPoint templates",
+  "scripts": { "build": "node build-templates.cjs" },
+  "dependencies": {
+    "docx": "^9.5.1",
+    "jszip": "^3.10.1",
+    "pptxgenjs": "^4.0.1"
+  }
+}
