@@ -23,8 +23,10 @@ The build is deterministic: a rebuild only changes files whose content changed. 
 | 05 | `purchase-history.xlsx` and `purchase-history.csv` (January 2025 to September 2026) |
 | 07 | `open-rfqs.pdf`, ten test quotations, `procurement-policy-v3.0.pdf`, `approved-vendor-list.pdf` |
 | 09 | `procurement-policy-v3.0.pdf` and the superseded `procurement-policy-v2.1.pdf` |
+| 10 | `rfq-2026-131.pdf`, four shredder quotations, `procurement-policy-v3.0.pdf`, `approved-vendors.csv`, `policy-limits.csv`, and `quotation-approval-starter.json` (a half-built n8n workflow) |
+| 13 | Three capstone briefs (PDF), their data (CSV), and `ai-workflow-canvas.docx` |
 
-Each module also gets a `sample-files.zip` of its folder. Four answer keys go to `_trainer/`, which git ignores.
+Each module also gets a `sample-files.zip` of its folder. Six answer keys go to `_trainer/`, which git ignores.
 
 ## Changing the data
 
