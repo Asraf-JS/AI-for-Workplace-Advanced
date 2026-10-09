@@ -1,0 +1,14 @@
+{
+  "name": "ai-for-workplace-advanced-deck",
+  "private": true,
+  "description": "Builds the trainer deck",
+  "scripts": { "build": "node build-deck.cjs" },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "pptxgenjs": "^4.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0",
+    "sharp": "^0.33.5"
+  }
+}
