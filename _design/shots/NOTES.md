@@ -75,3 +75,11 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 07-evaluating-output, 7.4.3: README says save the instructions; UI shows Agent Builder uses Update and confirms Your agent was updated successfully; the agent remains private.
 
 - 07-evaluating-output, 7.2 capture scope: README says run ten cases and score them; UI shows this screenshot run followed the shot list and ran case 01 only; Kertas Lestari returned PASS at RM19,116.00; the ten-case score and regression run were not performed.
+
+- 08-agents-connectors-mcp, 8.3.1: README says open the connector list and inspect available connections; UI shows the Basic agent editor exposes Configure > Knowledge > Add knowledge with Enter a link and Add website; Knowledge settings says source availability depends on license; no connection was added or settings changed.
+
+- 08-agents-connectors-mcp, 8.2 and 8.3.2: README says show the added read, write, approval and connector columns; UI shows the eight-column and nine-column tables scroll horizontally; captures show the answer starts with the tables scrolled right to reveal the added columns.
+
+- 08-agents-connectors-mcp, 8.2 and 8.3.2 approval memo: README says the approval-memo step requires a person to approve; UI shows Copilot marks step 6 No because approval occurs in that step; it correctly marks external supplier emails and purchase orders Yes.
+
+- 08-agents-connectors-mcp, 8.2 and 8.3.2 incoming mailbox: README says an agent can read incoming quotations; UI shows Copilot treats step 1 as the supplier sending a quotation and marks Agent No and Write, although the connector column correctly says Mailbox: read.
