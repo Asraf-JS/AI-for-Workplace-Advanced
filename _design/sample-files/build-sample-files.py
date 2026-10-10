@@ -1423,7 +1423,7 @@ SHRED_QUOTES = [
                 items=[("Teraju ShredSafe 16 cross-cut paper shredder, security level P-4, 16 sheets per pass, "
                         "31 litre bin", 60, "unit", 605.00),
                        ("Delivery to Petaling Jaya warehouse", 1, "lot", 150.00)],
-                terms=STD_TERMS("60 days from the date of this quotation.", "14 days from receipt of deposit.", SHRED_WARRANTY,
+                terms=STD_TERMS("60 days from the date of this quotation.", "14 days from purchase order.", SHRED_WARRANTY,
                                 payment="40% deposit with purchase order. Balance 30 days from date of invoice."))),
 ]
 

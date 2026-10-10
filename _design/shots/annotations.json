@@ -941,6 +941,332 @@
      200
     ]
    ]
+  },
+  "10-01-sign-n8n-details-from.png": {
+   "boxes": [
+    [
+     580,
+     350,
+     1222,
+     592
+    ]
+   ]
+  },
+  "10-02-create-new-workflow-open.png": {
+   "boxes": [
+    [
+     426,
+     62,
+     460,
+     98
+    ],
+    [
+     428,
+     374,
+     644,
+     412
+    ]
+   ]
+  },
+  "10-03-select-quotation-approval-starter.png": {
+   "boxes": [
+    [
+     312,
+     64,
+     516,
+     98
+    ]
+   ]
+  },
+  "10-04-ll-see-three-connected.png": {
+   "boxes": [
+    [
+     322,
+     488,
+     618,
+     572
+    ],
+    [
+     670,
+     384,
+     1494,
+     586
+    ]
+   ]
+  },
+  "10-05-save-workflow.png": {
+   "boxes": [
+    [
+     314,
+     64,
+     486,
+     98
+    ]
+   ]
+  },
+  "10-06-double-click-upload-quotation.png": {
+   "boxes": [
+    [
+     568,
+     72,
+     1030,
+     494
+    ]
+   ]
+  },
+  "10-07-upload-quotation-alat-tulis.png": {
+   "boxes": [
+    [
+     568,
+     72,
+     1032,
+     194
+    ]
+   ]
+  },
+  "10-08-back-n8n-open-read.png": {
+   "boxes": [
+    [
+     602,
+     240,
+     998,
+     316
+    ],
+    [
+     1026,
+     122,
+     1152,
+     148
+    ]
+   ]
+  },
+  "10-09-open-policy-limits-its.png": {
+   "boxes": [
+    [
+     624,
+     272,
+     996,
+     828
+    ]
+   ]
+  },
+  "10-10-select-after-policy-limits.png": {
+   "boxes": [
+    [
+     30,
+     76,
+     216,
+     110
+    ]
+   ]
+  },
+  "10-11-under-model-add-chat.png": {
+   "boxes": [
+    [
+     598,
+     160,
+     994,
+     288
+    ]
+   ]
+  },
+  "10-12-set-prompt-source-define.png": {
+   "boxes": [
+    [
+     600,
+     214,
+     1000,
+     432
+    ]
+   ]
+  },
+  "10-13-turn-require-specific-output.png": {
+   "boxes": [
+    [
+     598,
+     168,
+     1000,
+     530
+    ]
+   ]
+  },
+  "10-14-select-test-step-output.png": {
+   "boxes": [
+    [
+     1018,
+     180,
+     1586,
+     476
+    ]
+   ]
+  },
+  "10-15-add-code-node-after.png": {
+   "boxes": [
+    [
+     30,
+     76,
+     216,
+     110
+    ]
+   ]
+  },
+  "10-16-set-mode-run-once.png": {
+   "boxes": [
+    [
+     488,
+     168,
+     1110,
+     302
+    ]
+   ]
+  },
+  "10-17-replace-code-part-3.png": {
+   "boxes": [
+    [
+     488,
+     322,
+     1110,
+     698
+    ]
+   ]
+  },
+  "10-18-select-test-step-check.png": {
+   "boxes": [
+    [
+     1150,
+     438,
+     1270,
+     474
+    ]
+   ]
+  },
+  "10-19-add-switch-node-after.png": {
+   "boxes": [
+    [
+     30,
+     76,
+     130,
+     110
+    ]
+   ]
+  },
+  "10-20-add-four-rules-checking.png": {
+   "boxes": [
+    [
+     604,
+     246,
+     1000,
+     496
+    ]
+   ]
+  },
+  "10-21-select-test-step-alat.png": {
+   "boxes": [
+    [
+     1022,
+     156,
+     1138,
+     190
+    ]
+   ]
+  },
+  "10-22-approve-output-add-gmail.png": {
+   "boxes": [
+    [
+     600,
+     300,
+     1000,
+     356
+    ],
+    [
+     600,
+     644,
+     1000,
+     696
+    ]
+   ]
+  },
+  "10-23-fill.png": {
+   "boxes": [
+    [
+     598,
+     436,
+     1000,
+     720
+    ]
+   ]
+  },
+  "10-24-do-same-escalate-output.png": {
+   "boxes": [
+    [
+     598,
+     436,
+     1000,
+     516
+    ]
+   ]
+  },
+  "10-25-revise-reject-outputs-add.png": {
+   "boxes": [
+    [
+     598,
+     300,
+     1000,
+     496
+    ]
+   ]
+  },
+  "10-26-save-workflow-open-form.png": {
+   "boxes": [
+    [
+     568,
+     72,
+     1030,
+     494
+    ]
+   ]
+  },
+  "10-27-upload-four-quotations-turn.png": {
+   "boxes": [
+    [
+     568,
+     72,
+     1032,
+     194
+    ]
+   ]
+  },
+  "10-28-after-check-inbox-open.png": {
+   "boxes": [
+    [
+     836,
+     96,
+     930,
+     128
+    ],
+    [
+     224,
+     212,
+     486,
+     272
+    ]
+   ]
+  },
+  "10-29-approval-emails-click-approve.png": {
+   "boxes": [
+    [
+     224,
+     208,
+     488,
+     262
+    ],
+    [
+     526,
+     140,
+     780,
+     190
+    ]
+   ]
   }
  }
 }

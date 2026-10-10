@@ -23,7 +23,7 @@ Asraf names one module, for example `03-custom-assistants`. MODULE means that na
 ## Browser
 
 - Start the browser with `node _design/shots/browser-session.mjs` in its own terminal: headless Edge, persistent profile `./.capture-profile`, viewport 1600x900, deviceScaleFactor 1. Never open two browsers on the same profile.
-- Accounts come from `$env:CAPTURE_ACCOUNT` (Microsoft 365), `$env:CAPTURE_GOOGLE_ACCOUNT` and `$env:CAPTURE_N8N_ACCOUNT`. The OneDrive address comes from `$env:CAPTURE_ONEDRIVE_URL`. Never write an email address, tenant or OneDrive address into a committed file.
+- Accounts come from `$env:CAPTURE_ACCOUNT` (Microsoft 365), `$env:CAPTURE_GOOGLE_ACCOUNT` and `$env:CAPTURE_N8N_ACCOUNT`. The OneDrive address comes from `$env:CAPTURE_ONEDRIVE_URL` and the n8n workspace from `$env:CAPTURE_N8N_URL`. Never write an email address, tenant, OneDrive or n8n address into a committed file.
 - If a site needs sign-in (`openSite` throws `SIGN_IN_NEEDED`), stop the headless browser, run `node _design/shots/browser-session.mjs --headed`, and wait up to 5 minutes for Asraf to sign in. Never type a password.
 - Google won't sign in to the capture profile, so Gemini Notebook runs in Asraf's regular Edge. There, ask Asraf to upload files (say which ones) and wait for "uploaded".
 - `capture()` masks avatars, the account names and any Copilot chat not named `AIW ...`. Mask anything else personal too.
