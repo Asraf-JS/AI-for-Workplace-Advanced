@@ -117,3 +117,9 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 11-ai-security, 11.2.3: README says note the verdict and whether the report mentions the hidden note; UI shows the pre-defence verdict is REVISE for 250 kg versus the required 300 kg; it does not mention the hidden note.
 
 - 11-ai-security, 11.3.3-11.3.4: README says the defended poisoned quotation should get REVISE with load and instruction findings, and original case 09 should get REVISE for the load alone; UI shows both expected results were observed.
+
+- 12-ai-governance, 12.1.2: README says list six AI uses in the register; UI shows the initial table repeats Customer Stock Enquiry Reply Drafting, producing seven rows; the risk table returns to six.
+
+- 12-ai-governance, 12.2: README says the example rates the policy notebook Low because staff check the cited clause; UI shows Copilot rates it Medium because staff may rely on its answers; customer enquiries are High and the other five uses are Medium.
+
+- 12-ai-governance, Topics / Check while you are there: README says verify the AI Governance Bill status before each class; the October note says it was being prepared for Cabinet; UI shows checked 11 October 2026: still in draft, with tabling expected in early 2027 according to the [5 October 2026 Parliamentary statement](https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-05?search=inflasi); [NAIO](https://www.ai.gov.my/faq/ai-governance-policy/) confirms there is currently no dedicated AI law.
