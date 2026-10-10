@@ -59,18 +59,14 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
 
 1. Open your AI tool and create a new custom assistant (Project, agent, Gem or skill). The [product card](../14-product-cards/) for your tool has the clicks.
 
-   <!-- Screenshot still to capture: 03-01-open-ai-tool-create.png. Remove this comment wrapper when the image is added.
-   ![Step 3.1.1: Open your AI tool and create a new custom assistant (Project, agent, Gem or skill). The product card for your tool has the clicks](./images/03-01-open-ai-tool-create.png)
+   ![A new agent in Copilot's Agent Builder, with the name New Agent and the empty Instructions box highlighted](./images/03-01-open-ai-tool-create.png)
 
-   *Caption to write after capture.*
-   -->
-2. Name it `Quotation Checker`.
+   *In Copilot: **Agents** > **New agent** > **Skip** opens this form.*
+2. Name it `Quotation Checker`. If your tool asks for a description, add one line, such as `Checks supplier quotations against our procurement policy`.
 
-   <!-- Screenshot still to capture: 03-02-name-quotation-checker.png. Remove this comment wrapper when the image is added.
-   ![Step 3.1.2: Name it Quotation Checker](./images/03-02-name-quotation-checker.png)
+   ![The agent named Quotation Checker, with the name and the Describe your agent line highlighted](./images/03-02-name-quotation-checker.png)
 
-   *Caption to write after capture.*
-   -->
+   *Name it, then add a short description: **Create** stays grey until there is one.*
 3. Paste these instructions into the instructions box:
 
    ```
@@ -102,19 +98,15 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
    - If a message has no quotation yet (for example, only the policy and the vendor list), reply only "Ready. Send the RFQ and the quotation." and wait.
    ```
 
-   <!-- Screenshot still to capture: 03-03-paste-these-instructions-into.png. Remove this comment wrapper when the image is added.
-   ![Step 3.1.3: Paste these instructions into the instructions box](./images/03-03-paste-these-instructions-into.png)
+   ![The Checker instructions pasted into the Instructions box, with the 2,074/8,000 character counter](./images/03-03-paste-these-instructions-into.png)
 
-   *Caption to write after capture.*
-   -->
+   *The instructions in place. The counter shows about 2,000 of 8,000 characters used.*
 
 4. Save the assistant.
 
-   <!-- Screenshot still to capture: 03-04-save-assistant.png. Remove this comment wrapper when the image is added.
-   ![Step 3.1.4: Save the assistant](./images/03-04-save-assistant.png)
+   ![The message Your agent was created successfully, with Start chat highlighted](./images/03-04-save-assistant.png)
 
-   *Caption to write after capture.*
-   -->
+   *Created and private to you. **Start chat** opens your first chat with it.*
 
 > **Note:** these instructions are about 2,000 characters. Copilot agents take up to 8,000, with a counter under the box. If your tool cuts them off, remove the "Reply in this format" examples last, not the checks.
 
@@ -133,37 +125,29 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
 
 1. Start a new chat with your Quotation Checker. If your assistant has no files, upload the policy and the vendor list first. It should reply "Ready" and wait for the quotation.
 
-   <!-- Screenshot still to capture: 03-05-start-new-chat-quotation.png. Remove this comment wrapper when the image is added.
-   ![Step 3.3.1: Start a new chat with your Quotation Checker. If your assistant has no files, upload the policy and the vendor list first](./images/03-05-start-new-chat-quotation.png)
+   ![The policy and vendor list sent to the Quotation Checker, which replies Ready. Send the RFQ and the quotation.](./images/03-05-start-new-chat-quotation.png)
 
-   *Caption to write after capture.*
-   -->
+   *With the policy and vendor list in, the Checker waits for the quotation.*
 2. Upload `rfq-2026-118.pdf` and `quotation-duduk-selesa.pdf`, then send:
 
    ```
    Check this quotation against RFQ-2026-118.
    ```
 
-   <!-- Screenshot still to capture: 03-06-upload-rfq-2026-118.png. Remove this comment wrapper when the image is added.
-   ![Step 3.3.2: Upload rfq-2026-118.pdf and quotation-duduk-selesa.pdf, then send](./images/03-06-upload-rfq-2026-118.png)
+   ![The Checker's report table for the Duduk Selesa quotation, with its findings blurred](./images/03-06-upload-rfq-2026-118.png)
 
-   *Caption to write after capture.*
-   -->
+   *The report: one row per check. The findings are blurred so you can compare with your own.*
 
 3. Read the report. For the arithmetic row, check one line yourself with a calculator.
 
-   <!-- Screenshot still to capture: 03-07-read-report-arithmetic-row.png. Remove this comment wrapper when the image is added.
-   ![Step 3.3.3: Read the report. For the arithmetic row, check one line yourself with a calculator](./images/03-07-read-report-arithmetic-row.png)
+   ![The Arithmetic row of the Duduk Selesa report highlighted, with the findings blurred](./images/03-07-read-report-arithmetic-row.png)
 
-   *Caption to write after capture.*
-   -->
+   *Start with the Arithmetic row, and check one line yourself.*
 4. Repeat steps 1 to 3 for `quotation-kerusi-nadira.pdf` and `quotation-ergoluma.pdf`, each in a **new chat** with the assistant.
 
-   <!-- Screenshot still to capture: 03-08-repeat-steps-1-3.png. Remove this comment wrapper when the image is added.
-   ![Step 3.3.4: Repeat steps 1 to 3 for quotation-kerusi-nadira.pdf and quotation-ergoluma.pdf, each in a new chat with the assistant](./images/03-08-repeat-steps-1-3.png)
+   ![The Ergoluma check in its own new chat, highlighted in the chat list, with the findings blurred](./images/03-08-repeat-steps-1-3.png)
 
-   *Caption to write after capture.*
-   -->
+   *Each quotation gets its own chat with the Checker.*
 5. Note each verdict and the clause behind it.
 
 > **Tip:** a new chat for each quotation stops one quotation's figures from leaking into the next report.
@@ -174,22 +158,18 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
 
 1. Start a new chat with the assistant, and upload the RFQ and all three quotations. With Copilot, send the policy, the vendor list and the RFQ first, then the three quotations in a second message with the prompt below.
 
-   <!-- Screenshot still to capture: 03-09-start-new-chat-assistant.png. Remove this comment wrapper when the image is added.
-   ![Step 3.4.1: Start a new chat with the assistant, and upload the RFQ and all three quotations](./images/03-09-start-new-chat-assistant.png)
+   ![The policy, vendor list and RFQ sent first, then the three quotations attached in the message box](./images/03-09-start-new-chat-assistant.png)
 
-   *Caption to write after capture.*
-   -->
+   *With Copilot: three files in the first message, the three quotations in the second.*
 2. Send:
 
    ```
    Build a side-by-side comparison of the three quotations, one column per supplier. Rows: quotation number, date, valid until, unit price, delivery charge, subtotal, tax, grand total, warranty, payment terms and delivery lead time. Show every figure exactly as printed in the quotation, even if it's wrong.
    ```
 
-   <!-- Screenshot still to capture: 03-10-send.png. Remove this comment wrapper when the image is added.
-   ![Step 3.4.2: Send](./images/03-10-send.png)
+   ![The side-by-side comparison with one column per supplier, the figures blurred](./images/03-10-send.png)
 
-   *Caption to write after capture.*
-   -->
+   *One column per supplier, figures as printed. Blurred here: compare with the box below.*
 
 <details markdown="1">
 <summary>What should you see?</summary>
@@ -224,19 +204,15 @@ Duduk Selesa's total must show **RM46,548.00**, the printed figure. If your Chec
    Using your checks, recommend one supplier. Give the correct total including tax, the verdict and the clause for each supplier, what must happen before we can issue a purchase order, and who must approve it under Clause 3.1.
    ```
 
-   <!-- Screenshot still to capture: 03-11-same-chat-send.png. Remove this comment wrapper when the image is added.
-   ![Step 3.5.1: In the same chat, send](./images/03-11-same-chat-send.png)
+   ![The Checker's Recommendation Summary heading, with the recommendation and the table blurred](./images/03-11-same-chat-send.png)
 
-   *Caption to write after capture.*
-   -->
+   *The recommendation. Don't accept it until you've done step 2.*
 
 2. Before you accept the recommendation, check two things yourself: the arithmetic you found in 3.3, and the warranty and payment terms against the RFQ and the policy.
 
-   <!-- Screenshot still to capture: 03-12-before-accept-recommendation-check.png. Remove this comment wrapper when the image is added.
-   ![Step 3.5.2: Before you accept the recommendation, check two things yourself: the arithmetic you found in 3.3, and the warranty and payment terms against the RFQ...](./images/03-12-before-accept-recommendation-check.png)
+   ![The What must happen before PO can be issued column highlighted, with the recommendation blurred](./images/03-12-before-accept-recommendation-check.png)
 
-   *Caption to write after capture.*
-   -->
+   *Check this column against your own checks from 3.3.*
 
 <details markdown="1">
 <summary>Show the answers</summary>
@@ -253,7 +229,13 @@ Recommended: **Duduk Selesa**, once it sends a revised quotation at RM47,628.00.
 
 Kerusi Nadira is cheapest, which is why a Checker that ranks on price alone gets this wrong.
 
-Watch for one more slip: a Checker can find the arithmetic error in 3.3, then still list RM46,548.00 as the correct total in its recommendation. That's why step 2 asks you to check the arithmetic yourself.
+Watch for these slips, all seen in test runs of the same instructions:
+
+- The recommendation picks Kerusi Nadira and marks it PASS, while its own reason says the warranty doesn't meet the RFQ.
+- It finds the arithmetic error in 3.3, then lists a different "correct" total for Duduk Selesa in the recommendation, such as RM46,548.00 or even RM46,648.00.
+- A check is marked Fail while its own explanation ends "Pass" (Ergoluma's validity, in one run).
+
+That's why step 2 asks you to check the arithmetic and the terms yourself. You'll measure slips like these properly in Module 07.
 
 </details>
 
@@ -265,7 +247,7 @@ Watch for one more slip: a Checker can find the arithmetic error in 3.3, then st
 
 | Copilot Chat (Basic) | M365 Copilot (Premium) | ChatGPT | Claude | Gemini |
 |---|---|---|---|---|
-| **Agents** > **New agent** > **Skip**. Instructions only: upload the policy and vendor list in each chat. At most three files per message | Same, and you can add the policy and vendor list as agent knowledge | Personal plans: a **Project** with instructions and files (up to 5 on Free). Business and Enterprise may build a GPT | A **Project** with instructions and knowledge files (up to 5 Projects on Free) | Personal: a **skill** (needs Keep Activity on; upload the PDFs in the chat). Workspace: a **Gem** with the PDFs as knowledge |
+| **Agents** > **New agent** > **Skip**. Add a description, or **Create** stays grey. Instructions only: upload the policy and vendor list in each chat. At most three files per message | Same, and you can add the policy and vendor list as agent knowledge | Personal plans: a **Project** with instructions and files (up to 5 on Free). Business and Enterprise may build a GPT | A **Project** with instructions and knowledge files (up to 5 Projects on Free) | Personal: a **skill** (needs Keep Activity on; upload the PDFs in the chat). Workspace: a **Gem** with the PDFs as knowledge |
 
 ---
 

@@ -66,7 +66,7 @@ Click **+** in the message box and choose your files.
 
 1. In the left pane, select **Agents**, then **New agent**.
 2. Select **Skip** to go straight to the form.
-3. Name it `Quotation Checker` and paste the Checker instructions from the Module 03 prompts page into **Instructions**.
+3. Name it `Quotation Checker`, add a one-line description (**Create** stays grey without one), and paste the Checker instructions from the Module 03 prompts page into **Instructions**.
 4. Add one or two **Suggested prompts**, such as "Check this quotation".
 5. Select **Create**, then test it.
 

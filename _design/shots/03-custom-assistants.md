@@ -10,18 +10,18 @@ Capture each shot right after its step: for a step that sends a prompt, when the
 
 | File | Section | Step | Blur after capture? |
 |---|---|---|---|
-| `03-01-open-ai-tool-create.png` | 3.1 Create the Assistant | Step 3.1.1: Open your AI tool and create a new custom assistant (Project, agent, Gem or skill). The product card for your tool has the clicks |  |
-| `03-02-name-quotation-checker.png` | 3.1 Create the Assistant | Step 3.1.2: Name it Quotation Checker |  |
-| `03-03-paste-these-instructions-into.png` | 3.1 Create the Assistant | Step 3.1.3: Paste these instructions into the instructions box |  |
-| `03-04-save-assistant.png` | 3.1 Create the Assistant | Step 3.1.4: Save the assistant |  |
-| `03-05-start-new-chat-quotation.png` | 3.3 Check One Quotation at a Time | Step 3.3.1: Start a new chat with your Quotation Checker. If your assistant has no files, upload the policy and the vendor list first | Yes |
-| `03-06-upload-rfq-2026-118.png` | 3.3 Check One Quotation at a Time | Step 3.3.2: Upload rfq-2026-118.pdf and quotation-duduk-selesa.pdf, then send | Yes |
-| `03-07-read-report-arithmetic-row.png` | 3.3 Check One Quotation at a Time | Step 3.3.3: Read the report. For the arithmetic row, check one line yourself with a calculator | Yes |
-| `03-08-repeat-steps-1-3.png` | 3.3 Check One Quotation at a Time | Step 3.3.4: Repeat steps 1 to 3 for quotation-kerusi-nadira.pdf and quotation-ergoluma.pdf, each in a new chat with the assistant | Yes |
-| `03-09-start-new-chat-assistant.png` | 3.4 Compare the Three | Step 3.4.1: Start a new chat with the assistant, and upload the RFQ and all three quotations | Yes |
-| `03-10-send.png` | 3.4 Compare the Three | Step 3.4.2: Send | Yes |
-| `03-11-same-chat-send.png` | 3.5 Recommend a Supplier | Step 3.5.1: In the same chat, send | Yes |
-| `03-12-before-accept-recommendation-check.png` | 3.5 Recommend a Supplier | Step 3.5.2: Before you accept the recommendation, check two things yourself: the arithmetic you found in 3.3, and the warranty and payment terms against the RFQ... | Yes |
+| `03-01-open-ai-tool-create.png` | 3.1 Create the Assistant | A new agent in Copilot's Agent Builder, with the name New Agent and the empty Instructions box highlighted |  |
+| `03-02-name-quotation-checker.png` | 3.1 Create the Assistant | The agent named Quotation Checker, with the name and the Describe your agent line highlighted |  |
+| `03-03-paste-these-instructions-into.png` | 3.1 Create the Assistant | The Checker instructions pasted into the Instructions box, with the 2,074/8,000 character counter |  |
+| `03-04-save-assistant.png` | 3.1 Create the Assistant | The message Your agent was created successfully, with Start chat highlighted |  |
+| `03-05-start-new-chat-quotation.png` | 3.3 Check One Quotation at a Time | The policy and vendor list sent to the Quotation Checker, which replies Ready. Send the RFQ and the quotation. | Yes |
+| `03-06-upload-rfq-2026-118.png` | 3.3 Check One Quotation at a Time | The Checker's report table for the Duduk Selesa quotation, with its findings blurred | Yes |
+| `03-07-read-report-arithmetic-row.png` | 3.3 Check One Quotation at a Time | The Arithmetic row of the Duduk Selesa report highlighted, with the findings blurred | Yes |
+| `03-08-repeat-steps-1-3.png` | 3.3 Check One Quotation at a Time | The Ergoluma check in its own new chat, highlighted in the chat list, with the findings blurred | Yes |
+| `03-09-start-new-chat-assistant.png` | 3.4 Compare the Three | The policy, vendor list and RFQ sent first, then the three quotations attached in the message box | Yes |
+| `03-10-send.png` | 3.4 Compare the Three | The side-by-side comparison with one column per supplier, the figures blurred | Yes |
+| `03-11-same-chat-send.png` | 3.5 Recommend a Supplier | The Checker's Recommendation Summary heading, with the recommendation and the table blurred | Yes |
+| `03-12-before-accept-recommendation-check.png` | 3.5 Recommend a Supplier | The What must happen before PO can be issued column highlighted, with the recommendation blurred | Yes |
 
 ## Check while you're there
 
