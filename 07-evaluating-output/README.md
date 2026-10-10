@@ -74,22 +74,18 @@ For each case, 01 to 10:
 
 1. Start a **new chat** with your Quotation Checker. If it has no files of its own, upload the policy and the vendor list first.
 
-   <!-- Screenshot still to capture: 07-01-start-new-chat-quotation.png. Remove this comment wrapper when the image is added.
-   ![Step 7.2.1: Start a new chat with your Quotation Checker. If it has no files of its own, upload the policy and the vendor list first](./images/07-01-start-new-chat-quotation.png)
+   ![A new chat with the Quotation Checker: the policy and vendor list sent, and the reply Ready. Send the RFQ and the quotation.](./images/07-01-start-new-chat-quotation.png)
 
-   *Caption to write after capture.*
-   -->
+   *Each case starts in a new chat. The Checker waits for the quotation.*
 2. Upload `open-rfqs.pdf` and the case's quotation, and send:
 
    ```
    Check this quotation against the matching RFQ in open-rfqs.pdf. The RFQ number is in the quotation's "Your reference".
    ```
 
-   <!-- Screenshot still to capture: 07-02-upload-open-rfqs-pdf.png. Remove this comment wrapper when the image is added.
-   ![Step 7.2.2: Upload open-rfqs.pdf and the case's quotation, and send](./images/07-02-upload-open-rfqs-pdf.png)
+   ![The Checker's report for case 01, with the table headings highlighted and the results blurred](./images/07-02-upload-open-rfqs-pdf.png)
 
-   *Caption to write after capture.*
-   -->
+   *Case 01's report. Score the verdict and the clause, not how tidy it looks.*
 
 3. Fill in the Checker verdict, Pass or Fail, and the clause it gives.
 
@@ -144,19 +140,15 @@ Then answer:
    An advance of exactly 30% is within the limit. Only more than 30% fails Clause 6.2.
    ```
 
-   <!-- Screenshot still to capture: 07-03-open-quotation-checker-s.png. Remove this comment wrapper when the image is added.
-   ![Step 7.4.2: Open your Quotation Checker's instructions and change one thing. For example, add a rule](./images/07-03-open-quotation-checker-s.png)
+   ![The Quotation Checker's instructions in Agent Builder, with the pencil and the new discount rule at the end highlighted](./images/07-03-open-quotation-checker-s.png)
 
-   *Caption to write after capture.*
-   -->
+   *One new rule, added at the end of the instructions.*
 
 3. Save the instructions.
 
-   <!-- Screenshot still to capture: 07-04-save-instructions.png. Remove this comment wrapper when the image is added.
-   ![Step 7.4.3: Save the instructions](./images/07-04-save-instructions.png)
+   ![Update highlighted, and the message Your agent was updated successfully](./images/07-04-save-instructions.png)
 
-   *Caption to write after capture.*
-   -->
+   *Select **Update** to save. Then re-run all ten cases.*
 4. Re-run **all ten** cases and score them again.
 
 Did your score go up? Did any case that was right before go wrong? Keep the better version of the instructions: you'll use it in Modules 10 and 11.

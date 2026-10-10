@@ -10,7 +10,7 @@ Capture each shot right after its step: for a step that sends a prompt, when the
 
 | File | Section | Step | Blur after capture? |
 |---|---|---|---|
-| `07-01-start-new-chat-quotation.png` | 7.2 Run the Ten Cases | Step 7.2.1: Start a new chat with your Quotation Checker. If it has no files of its own, upload the policy and the vendor list first | Yes |
-| `07-02-upload-open-rfqs-pdf.png` | 7.2 Run the Ten Cases | Step 7.2.2: Upload open-rfqs.pdf and the case's quotation, and send | Yes |
-| `07-03-open-quotation-checker-s.png` | 7.4 Improve One Thing and Test Again | Step 7.4.2: Open your Quotation Checker's instructions and change one thing. For example, add a rule |  |
-| `07-04-save-instructions.png` | 7.4 Improve One Thing and Test Again | Step 7.4.3: Save the instructions |  |
+| `07-01-start-new-chat-quotation.png` | 7.2 Run the Ten Cases | A new chat with the Quotation Checker: the policy and vendor list sent, and the reply Ready. Send the RFQ and the quotation. | Yes |
+| `07-02-upload-open-rfqs-pdf.png` | 7.2 Run the Ten Cases | The Checker's report for case 01, with the table headings highlighted and the results blurred | Yes |
+| `07-03-open-quotation-checker-s.png` | 7.4 Improve One Thing and Test Again | The Quotation Checker's instructions in Agent Builder, with the pencil and the new discount rule at the end highlighted |  |
+| `07-04-save-instructions.png` | 7.4 Improve One Thing and Test Again | Update highlighted, and the message Your agent was updated successfully |  |
