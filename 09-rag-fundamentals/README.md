@@ -53,25 +53,19 @@ Use a source-grounded notebook, as in Module 04. Gemini Notebook (formerly Noteb
 
 1. Create a new notebook called `Procurement policy, both versions`.
 
-   <!-- Screenshot still to capture: 09-01-create-new-notebook-called.png. Remove this comment wrapper when the image is added.
-   ![Step 9.1.1: Create a new notebook called Procurement policy, both versions](./images/09-01-create-new-notebook-called.png)
+   ![A new Gemini Notebook named Procurement policy, both versions, with the name and Add sources highlighted](./images/09-01-create-new-notebook-called.png)
 
-   *Caption to write after capture.*
-   -->
+   *A new notebook, separate from the one in Module 04.*
 2. Add `procurement-policy-v3.0.pdf` and `procurement-policy-v2.1.pdf` as sources.
 
-   <!-- Screenshot still to capture: 09-02-add-procurement-policy-v3.png. Remove this comment wrapper when the image is added.
-   ![Step 9.1.2: Add procurement-policy-v3.0.pdf and procurement-policy-v2.1.pdf as sources](./images/09-02-add-procurement-policy-v3.png)
+   ![Both policy PDFs ticked in the Sources list, highlighted, with the notebook's summary naming Version 2.1 and Version 3.0](./images/09-02-add-procurement-policy-v3.png)
 
-   *Caption to write after capture.*
-   -->
+   *Both versions are sources. The summary already mentions both.*
 3. Look at page 1 of each PDF. Only the old one has a red **SUPERSEDED** box. Now look at page 2 of the old one.
 
-   <!-- Screenshot still to capture: 09-03-look-page-1-pdf.png. Remove this comment wrapper when the image is added.
-   ![Step 9.1.3: Look at page 1 of each PDF. Only the old one has a red SUPERSEDED box. Now look at page 2 of the old one](./images/09-03-look-page-1-pdf.png)
+   ![Page 1 of Version 3.0, page 1 of Version 2.1 with its red SUPERSEDED box, and page 2 of Version 2.1 with only Version 2.1 in its header, highlighted](./images/09-03-look-page-1-pdf.png)
 
-   *Caption to write after capture.*
-   -->
+   *Only page 1 of the old policy says SUPERSEDED. Page 2 says Version 2.1 in small print, and nothing else.*
 
 ---
 
@@ -95,11 +89,9 @@ Who has to approve a purchase of RM80,000 including tax? Give the clause and the
 Does a quotation have to show the supplier's SST registration number? Give the clause and the policy version.
 ```
 
-<!-- Screenshot still to capture: 09-04-ask-four-questions.png. Remove this comment wrapper when the image is added.
-![Section 9.2: Ask Four Questions](./images/09-04-ask-four-questions.png)
+![The fourth question, about the SST registration number, highlighted above a blurred answer](./images/09-04-ask-four-questions.png)
 
-*Caption to write after capture.*
--->
+*Ask each question on its own. The answer is blurred: compare with your own.*
 
 ---
 
@@ -107,11 +99,9 @@ Does a quotation have to show the supplier's SST registration number? Give the c
 
 1. For each answer, click or open the citation and find the page it points to.
 
-   <!-- Screenshot still to capture: 09-05-answer-click-or-open.png. Remove this comment wrapper when the image is added.
-   ![Step 9.3.1: For each answer, click or open the citation and find the page it points to](./images/09-05-answer-click-or-open.png)
+   ![A citation opened in the Sources panel, showing procurement-policy-v3.0.pdf, highlighted, with the answer blurred](./images/09-05-answer-click-or-open.png)
 
-   *Caption to write after capture.*
-   -->
+   *Click a citation to open the passage. The file name at the top tells you which version it came from.*
 2. Check the version in the page header: **Version 3.0** or **Version 2.1**.
 3. Mark each answer **Right** (from v3.0) or **Wrong** (from v2.1, or a mix of both).
 
@@ -131,6 +121,8 @@ The wrong answers come from Version 2.1, which says SUPERSEDED only on its first
 
 The clause numbers are the same in both versions, which is why a wrong citation looks right. Open the cited page and check the version in its header.
 
+If every answer came from Version 3.0, your notebook retrieved well this time. In our test Gemini Notebook answered all four from Version 3.0 and even noted what Version 2.1 had said. Retrieval varies, so ask the same questions in different words (see Troubleshooting), and compare with your neighbours: the risk is that you can't predict which run will slip.
+
 </details>
 
 ---
@@ -143,11 +135,9 @@ In the same notebook, send:
 For your answer about advance payments, list every passage you retrieved from the sources, with the document name, page and clause for each. Then explain why a passage from Version 2.1 could look relevant to the question.
 ```
 
-<!-- Screenshot still to capture: 09-06-diagnose-why.png. Remove this comment wrapper when the image is added.
-![Section 9.4: Diagnose Why](./images/09-06-diagnose-why.png)
+![The diagnosis, with Passages Retrieved on Advance Payments highlighted, listing Clause 6.2 from both versions](./images/09-06-diagnose-why.png)
 
-*Caption to write after capture.*
--->
+*The notebook lists the passages it retrieved: Clause 6.2 from both versions.*
 
 Then, with the person next to you, write one sentence for each:
 
@@ -164,11 +154,9 @@ Then, with the person next to you, write one sentence for each:
 From now on, use only the Procurement Policy Version 3.0, effective 1 July 2026. Version 2.1 is superseded: ignore it unless I ask about it by name. Now answer again: what is the most we can pay in advance before the Finance Director has to approve it?
 ```
 
-<!-- Screenshot still to capture: 09-07-fix-two-ways.png. Remove this comment wrapper when the image is added.
-![Section 9.5: Fix It Two Ways](./images/09-07-fix-two-ways.png)
+![The Fix A instruction to use only Version 3.0, highlighted, with the answer citing Version 3.0 below](./images/09-07-fix-two-ways.png)
 
-*Caption to write after capture.*
--->
+*Fix A: tell the notebook which version wins, then ask again.*
 
 **Fix B: curate the sources.** Remove `procurement-policy-v2.1.pdf` from the notebook's sources, and ask the four questions again.
 
