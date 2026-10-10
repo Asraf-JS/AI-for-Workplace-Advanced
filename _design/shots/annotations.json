@@ -1267,6 +1267,122 @@
      190
     ]
    ]
+  },
+  "11-01-open-word-create-blank.png": {
+   "boxes": [
+    [
+     382,
+     218,
+     1200,
+     876
+    ]
+   ]
+  },
+  "11-02-copy-quotation-text-from.png": {
+   "boxes": [
+    [
+     466,
+     210,
+     1090,
+     790
+    ]
+   ]
+  },
+  "11-03-select-last-paragraph-starts.png": {
+   "boxes": [
+    [
+     470,
+     726,
+     1088,
+     798
+    ]
+   ]
+  },
+  "11-04-set-its-font-colour.png": {
+   "boxes": [
+    [
+     276,
+     88,
+     340,
+     116
+    ],
+    [
+     566,
+     88,
+     610,
+     116
+    ]
+   ]
+  },
+  "11-05-select-file-save-choose.png": {
+   "boxes": [
+    [
+     652,
+     362,
+     952,
+     538
+    ]
+   ]
+  },
+  "11-06-start-new-chat-quotation.png": {
+   "boxes": [
+    [
+     552,
+     532,
+     952,
+     592
+    ]
+   ]
+  },
+  "11-07-upload-open-rfqs-pdf.png": {
+   "boxes": [
+    [
+     534,
+     90,
+     1206,
+     122
+    ]
+   ]
+  },
+  "11-08-open-quotation-checker-s.png": {
+   "boxes": [
+    [
+     728,
+     332,
+     1468,
+     416
+    ]
+   ]
+  },
+  "11-09-save-instructions.png": {
+   "boxes": [
+    [
+     492,
+     362,
+     1108,
+     538
+    ]
+   ]
+  },
+  "11-10-run-quotation-rakmas-poisoned.png": {
+   "boxes": [
+    [
+     8,
+     262,
+     240,
+     294
+    ]
+   ]
+  },
+  "11-11-run-case-09-rakmas.png": {
+   "boxes": [
+    [
+     8,
+     262,
+     240,
+     294
+    ]
+   ]
   }
  }
 }
