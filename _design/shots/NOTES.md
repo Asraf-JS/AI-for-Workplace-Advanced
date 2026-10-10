@@ -71,3 +71,7 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 06-output-templates, retake checks: accessibility: README says verify the PowerPoint for Windows accessibility command and bad-deck title warnings; UI shows this retake opens only existing Copilot answers; the Windows accessibility check remains unverified.
 
 - 06-output-templates, retake checks: returned layouts: README says verify template layout retention in ChatGPT, Claude and Gemini; UI shows this retake opens only existing Copilot answers; other tools remain untested.
+
+- 07-evaluating-output, 7.4.3: README says save the instructions; UI shows Agent Builder uses Update and confirms Your agent was updated successfully; the agent remains private.
+
+- 07-evaluating-output, 7.2 capture scope: README says run ten cases and score them; UI shows this screenshot run followed the shot list and ran case 01 only; Kertas Lestari returned PASS at RM19,116.00; the ten-case score and regression run were not performed.
