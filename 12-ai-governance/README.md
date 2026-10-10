@@ -46,9 +46,9 @@ No files to download. Bring your notes from Day 1 and this morning: you'll list 
 6. Accountability
 7. Pursuit of human benefit and happiness
 
-**What's coming.** Malaysia's National AI Office consulted the public on a proposed **AI Governance Bill** in July 2026. The draft is reported to take a risk-based approach, with duties for organisations that develop or deploy AI. It isn't law yet. Check its status before you rely on it.
+**What's coming.** Malaysia's National AI Office consulted the public on a proposed **AI Governance Bill** in July 2026. The draft is reported to take a risk-based approach, with duties for organisations that develop or deploy AI. It isn't law yet: on 5 October 2026 the Digital Minister told Parliament it was still being drafted, with tabling expected in early 2027. Check its status before you rely on it.
 
-<!-- VERIFY: the AI Governance Bill's status (tabled, passed or still in draft) before each class. As of October 2026 it was being prepared for Cabinet. -->
+<!-- VERIFY: the AI Governance Bill's status (tabled, passed or still in draft) before each class. Checked 10 October 2026: still a draft, tabling expected in early 2027 (Digital Minister in Parliament, 5 October 2026). -->
 
 **Read more:** [National Guidelines on AI Governance and Ethics (MOSTI, PDF)](https://mastic.mosti.gov.my/storage/2024/09/THE-NATIONAL-GUIDELINES-ON-AI-GOVERNANCE-ETHICS.pdf).
 
@@ -58,11 +58,9 @@ No files to download. Bring your notes from Day 1 and this morning: you'll list 
 
 1. Start a new chat in your AI tool.
 
-   <!-- Screenshot still to capture: 12-01-start-new-chat-ai.png. Remove this comment wrapper when the image is added.
-   ![Step 12.1.1: Start a new chat in your AI tool](./images/12-01-start-new-chat-ai.png)
+   ![A new, empty Copilot chat](./images/12-01-start-new-chat-ai.png)
 
-   *Caption to write after capture.*
-   -->
+   *A new chat, so nothing from earlier modules affects the register.*
 2. Send:
 
    ```
@@ -77,13 +75,11 @@ No files to download. Bring your notes from Day 1 and this morning: you'll list 
    Make a Markdown table with these columns: Use case, AI tool, Data used, Personal data? (Yes or No), Who sees the output, Human check before use, Owner. Fill in what you can from the list, and write "To confirm" where you're guessing.
    ```
 
-   <!-- Screenshot still to capture: 12-02-send.png. Remove this comment wrapper when the image is added.
-   ![Step 12.1.2: Send](./images/12-02-send.png)
+   ![Copilot's register table, with Customer Stock Enquiry Reply Drafting listed twice](./images/12-02-send.png)
 
-   *Caption to write after capture.*
-   -->
+   *Copilot's first table. Here it listed the customer enquiry use twice: delete the copy so there's one row per use.*
 
-3. Replace every "To confirm" with your own answer. You know the process; the AI is guessing.
+3. Replace every "To confirm" with your own answer. You know the process; the AI is guessing. Check the table has one row per use: AI tools sometimes split or repeat a row (in our test run, Copilot listed the customer enquiry drafting twice).
 
 ---
 
@@ -120,6 +116,8 @@ Your ratings may differ: this is a judgement, and the reason matters more than t
 | Purchase history analysis | Medium | Confidential spend data; the Finance Director acts on it |
 | Approval memos and decks | Medium | Confidential figures, checked by the author before sending |
 | Policy notebook | Low | Internal policy, and staff check the cited clause |
+
+In our test run, Copilot rated the policy notebook Medium, because staff rely on its answers. That's defensible too: it stays Low only if staff always check the cited clause.
 
 The customer enquiry use moves to Medium if replies are only drafts that a sales executive checks and sends, and the tool is approved for personal data.
 
