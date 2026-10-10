@@ -46,29 +46,23 @@ This lab works best in **Gemini Notebook** (formerly NotebookLM), which is free 
 
 1. Open your notebook tool and create a new notebook (or Project) called `Sinar Maju procurement policy`.
 
-   <!-- Screenshot still to capture: 04-01-open-notebook-tool-create.png. Remove this comment wrapper when the image is added.
-   ![Step 4.1.1: Open your notebook tool and create a new notebook (or Project) called Sinar Maju procurement policy](./images/04-01-open-notebook-tool-create.png)
+   ![A new Gemini Notebook named Sinar Maju procurement policy, with the name and Add sources highlighted](./images/04-01-open-notebook-tool-create.png)
 
-   *Caption to write after capture.*
-   -->
+   *In Gemini Notebook: **Create notebook**, rename it, then **Add sources**.*
 2. Add `procurement-policy-v3.0.pdf` and `approved-vendor-list.pdf` as sources.
 
-   <!-- Screenshot still to capture: 04-02-add-procurement-policy-v3.png. Remove this comment wrapper when the image is added.
-   ![Step 4.1.2: Add procurement-policy-v3.0.pdf and approved-vendor-list.pdf as sources](./images/04-02-add-procurement-policy-v3.png)
+   ![The two PDFs ticked in the Sources list, with the notebook's own summary of the policy](./images/04-02-add-procurement-policy-v3.png)
 
-   *Caption to write after capture.*
-   -->
+   *Only the two PDFs, both ticked. The notebook writes a summary of them.*
 3. Ask:
 
    ```
    In three bullets, what do these sources cover? Name each document and its version or date.
    ```
 
-   <!-- Screenshot still to capture: 04-03-ask.png. Remove this comment wrapper when the image is added.
-   ![Step 4.1.3: Ask](./images/04-03-ask.png)
+   ![The answer naming the Procurement Policy, Version 3.0, effective 1 July 2026, highlighted](./images/04-03-ask.png)
 
-   *Caption to write after capture.*
-   -->
+   *Check the version: the answer should name Version 3.0.*
 
 4. Check that both documents are named, and that the policy is shown as Version 3.0.
 
@@ -98,11 +92,9 @@ Does a quotation have to show the supplier's SST registration number?
 What happens if one department places several small orders with the same supplier in the same month?
 ```
 
-<!-- Screenshot still to capture: 04-04-ask-five-policy-questions.png. Remove this comment wrapper when the image is added.
-![Section 4.2: Ask Five Policy Questions](./images/04-04-ask-five-policy-questions.png)
+![The answer to the advance payment question, with the clause number and the exact quotation highlighted](./images/04-04-ask-five-policy-questions.png)
 
-*Caption to write after capture.*
--->
+*The first answer sets the pattern: a clause number and the exact sentence.*
 
 > **Tip:** the first question sets the pattern (answer only from the sources, give the clause, quote the sentence). If later answers drop the quote, say `Quote the exact sentence for that too.`
 
@@ -112,11 +104,9 @@ What happens if one department places several small orders with the same supplie
 
 1. For each answer, open the policy PDF and find the clause it names.
 
-   <!-- Screenshot still to capture: 04-05-answer-open-policy-pdf.png. Remove this comment wrapper when the image is added.
-   ![Step 4.3.1: For each answer, open the policy PDF and find the clause it names](./images/04-05-answer-open-policy-pdf.png)
+   ![A citation preview for Clause 7.2, with the cited passage highlighted in the policy and View source highlighted](./images/04-05-answer-open-policy-pdf.png)
 
-   *Caption to write after capture.*
-   -->
+   *Click a citation number to see the passage, then **View source** to open it in the policy.*
 2. Read the quoted sentence in the PDF. Does it say the same thing as the answer?
 3. Mark each answer **Correct**, **Wrong clause** or **Doesn't support the answer**.
 
@@ -147,11 +137,9 @@ Send:
 Answer only from the sources. What is our policy on buying from suppliers outside Malaysia?
 ```
 
-<!-- Screenshot still to capture: 04-06-ask-something-policy-doesn.png. Remove this comment wrapper when the image is added.
-![Section 4.4: Ask Something the Policy Doesn't Cover](./images/04-06-ask-something-policy-doesn.png)
+![The answer saying the sources don't contain a policy on suppliers outside Malaysia, highlighted](./images/04-06-ask-something-policy-doesn.png)
 
-*Caption to write after capture.*
--->
+*A good answer: the sources don't cover it.*
 
 <details markdown="1">
 <summary>What should you see?</summary>
@@ -170,7 +158,7 @@ Watch for a subtler version too. A tool can say the sources don't cover it, then
 
 | Copilot Chat (Basic) | M365 Copilot (Premium) | ChatGPT | Claude | Gemini |
 |---|---|---|---|---|
-| **Notebooks** > new notebook > **Add references** > **Upload files**. Citations show as small labels with a **Sources** button | Same as Basic. **Researcher** can also search your organisation's files, with sources | A **Project** with the two PDFs. Ask for the clause and quote every time, because Projects also use general knowledge | A **Project** with the two PDFs in its knowledge. Ask for the clause and quote | **Gemini Notebook** (formerly NotebookLM): add both PDFs as sources. Click a citation number to see the quote |
+| **Notebooks** > new notebook > **Add references** > **Upload files**. Citations show as small labels with a **Sources** button | Same as Basic. **Researcher** can also search your organisation's files, with sources | A **Project** with the two PDFs. Ask for the clause and quote every time, because Projects also use general knowledge | A **Project** with the two PDFs in its knowledge. Ask for the clause and quote | **Gemini Notebook** (formerly NotebookLM): add both PDFs as sources. Click a citation number to see the passage, then **View source** to open it in the PDF's text |
 
 ---
 
