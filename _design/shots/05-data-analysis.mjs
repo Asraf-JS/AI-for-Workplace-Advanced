@@ -1,4 +1,4 @@
-import {attach,openSite,newChat,send,capture,stable,remember,state,root} from './run-helpers.mjs';
+import {attach,openSite,newChat,send,capture,stable,remember,state,root,note} from './run-helpers.mjs';
 import {readFileSync,writeFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 const module='05-data-analysis', step=process.argv[2];
@@ -19,7 +19,34 @@ async function answer(){
  writeFileSync(resolve(root,'../05-'+step+'-answer.txt'),await card.textContent());
 }
 try {
- if(step.startsWith('excel-')){
+ if(step==='retake'){
+  if(!state['05-chat'])throw Error('Missing existing Module 05 chat');
+  await newChat(page,'05-chat');await stable(page);
+  await page.getByText('M365 Copilot (Basic)',{exact:true}).waitFor();
+  await page.getByText('AIW 05 - purchase history',{exact:true}).waitFor();
+  await page.emulateMedia({colorScheme:'light'});
+  const scroller=page.locator('.fui-Virtualizer-Scroll-View-Dynamic__container');
+  async function position(text,y){
+   const card=page.locator('.fai-CopilotMessage').filter({hasText:text}).first();
+   await card.waitFor();
+   await card.evaluate((e,y)=>{for(let p=e.parentElement;p;p=p.parentElement){if(/auto|scroll/.test(getComputedStyle(p).overflowY)&&p.scrollHeight>p.clientHeight){p.scrollTop+=e.getBoundingClientRect().top-y;break;}}},y);
+   await stable(page);
+   const actual=await card.boundingBox();
+   if(!actual||actual.y<80||actual.y>300)throw Error('Answer start is outside capture position');
+   console.log('ANSWER_POSITION',text,Math.round(actual.y));
+  }
+  await scroller.evaluate(e=>e.scrollTop=0);await stable(page);
+  await position('I have read both sheets in purchase-history.',140);
+  await shot('05-02-send.png');
+  await scroller.evaluate(e=>e.scrollTop=e.scrollHeight);await stable(page);
+  await position('Using the cleaned dataset (cancelled orders removed',140);
+  await shot('05-08-look-patterns.png');
+  await scroller.evaluate(e=>e.scrollTop=e.scrollHeight);await stable(page);
+  await position("I've created the chart showing monthly spend",180);
+  await shot('05-09-make-chart.png');
+  note(module,'05-02, 05-08 and 05-09 retake','capture the existing answers in light mode','the saved AIW 05 - purchase history chat was reopened in light mode and the same three answers were captured without resending prompts');
+  note(module,'check while retaking','check whether Gemini shows its code','Gemini was not opened because this retake covers only three existing Copilot answers; Gemini code visibility remains unverified');
+ } else if(step.startsWith('excel-')){
   const {page:excel,browser:excelBrowser}=await openSite(state['05-excel'],'purchase-history-pivot.xlsx');
   const f=excel.frames().find(f=>f.url()===''&&f!==excel.mainFrame());
   const namebox=f.locator('#FormulaBar-NameBox-input');

@@ -45,3 +45,7 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 05-data-analysis, 5.5: README says the chart jump should match the month in the pattern finding; UI shows Copilot generated the titled column chart with labelled axes and a May 2026 increase, then incorrectly said that increase had been identified earlier in its analysis.
 
 - 05-data-analysis, 5.4 verification: README says filter the spreadsheet to a listed PO and check one finding; UI shows Excel was filtered to PO-2026-0071; it shows Total RM12,409.20, one quotation, a blank Contract Ref and Farah Nadiah binti Zulkifli as approver, confirming the reported exception.
+
+- 05-data-analysis, 05-02, 05-08 and 05-09 retake: README says capture the existing answers in light mode; UI shows the saved AIW 05 - purchase history chat was reopened in light mode and the same three answers were captured without resending prompts.
+
+- 05-data-analysis, check while retaking: README says check whether Gemini shows its code; UI shows Gemini was not opened because this retake covers only three existing Copilot answers; Gemini code visibility remains unverified.
