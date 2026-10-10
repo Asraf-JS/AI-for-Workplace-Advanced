@@ -545,6 +545,168 @@
      400
     ]
    ]
+  },
+  "06-01-open-sinar-maju-deck.png": {
+   "boxes": [
+    [
+     212,
+     124,
+     724,
+     534
+    ]
+   ]
+  },
+  "06-02-select-view-outline-view.png": {
+   "boxes": [
+    [
+     640,
+     52,
+     680,
+     76
+    ],
+    [
+     166,
+     90,
+     358,
+     118
+    ]
+   ]
+  },
+  "06-03-select-review-check-accessibility.png": {
+   "boxes": [
+    [
+     20,
+     90,
+     166,
+     118
+    ],
+    [
+     1304,
+     262,
+     1576,
+     462
+    ]
+   ]
+  },
+  "06-04-close-do-same-three.png": {
+   "boxes": [
+    [
+     104,
+     12,
+     240,
+     36
+    ],
+    [
+     1304,
+     262,
+     1576,
+     462
+    ]
+   ]
+  },
+  "06-05-open-sinar-maju-memo.png": {
+   "boxes": [
+    [
+     1078,
+     90,
+     1200,
+     118
+    ],
+    [
+     474,
+     542,
+     556,
+     566
+    ]
+   ]
+  },
+  "06-06-select-view-navigation-pane.png": {
+   "boxes": [
+    [
+     36,
+     256,
+     192,
+     410
+    ]
+   ]
+  },
+  "06-07-click-into-grey-text.png": {
+   "boxes": [
+    [
+     762,
+     274,
+     932,
+     296
+    ]
+   ]
+  },
+  "06-08-start-new-chat-ai.png": {
+   "boxes": [
+    [
+     564,
+     536,
+     752,
+     586
+    ]
+   ]
+  },
+  "06-09-copy-prompt-below-replace.png": {
+   "boxes": [
+    [
+     566,
+     286,
+     876,
+     320
+    ],
+    [
+     1220,
+     292,
+     1246,
+     318
+    ]
+   ]
+  },
+  "06-10-download-file-open-word.png": {
+   "boxes": [
+    [
+     36,
+     256,
+     192,
+     410
+    ],
+    [
+     632,
+     272,
+     1258,
+     342
+    ]
+   ]
+  },
+  "06-11-start-new-chat-upload.png": {
+   "boxes": [
+    [
+     564,
+     536,
+     752,
+     586
+    ]
+   ]
+  },
+  "06-13-download-open-powerpoint-check.png": {
+   "boxes": [
+    [
+     382,
+     162,
+     550,
+     284
+    ],
+    [
+     36,
+     180,
+     234,
+     730
+    ]
+   ]
   }
  }
 }

@@ -81,7 +81,7 @@ try {
   }
   await excelBrowser.close();
  } else if(step==='office-setup'){
-  const {page:drive,context,browser:driveBrowser}=await openSite('https://jsasraf-my.sharepoint.com/','jsasraf-my.sharepoint.com');
+  const {page:drive,context,browser:driveBrowser}=await openSite(process.env.CAPTURE_ONEDRIVE_URL,new URL(process.env.CAPTURE_ONEDRIVE_URL).host);
   const dialog=drive.getByRole('dialog');
   if(await dialog.count()){
    await dialog.getByRole('textbox').fill('AIW Training');

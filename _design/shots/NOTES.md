@@ -49,3 +49,17 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 05-data-analysis, 05-02, 05-08 and 05-09 retake: README says capture the existing answers in light mode; UI shows the saved AIW 05 - purchase history chat was reopened in light mode and the same three answers were captured without resending prompts.
 
 - 05-data-analysis, check while retaking: README says check whether Gemini shows its code; UI shows Gemini was not opened because this retake covers only three existing Copilot answers; Gemini code visibility remains unverified.
+
+- 06-output-templates, 6.1.2: README says select View > Outline View; UI shows PowerPoint for the web has Normal (Tri-pane) View and Slide Sorter but no Outline View; the View ribbon was captured.
+
+- 06-output-templates, 6.2.2: README says select View > Navigation Pane; UI shows Word for the web calls the command View Navigation Pane and shows all six numbered headings.
+
+- 06-output-templates, check while there: accessibility: README says verify the current PowerPoint for Windows command and missing slide titles in the bad deck; UI shows PowerPoint for the web has Review > Check Accessibility; its bad-deck Accessibility Assistant reports Missing slide title - 0 issues; the Windows command and result remain unverified.
+
+- 06-output-templates, 6.3.3: README says download the finished memo and open it in Word with six headings and no placeholders; UI shows Copilot saved a Word file to OneDrive and Open file opened it in Word for the web; its Navigation Pane keeps all six headings and no square-bracket placeholders were found.
+
+- 06-output-templates, 6.4.3: README says download and check the deck layouts; UI shows Copilot saved a four-slide PowerPoint file to OneDrive; Open file opened it in PowerPoint for the web and Home > Slide Layout confirms SM Title, SM Title Only, SM Content and SM Closing on slides 1 to 4.
+
+- 06-output-templates, check while there: returned layouts: README says verify which tools return a PowerPoint file keeping the uploaded template layouts in October 2026; UI shows M365 Copilot (Basic) returned a four-slide .pptx retaining the good template layouts, confirmed in PowerPoint for the web; other tools were not tested.
+
+- 06-output-templates, 6.5.1-2: README says the bad template output usually drifts and has no real slide titles; UI shows Copilot claimed SM layouts in its answer, but the returned four-slide deck has only Office Theme > DEFAULT, all thumbnail labels are Slide, the title wraps into fragments, and the old example title, subtitle and date text remains.
