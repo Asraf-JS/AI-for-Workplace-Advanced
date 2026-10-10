@@ -15,6 +15,7 @@ Codex captures the screenshots on Asraf's Windows machine, one per step, followi
    $env:CAPTURE_ACCOUNT = "<the M365 Copilot (Basic) training account>"
    $env:CAPTURE_GOOGLE_ACCOUNT = "<the Google training account>"
    $env:CAPTURE_N8N_ACCOUNT = "<the n8n trial account email>"
+   $env:CAPTURE_ONEDRIVE_URL = "<the training account's OneDrive address, https://...-my.sharepoint.com/>"
    ```
 3. Start the browser headed once and sign in to every site by hand: `node _design/shots/browser-session.mjs --headed`
    - **m365.cloud.microsoft**: the unlicensed training user, which must show **M365 Copilot (Basic)**

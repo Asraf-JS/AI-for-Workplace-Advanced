@@ -18,7 +18,7 @@ async function renameChat(key,title){if(await page.getByRole('button',{name:'Clo
 async function answer(){await stable(page);await page.locator('.fai-CopilotMessage').last().evaluate(e=>{for(let p=e.parentElement;p;p=p.parentElement)if(/auto|scroll/.test(getComputedStyle(p).overflowY)&&p.scrollHeight>p.clientHeight){p.scrollTop=p.scrollHeight;break;}});await stable(page);await page.locator('.fai-CopilotMessage').last().evaluate(e=>{for(let p=e.parentElement;p;p=p.parentElement)if(/auto|scroll/.test(getComputedStyle(p).overflowY)&&p.scrollHeight>p.clientHeight){p.scrollTop+=e.getBoundingClientRect().top-140;break;}});await stable(page);}
 try{
  if(step==='setup'){
-  const {page:drive,browser:b}=await openSite('https://jsasraf-my.sharepoint.com/','jsasraf-my.sharepoint.com');
+  const {page:drive,browser:b}=await openSite(process.env.CAPTURE_ONEDRIVE_URL,new URL(process.env.CAPTURE_ONEDRIVE_URL).host);
   if(!decodeURIComponent(drive.url()).includes('/AIW Training')){
    await drive.getByRole('link',{name:'My files',exact:true}).first().click();await stable(drive);
    await drive.getByRole('button').filter({hasText:/^AIW Training$/}).first().dblclick();

@@ -51,35 +51,29 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
 
 1. Open `sinar-maju-deck.pptx` in PowerPoint. Select **Home** > **Layout** and look at the list of layouts.
 
-   <!-- Screenshot still to capture: 06-01-open-sinar-maju-deck.png. Remove this comment wrapper when the image is added.
-   ![Step 6.1.1: Open sinar-maju-deck.pptx in PowerPoint. Select Home > Layout and look at the list of layouts](./images/06-01-open-sinar-maju-deck.png)
+   ![The Layout gallery in PowerPoint for the web, listing the Sinar Maju layouts: DEFAULT, SM Title, SM Section, SM Content, SM Two Content, SM Comparison, SM Title Only, SM Chart and SM Closing](./images/06-01-open-sinar-maju-deck.png)
 
-   *Caption to write after capture.*
-   -->
+   *The good deck's layouts, each with a name. The slides use them.*
 2. Select **View** > **Outline View**. Every slide's title shows in the outline.
 
-   <!-- Screenshot still to capture: 06-02-select-view-outline-view.png. Remove this comment wrapper when the image is added.
-   ![Step 6.1.2: Select View > Outline View. Every slide's title shows in the outline](./images/06-02-select-view-outline-view.png)
+   ![The View tab in PowerPoint for the web, with Slide Sorter and Normal highlighted and no Outline View](./images/06-02-select-view-outline-view.png)
 
-   *Caption to write after capture.*
-   -->
+   *PowerPoint for the web has no Outline View. Use desktop PowerPoint for this step.*
 3. Select **Review** > **Check Accessibility**.
 
-   <!-- Screenshot still to capture: 06-03-select-review-check-accessibility.png. Remove this comment wrapper when the image is added.
-   ![Step 6.1.3: Select Review > Check Accessibility](./images/06-03-select-review-check-accessibility.png)
+   ![The Accessibility Assistant for the good deck, with Check Accessibility and the list of error checks highlighted](./images/06-03-select-review-check-accessibility.png)
 
-   *Caption to write after capture.*
-   -->
+   *On the web, Check Accessibility is on its own **Accessibility** tab.*
 4. Close it and do the same three things with `sinar-maju-deck-bad.pptx`.
 
-   <!-- Screenshot still to capture: 06-04-close-do-same-three.png. Remove this comment wrapper when the image is added.
-   ![Step 6.1.4: Close it and do the same three things with sinar-maju-deck-bad.pptx](./images/06-04-close-do-same-three.png)
+   ![The Accessibility Assistant for sinar-maju-deck-bad, with the file name and the error checks highlighted](./images/06-04-close-do-same-three.png)
 
-   *Caption to write after capture.*
-   -->
+   *The bad deck in the web checker. It found no missing titles in our test, so check in desktop PowerPoint.*
 5. Note what's different. On screen, the two decks look almost the same.
 
-<!-- VERIFY: the Check Accessibility command location in current PowerPoint for Windows, and that it reports missing slide titles for the bad deck. -->
+> **Note:** do 6.1 in desktop PowerPoint. PowerPoint for the web has no Outline View, and in our test its accessibility check didn't report the bad deck's missing slide titles. On the web, **Home** > **Layout** (step 1) still shows the difference.
+
+<!-- VERIFY: the Check Accessibility command location in current PowerPoint for Windows, and that it reports missing slide titles for the bad deck. The web version (Accessibility tab) reported none in the Module 06 capture. -->
 
 ---
 
@@ -87,25 +81,19 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
 
 1. Open `sinar-maju-memo.docx` in Word.
 
-   <!-- Screenshot still to capture: 06-05-open-sinar-maju-memo.png. Remove this comment wrapper when the image is added.
-   ![Step 6.2.1: Open sinar-maju-memo.docx in Word](./images/06-05-open-sinar-maju-memo.png)
+   ![The approval memo template in Word for the web, with the Title style and the heading 1. Purpose highlighted](./images/06-05-open-sinar-maju-memo.png)
 
-   *Caption to write after capture.*
-   -->
+   *Each part of the memo uses a style: the cursor here is in **Title**.*
 2. Select **View** > **Navigation Pane**. The numbered headings are there because they use the **Heading 1** style.
 
-   <!-- Screenshot still to capture: 06-06-select-view-navigation-pane.png. Remove this comment wrapper when the image is added.
-   ![Step 6.2.2: Select View > Navigation Pane. The numbered headings are there because they use the Heading 1 style](./images/06-06-select-view-navigation-pane.png)
+   ![The Navigation pane in Word for the web listing the six numbered headings, highlighted](./images/06-06-select-view-navigation-pane.png)
 
-   *Caption to write after capture.*
-   -->
+   *Six headings, because each uses **Heading 1**.*
 3. Click into the grey text in square brackets. Those are placeholders: everything the AI (or you) must replace.
 
-   <!-- Screenshot still to capture: 06-07-click-into-grey-text.png. Remove this comment wrapper when the image is added.
-   ![Step 6.2.3: Click into the grey text in square brackets. Those are placeholders: everything the AI (or you) must replace](./images/06-07-click-into-grey-text.png)
+   ![The placeholder Approver's name and title in square brackets, highlighted in the memo's first table](./images/06-07-click-into-grey-text.png)
 
-   *Caption to write after capture.*
-   -->
+   *Grey text in square brackets is a placeholder: it must all be replaced.*
 
 ---
 
@@ -113,11 +101,9 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
 
 1. Start a new chat in your AI tool and upload `sinar-maju-memo.docx`.
 
-   <!-- Screenshot still to capture: 06-08-start-new-chat-ai.png. Remove this comment wrapper when the image is added.
-   ![Step 6.3.1: Start a new chat in your AI tool and upload sinar-maju-memo.docx](./images/06-08-start-new-chat-ai.png)
+   ![sinar-maju-memo.docx attached in a new Copilot chat](./images/06-08-start-new-chat-ai.png)
 
-   *Caption to write after capture.*
-   -->
+   *The memo template attached, ready for the prompt.*
 2. Copy the prompt below, replace `[your name]` with your own name, and send it. It includes the facts from Module 03, so it works even if you don't have that chat any more.
 
    ```
@@ -135,19 +121,15 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
    Give me the finished memo as a Word file I can download.
    ```
 
-   <!-- Screenshot still to capture: 06-09-copy-prompt-below-replace.png. Remove this comment wrapper when the image is added.
-   ![Step 6.3.2: Copy the prompt below, replace your name with your own name, and send it. It includes the facts from Module 03, so it works even if you don't have...](./images/06-09-copy-prompt-below-replace.png)
+   ![Copilot's answer with the file card Approval_Memo_RFQ-2026-118.docx and its open button highlighted, previewing the filled memo](./images/06-09-copy-prompt-below-replace.png)
 
-   *Caption to write after capture.*
-   -->
+   *Copilot saves the filled memo to your OneDrive. Open it from the file card.*
 
 3. Download the file and open it in Word. Check the Navigation Pane still shows the six headings, and that no grey placeholder text is left.
 
-   <!-- Screenshot still to capture: 06-10-download-file-open-word.png. Remove this comment wrapper when the image is added.
-   ![Step 6.3.3: Download the file and open it in Word. Check the Navigation Pane still shows the six headings, and that no grey placeholder text is left](./images/06-10-download-file-open-word.png)
+   ![The filled memo in Word for the web, with the six headings in the Navigation pane and the filled To and From rows highlighted](./images/06-10-download-file-open-word.png)
 
-   *Caption to write after capture.*
-   -->
+   *The six headings survived, and the placeholders are replaced.*
 
 > **If you don't see this:** if your tool can't return a Word file, ask for the memo text section by section, and paste each section into the template yourself with **Paste** > **Keep Text Only**. That keeps the template's styles.
 
@@ -157,11 +139,9 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
 
 1. Start a new chat and upload `sinar-maju-deck.pptx`.
 
-   <!-- Screenshot still to capture: 06-11-start-new-chat-upload.png. Remove this comment wrapper when the image is added.
-   ![Step 6.4.1: Start a new chat and upload sinar-maju-deck.pptx](./images/06-11-start-new-chat-upload.png)
+   ![sinar-maju-deck.pptx attached in a new Copilot chat](./images/06-11-start-new-chat-upload.png)
 
-   *Caption to write after capture.*
-   -->
+   *The good template attached.*
 2. Send:
 
    ```
@@ -181,11 +161,9 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
 
 3. Download it and open it in PowerPoint. Check each slide's layout (**Home** > **Layout**), the figures, and that nothing spills off a slide.
 
-   <!-- Screenshot still to capture: 06-13-download-open-powerpoint-check.png. Remove this comment wrapper when the image is added.
-   ![Step 6.4.3: Download it and open it in PowerPoint. Check each slide's layout (Home > Layout), the figures, and that nothing spills off a slide](./images/06-13-download-open-powerpoint-check.png)
+   ![The returned deck in PowerPoint for the web, with the Layout gallery open on SM Title and the four slide thumbnails highlighted](./images/06-13-download-open-powerpoint-check.png)
 
-   *Caption to write after capture.*
-   -->
+   *Each slide uses a template layout. Slide 1 is on **SM Title**.*
 
 ---
 
@@ -218,6 +196,8 @@ The evaluation should name the three problems: Duduk Selesa's arithmetic (4.4), 
 
 For the deck: new slides made from `sinar-maju-deck.pptx` should use its layouts and keep its fonts and colours. Slides made from `sinar-maju-deck-bad.pptx` usually drift: titles move, fonts change, and the slides have no real titles.
 
+In our test with Copilot, the good template came back with SM Title, SM Title Only, SM Content and SM Closing on slides 1 to 4. The bad template came back on a blank DEFAULT layout on every slide, with the new title squeezed into a narrow box and the template's example title still there, even though Copilot's answer said it had used the SM layouts. Check the file, not the AI's description of it.
+
 </details>
 
 > **Key point:** the prompt was the same. The difference came from the template. If your team's AI output always needs fixing, look at the template before you rewrite the prompt.
@@ -228,9 +208,9 @@ For the deck: new slides made from `sinar-maju-deck.pptx` should use its layouts
 
 | Copilot Chat (Basic) | M365 Copilot (Premium) | ChatGPT | Claude | Gemini |
 |---|---|---|---|---|
-| No Copilot in Word or PowerPoint on Copilot Chat (Basic). Draft the memo in chat or a Page and paste it into the template. M365 Copilot (Basic) has standard access in the apps | Copilot in Word fills the memo in place. In PowerPoint, create a deck from the template file; work on a copy, as it can replace the open deck | Ask for a downloadable file, or use ChatGPT for Word and PowerPoint (limited on Free) | Turn on file creation under **Settings** > **Capabilities**. Claude returns a new .docx or .pptx | Workspace: Gemini in Docs and Slides. Personal: draft in chat and paste into the template |
+| Copilot returns the filled .docx and .pptx, saved to your OneDrive: open them from the file card in the answer. Copilot Chat (Basic) has no Copilot inside Word or PowerPoint; M365 Copilot (Basic) has standard access in the apps | Copilot in Word fills the memo in place. In PowerPoint, create a deck from the template file; work on a copy, as it can replace the open deck | Ask for a downloadable file, or use ChatGPT for Word and PowerPoint (limited on Free) | Turn on file creation under **Settings** > **Capabilities**. Claude returns a new .docx or .pptx | Workspace: Gemini in Docs and Slides. Personal: draft in chat and paste into the template |
 
-<!-- VERIFY: which tools return a .pptx that keeps the uploaded template's layouts, October 2026. -->
+<!-- VERIFY: whether ChatGPT, Claude and Gemini return a .pptx that keeps the uploaded template's layouts, October 2026. Copilot (Basic) did, in the Module 06 capture. -->
 
 ---
 

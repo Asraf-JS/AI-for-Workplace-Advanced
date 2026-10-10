@@ -10,22 +10,22 @@ Capture each shot right after its step: for a step that sends a prompt, when the
 
 | File | Section | Step | Blur after capture? |
 |---|---|---|---|
-| `06-01-open-sinar-maju-deck.png` | 6.1 Look Under the Hood of the Two Decks | Step 6.1.1: Open sinar-maju-deck.pptx in PowerPoint. Select Home > Layout and look at the list of layouts |  |
-| `06-02-select-view-outline-view.png` | 6.1 Look Under the Hood of the Two Decks | Step 6.1.2: Select View > Outline View. Every slide's title shows in the outline |  |
-| `06-03-select-review-check-accessibility.png` | 6.1 Look Under the Hood of the Two Decks | Step 6.1.3: Select Review > Check Accessibility |  |
-| `06-04-close-do-same-three.png` | 6.1 Look Under the Hood of the Two Decks | Step 6.1.4: Close it and do the same three things with sinar-maju-deck-bad.pptx |  |
-| `06-05-open-sinar-maju-memo.png` | 6.2 Look at the Memo's Styles | Step 6.2.1: Open sinar-maju-memo.docx in Word |  |
-| `06-06-select-view-navigation-pane.png` | 6.2 Look at the Memo's Styles | Step 6.2.2: Select View > Navigation Pane. The numbered headings are there because they use the Heading 1 style |  |
-| `06-07-click-into-grey-text.png` | 6.2 Look at the Memo's Styles | Step 6.2.3: Click into the grey text in square brackets. Those are placeholders: everything the AI (or you) must replace |  |
-| `06-08-start-new-chat-ai.png` | 6.3 Fill the Memo | Step 6.3.1: Start a new chat in your AI tool and upload sinar-maju-memo.docx |  |
-| `06-09-copy-prompt-below-replace.png` | 6.3 Fill the Memo | Step 6.3.2: Copy the prompt below, replace your name with your own name, and send it. It includes the facts from Module 03, so it works even if you don't have... |  |
-| `06-10-download-file-open-word.png` | 6.3 Fill the Memo | Step 6.3.3: Download the file and open it in Word. Check the Navigation Pane still shows the six headings, and that no grey placeholder text is left |  |
-| `06-11-start-new-chat-upload.png` | 6.4 Make the Deck from the Good Template | Step 6.4.1: Start a new chat and upload sinar-maju-deck.pptx |  |
+| `06-01-open-sinar-maju-deck.png` | 6.1 Look Under the Hood of the Two Decks | The Layout gallery in PowerPoint for the web, listing the Sinar Maju layouts: DEFAULT, SM Title, SM Section, SM Content, SM Two Content, SM Comparison, SM Title Only, SM Chart and SM Closing |  |
+| `06-02-select-view-outline-view.png` | 6.1 Look Under the Hood of the Two Decks | The View tab in PowerPoint for the web, with Slide Sorter and Normal highlighted and no Outline View |  |
+| `06-03-select-review-check-accessibility.png` | 6.1 Look Under the Hood of the Two Decks | The Accessibility Assistant for the good deck, with Check Accessibility and the list of error checks highlighted |  |
+| `06-04-close-do-same-three.png` | 6.1 Look Under the Hood of the Two Decks | The Accessibility Assistant for sinar-maju-deck-bad, with the file name and the error checks highlighted |  |
+| `06-05-open-sinar-maju-memo.png` | 6.2 Look at the Memo's Styles | The approval memo template in Word for the web, with the Title style and the heading 1. Purpose highlighted |  |
+| `06-06-select-view-navigation-pane.png` | 6.2 Look at the Memo's Styles | The Navigation pane in Word for the web listing the six numbered headings, highlighted |  |
+| `06-07-click-into-grey-text.png` | 6.2 Look at the Memo's Styles | The placeholder Approver's name and title in square brackets, highlighted in the memo's first table |  |
+| `06-08-start-new-chat-ai.png` | 6.3 Fill the Memo | sinar-maju-memo.docx attached in a new Copilot chat |  |
+| `06-09-copy-prompt-below-replace.png` | 6.3 Fill the Memo | Copilot's answer with the file card Approval_Memo_RFQ-2026-118.docx and its open button highlighted, previewing the filled memo |  |
+| `06-10-download-file-open-word.png` | 6.3 Fill the Memo | The filled memo in Word for the web, with the six headings in the Navigation pane and the filled To and From rows highlighted |  |
+| `06-11-start-new-chat-upload.png` | 6.4 Make the Deck from the Good Template | sinar-maju-deck.pptx attached in a new Copilot chat |  |
 | `06-12-send.png` | 6.4 Make the Deck from the Good Template | Step 6.4.2: Send |  |
-| `06-13-download-open-powerpoint-check.png` | 6.4 Make the Deck from the Good Template | Step 6.4.3: Download it and open it in PowerPoint. Check each slide's layout (Home > Layout), the figures, and that nothing spills off a slide |  |
+| `06-13-download-open-powerpoint-check.png` | 6.4 Make the Deck from the Good Template | The returned deck in PowerPoint for the web, with the Layout gallery open on SM Title and the four slide thumbnails highlighted |  |
 | `06-14-start-new-chat-upload.png` | 6.5 Do It Again with the Bad Template | Step 6.5.1: Start a new chat, upload sinar-maju-deck-bad.pptx, and send the same prompt as in 6.4 (it still names the layouts, which this file doesn't have) |  |
 
 ## Check while you're there
 
-- the Check Accessibility command location in current PowerPoint for Windows, and that it reports missing slide titles for the bad deck.
-- which tools return a .pptx that keeps the uploaded template's layouts, October 2026.
+- the Check Accessibility command location in current PowerPoint for Windows, and that it reports missing slide titles for the bad deck. The web version (Accessibility tab) reported none in the Module 06 capture.
+- whether ChatGPT, Claude and Gemini return a .pptx that keeps the uploaded template's layouts, October 2026. Copilot (Basic) did, in the Module 06 capture.
