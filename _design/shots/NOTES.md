@@ -17,3 +17,13 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 03-custom-assistants, retake other-tools instruction-length check: README says check instruction limits in Claude, ChatGPT Projects and Gemini skills; UI shows this retake uses Copilot only; those tools were not opened, so their limits remain unverified.
 
 - 03-custom-assistants, retake preparation: README says create a new Quotation Checker; UI shows the old agent was renamed CCB Quotation Checker with its instructions, description and suggested prompts verified unchanged; a separate new Quotation Checker was created.
+
+- 04-grounded-research, retake 4.2 question 2: README says later answers should give the exact sentence, using the provided follow-up if needed; UI shows the validity answer gave Clause 4.2 but no exact quotation; the provided follow-up returned both exact Clause 4.2 sentences.
+
+- 04-grounded-research, retake 4.2 questions 3 and 5: README says use the provided follow-up when later answers omit exact quotations; UI shows the approval and split-purchase answers needed that follow-up; it returned the correct Clause 3.1 table wording and exact Clause 7.2 text.
+
+- 04-grounded-research, retake 4.3.1: README says open the policy PDF and check each cited clause; UI shows Gemini Notebook opens extracted PDF source text; all five final answers match Clauses 6.2, 4.2, 3.1, 4.5 and 7.2 and are marked Correct.
+
+- 04-grounded-research, retake 4.4: README says say the sources do not cover overseas suppliers and optionally point to Procurement; UI shows the answer says there is no specific overseas policy, adds cited general AVL and SSM requirements, and offers the Procurement contact; it does not claim all listed vendors are Malaysian.
+
+- 04-grounded-research, retake 4.1.2: README says use only procurement-policy-v3.0.pdf and approved-vendor-list.pdf; UI shows the fresh notebook contains exactly those two selected sources; all six retake captures are 1600x900 with account details masked.
