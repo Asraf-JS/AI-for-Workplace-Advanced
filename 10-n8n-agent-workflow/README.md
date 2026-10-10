@@ -61,74 +61,54 @@ You need:
 
 1. Sign in to n8n with the details from your trainer.
 
-   <!-- Screenshot still to capture: 10-01-sign-n8n-details-from.png. Remove this comment wrapper when the image is added.
-   ![Step 10.1.1: Sign in to n8n with the details from your trainer](./images/10-01-sign-n8n-details-from.png)
+   ![n8n Overview page after signing in, with Run live demo, Build an agent and Build a workflow](./images/10-01-sign-n8n-details-from.png)
 
-   *Caption to write after capture.*
-   -->
-2. Create a new workflow. Open the **...** menu at the top right and choose **Import from File**.
+   *n8n after signing in to a trial account. The banner at the top shows the days left in the trial.*
+2. Create a new workflow. Open the **...** menu next to the workflow name and choose **Import** > **From file**.
 
-   <!-- Screenshot still to capture: 10-02-create-new-workflow-open.png. Remove this comment wrapper when the image is added.
-   ![Step 10.1.2: Create a new workflow. Open the ... menu at the top right and choose Import from File](./images/10-02-create-new-workflow-open.png)
+   ![A new workflow with the ... menu open next to its name and Import highlighted](./images/10-02-create-new-workflow-open.png)
 
-   *Caption to write after capture.*
-   -->
+   *Open the **...** menu next to the workflow name, then **Import** > **From file**.*
 3. Select `quotation-approval-starter.json`.
 
-   <!-- Screenshot still to capture: 10-03-select-quotation-approval-starter.png. Remove this comment wrapper when the image is added.
-   ![Step 10.1.3: Select quotation-approval-starter.json](./images/10-03-select-quotation-approval-starter.png)
+   ![The imported workflow named Quotation approval (starter) on the canvas](./images/10-03-select-quotation-approval-starter.png)
 
-   *Caption to write after capture.*
-   -->
+   *The workflow takes the name from the starter file. You'll rename it when you save.*
 4. You'll see three connected nodes (**Upload quotation**, **Read the PDF text**, **Policy limits**) and four sticky notes describing the steps you'll build.
 
-   <!-- Screenshot still to capture: 10-04-ll-see-three-connected.png. Remove this comment wrapper when the image is added.
-   ![Step 10.1.4: You'll see three connected nodes (Upload quotation, Read the PDF text, Policy limits) and four sticky notes describing the steps you'll build](./images/10-04-ll-see-three-connected.png)
+   ![The starter's three connected nodes and four sticky notes, Step 1 to Step 4](./images/10-04-ll-see-three-connected.png)
 
-   *Caption to write after capture.*
-   -->
-5. Save the workflow.
+   *Three connected nodes on the left, and the four steps you'll build on the sticky notes.*
+5. Save the workflow (**Ctrl+S**). You don't need **Publish** for this lab.
 
-   <!-- Screenshot still to capture: 10-05-save-workflow.png. Remove this comment wrapper when the image is added.
-   ![Step 10.1.5: Save the workflow](./images/10-05-save-workflow.png)
+   ![The workflow saved as AIW Quotation approval](./images/10-05-save-workflow.png)
 
-   *Caption to write after capture.*
-   -->
-
-<!-- VERIFY: import quotation-approval-starter.json into an n8n trial account (Workflows > Import from File). Check the three nodes connect, the form shows a PDF upload field, and Read the PDF text finds the file (binary field Quotation_PDF). Built against n8n's source in October 2026, not tested in n8n itself. -->
+   *Saved with **Ctrl+S** and renamed. **Publish** isn't needed for this lab.*
 
 ---
 
 ## 10.2 Test the First Three Nodes
 
-1. Double-click **Upload quotation** and select **Test step** (or open the test form URL). A form opens in your browser.
+1. Double-click **Upload quotation** and select **Execute step** (or open the test form URL). A form opens in your browser.
 
-   <!-- Screenshot still to capture: 10-06-double-click-upload-quotation.png. Remove this comment wrapper when the image is added.
-   ![Step 10.2.1: Double-click Upload quotation and select Test step (or open the test form URL). A form opens in your browser](./images/10-06-double-click-upload-quotation.png)
+   ![The test form Sinar Maju: check a quotation, with Quotation PDF and RFQ number fields](./images/10-06-double-click-upload-quotation.png)
 
-   *Caption to write after capture.*
-   -->
+   *The test form opens in a new tab. The yellow note says it's a test version.*
 2. Upload `quotation-alat-tulis-cendana.pdf`, type `RFQ-2026-131`, and submit.
 
-   <!-- Screenshot still to capture: 10-07-upload-quotation-alat-tulis.png. Remove this comment wrapper when the image is added.
-   ![Step 10.2.2: Upload quotation-alat-tulis-cendana.pdf, type RFQ-2026-131, and submit](./images/10-07-upload-quotation-alat-tulis.png)
+   ![Form Submitted, Your response has been recorded](./images/10-07-upload-quotation-alat-tulis.png)
 
-   *Caption to write after capture.*
-   -->
+   *After you submit, go back to the n8n tab.*
 3. Back in n8n, open **Read the PDF text**. Its output should show a field called `text` with the quotation's words.
 
-   <!-- Screenshot still to capture: 10-08-back-n8n-open-read.png. Remove this comment wrapper when the image is added.
-   ![Step 10.2.3: Back in n8n, open Read the PDF text. Its output should show a field called text with the quotation's words](./images/10-08-back-n8n-open-read.png)
+   ![Read the PDF text node with Input Binary Field set to Quotation_PDF and its output fields](./images/10-08-back-n8n-open-read.png)
 
-   *Caption to write after capture.*
-   -->
+   *The input shows the uploaded file, and the output ends with the `text` field (scroll down to see it).*
 4. Open **Policy limits**. Its output should show the same `text`, plus fields such as `max_advance_percent` and `finance_director_above_rm`.
 
-   <!-- Screenshot still to capture: 10-09-open-policy-limits-its.png. Remove this comment wrapper when the image is added.
-   ![Step 10.2.4: Open Policy limits. Its output should show the same text, plus fields such as max_advance_percent and finance_director_above_rm](./images/10-09-open-policy-limits-its.png)
+   ![Policy limits node listing fields such as one_quotation_below_rm and max_advance_percent](./images/10-09-open-policy-limits-its.png)
 
-   *Caption to write after capture.*
-   -->
+   *The limits from the policy, ready for the AI step to use.*
 
 > **If you don't see this:** if **Read the PDF text** says it can't find the file, open **Upload quotation**'s output, select **Binary**, and check the file's name there. Type that name into **Read the PDF text**'s **Input Binary Field**.
 
@@ -138,41 +118,29 @@ You need:
 
 1. Select **+** after **Policy limits** and add a **Basic LLM Chain** node. Name it `Check the quotation`.
 
-   <!-- Screenshot still to capture: 10-10-select-after-policy-limits.png. Remove this comment wrapper when the image is added.
-   ![Step 10.3.1: Select + after Policy limits and add a Basic LLM Chain node. Name it Check the quotation](./images/10-10-select-after-policy-limits.png)
+   ![A new Basic LLM Chain node named Check the quotation, with its default settings](./images/10-10-select-after-policy-limits.png)
 
-   *Caption to write after capture.*
-   -->
-2. Under **Model**, add a chat model (for example **OpenAI Chat Model**) and choose the credential your trainer gave you.
+   *The new node starts with the prompt coming from a chat trigger. You'll change that in step 3.*
+2. Under **Model**, add a chat model (for example **OpenAI Chat Model**). On an n8n trial, the credential **Gateway credits** is already there with a small free allowance, and the model defaults to `gpt-5-mini`. On a class workspace, choose the credential your trainer gave you.
 
-   <!-- Screenshot still to capture: 10-11-under-model-add-chat.png. Remove this comment wrapper when the image is added.
-   ![Step 10.3.2: Under Model, add a chat model (for example OpenAI Chat Model) and choose the credential your trainer gave you](./images/10-11-under-model-add-chat.png)
+   ![OpenAI Chat Model node using Gateway credits with $2.00 left and the gpt-5-mini model](./images/10-11-under-model-add-chat.png)
 
-   *Caption to write after capture.*
-   -->
-3. Set the prompt source to define it yourself, and paste the **Part 1** prompt from the [prompts page](./prompts.md). It's your Checker instructions, adapted to read the quotation text from the previous node and the limits from **Policy limits**.
+   *On a trial, the **Gateway credits** credential is already set up.*
+3. Set **Source for Prompt (User Message)** to **Define below**, and paste the **Part 1** prompt from the [prompts page](./prompts.md). It's your Checker instructions, adapted to read the quotation text from the previous node and the limits from **Policy limits**.
 
-   <!-- Screenshot still to capture: 10-12-set-prompt-source-define.png. Remove this comment wrapper when the image is added.
-   ![Step 10.3.3: Set the prompt source to define it yourself, and paste the Part 1 prompt from the prompts page. It's your Checker instructions, adapted to read the...](./images/10-12-set-prompt-source-define.png)
+   ![Check the quotation with Source for Prompt set to Define below and the Part 1 prompt pasted in](./images/10-12-set-prompt-source-define.png)
 
-   *Caption to write after capture.*
-   -->
-4. Turn on **Require Specific Output Format**. Add a **Structured Output Parser**, choose to generate it from a JSON example, and paste the **Part 2** example from the prompts page.
+   ***Define below**, then the Part 1 prompt. The output on the right is blurred.*
+4. Turn on **Require Specific Output Format**. Add a **Structured Output Parser**, set **Schema Type** to **Generate From JSON Example**, and paste the **Part 2** example from the prompts page.
 
-   <!-- Screenshot still to capture: 10-13-turn-require-specific-output.png. Remove this comment wrapper when the image is added.
-   ![Step 10.3.4: Turn on Require Specific Output Format. Add a Structured Output Parser, choose to generate it from a JSON example, and paste the Part 2 example fro...](./images/10-13-turn-require-specific-output.png)
+   ![Structured Output Parser with Schema Type Generate From JSON Example and the Part 2 example](./images/10-13-turn-require-specific-output.png)
 
-   *Caption to write after capture.*
-   -->
-5. Select **Test step**. The output should have an `output` object with `supplier`, `correct_total`, `problems` and `verdict`.
+   *The Part 2 example tells the parser which fields to expect.*
+5. Select **Execute step**. The output should have an `output` object with `supplier`, `correct_total`, `problems` and `verdict`.
 
-   <!-- Screenshot still to capture: 10-14-select-test-step-output.png. Remove this comment wrapper when the image is added.
-   ![Step 10.3.5: Select Test step. The output should have an output object with supplier, correct_total, problems and verdict](./images/10-14-select-test-step-output.png)
+   ![Check the quotation output with supplier, correct_total, problems and verdict for Alat Tulis Cendana](./images/10-14-select-test-step-output.png)
 
-   *Caption to write after capture.*
-   -->
-
-<!-- VERIFY: Basic LLM Chain option labels (prompt source, Require Specific Output Format), the Structured Output Parser's "generate from JSON example" option, and whether n8n trial accounts include free AI credits or need a key from the trainer, October 2026. -->
+   *The `output` object has every field from the example.*
 
 ---
 
@@ -180,32 +148,24 @@ You need:
 
 1. Add a **Code** node after **Check the quotation**. Name it `Check the vendor list`.
 
-   <!-- Screenshot still to capture: 10-15-add-code-node-after.png. Remove this comment wrapper when the image is added.
-   ![Step 10.4.1: Add a Code node after Check the quotation. Name it Check the vendor list](./images/10-15-add-code-node-after.png)
+   ![A new Code node named Check the vendor list with its sample code](./images/10-15-add-code-node-after.png)
 
-   *Caption to write after capture.*
-   -->
+   *The new Code node starts with sample code. You'll replace it in step 3.*
 2. Set the mode to **Run Once for Each Item** and the language to **JavaScript**.
 
-   <!-- Screenshot still to capture: 10-16-set-mode-run-once.png. Remove this comment wrapper when the image is added.
-   ![Step 10.4.2: Set the mode to Run Once for Each Item and the language to JavaScript](./images/10-16-set-mode-run-once.png)
+   ![Code node with Mode Run Once for Each Item and Language JavaScript](./images/10-16-set-mode-run-once.png)
 
-   *Caption to write after capture.*
-   -->
+   ***Run Once for Each Item** and **JavaScript**.*
 3. Replace the code with the **Part 3** code from the prompts page. It holds the names from `approved-vendors.csv`, and it changes the verdict to `reject` if the supplier isn't on the list, whatever the AI said.
 
-   <!-- Screenshot still to capture: 10-17-replace-code-part-3.png. Remove this comment wrapper when the image is added.
-   ![Step 10.4.3: Replace the code with the Part 3 code from the prompts page. It holds the names from approved-vendors.csv, and it changes the verdict to reject if...](./images/10-17-replace-code-part-3.png)
+   ![The Part 3 code in the Code node, ending with the rule that changes the verdict to reject](./images/10-17-replace-code-part-3.png)
 
-   *Caption to write after capture.*
-   -->
-4. Select **Test step** and check the output has `on_avl: true` for Alat Tulis Cendana.
+   *The end of the Part 3 code: not on the list means reject (Clause 5.1).*
+4. Select **Execute step** and check the output has `on_avl: true` for Alat Tulis Cendana.
 
-   <!-- Screenshot still to capture: 10-18-select-test-step-check.png. Remove this comment wrapper when the image is added.
-   ![Step 10.4.4: Select Test step and check the output has on_avl: true for Alat Tulis Cendana](./images/10-18-select-test-step-check.png)
+   ![Check the vendor list output with on_avl true](./images/10-18-select-test-step-check.png)
 
-   *Caption to write after capture.*
-   -->
+   *`on_avl: true` means Alat Tulis Cendana is on the Approved Vendor List.*
 
 ---
 
@@ -213,11 +173,9 @@ You need:
 
 1. Add a **Switch** node after **Check the vendor list**. Name it `Route`.
 
-   <!-- Screenshot still to capture: 10-19-add-switch-node-after.png. Remove this comment wrapper when the image is added.
-   ![Step 10.5.1: Add a Switch node after Check the vendor list. Name it Route](./images/10-19-add-switch-node-after.png)
+   ![A new Switch node named Route with one empty routing rule](./images/10-19-add-switch-node-after.png)
 
-   *Caption to write after capture.*
-   -->
+   *The Switch starts with one empty rule.*
 2. Add four rules, each checking the value `{{ $json.verdict }}`:
 
    | Rule | Value equals | Rename the output to |
@@ -227,91 +185,71 @@ You need:
    | 3 | `reject` | Reject |
    | 4 | `escalate` | Escalate |
 
-   <!-- Screenshot still to capture: 10-20-add-four-rules-checking.png. Remove this comment wrapper when the image is added.
-   ![Step 10.5.2: Add four rules, each checking the value {{ $json.verdict }}](./images/10-20-add-four-rules-checking.png)
+   ![Route's routing rules checking $json.verdict, with outputs renamed Approve, Revise and Reject](./images/10-20-add-four-rules-checking.png)
 
-   *Caption to write after capture.*
-   -->
+   *Each rule checks `{{ $json.verdict }}`. Turn on **Rename Output** to name each output.*
 
-3. Select **Test step**. Alat Tulis Cendana should come out of **Approve**.
+3. Select **Execute step**. Alat Tulis Cendana should come out of **Approve**.
 
-   <!-- Screenshot still to capture: 10-21-select-test-step-alat.png. Remove this comment wrapper when the image is added.
-   ![Step 10.5.3: Select Test step. Alat Tulis Cendana should come out of Approve](./images/10-21-select-test-step-alat.png)
+   ![Route output with tabs Approve (1 item), Revise, Reject and Escalate](./images/10-21-select-test-step-alat.png)
 
-   *Caption to write after capture.*
-   -->
+   *Alat Tulis Cendana comes out of **Approve**.*
 
 ---
 
 ## 10.6 Ask a Person to Approve
 
-1. On the **Approve** output, add a **Gmail** (or **Microsoft Outlook**) node with the **Send and Wait for Response** operation. Connect your email account.
+1. On the **Approve** output, add a **Gmail** (or **Microsoft Outlook**) node and pick the action **Send message and wait for response** (the node then shows the operation **Send and Wait for Response**). Connect your email account.
 
-   <!-- Screenshot still to capture: 10-22-approve-output-add-gmail.png. Remove this comment wrapper when the image is added.
-   ![Step 10.6.1: On the Approve output, add a Gmail (or Microsoft Outlook) node with the Send and Wait for Response operation. Connect your email account](./images/10-22-approve-output-add-gmail.png)
+   ![Microsoft Outlook node with Operation Send and Wait for Response and Response Type Approval](./images/10-22-approve-output-add-gmail.png)
 
-   *Caption to write after capture.*
-   -->
+   *The action **Send message and wait for response** sets the operation, and **Response Type** is **Approval**.*
 2. Fill it in:
    - **To:** your own email address
    - **Subject:** `[AIW TRAINING] Approve: {{ $json.supplier }}`
    - **Message:** the **Part 4** message from the prompts page
    - **Response Type:** **Approval**
 
-   <!-- Screenshot still to capture: 10-23-fill.png. Remove this comment wrapper when the image is added.
-   ![Step 10.6.2: Fill it in](./images/10-23-fill.png)
+   ![Ask for approval node with the AIW TRAINING Approve subject, the Part 4 message and Response Type Approval](./images/10-23-fill.png)
 
-   *Caption to write after capture.*
-   -->
+   *The subject and message use the supplier's fields. **To** is your own address (hidden here).*
 3. Do the same on the **Escalate** output, with the subject `[AIW TRAINING] Finance Director approval: {{ $json.supplier }}`.
 
-   <!-- Screenshot still to capture: 10-24-do-same-escalate-output.png. Remove this comment wrapper when the image is added.
-   ![Step 10.6.3: Do the same on the Escalate output, with the subject AIW TRAINING Finance Director approval: the supplier](./images/10-24-do-same-escalate-output.png)
+   ![Ask Finance Director node with the subject AIW TRAINING Finance Director approval](./images/10-24-do-same-escalate-output.png)
 
-   *Caption to write after capture.*
-   -->
-4. On the **Revise** and **Reject** outputs, add a plain **Send** email to yourself saying what happened. (At work, Revise would draft an email to the supplier, and a person would send it.)
+   *The same settings, with the Finance Director subject.*
+4. On the **Revise** and **Reject** outputs, add a plain email to yourself (action **Send a message**, operation **Send**) saying what happened. (At work, Revise would draft an email to the supplier, and a person would send it.)
 
-   <!-- Screenshot still to capture: 10-25-revise-reject-outputs-add.png. Remove this comment wrapper when the image is added.
-   ![Step 10.6.4: On the Revise and Reject outputs, add a plain Send email to yourself saying what happened. (At work, Revise would draft an email to the supplier, a...](./images/10-25-revise-reject-outputs-add.png)
+   ![Report reject node with Operation Send and the AIW TRAINING Reject subject](./images/10-25-revise-reject-outputs-add.png)
 
-   *Caption to write after capture.*
-   -->
-
-<!-- VERIFY: that Send and Wait for Response is available in the Gmail and Microsoft Outlook nodes on n8n Cloud, and the label of the Approval response type. -->
+   *A plain **Send** for Reject (and the same for Revise). Nothing waits for an answer here.*
 
 ---
 
 ## 10.7 Run All Four Quotations
 
-1. Save the workflow. Open the form again (**Upload quotation** > **Test step**).
+1. Save the workflow. Open the form again (**Upload quotation** > **Execute step**).
 
-   <!-- Screenshot still to capture: 10-26-save-workflow-open-form.png. Remove this comment wrapper when the image is added.
-   ![Step 10.7.1: Save the workflow. Open the form again (Upload quotation > Test step)](./images/10-26-save-workflow-open-form.png)
+   ![The test form opened again to upload the next quotation](./images/10-26-save-workflow-open-form.png)
 
-   *Caption to write after capture.*
-   -->
+   *The same test form, once for each quotation.*
 2. Upload each of the four quotations in turn, submitting the form once for each.
 
-   <!-- Screenshot still to capture: 10-27-upload-four-quotations-turn.png. Remove this comment wrapper when the image is added.
-   ![Step 10.7.2: Upload each of the four quotations in turn, submitting the form once for each](./images/10-27-upload-four-quotations-turn.png)
+   ![Form Submitted after uploading a quotation](./images/10-27-upload-four-quotations-turn.png)
 
-   *Caption to write after capture.*
-   -->
+   *Submit, then go back to n8n before the next one.*
 3. After each one, check your inbox, and open the workflow's **Executions** to see which route it took.
 
-   <!-- Screenshot still to capture: 10-28-after-check-inbox-open.png. Remove this comment wrapper when the image is added.
-   ![Step 10.7.3: After each one, check your inbox, and open the workflow's Executions to see which route it took](./images/10-28-after-check-inbox-open.png)
+   ![The workflow's Executions tab with a list of succeeded runs and the selected run's path on the canvas](./images/10-28-after-check-inbox-open.png)
 
-   *Caption to write after capture.*
-   -->
+   ***Executions** lists each run. Select one to see the path it took on the canvas.*
 4. For the approval emails, click **Approve** and watch the waiting execution finish.
 
-   <!-- Screenshot still to capture: 10-29-approval-emails-click-approve.png. Remove this comment wrapper when the image is added.
-   ![Step 10.7.4: For the approval emails, click Approve and watch the waiting execution finish](./images/10-29-approval-emails-click-approve.png)
+   ![An execution marked Waiting in the Executions list, ID 13](./images/10-29-approval-emails-click-approve.png)
 
-   *Caption to write after capture.*
-   -->
+   *An approval run shows **Waiting** until someone answers the email. Click **Approve** in the email and it changes to Succeeded.*
+
+<!-- VERIFY: in the capture run, the Approve links in the Cendana emails (executions 7 and 13) opened blank pages and the executions stayed Waiting. Click Approve by hand on a trial and check the execution finishes as Succeeded, and what the page after clicking shows. -->
 
 <details markdown="1">
 <summary>Show the answers</summary>
@@ -335,7 +273,7 @@ Nothing should reach a supplier, or be approved, until a person clicks Approve i
 
 ## Product Notes
 
-n8n works the same whichever AI tool you use the rest of the time. The AI model inside the workflow comes from the credential your trainer gives you.
+n8n works the same whichever AI tool you use the rest of the time. The AI model inside the workflow comes from the trial's Gateway credits or the credential your trainer gives you.
 
 | Copilot Chat (Basic) | M365 Copilot (Premium) | ChatGPT | Claude | Gemini |
 |---|---|---|---|---|
@@ -358,7 +296,7 @@ Add a fifth route: if `correct_total` is more than RM50,000, send it to Escalate
 | The Switch sends everything to one output | Open **Check the vendor list**'s output and check `verdict` is lower case: `pass`, `revise`, `reject` or `escalate` |
 | Hancur Rapi Supplies comes out of Approve | Check the Code node runs after the AI step, and that its output says `on_avl: false` |
 | No approval email arrives | Check the email node's credential, the **To** address, and your spam folder |
-| The AI step fails with a quota or credential error | Tell your trainer: the class credential may have run out |
+| The AI step fails with a quota or credential error | On a trial, check the **Gateway credits** balance in the chat model node. On a class workspace, tell your trainer: the class credential may have run out |
 
 ---
 

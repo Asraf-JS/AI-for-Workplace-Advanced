@@ -89,3 +89,21 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 09-rag-fundamentals, 9.3.1: README says open the cited page and check its version header; UI shows extracted source text and highlighted passages, with the policy version and page labels included in the source text; 09-05 captures the Version 3.0 SST passage rather than a wrong-version citation.
 - 09-rag-fundamentals, 9.4: README says diagnose which RAG step let the old clause in and why the page 1 warning was missed; UI shows both page 2 Clause 6.2 passages and explains matching topics and almost identical wording, but does not explain the missing page 1 stamp in page 2 chunks; its list is the model's reported passages, not an independently verified retrieval trace.
 - 09-rag-fundamentals, 9.1.2 capture: README says show both uploaded policy sources; UI shows both sources in 09-02, captured at 1600x873 after the manual upload; the other five saved shots are 1600x900.
+
+- 10-n8n-agent-workflow, 10.1.2 / check while there: README says Import from File; UI shows workflow menu > Import > From file.
+
+- 10-n8n-agent-workflow, 10.1–10.2 / check while there: README says the starter connects three nodes and extracts binary field Quotation_PDF; UI shows all three nodes connect, the form accepts a PDF, Read the PDF text extracts Quotation_PDF, and Policy limits preserves the text.
+
+- 10-n8n-agent-workflow, 10.3 / check while there: README says define the prompt yourself, require specific output, and generate the parser from a JSON example; UI shows Source for Prompt (User Message) = Define below, Require Specific Output Format, and Schema Type = Generate From JSON Example; the trial supplies Gateway credits ($2.00 before testing) with OpenAI Chat Model defaulting to gpt-5-mini.
+
+- 10-n8n-agent-workflow, 10.2–10.7: README says Test step; UI shows Execute step; workflow saving uses Ctrl+S and the header offers Publish.
+
+- 10-n8n-agent-workflow, 10.6 / check while there: README says Gmail or Outlook Send and Wait for Response with Approval response type; UI shows both Gmail and Microsoft Outlook action pickers have Send message and wait for response; Microsoft Outlook uses Response Type = Approval.
+
+- 10-n8n-agent-workflow, 10.6.4: README says plain Send email; UI shows Microsoft Outlook action Send a message.
+
+- 10-n8n-agent-workflow, 10.7.2 / answers: README says Cendana approves, Kodbar revises, Hancur rejects and Imbas escalates; UI shows Cendana pass (RM39,852), Kodbar revise (RM38,966.40), Hancur reject with on_avl false, and Imbas revise; Imbas returned clauses 6.2 (40% deposit) and 4.3 (delivery measured from deposit), so the exact prompt prioritises revise.
+
+- 10-n8n-agent-workflow, 10.7.4 / shot 10-29: README says click Approve and watch the waiting execution finish; UI shows the workflow email links for Cendana executions 7 and 13 returned blank pages; refreshed Executions still says Waiting. Shot 10-29 shows that unresolved state, not successful approval; manual verification or a retake is needed.
+
+- 10-n8n-agent-workflow, capture corrections: README says submit each sample once with AIW TRAINING subjects; UI shows capture editing errors required Cendana and Kodbar retries. The first Cendana email had an empty subject and the first Kodbar email incorrectly said Reject. All mail went only to the training account; the current four email nodes and routing rules were corrected and verified after reopening.
