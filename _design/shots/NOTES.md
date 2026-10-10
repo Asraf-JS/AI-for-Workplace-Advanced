@@ -63,3 +63,11 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 06-output-templates, check while there: returned layouts: README says verify which tools return a PowerPoint file keeping the uploaded template layouts in October 2026; UI shows M365 Copilot (Basic) returned a four-slide .pptx retaining the good template layouts, confirmed in PowerPoint for the web; other tools were not tested.
 
 - 06-output-templates, 6.5.1-2: README says the bad template output usually drifts and has no real slide titles; UI shows Copilot claimed SM layouts in its answer, but the returned four-slide deck has only Office Theme > DEFAULT, all thumbnail labels are Slide, the title wraps into fragments, and the old example title, subtitle and date text remains.
+
+- 06-output-templates, 06-12 and 06-14 retake: README says capture the completed deck answers; UI shows the same good-template and bad-template answers were captured in light mode without resending prompts.
+
+- 06-output-templates, original chat setup: README says start separate chats for the memo, good deck and bad deck; UI shows the original capture run mistakenly kept all three exchanges in one conversation, now named AIW 06 - bad approval deck; both existing deck answers were located by their generated filenames for this retake.
+
+- 06-output-templates, retake checks: accessibility: README says verify the PowerPoint for Windows accessibility command and bad-deck title warnings; UI shows this retake opens only existing Copilot answers; the Windows accessibility check remains unverified.
+
+- 06-output-templates, retake checks: returned layouts: README says verify template layout retention in ChatGPT, Claude and Gemini; UI shows this retake opens only existing Copilot answers; other tools remain untested.
