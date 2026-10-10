@@ -27,3 +27,21 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 04-grounded-research, retake 4.4: README says say the sources do not cover overseas suppliers and optionally point to Procurement; UI shows the answer says there is no specific overseas policy, adds cited general AVL and SSM requirements, and offers the Procurement contact; it does not claim all listed vendors are Malaysian.
 
 - 04-grounded-research, retake 4.1.2: README says use only procurement-policy-v3.0.pdf and approved-vendor-list.pdf; UI shows the fresh notebook contains exactly those two selected sources; all six retake captures are 1600x900 with account details masked.
+
+- 05-data-analysis, 5.1.2 and 5.1.3: README says check the AI row count against Excel; UI shows Copilot reported 462 data rows and 18 columns; Excel shows Count 355 including the header, so there are 354 data rows; the source has 17 columns.
+
+- 05-data-analysis, 5.2: README says expect 4 duplicate rows, 6 blank departments, 7 supplier-name variants and 8 cancelled rows; UI shows Copilot found the four duplicate PO numbers and seven variants, but reported only 2 blank departments and 7 cancelled rows; its duplicate description also incorrectly called four PO numbers two duplicated PO numbers.
+
+- 05-data-analysis, 5.3: README says 350 unique purchase orders after cleaning and excluding cancellations; UI shows Copilot correctly reports 342 non-cancelled unique orders; the file has 350 unique orders before excluding 8 cancellations; all stated spend totals and top-five supplier totals match.
+
+- 05-data-analysis, 5.3.4 and 5.3.5: README says V003 should match the AI and V005 should be higher in Excel because of a duplicate; UI shows the filtered PivotTable excludes Cancelled and includes Open and Received; V003 is RM966,183.56 and V005 is RM360,296.99 versus the cleaned AI total RM335,418.16.
+
+- 05-data-analysis, code-execution check: README says verify whether Copilot Basic runs code on uploaded spreadsheets; UI shows Copilot Basic shows Coding and executing and exposes executed Python using pandas read_excel, drop_duplicates and grouped sums for this workbook.
+
+- 05-data-analysis, Gemini code-display check: README says verify whether Gemini shows its code in October 2026; UI shows this module was captured in Copilot Basic and Excel; Gemini Chat was not opened, so its code display remains unverified.
+
+- 05-data-analysis, 5.4: README says find the May 2026 courier increase and seasonal paper pattern; UI shows Copilot found the split orders and quotation exceptions but omitted the courier increase; its seasonal answer compared aggregated monthly spend with unequal month coverage instead of the expected ream averages.
+
+- 05-data-analysis, 5.5: README says the chart jump should match the month in the pattern finding; UI shows Copilot generated the titled column chart with labelled axes and a May 2026 increase, then incorrectly said that increase had been identified earlier in its analysis.
+
+- 05-data-analysis, 5.4 verification: README says filter the spreadsheet to a listed PO and check one finding; UI shows Excel was filtered to PO-2026-0071; it shows Total RM12,409.20, one quotation, a blank Contract Ref and Farah Nadiah binti Zulkifli as approver, confirming the reported exception.
