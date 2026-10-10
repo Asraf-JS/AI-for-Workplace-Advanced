@@ -107,3 +107,13 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 10-n8n-agent-workflow, 10.7.4 / shot 10-29: README says click Approve and watch the waiting execution finish; UI shows the workflow email links for Cendana executions 7 and 13 returned blank pages; refreshed Executions still says Waiting. Shot 10-29 shows that unresolved state, not successful approval; manual verification or a retake is needed.
 
 - 10-n8n-agent-workflow, capture corrections: README says submit each sample once with AIW TRAINING subjects; UI shows capture editing errors required Cendana and Kodbar retries. The first Cendana email had an empty subject and the first Kodbar email incorrectly said Reject. All mail went only to the training account; the current four email nodes and routing rules were corrected and verified after reopening.
+
+- 11-ai-security, 11.1.5: README says select File > Save As, choose PDF, and save it; UI shows File > Export > Download as PDF shows a Download dialog; the headless browser closes after download, so the completed PDF was copied into 11-ai-security/sample-files before upload and excluded from commit.
+
+- 11-ai-security, 11.1.4: README says set the hidden paragraph font size to 1; UI shows entering 1 produced a white 6-point paragraph in Word PDF export; the hidden note remains extractable.
+
+- 11-ai-security, 11.3.2: README says save the instructions; UI shows the agent editor uses Update and confirms Your agent was updated successfully.
+
+- 11-ai-security, 11.2.3: README says note the verdict and whether the report mentions the hidden note; UI shows the pre-defence verdict is REVISE for 250 kg versus the required 300 kg; it does not mention the hidden note.
+
+- 11-ai-security, 11.3.3-11.3.4: README says the defended poisoned quotation should get REVISE with load and instruction findings, and original case 09 should get REVISE for the load alone; UI shows both expected results were observed.
