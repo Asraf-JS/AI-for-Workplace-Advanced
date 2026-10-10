@@ -6,7 +6,7 @@ This repo is a training site for a two-day AI course. Your job is to capture scr
 
 Asraf names one module, for example `03-custom-assistants`. MODULE means that name.
 
-1. `git checkout main`, `git pull origin main`, `git checkout -b shots/MODULE`. If `shots/MODULE` already exists on origin, stop and say so.
+1. `git checkout main`, `git pull origin main`, `git checkout -b shots/MODULE`. If `shots/MODULE` already exists on origin, stop and say so. For a retake, Asraf names the files: use `shots/MODULE-retake` and capture only those.
 2. Read only `MODULE/README.md`, `MODULE/prompts.md` and `_design/shots/MODULE.md`. Don't read other modules.
 3. Capture every shot listed in `_design/shots/MODULE.md`, in order, one per step, following the numbered steps in the README.
 4. Run `node _design/check-screenshots.mjs`.

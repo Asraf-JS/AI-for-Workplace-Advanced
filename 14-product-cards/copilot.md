@@ -70,6 +70,8 @@ Click **+** in the message box and choose your files.
 4. Add one or two **Suggested prompts**, such as "Check this quotation".
 5. Select **Create**, then test it.
 
+The **Instructions** box shows a counter, up to 8,000 characters. To change the instructions later (Modules 07 and 11), open the agent's editor, select the pencil (**Edit instructions**) next to **Instructions**, make the change and select **Update**.
+
 On **Basic**, agents can use instructions and public websites only, so upload the policy and vendor list in each chat with the agent. On **Premium**, you can also add files or SharePoint as the agent's knowledge.
 
 > **If you don't see this:** your admin may have turned off Agent Builder. Paste the instructions at the start of a normal chat instead.

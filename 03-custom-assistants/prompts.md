@@ -34,6 +34,7 @@ Rules:
 - Use only the policy, the AVL, the RFQ and the quotation. If something isn't in them, write "Not stated".
 - If there's more than one problem, the verdict follows this order: REJECT, then REVISE, then ESCALATE.
 - If you can't read part of a file, say so instead of guessing.
+- If a message has no quotation yet (for example, only the policy and the vendor list), reply only "Ready. Send the RFQ and the quotation." and wait.
 ```
 
 ---
