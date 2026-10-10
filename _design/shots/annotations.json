@@ -341,6 +341,78 @@
      290
     ]
    ]
+  },
+  "04-01-open-notebook-tool-create.png": {
+   "boxes": [
+    [
+     70,
+     14,
+     392,
+     50
+    ],
+    [
+     20,
+     124,
+     206,
+     162
+    ]
+   ]
+  },
+  "04-02-add-procurement-policy-v3.png": {
+   "boxes": [
+    [
+     24,
+     308,
+     392,
+     374
+    ]
+   ]
+  },
+  "04-03-ask.png": {
+   "boxes": [
+    [
+     496,
+     220,
+     1062,
+     268
+    ]
+   ]
+  },
+  "04-04-ask-five-policy-questions.png": {
+   "boxes": [
+    [
+     496,
+     298,
+     1086,
+     410
+    ]
+   ]
+  },
+  "04-05-answer-open-policy-pdf.png": {
+   "boxes": [
+    [
+     18,
+     464,
+     378,
+     632
+    ],
+    [
+     792,
+     842,
+     884,
+     866
+    ]
+   ]
+  },
+  "04-06-ask-something-policy-doesn.png": {
+   "boxes": [
+    [
+     460,
+     272,
+     1072,
+     318
+    ]
+   ]
   }
  }
 }
