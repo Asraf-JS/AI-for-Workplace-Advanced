@@ -57,11 +57,9 @@ Have Excel open too. You'll use it to check one figure.
    This is Sinar Maju Sdn Bhd's purchase order export, January 2025 to September 2026. Read both sheets. Tell me how many rows and columns there are, the date range, and what each column means. Don't analyse anything yet.
    ```
 
-   <!-- Screenshot still to capture: 05-02-send.png. Remove this comment wrapper when the image is added.
-   ![Step 5.1.2: Send](./images/05-02-send.png)
+   ![Copilot's Workbook structure table, with the rows Data columns 18 columns and Purchase Order records 462 rows highlighted](./images/05-02-send.png)
 
-   *Caption to write after capture.*
-   -->
+   *Compare these with Excel. Here Copilot says 18 columns and 462 rows: both wrong.*
 
 3. Check the row count against Excel: select the PO No. column and read **Count** at the bottom of the window. It includes the header row, so subtract one.
 
@@ -169,11 +167,9 @@ Look for anything the Finance Director should know about. In particular:
 For each finding, list the PO numbers and the figures.
 ```
 
-<!-- Screenshot still to capture: 05-08-look-patterns.png. Remove this comment wrapper when the image is added.
-![Section 5.4: Look for Patterns](./images/05-08-look-patterns.png)
+![Coding and executing highlighted above Copilot's findings, with the findings blurred](./images/05-08-look-patterns.png)
 
-*Caption to write after capture.*
--->
+***Coding and executing** means Copilot ran code. Open it to see the Python.*
 
 Check at least one finding yourself: filter the spreadsheet to the PO numbers the AI lists.
 
@@ -200,11 +196,9 @@ In the same chat, send:
 Make a column chart of monthly spend with Kilat Merbok Express (V014), January 2025 to September 2026. Title it with what the chart shows, and label the axes.
 ```
 
-<!-- Screenshot still to capture: 05-09-make-chart.png. Remove this comment wrapper when the image is added.
-![Section 5.5: Make One Chart](./images/05-09-make-chart.png)
+![Copilot's column chart of monthly spend with Kilat Merbok Express, January 2025 to September 2026, with Coding and executing and the Chart label highlighted](./images/05-09-make-chart.png)
 
-*Caption to write after capture.*
--->
+*The chart, with a title and labelled axes. Check the month of the jump against your 5.4 finding.*
 
 Check that the chart's jump matches the month in your finding. If your 5.4 answer missed the jump, the chart is where you spot it: don't accept the AI saying it found it earlier. Download the chart or take a screenshot for your notes.
 
