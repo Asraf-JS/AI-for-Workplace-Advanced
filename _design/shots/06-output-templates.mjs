@@ -17,7 +17,34 @@ async function openFile(name,key){
 async function renameChat(key,title){if(await page.getByRole('button',{name:'Close preview',exact:true}).isVisible())await page.getByRole('button',{name:'Close preview',exact:true}).click();if(await page.getByRole('button',{name:'Expand sidebar',exact:true}).isVisible())await page.getByRole('button',{name:'Expand sidebar',exact:true}).click();await stable(page);remember(key,page.url());const id=page.url().match(/conversation\/([^/?]+)/)?.[1];const row=page.locator(`.fai-CopilotNavSubItem[href*="${id}"]`).locator('..');await row.hover();await row.getByRole('button',{name:'More',exact:true}).click();await page.getByRole('menuitem',{name:'Rename',exact:true}).click();await page.getByRole('textbox',{name:'Chat name',exact:true}).fill(title);await page.getByRole('button',{name:'Save',exact:true}).click();}
 async function answer(){await stable(page);await page.locator('.fai-CopilotMessage').last().evaluate(e=>{for(let p=e.parentElement;p;p=p.parentElement)if(/auto|scroll/.test(getComputedStyle(p).overflowY)&&p.scrollHeight>p.clientHeight){p.scrollTop=p.scrollHeight;break;}});await stable(page);await page.locator('.fai-CopilotMessage').last().evaluate(e=>{for(let p=e.parentElement;p;p=p.parentElement)if(/auto|scroll/.test(getComputedStyle(p).overflowY)&&p.scrollHeight>p.clientHeight){p.scrollTop+=e.getBoundingClientRect().top-140;break;}});await stable(page);}
 try{
- if(step==='setup'){
+ if(step==='retake'){
+  for(const [type,title,file,expected] of [
+   ['good','AIW 06 - good approval deck','06-12-send.png','RFQ-2026-118_Approval_Deck.pptx'],
+   ['bad','AIW 06 - bad approval deck','06-14-start-new-chat-upload.png','Approval_Deck_120_Chairs.pptx']
+  ]){
+   if(!state['06-chat-'+type])throw Error('Existing chat URL missing');
+   if(page.url()!==state['06-chat-'+type]){await newChat(page,'06-chat-'+type);await page.waitForTimeout(8000);}
+   await page.emulateMedia({colorScheme:'dark'});await page.emulateMedia({colorScheme:'light'});await page.waitForTimeout(1500);
+   if(await page.getByRole('button',{name:'Close preview',exact:true}).isVisible())await page.getByRole('button',{name:'Close preview',exact:true}).click();
+   if(await page.getByRole('button',{name:'Expand sidebar',exact:true}).isVisible())await page.getByRole('button',{name:'Expand sidebar',exact:true}).click();
+   await page.getByText('M365 Copilot (Basic)',{exact:true}).waitFor();
+   await page.locator('.fai-CopilotNavSubItem').filter({hasText:state['06-chat-good']===state['06-chat-bad']?'AIW 06 - bad approval deck':title}).waitFor();
+   await page.getByRole('button',{name:/^Stop/i}).waitFor({state:'hidden'});
+   const card=page.locator('.fai-CopilotMessage').filter({hasText:expected}).first();
+   await card.getByRole('button',{name:'Copy Response',exact:true}).waitFor({state:'attached'});
+   await card.scrollIntoViewIfNeeded();await stable(page);
+   for(let i=0;i<5;i++){await card.evaluate(e=>{for(let p=e.parentElement;p;p=p.parentElement)if(/auto|scroll/.test(getComputedStyle(p).overflowY)&&p.scrollHeight>p.clientHeight){p.scrollTop+=e.getBoundingClientRect().top-140;break;}});await stable(page);const b=await card.boundingBox();if(b&&b.y>=100&&b.y<=200)break;}
+   if(!(await card.innerText()).includes(expected))throw Error('Wrong saved answer');
+   const box=await card.boundingBox();console.log('ANSWER_POSITION',type,box?.y);if(!box||box.y<80||box.y>300)throw Error('Answer start outside capture position');
+   console.log('LIGHT_SURFACES',type,await card.evaluate(e=>{const result=[];for(let p=e;p;p=p.parentElement){const color=getComputedStyle(p).backgroundColor;if(color!=='rgba(0, 0, 0, 0)')result.push(color);}return result;}));
+   if(!await card.evaluate(e=>{for(let p=e;p;p=p.parentElement){const c=getComputedStyle(p).backgroundColor;if(c!=='rgba(0, 0, 0, 0)')return c==='rgb(255, 255, 255)';}return false;}))throw Error('Answer surface is not light');
+   await shot(page,file);
+  }
+  note(module,'06-12 and 06-14 retake','capture the completed deck answers','the same good-template and bad-template answers were captured in light mode without resending prompts');
+  if(state['06-chat-good']===state['06-chat-bad'])note(module,'original chat setup','start separate chats for the memo, good deck and bad deck','the original capture run mistakenly kept all three exchanges in one conversation, now named AIW 06 - bad approval deck; both existing deck answers were located by their generated filenames for this retake');
+  note(module,'retake checks: accessibility','verify the PowerPoint for Windows accessibility command and bad-deck title warnings','this retake opens only existing Copilot answers; the Windows accessibility check remains unverified');
+  note(module,'retake checks: returned layouts','verify template layout retention in ChatGPT, Claude and Gemini','this retake opens only existing Copilot answers; other tools remain untested');
+ }else if(step==='setup'){
   const {page:drive,browser:b}=await openSite(process.env.CAPTURE_ONEDRIVE_URL,new URL(process.env.CAPTURE_ONEDRIVE_URL).host);
   if(!decodeURIComponent(drive.url()).includes('/AIW Training')){
    await drive.getByRole('link',{name:'My files',exact:true}).first().click();await stable(drive);

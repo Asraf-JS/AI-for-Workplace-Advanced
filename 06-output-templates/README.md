@@ -153,11 +153,9 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
    Remove the template's example slides. Give me the finished deck as a PowerPoint file.
    ```
 
-   <!-- Screenshot still to capture: 06-12-send.png. Remove this comment wrapper when the image is added.
-   ![Step 6.4.2: Send](./images/06-12-send.png)
+   ![Copilot's file card RFQ-2026-118_Approval_Deck.pptx, previewing a title slide in the Sinar Maju template, with the file name and open button highlighted](./images/06-12-send.png)
 
-   *Caption to write after capture.*
-   -->
+   *The deck from the good template: the title sits where the template puts it.*
 
 3. Download it and open it in PowerPoint. Check each slide's layout (**Home** > **Layout**), the figures, and that nothing spills off a slide.
 
@@ -171,11 +169,9 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
 
 1. Start a new chat, upload `sinar-maju-deck-bad.pptx`, and send the same prompt as in 6.4 (it still names the layouts, which this file doesn't have).
 
-   <!-- Screenshot still to capture: 06-14-start-new-chat-upload.png. Remove this comment wrapper when the image is added.
-   ![Step 6.5.1: Start a new chat, upload sinar-maju-deck-bad.pptx, and send the same prompt as in 6.4 (it still names the layouts, which this file doesn't have)](./images/06-14-start-new-chat-upload.png)
+   ![Copilot's file card Approval_Deck_120_Chairs.pptx, previewing a title slide where the new title is squeezed into a narrow column over the old Presentation title text, highlighted](./images/06-14-start-new-chat-upload.png)
 
-   *Caption to write after capture.*
-   -->
+   *The same prompt with the bad template: the new title is crushed into a corner and the old example text is still there.*
 2. Open the result next to the deck from 6.4. Compare the titles, fonts, positions and the table.
 
 <details markdown="1">

@@ -21,9 +21,9 @@ Capture each shot right after its step: for a step that sends a prompt, when the
 | `06-09-copy-prompt-below-replace.png` | 6.3 Fill the Memo | Copilot's answer with the file card Approval_Memo_RFQ-2026-118.docx and its open button highlighted, previewing the filled memo |  |
 | `06-10-download-file-open-word.png` | 6.3 Fill the Memo | The filled memo in Word for the web, with the six headings in the Navigation pane and the filled To and From rows highlighted |  |
 | `06-11-start-new-chat-upload.png` | 6.4 Make the Deck from the Good Template | sinar-maju-deck.pptx attached in a new Copilot chat |  |
-| `06-12-send.png` | 6.4 Make the Deck from the Good Template | Step 6.4.2: Send |  |
+| `06-12-send.png` | 6.4 Make the Deck from the Good Template | Copilot's file card RFQ-2026-118_Approval_Deck.pptx, previewing a title slide in the Sinar Maju template, with the file name and open button highlighted |  |
 | `06-13-download-open-powerpoint-check.png` | 6.4 Make the Deck from the Good Template | The returned deck in PowerPoint for the web, with the Layout gallery open on SM Title and the four slide thumbnails highlighted |  |
-| `06-14-start-new-chat-upload.png` | 6.5 Do It Again with the Bad Template | Step 6.5.1: Start a new chat, upload sinar-maju-deck-bad.pptx, and send the same prompt as in 6.4 (it still names the layouts, which this file doesn't have) |  |
+| `06-14-start-new-chat-upload.png` | 6.5 Do It Again with the Bad Template | Copilot's file card Approval_Deck_120_Chairs.pptx, previewing a title slide where the new title is squeezed into a narrow column over the old Presentation title text, highlighted |  |
 
 ## Check while you're there
 
