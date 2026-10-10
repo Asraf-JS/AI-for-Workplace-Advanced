@@ -44,11 +44,9 @@ No files to download. Open your AI tool, and the [product card](../14-product-ca
 
 1. Start a new chat in your AI tool.
 
-   <!-- Screenshot still to capture: 08-01-start-new-chat-ai.png. Remove this comment wrapper when the image is added.
-   ![Step 8.1.1: Start a new chat in your AI tool](./images/08-01-start-new-chat-ai.png)
+   ![A new chat in the Microsoft 365 Copilot app, with New chat highlighted](./images/08-01-start-new-chat-ai.png)
 
-   *Caption to write after capture.*
-   -->
+   *A new chat for the systems map.*
 2. Send:
 
    ```
@@ -64,11 +62,9 @@ No files to download. Open your AI tool, and the [product card](../14-product-ca
    Turn this into a Markdown table with one row per step and these columns: Step, Who does it today, System, Data used.
    ```
 
-   <!-- Screenshot still to capture: 08-02-send.png. Remove this comment wrapper when the image is added.
-   ![Step 8.1.2: Send](./images/08-02-send.png)
+   ![Copilot's table of the seven process steps, with the headings Step, Who does it today, System and Data used highlighted](./images/08-02-send.png)
 
-   *Caption to write after capture.*
-   -->
+   *Step 8.1's table: one row per step of today's process.*
 
 3. Check the table against the seven steps. Fix anything the AI added or changed.
 
@@ -82,11 +78,9 @@ In the same chat, send:
 Add four columns to the table: Could an agent do this? (Yes, Partly or No), Read or write?, What could go wrong if the agent got it wrong?, Must a person approve first? (Yes or No). For any step that sends something outside the company, or commits money, the answer to the last column must be Yes.
 ```
 
-<!-- Screenshot still to capture: 08-03-mark-read-write-approval.png. Remove this comment wrapper when the image is added.
-![Section 8.2: Mark Read, Write and Approval](./images/08-03-mark-read-write-approval.png)
+![The four added columns, scrolled into view, with Must a person approve first? and a Yes for the supplier email highlighted](./images/08-03-mark-read-write-approval.png)
 
-*Caption to write after capture.*
--->
+*The table scrolls sideways. Check the approval column row by row.*
 
 Now go through the table yourself and change anything you disagree with. This is where your judgement matters more than the AI's.
 
@@ -96,22 +90,18 @@ Now go through the table yourself and change anything you disagree with. This is
 
 1. Open your AI tool's connector list (see the [product card](../14-product-cards/)) and look at what it can connect to today.
 
-   <!-- Screenshot still to capture: 08-04-open-ai-tool-s.png. Remove this comment wrapper when the image is added.
-   ![Step 8.3.1: Open your AI tool's connector list (see the product card) and look at what it can connect to today](./images/08-04-open-ai-tool-s.png)
+   ![The Knowledge section of a Copilot agent, with Add knowledge and the Enter a link box highlighted](./images/08-04-open-ai-tool-s.png)
 
-   *Caption to write after capture.*
-   -->
+   *On Copilot Basic, an agent's knowledge is a web link. There are no connectors to work systems.*
 2. In the same chat, send:
 
    ```
    Add a last column, Connector needed. For each step, name the kind of connector the agent would need (for example "mailbox: read", "shared drive: write", "procurement system: read via MCP server"). Then list, under the table, every connector the agent would need, and whether it needs read access, write access or both.
    ```
 
-   <!-- Screenshot still to capture: 08-05-same-chat-send.png. Remove this comment wrapper when the image is added.
-   ![Step 8.3.2: In the same chat, send](./images/08-05-same-chat-send.png)
+   ![The added Connector needed column highlighted, listing Mailbox read, Shared drive write and Procurement system read via MCP server](./images/08-05-same-chat-send.png)
 
-   *Caption to write after capture.*
-   -->
+   *Each step's connector, with read or write.*
 
 3. Compare the list with what your tool actually offers. Which connectors exist? Which would IT have to build, for example as an MCP server for the procurement system?
 
@@ -130,6 +120,8 @@ Your map will differ in the details. A sound one looks something like this:
 | 6. Approval memo | Partly: drafts the memo | Write (internal) | **Yes**: this *is* the approval | Mailbox or approval system |
 | 7. Purchase order | Partly: drafts the PO | Write (external, commits money) | **Yes** | Procurement system: write, mailbox: send |
 
+Two slips to fix if your table has them, both seen in a test run: reading step 1 from the supplier's side ("Write", agent "No") when the agent's job is to read the mailbox, and marking step 6 "No" because the approval happens in that step. The approval memo is exactly where a person must say yes.
+
 The pattern to look for: the agent reads freely, drafts anything, and stops for a person before anything leaves the company or commits money. That's the workflow you build in Module 10.
 
 </details>
@@ -146,7 +138,7 @@ With the person next to you, agree on the **one** connector in your map that wou
 
 | Copilot Chat (Basic) | M365 Copilot (Premium) | ChatGPT | Claude | Gemini |
 |---|---|---|---|---|
-| Basic agents reach public websites only. Connectors to work systems need the paid license and your admin | **Copilot connectors** and agents built in **Copilot Studio**, which can use MCP servers. Your IT admin sets them up | **Settings** > **Apps**. Your own MCP servers need developer mode (full access on Business, Enterprise and Edu) | **Customize** > **Connectors**: a reviewed directory, plus custom connectors to MCP servers (one on Free) | Connected apps such as Gmail and Drive. On Workspace, your admin decides |
+| Basic agents reach public websites only: in the agent editor, **Knowledge** > **Add knowledge** offers a web link. Connectors to work systems need the paid license and your admin | **Copilot connectors** and agents built in **Copilot Studio**, which can use MCP servers. Your IT admin sets them up | **Settings** > **Apps**. Your own MCP servers need developer mode (full access on Business, Enterprise and Edu) | **Customize** > **Connectors**: a reviewed directory, plus custom connectors to MCP servers (one on Free) | Connected apps such as Gmail and Drive. On Workspace, your admin decides |
 
 ---
 
