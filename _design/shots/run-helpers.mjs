@@ -34,6 +34,7 @@ export async function attach() {
   const page = context.pages().find(p => p.url().includes("m365.cloud.microsoft/chat")) || await context.newPage();
   page.on("dialog", d => d.accept());
   await page.setViewportSize({ width: 1600, height: 900 });
+  await page.emulateMedia({ colorScheme: "light" });
   if (!page.url().includes("m365.cloud.microsoft/chat")) await page.goto(COPILOT, { waitUntil: "domcontentloaded", timeout: 60000 });
   await page.waitForTimeout(2000);
   const acct = process.env.CAPTURE_ACCOUNT || "(no CAPTURE_ACCOUNT set)";
@@ -50,6 +51,7 @@ export async function openSite(url, match = url) {
   const page = context.pages().find(p => p.url().includes(match)) || await context.newPage();
   page.on("dialog", d => d.accept());
   await page.setViewportSize({ width: 1600, height: 900 });
+  await page.emulateMedia({ colorScheme: "light" });
   if (!page.url().includes(match)) await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
   await page.waitForTimeout(2500);
   if (/accounts\.google\.com|login\.microsoftonline\.com|\/signin/.test(page.url())) throw Error("SIGN_IN_NEEDED: " + url);

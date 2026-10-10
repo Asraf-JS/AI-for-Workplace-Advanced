@@ -91,7 +91,7 @@ On **Premium**, **Researcher** can also search your organisation's files and the
 
 ## Analyse a Spreadsheet (Module 05)
 
-- **Basic:** upload `purchase-history.xlsx` in a chat and ask your question. Ask Copilot to show its calculation, and check one figure yourself in Excel.
+- **Basic:** upload `purchase-history.xlsx` in a chat and ask your question. Copilot runs Python on the file: **Coding and executing** shows above the answer, and you can open it to see the code. Still check one figure yourself in Excel.
 - **Premium:** use **Analyst**, which runs code on your data, or open the file in Excel and use Copilot there.
 
 > **If you don't see this:** Analyst and Researcher may appear in the left pane on a Basic account, but they need the paid license.

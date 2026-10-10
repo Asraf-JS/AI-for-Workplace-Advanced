@@ -102,13 +102,12 @@ Gems on Workspace business accounts end in March 2027 and move to skills automat
 **Gemini Notebook** (formerly NotebookLM) answers only from the sources you add, and each citation shows the exact quote it used.
 
 1. Go to [notebooklm.google](https://notebooklm.google) and sign in.
-2. Create a new notebook.
-3. Add `procurement-policy-v3.0.pdf` and `approved-vendor-list.pdf` as sources.
-4. Ask your question, then click a citation number to see the quote in the source.
+2. Select **Create notebook**, and rename it from **Untitled notebook**.
+3. Select **Add sources** and add `procurement-policy-v3.0.pdf` and `approved-vendor-list.pdf` as sources.
+4. Ask your question, then click a citation number to see the quote. **View source** opens the passage in the source.
 
 Free accounts can add up to 50 sources to a notebook, and usage limits reset every five hours.
 
-<!-- VERIFY: the web address and the button names for a new notebook and adding sources after the rename. -->
 
 ---
 

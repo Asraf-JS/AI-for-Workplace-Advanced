@@ -40,7 +40,7 @@ The shot list says which site. In short: the Copilot app for chat steps, Gemini 
 - One screenshot per listed step, taken right after that step. For a step that sends a prompt, wait until the answer is complete and scroll so the start of the answer shows.
 - Send prompts exactly as written in `MODULE/prompts.md`. The only change allowed is replacing `[your name]` with `Daniel Wong Kah Leong`. Don't change a prompt to make the answer fit.
 - Each image line in the README sits inside a `<!-- Screenshot still to capture ... -->` comment. Capture it and leave the comment for Claude to remove.
-- Close pop-ups that aren't part of the step before capturing: feedback surveys, "What's new" boxes, tips and banners. Move the mouse pointer off the page.
+- Close pop-ups that aren't part of the step before capturing: feedback surveys, "What's new" boxes, tips and banners. Move the mouse pointer off the page. Capture in light mode: if a page shows dark, call `page.emulateMedia({ colorScheme: "light" })`.
 - If a file, chat or notebook from another course shows (Teratai Holdings, Pinnacle Komputer and so on), stop and ask before capturing.
 - Wait for animations to finish, answers to complete (Stop button gone) and menus to open fully.
 - Skip a shot headless Playwright can't show (a desktop app, a download dialog) and add a `NOTES.md` line saying it needs a manual capture.
