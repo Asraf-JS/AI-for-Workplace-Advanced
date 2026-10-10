@@ -4,7 +4,7 @@
 
 **Set up first:** All six files from `03-custom-assistants/sample-files`.
 
-**During capture:** Create the agent `Quotation Checker` once and keep it: Modules 07 and 11 reuse it. Copilot Basic agents can't hold files, so upload the policy and the vendor list first in every chat with the agent.
+**During capture:** Create a new agent with Agents > New agent > Skip, named `Quotation Checker`, and keep it: Modules 07 and 11 reuse it. If an agent named `Quotation Checker` already exists before 3.1, stop and ask. Copilot Basic agents can't hold files, so upload the policy and the vendor list first in every chat with the agent and wait for Ready. For 03-07, scroll to the Arithmetic row of the report; for 03-12, scroll to what must happen before a purchase order.
 
 Capture each shot right after its step: for a step that sends a prompt, when the answer is complete, scrolled so the start of the answer shows.
 
@@ -18,11 +18,11 @@ Capture each shot right after its step: for a step that sends a prompt, when the
 | `03-06-upload-rfq-2026-118.png` | 3.3 Check One Quotation at a Time | Step 3.3.2: Upload rfq-2026-118.pdf and quotation-duduk-selesa.pdf, then send | Yes |
 | `03-07-read-report-arithmetic-row.png` | 3.3 Check One Quotation at a Time | Step 3.3.3: Read the report. For the arithmetic row, check one line yourself with a calculator | Yes |
 | `03-08-repeat-steps-1-3.png` | 3.3 Check One Quotation at a Time | Step 3.3.4: Repeat steps 1 to 3 for quotation-kerusi-nadira.pdf and quotation-ergoluma.pdf, each in a new chat with the assistant | Yes |
-| `03-09-start-new-chat-assistant.png` | 3.4 Compare the Three | Step 3.4.1: Start a new chat with the assistant, and upload the RFQ and all three quotations (with Copilot, send the RFQ first, then the three quotations in a s... | Yes |
+| `03-09-start-new-chat-assistant.png` | 3.4 Compare the Three | Step 3.4.1: Start a new chat with the assistant, and upload the RFQ and all three quotations | Yes |
 | `03-10-send.png` | 3.4 Compare the Three | Step 3.4.2: Send | Yes |
 | `03-11-same-chat-send.png` | 3.5 Recommend a Supplier | Step 3.5.1: In the same chat, send | Yes |
 | `03-12-before-accept-recommendation-check.png` | 3.5 Recommend a Supplier | Step 3.5.2: Before you accept the recommendation, check two things yourself: the arithmetic you found in 3.3, and the warranty and payment terms against the RFQ... | Yes |
 
 ## Check while you're there
 
-- the instruction length limit in Copilot Agent Builder, Claude and ChatGPT Projects, and Gemini skills, October 2026.
+- the instruction length limit in Claude and ChatGPT Projects, and Gemini skills, October 2026. Copilot Agent Builder shows 8,000, confirmed in the Module 03 capture.

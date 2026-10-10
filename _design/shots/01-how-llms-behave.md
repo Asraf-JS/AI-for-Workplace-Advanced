@@ -10,16 +10,16 @@ Capture each shot right after its step: for a step that sends a prompt, when the
 
 | File | Section | Step | Blur after capture? |
 |---|---|---|---|
-| `01-01-open-ai-tool-start.png` | 1.1 Ask the Same Question Twice | Step 1.1.1: Open your AI tool and start a new chat |  |
-| `01-02-send-prompt.png` | 1.1 Ask the Same Question Twice | Step 1.1.2: Send this prompt |  |
-| `01-03-start-another-new-chat.png` | 1.1 Ask the Same Question Twice | Step 1.1.3: Start another new chat and send exactly the same prompt |  |
-| `01-04-start-new-chat-choose.png` | 1.2 Check the Quotation with a Fast Model | Step 1.2.1: Start a new chat and choose a fast model (the product cards show where) |  |
-| `01-05-upload-rfq-2026-118.png` | 1.2 Check the Quotation with a Fast Model | Step 1.2.2: Upload rfq-2026-118.pdf and quotation-duduk-selesa.pdf |  |
-| `01-06-send-prompt.png` | 1.2 Check the Quotation with a Fast Model | Step 1.2.3: Send this prompt |  |
-| `01-07-start-new-chat-switch.png` | 1.3 Check It Again with a Reasoning Model | Step 1.3.1: Start a new chat and switch to a reasoning (thinking) model | Yes |
-| `01-08-upload-same-two-files.png` | 1.3 Check It Again with a Reasoning Model | Step 1.3.2: Upload the same two files | Yes |
-| `01-09-send-same-prompt-1.png` | 1.3 Check It Again with a Reasoning Model | Step 1.3.3: Send the same prompt as in 1.2, then send this one | Yes |
+| `01-01-open-ai-tool-start.png` | 1.1 Ask the Same Question Twice | A new chat in the Microsoft 365 Copilot app, with New chat highlighted in the left pane |  |
+| `01-02-send-prompt.png` | 1.1 Ask the Same Question Twice | Copilot's answer to the prompt: a single email subject line |  |
+| `01-03-start-another-new-chat.png` | 1.1 Ask the Same Question Twice | The same prompt in a second chat, with a differently worded subject line highlighted |  |
+| `01-04-start-new-chat-choose.png` | 1.2 Check the Quotation with a Fast Model | A new Copilot chat with Quick response chosen in the model menu at the top |  |
+| `01-05-upload-rfq-2026-118.png` | 1.2 Check the Quotation with a Fast Model | The plus menu open with Upload images and files highlighted, and the two PDFs attached in the message box |  |
+| `01-06-send-prompt.png` | 1.2 Check the Quotation with a Fast Model | The fast model's five-bullet summary of the Duduk Selesa quotation, with the grand total line highlighted |  |
+| `01-07-start-new-chat-switch.png` | 1.3 Check It Again with a Reasoning Model | A new Copilot chat with Think deeper chosen in the model menu | Yes |
+| `01-08-upload-same-two-files.png` | 1.3 Check It Again with a Reasoning Model | The same two PDFs attached in the message box of the Think deeper chat | Yes |
+| `01-09-send-same-prompt-1.png` | 1.3 Check It Again with a Reasoning Model | The reasoning model's Arithmetic Check heading, with the table and conclusion below it blurred | Yes |
 
 ## Check while you're there
 
-- model menu option names in each tool, October 2026 (see the VERIFY notes in the product cards).
+- model menu option names in ChatGPT, Claude and Gemini, October 2026 (see the VERIFY notes in the product cards). Copilot confirmed in the Module 01 capture.

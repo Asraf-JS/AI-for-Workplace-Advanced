@@ -99,6 +99,7 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
    - Use only the policy, the AVL, the RFQ and the quotation. If something isn't in them, write "Not stated".
    - If there's more than one problem, the verdict follows this order: REJECT, then REVISE, then ESCALATE.
    - If you can't read part of a file, say so instead of guessing.
+   - If a message has no quotation yet (for example, only the policy and the vendor list), reply only "Ready. Send the RFQ and the quotation." and wait.
    ```
 
    <!-- Screenshot still to capture: 03-03-paste-these-instructions-into.png. Remove this comment wrapper when the image is added.
@@ -115,9 +116,9 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
    *Caption to write after capture.*
    -->
 
-> **Note:** Copilot agents allow a limited number of characters in the instructions. If yours is cut off, remove the "Reply in this format" examples last, not the checks.
+> **Note:** these instructions are about 2,000 characters. Copilot agents take up to 8,000, with a counter under the box. If your tool cuts them off, remove the "Reply in this format" examples last, not the checks.
 
-<!-- VERIFY: the instruction length limit in Copilot Agent Builder, Claude and ChatGPT Projects, and Gemini skills, October 2026. -->
+<!-- VERIFY: the instruction length limit in Claude and ChatGPT Projects, and Gemini skills, October 2026. Copilot Agent Builder shows 8,000, confirmed in the Module 03 capture. -->
 
 ---
 
@@ -130,7 +131,7 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
 
 ## 3.3 Check One Quotation at a Time
 
-1. Start a new chat with your Quotation Checker. If your assistant has no files, upload the policy and the vendor list first.
+1. Start a new chat with your Quotation Checker. If your assistant has no files, upload the policy and the vendor list first. It should reply "Ready" and wait for the quotation.
 
    <!-- Screenshot still to capture: 03-05-start-new-chat-quotation.png. Remove this comment wrapper when the image is added.
    ![Step 3.3.1: Start a new chat with your Quotation Checker. If your assistant has no files, upload the policy and the vendor list first](./images/03-05-start-new-chat-quotation.png)
@@ -171,10 +172,10 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
 
 ## 3.4 Compare the Three
 
-1. Start a new chat with the assistant, and upload the RFQ and all three quotations (with Copilot, send the RFQ first, then the three quotations in a second message).
+1. Start a new chat with the assistant, and upload the RFQ and all three quotations. With Copilot, send the policy, the vendor list and the RFQ first, then the three quotations in a second message with the prompt below.
 
    <!-- Screenshot still to capture: 03-09-start-new-chat-assistant.png. Remove this comment wrapper when the image is added.
-   ![Step 3.4.1: Start a new chat with the assistant, and upload the RFQ and all three quotations (with Copilot, send the RFQ first, then the three quotations in a s...](./images/03-09-start-new-chat-assistant.png)
+   ![Step 3.4.1: Start a new chat with the assistant, and upload the RFQ and all three quotations](./images/03-09-start-new-chat-assistant.png)
 
    *Caption to write after capture.*
    -->
@@ -246,9 +247,13 @@ Duduk Selesa's total must show **RM46,548.00**, the printed figure. If your Chec
 | Kerusi Nadira | Warranty is 3 years on the frame and 1 year on the mechanism and gas lift; the RFQ asks for 5 years on all three | 4.3 | Non-compliant. Ask for a revised quotation or exclude it |
 | Ergoluma | 50% deposit; the limit is 30% | 6.2 | Needs the Finance Director's written approval, or ask for standard terms |
 
+Under your instructions, Ergoluma's verdict is **ESCALATE**: its only problem is the deposit, and ESCALATE is the verdict for anything that needs the Finance Director. If your Checker says REVISE, it has picked the other way forward (asking for standard terms) instead of following its own verdict list. Note it: you'll test the verdicts properly in Module 07.
+
 Recommended: **Duduk Selesa**, once it sends a revised quotation at RM47,628.00. That falls in the RM5,000 to RM50,000 band (3.1): three quotations and a comparison, approved by the HOD and the Head of Procurement.
 
 Kerusi Nadira is cheapest, which is why a Checker that ranks on price alone gets this wrong.
+
+Watch for one more slip: a Checker can find the arithmetic error in 3.3, then still list RM46,548.00 as the correct total in its recommendation. That's why step 2 asks you to check the arithmetic yourself.
 
 </details>
 
