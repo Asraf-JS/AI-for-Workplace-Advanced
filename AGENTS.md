@@ -25,6 +25,7 @@ Asraf names one module, for example `03-custom-assistants`. MODULE means that na
 - Start the browser with `node _design/shots/browser-session.mjs` in its own terminal: headless Edge, persistent profile `./.capture-profile`, viewport 1600x900, deviceScaleFactor 1. Never open two browsers on the same profile.
 - Accounts come from `$env:CAPTURE_ACCOUNT` (Microsoft 365), `$env:CAPTURE_GOOGLE_ACCOUNT` and `$env:CAPTURE_N8N_ACCOUNT`. Never write an email address into a committed file.
 - If a site needs sign-in (`openSite` throws `SIGN_IN_NEEDED`), stop the headless browser, run `node _design/shots/browser-session.mjs --headed`, and wait up to 5 minutes for Asraf to sign in. Never type a password.
+- Google won't sign in to the capture profile, so Gemini Notebook runs in Asraf's regular Edge. There, ask Asraf to upload files (say which ones) and wait for "uploaded".
 - `capture()` masks avatars, the account names and any Copilot chat not named `AIW ...`. Mask anything else personal too.
 
 ## Where each module is captured
@@ -39,7 +40,8 @@ The shot list says which site. In short: the Copilot app for chat steps, Gemini 
 - One screenshot per listed step, taken right after that step. For a step that sends a prompt, wait until the answer is complete and scroll so the start of the answer shows.
 - Send prompts exactly as written in `MODULE/prompts.md`. The only change allowed is replacing `[your name]` with `Daniel Wong Kah Leong`. Don't change a prompt to make the answer fit.
 - Each image line in the README sits inside a `<!-- Screenshot still to capture ... -->` comment. Capture it and leave the comment for Claude to remove.
-- Close pop-ups that aren't part of the step before capturing: feedback surveys, "What's new" boxes, tips and banners.
+- Close pop-ups that aren't part of the step before capturing: feedback surveys, "What's new" boxes, tips and banners. Move the mouse pointer off the page.
+- If a file, chat or notebook from another course shows (Teratai Holdings, Pinnacle Komputer and so on), stop and ask before capturing.
 - Wait for animations to finish, answers to complete (Stop button gone) and menus to open fully.
 - Skip a shot headless Playwright can't show (a desktop app, a download dialog) and add a `NOTES.md` line saying it needs a manual capture.
 - Copilot takes at most three files per message. Send the policy first, then the rest.

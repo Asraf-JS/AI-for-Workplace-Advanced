@@ -4,7 +4,7 @@
 
 **Set up first:** `procurement-policy-v3.0.pdf` and `approved-vendor-list.pdf` from `04-grounded-research/sample-files`.
 
-**During capture:** Create the notebook `Sinar Maju procurement policy` once. Send the five questions in 4.2 one after another in the same notebook; capture the answers to the first question for the 4.2 shot.
+**During capture:** Create the notebook `Sinar Maju procurement policy` once, with only the two PDFs as sources: if any other source shows, stop and ask. Send the five questions in 4.2 one after another in the same notebook; capture the answers to the first question for the 4.2 shot.
 
 Capture each shot right after its step: for a step that sends a prompt, when the answer is complete, scrolled so the start of the answer shows.
 
