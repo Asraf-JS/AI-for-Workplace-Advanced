@@ -160,6 +160,8 @@ A good answer says the sources don't cover buying from overseas suppliers, and m
 
 If the tool gives you rules about overseas suppliers, it's answering from general knowledge, not your sources. Ask: `Quote the clause that says that.` It won't be able to.
 
+Watch for a subtler version too. A tool can say the sources don't cover it, then add related rules that are in the sources (such as Clause 5.1 on the vendor list) and a conclusion of its own, such as "all the listed vendors are Malaysian". The rules are fine; the conclusion isn't written anywhere. Ask which sentence says it.
+
 </details>
 
 ---
