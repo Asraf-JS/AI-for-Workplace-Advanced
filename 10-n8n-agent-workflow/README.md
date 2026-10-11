@@ -249,8 +249,6 @@ You need:
 
    *An approval run shows **Waiting** until someone answers the email. Click **Approve** in the email: a page says "Got it, thanks", and the run changes to Succeeded.*
 
-<!-- VERIFY: clicking Approve by hand (execution 13) opened a page saying "Got it, thanks"; the blank pages in the capture run came from the headless browser. Still to confirm: the execution then shows Succeeded under Executions. -->
-
 <details markdown="1">
 <summary>Show the answers</summary>
 

@@ -73,7 +73,7 @@ You need desktop Word and PowerPoint, and the results from Module 03. If you don
 
 > **Note:** do 6.1 in desktop PowerPoint. PowerPoint for the web has no Outline View, and in our test its accessibility check didn't report the bad deck's missing slide titles. On the web, **Home** > **Layout** (step 1) still shows the difference.
 
-<!-- VERIFY: the Check Accessibility command location in current PowerPoint for Windows, and that it reports missing slide titles for the bad deck. The web version (Accessibility tab) reported none in the Module 06 capture. -->
+In desktop PowerPoint, the bad deck's check lists **Missing slide title** for all 8 slides, plus missing alt text for its drawn shapes. The titles are the point here: a slide without one has no name in the outline, the navigation pane or a screen reader.
 
 ---
 
