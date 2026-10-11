@@ -247,9 +247,9 @@ You need:
 
    ![An execution marked Waiting in the Executions list, ID 13](./images/10-29-approval-emails-click-approve.png)
 
-   *An approval run shows **Waiting** until someone answers the email. Click **Approve** in the email and it changes to Succeeded.*
+   *An approval run shows **Waiting** until someone answers the email. Click **Approve** in the email: a page says "Got it, thanks", and the run changes to Succeeded.*
 
-<!-- VERIFY: in the capture run, the Approve links in the Cendana emails (executions 7 and 13) opened blank pages and the executions stayed Waiting. Click Approve by hand on a trial and check the execution finishes as Succeeded, and what the page after clicking shows. -->
+<!-- VERIFY: clicking Approve by hand (execution 13) opened a page saying "Got it, thanks"; the blank pages in the capture run came from the headless browser. Still to confirm: the execution then shows Succeeded under Executions. -->
 
 <details markdown="1">
 <summary>Show the answers</summary>
