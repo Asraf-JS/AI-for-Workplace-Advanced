@@ -123,3 +123,5 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 12-ai-governance, 12.2: README says the example rates the policy notebook Low because staff check the cited clause; UI shows Copilot rates it Medium because staff may rely on its answers; customer enquiries are High and the other five uses are Medium.
 
 - 12-ai-governance, Topics / Check while you are there: README says verify the AI Governance Bill status before each class; the October note says it was being prepared for Cabinet; UI shows checked 11 October 2026: still in draft, with tabling expected in early 2027 according to the [5 October 2026 Parliamentary statement](https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-05?search=inflasi); [NAIO](https://www.ai.gov.my/faq/ai-governance-policy/) confirms there is currently no dedicated AI law.
+
+- 12-ai-governance, 12.2 retake: README says the example rates the policy notebook Low because staff check the cited clause; UI shows the existing answer rates it Medium; the retake scrolls the table horizontally to show Risk and Reason for rating.
