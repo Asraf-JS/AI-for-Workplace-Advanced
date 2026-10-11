@@ -125,3 +125,7 @@ Codex adds one line per difference between a README and the screen, and answers 
 - 12-ai-governance, Topics / Check while you are there: README says verify the AI Governance Bill status before each class; the October note says it was being prepared for Cabinet; UI shows checked 11 October 2026: still in draft, with tabling expected in early 2027 according to the [5 October 2026 Parliamentary statement](https://hansard.parlimen.gov.my/hansard/dewan-rakyat/2026-10-05?search=inflasi); [NAIO](https://www.ai.gov.my/faq/ai-governance-policy/) confirms there is currently no dedicated AI law.
 
 - 12-ai-governance, 12.2 retake: README says the example rates the policy notebook Low because staff check the cited clause; UI shows the existing answer rates it Medium; the retake scrolls the table horizontally to show Risk and Reason for rating.
+
+- 13-capstone, 13.2.2: README says list every rule as a numbered checklist; UI shows Copilot presents the five rules as an unnumbered checkbox checklist.
+
+- 13-capstone, 13.3 capture correction: README says four invoices should stop and nine should match; UI shows the initial answer stopped both copies of the duplicate invoice and reported five stops and eight matches; after a chat reload temporarily showed only the brief response, the same data prompt was resent and the final answer reports four stops and nine matches, confirmed independently against the CSV files.
