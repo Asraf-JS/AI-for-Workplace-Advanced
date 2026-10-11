@@ -52,19 +52,15 @@ Read the [scoring rubric](./scoring-rubric.md) before you start, so you know wha
 
 1. As a team, skim the three briefs.
 
-   <!-- Screenshot still to capture: 13-01-team-skim-three-briefs.png. Remove this comment wrapper when the image is added.
-   ![Step 13.1.1: As a team, skim the three briefs](./images/13-01-team-skim-three-briefs.png)
+   ![Brief A, Supplier Invoice Matching, open from the AIW Training folder](./images/13-01-team-skim-three-briefs.png)
 
-   *Caption to write after capture.*
-   -->
+   *Each brief fits on one page: background, how it works today, the rules, your data and what to design.*
 2. Pick one. It's fine for two teams to pick the same brief: their designs will differ.
 3. Open `ai-workflow-canvas.docx`, write your team's names and your brief at the top, and save a copy.
 
-   <!-- Screenshot still to capture: 13-02-open-ai-workflow-canvas.png. Remove this comment wrapper when the image is added.
-   ![Step 13.1.3: Open ai-workflow-canvas.docx, write your team's names and your brief at the top, and save a copy](./images/13-02-open-ai-workflow-canvas.png)
+   ![The AI Workflow Canvas in Word with the team name and Brief A filled in](./images/13-02-open-ai-workflow-canvas.png)
 
-   *Caption to write after capture.*
-   -->
+   *Team and brief go at the top. The nine boxes follow the order you'll pitch in.*
 
 ---
 
@@ -72,22 +68,18 @@ Read the [scoring rubric](./scoring-rubric.md) before you start, so you know wha
 
 1. Start a new chat in your AI tool, and upload your brief's PDF.
 
-   <!-- Screenshot still to capture: 13-03-start-new-chat-ai.png. Remove this comment wrapper when the image is added.
-   ![Step 13.2.1: Start a new chat in your AI tool, and upload your brief's PDF](./images/13-03-start-new-chat-ai.png)
+   ![A new Copilot chat with the Brief A PDF attached](./images/13-03-start-new-chat-ai.png)
 
-   *Caption to write after capture.*
-   -->
+   *Upload the brief on its own first; the data files come in 13.3.*
 2. Send:
 
    ```
    Read this brief. In a Markdown table, list each step of the process as it works today, who does it, and how long or how often. Then list every rule in the brief as a numbered checklist. Use only the brief.
    ```
 
-   <!-- Screenshot still to capture: 13-04-send.png. Remove this comment wrapper when the image is added.
-   ![Step 13.2.2: Send](./images/13-04-send.png)
+   ![Copilot's Current Process table for Brief A, followed by the Rules Checklist](./images/13-04-send.png)
 
-   *Caption to write after capture.*
-   -->
+   *Today's process step by step, with who does it and how often. The rules checklist follows below.*
 
 3. Check the table and the checklist against the brief. You'll use the checklist in 13.3.
 
@@ -95,14 +87,12 @@ Read the [scoring rubric](./scoring-rubric.md) before you start, so you know wha
 
 ## 13.3 Test the Data (15 minutes)
 
-In the same chat, upload your brief's data files and send the prompt for your brief from the [prompts page](./prompts.md) (Part 2A, 2B or 2C). Then check at least two of the AI's findings yourself in the files.
+In the same chat, upload your brief's data files and send the prompt for your brief from the [prompts page](./prompts.md) (Part 2A, 2B or 2C). Then check at least two of the AI's findings yourself in the files. In our test run, Copilot's first answer got one invoice wrong, and asking again fixed it. That's why you check.
 
 
-<!-- Screenshot still to capture: 13-05-test-data-15-minutes.png. Remove this comment wrapper when the image is added.
-![Section 13.3: Test the Data (15 minutes)](./images/13-05-test-data-15-minutes.png)
+![Copilot's Matching Results table for the Brief A invoices](./images/13-05-test-data-15-minutes.png)
 
-*Caption to write after capture.*
--->
+*Copilot matched each invoice to its PO and goods received note. The results are blurred: check yours against the box below.*
 These are the cases your workflow must handle. Open your brief's box only after you've tried.
 
 <details markdown="1">
@@ -165,11 +155,9 @@ Only Admin is over 75%. Rows with no department add RM8,459.69 and should be lis
    Using the brief, the rules checklist and the cases you found, draft a workflow for this process. For each step, say whether it's done by AI, by a rule or by a person, which data or system it uses, and what happens to the tricky cases. Mark every step where a person must approve before anything leaves the company, money moves or personal data is used. Keep it to no more than eight steps.
    ```
 
-   <!-- Screenshot still to capture: 13-06-same-chat-send.png. Remove this comment wrapper when the image is added.
-   ![Step 13.4.1: In the same chat, send](./images/13-06-same-chat-send.png)
+   ![Copilot's Proposed Invoice Matching Workflow, with an AI, Rule or Person column for each step](./images/13-06-same-chat-send.png)
 
-   *Caption to write after capture.*
-   -->
+   *Each step says whether AI, a rule or a person does it. The tricky cases are blurred.*
 
 2. Argue with it. Change any step where your team disagrees, especially the approvals.
 3. Ask for the risks:
@@ -178,11 +166,9 @@ Only Admin is over 75%. Rows with no department add RM8,459.69 and should be lis
    For this workflow, list the three biggest risks, including hidden instructions in incoming documents and personal data, and one control for each. Then suggest five test cases from our data, with the result we'd expect for each.
    ```
 
-   <!-- Screenshot still to capture: 13-07-ask-risks.png. Remove this comment wrapper when the image is added.
-   ![Step 13.4.3: Ask for the risks](./images/13-07-ask-risks.png)
+   ![Copilot's Top 3 Risks and Controls table, starting with hidden instructions in invoices](./images/13-07-ask-risks.png)
 
-   *Caption to write after capture.*
-   -->
+   *Three risks, each with a control. Scroll down for the five test cases.*
 
 4. Fill in the nine boxes of the canvas in your own words. Use the AI's drafts, but the canvas is your team's design.
 
