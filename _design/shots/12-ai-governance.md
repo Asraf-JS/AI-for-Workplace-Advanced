@@ -12,9 +12,9 @@ Capture each shot right after its step: for a step that sends a prompt, when the
 |---|---|---|---|
 | `12-01-start-new-chat-ai.png` | 12.1 List the Department's AI Uses | A new, empty Copilot chat |  |
 | `12-02-send.png` | 12.1 List the Department's AI Uses | Copilot's register table, with Customer Stock Enquiry Reply Drafting listed twice |  |
-| `12-03-rate-risk.png` | 12.2 Rate the Risk | Section 12.2: Rate the Risk |  |
-| `12-04-write-department-s-ai.png` | 12.3 Write the Department's AI Rules | Section 12.3: Write the Department's AI Rules |  |
-| `12-05-check-against-national-principles.png` | 12.4 Check It Against the National Principles | Section 12.4: Check It Against the National Principles |  |
+| `12-03-rate-risk.png` | 12.2 Rate the Risk | The register scrolled right to show the Risk and Reason for rating columns, sorted from High to Medium |  |
+| `12-04-write-department-s-ai.png` | 12.3 Write the Department's AI Rules | Copilot's draft AI Rules for the Procurement Department, starting with Approved tools, Data you may use and Checking AI output |  |
+| `12-05-check-against-national-principles.png` | 12.4 Check It Against the National Principles | A Rule-to-Principle Mapping table linking each rule to principles such as Accountability and Privacy and Security |  |
 
 ## Check while you're there
 

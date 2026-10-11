@@ -95,11 +95,9 @@ Add a Risk column (Low, Medium or High) using these rules:
 Give one sentence explaining each rating. Then sort the table from High to Low.
 ```
 
-<!-- Screenshot still to capture: 12-03-rate-risk.png. Remove this comment wrapper when the image is added.
-![Section 12.2: Rate the Risk](./images/12-03-rate-risk.png)
+![The register scrolled right to show the Risk and Reason for rating columns, sorted from High to Medium](./images/12-03-rate-risk.png)
 
-*Caption to write after capture.*
--->
+*Scroll the table sideways to see **Risk** and the reason. Here Copilot rated the customer enquiry use High and the rest Medium.*
 
 Check every rating yourself, and change any you disagree with.
 
@@ -133,11 +131,9 @@ In the same chat, send:
 Now draft one page of AI rules for the Procurement Department. Use these six headings: Approved tools; Data you may use; Checking AI output; Being open about AI use; The use-case register; Reporting problems. Write in plain, direct language, with no more than four short rules under each heading. Take account of Malaysia's Personal Data Protection Act 2010 and its 2024 amendments (Data Protection Officer, breach notification), and the risk ratings in the table above. Don't invent laws or deadlines: if you're unsure, write "Check with our DPO".
 ```
 
-<!-- Screenshot still to capture: 12-04-write-department-s-ai.png. Remove this comment wrapper when the image is added.
-![Section 12.3: Write the Department's AI Rules](./images/12-04-write-department-s-ai.png)
+![Copilot's draft AI Rules for the Procurement Department, starting with Approved tools, Data you may use and Checking AI output](./images/12-04-write-department-s-ai.png)
 
-*Caption to write after capture.*
--->
+*The draft follows the six headings. Look for vague rules to cut, and check it says "check with our DPO" where it isn't sure.*
 
 Edit the draft until you'd be happy to put your name to it. Cut anything vague, such as "use AI responsibly", and replace it with something a person can actually do.
 
@@ -151,11 +147,9 @@ In the same chat, send:
 Map each rule to the principle it supports from Malaysia's National Guidelines on AI Governance and Ethics: fairness; reliability, safety and control; privacy and security; inclusiveness; transparency; accountability; pursuit of human benefit and happiness. Then tell me which principles none of our rules cover, and suggest one rule for each gap.
 ```
 
-<!-- Screenshot still to capture: 12-05-check-against-national-principles.png. Remove this comment wrapper when the image is added.
-![Section 12.4: Check It Against the National Principles](./images/12-05-check-against-national-principles.png)
+![A Rule-to-Principle Mapping table linking each rule to principles such as Accountability and Privacy and Security](./images/12-05-check-against-national-principles.png)
 
-*Caption to write after capture.*
--->
+*Each rule mapped to a principle. Scroll down for the principles none of the rules cover.*
 
 Decide whether each suggested rule belongs in a one-page set of rules for your department, or somewhere else.
 
