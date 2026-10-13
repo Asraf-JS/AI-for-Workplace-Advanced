@@ -33,6 +33,8 @@ Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds:
 
 You need desktop Word and PowerPoint, and the results from Module 03. If you don't have them, the prompts give you the facts.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md).
+
 ---
 
 ## Topics

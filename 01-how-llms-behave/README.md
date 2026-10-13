@@ -34,6 +34,8 @@ Download both at once with **[sample-files.zip](./sample-files.zip)**, then righ
 
 > **Note:** every company, person and figure in the course files is fictional. Sinar Maju Sdn Bhd is an office supplies distributor in Petaling Jaya, and in this course you work in its Procurement Department.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md).
+
 ---
 
 ## Topics

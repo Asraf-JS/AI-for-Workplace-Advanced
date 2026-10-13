@@ -83,7 +83,7 @@ Please do not upload real company, customer or personal data into any AI tool du
 
 ## Before You Start
 
-You will need a laptop with desktop Word, Excel and PowerPoint, access to at least one of the AI tools above, and a Google account for Gemini Notebook (formerly NotebookLM). Your trainer will share n8n access details before Day 2.
+You will need a laptop with desktop Word, Excel and PowerPoint, access to at least one of the AI tools above, and a Google account for Gemini Notebook (formerly NotebookLM). Your trainer will share n8n access details before Day 2. If your company blocks any of these tools, see [If your company blocks a tool](./14-product-cards/locked-down.md). New words are explained in the [glossary](./14-product-cards/glossary.md).
 
 ---
 

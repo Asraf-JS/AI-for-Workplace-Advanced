@@ -28,6 +28,8 @@ You need your **Quotation Checker** and Word. From Module 07's **[sample-files.z
 
 > **Important:** this is a test of your own assistant with fictional data. Never try prompt injection on a tool or system you don't own or haven't been asked to test.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md).
+
 ---
 
 ## Topics

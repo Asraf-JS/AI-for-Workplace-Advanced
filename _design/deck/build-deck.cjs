@@ -607,7 +607,7 @@ async function finalise(file) {
   sec("10 n8n workflow");
   divider("10", "Building an AI Agent Workflow in n8n", "Stage: Automate", "90 minutes",
     "a working n8n workflow that checks a quotation, routes it, and waits for your approval by email.",
-    "The longest lab. Check before class that the starter imports into your trial account and that the trial shows Gateway credits (or the class credential works).");
+    "The longest lab. Check before class that the starter imports into your trial account and that the trial shows Gateway credits (or the class credential works).\n\nFor a non-technical group, or where IT blocks n8n or the mailbox connection, build 10.1 to 10.6 on screen while they follow, then have them predict each route before it runs in 10.7. The locked-down page in the product cards gives the options.");
   {
     const s = content("Module 10", "The workflow you'll build",
       "The first three nodes come in the starter file. Participants build the AI check, the vendor rule, the Switch and the approval.\n\nThe Code node checks the vendor list with a rule, not AI: a lookup is right every time.");
@@ -696,12 +696,13 @@ async function finalise(file) {
     "an AI Workflow Canvas for a new Sinar Maju process, tested on its data, and a five-minute pitch.",
     "Teams of three or four. Step back: let them use the notes from both days. Hints only if a team is stuck.");
   {
-    const s = content("Module 13", "Pick one of three briefs",
-      "Each brief has its own sample data, with the tricky cases built in. Don't reveal them: teams find them in 13.3.\n\nTwo teams can pick the same brief. Their designs will differ.");
+    const s = content("Module 13", "Pick one of four briefs",
+      "Each brief has its own sample data, with the tricky cases built in. Don't reveal them: teams find them in 13.3.\n\nTwo teams can pick the same brief. Their designs will differ. Steer HR participants to Brief D.");
     columns(s, [
       [I.sheet, "A: Invoice matching", "Finance matches each invoice to its purchase order and goods received note"],
       [I.mail, "B: Stock enquiries", "Sales answers customer emails about stock, prices and delivery"],
       [I.chart, "C: Monthly spend report", "Procurement reports spend against budget to the Finance Director"],
+      [I.usercheck, "D: Staff leave queries", "HR answers staff emails about leave, with personal data to protect"],
     ], 2.2, { size: 19, textH: 2.0 });
   }
   {

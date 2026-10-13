@@ -33,6 +33,8 @@ You need your **Quotation Checker** from Module 03. Download **[sample-files.zip
 
 Some of the ten quotations comply with the policy and some don't. Don't open them to look for the problems first: the point is to see what the Checker finds on its own.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md).
+
 ---
 
 ## Topics

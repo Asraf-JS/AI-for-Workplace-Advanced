@@ -30,6 +30,8 @@ Have Excel open too. You'll use it to check one figure.
 
 > **Important:** the data is fictional. At work, check your organisation allows the AI tool you're using to read financial data before you upload any.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md).
+
 ---
 
 ## Topics

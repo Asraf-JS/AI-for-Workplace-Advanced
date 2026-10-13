@@ -613,7 +613,8 @@ body{
     <a class="nav-item{% if page.url contains '12-ai-governance' %} active{% endif %}" href="/AI-for-Workplace-Advanced/12-ai-governance/"><span class="nav-num">12</span><span class="nav-name">AI Governance</span></a>
     <a class="nav-item{% if page.url contains '13-capstone' %} active{% endif %}" href="/AI-for-Workplace-Advanced/13-capstone/"><span class="nav-num">13</span><span class="nav-name">Capstone</span></a>
     <div class="nav-section-label">Reference</div>
-    <a class="nav-item{% if page.url contains '14-product-cards' %} active{% endif %}" href="/AI-for-Workplace-Advanced/14-product-cards/"><span class="nav-num">14</span><span class="nav-name">Product Cards</span></a>
+    <a class="nav-item{% if page.url contains '14-product-cards' %}{% unless page.url contains 'glossary' %} active{% endunless %}{% endif %}" href="/AI-for-Workplace-Advanced/14-product-cards/"><span class="nav-num">14</span><span class="nav-name">Product Cards</span></a>
+    <a class="nav-item{% if page.url contains 'glossary' %} active{% endif %}" href="/AI-for-Workplace-Advanced/14-product-cards/glossary"><span class="nav-num">A&ndash;Z</span><span class="nav-name">Glossary</span></a>
   </div>
 
   <div class="sidebar-footer">

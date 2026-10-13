@@ -41,6 +41,10 @@ You need:
 
 > **Important:** only send test emails to yourself. Start every training email subject with `[AIW TRAINING]`.
 
+> **Note:** new to workflow tools? Your trainer may build 10.1 to 10.6 on screen while you follow along. You then predict the route for each quotation before it runs in 10.7. Building it yourself is better practice, but understanding the design is what you need for Module 13.
+
+New words are explained in the [glossary](../14-product-cards/glossary.md). If your company blocks n8n or the mailbox connection, see [If your company blocks a tool](../14-product-cards/locked-down.md).
+
 ---
 
 ## Topics
