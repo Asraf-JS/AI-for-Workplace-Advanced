@@ -130,6 +130,8 @@ Then answer:
 1. Pick the one mistake that matters most.
 2. Open your Quotation Checker's instructions and change **one** thing. For example, add a rule:
 
+   > **Warning:** these example rules give away some of the answers. Score all ten cases (7.3) before you read them.
+
    ```
    A discount line is allowed. Recalculate the subtotal after the discount before you judge the arithmetic.
    ```
@@ -151,7 +153,7 @@ Then answer:
    *Select **Update** to save. Then re-run all ten cases.*
 4. Re-run **all ten** cases and score them again.
 
-Did your score go up? Did any case that was right before go wrong? Keep the better version of the instructions: you'll use it in Modules 10 and 11.
+Did your score go up? Did any case that was right before go wrong? Keep the better version of the instructions: you'll use it again in Module 11.
 
 ---
 

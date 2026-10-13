@@ -466,7 +466,7 @@ async function finalise(file) {
     "21 months of purchase orders. The lesson is clean first, define the measure, and check one figure yourself.");
   {
     const s = content("Module 05", "Clean, define, check",
-      "Tools that run code (ChatGPT, Claude, Gemini, Copilot's Analyst) are far more reliable for sums than tools that read the file as text.\n\nThe Excel PivotTable check in 5.3 shows why cleaning matters: one supplier's total comes out higher in Excel. Let them find out why.");
+      "Tools that run code (ChatGPT, Claude, Gemini, and Copilot, which runs Python even on Basic) are far more reliable for sums than tools that read the file as text.\n\nThe Excel PivotTable check in 5.3 shows why cleaning matters: one supplier's total comes out higher in Excel. Let them find out why.");
     flow(s, [
       [I.scan, "Look first", "Rows, columns, dates and what each column means"],
       [I.eye, "Find the problems", "Duplicates, blanks, spellings, cancelled orders"],
@@ -502,7 +502,7 @@ async function finalise(file) {
     ["6.4", "Make the deck from the good template"],
     ["6.5", "Do it again with the bad template"],
   ], "Your memo keeps the template's headings and has no grey placeholders left. You can name one difference between the two decks.",
-  "About 50 minutes. Sample files: Module 06 ZIP. Needs desktop Word and PowerPoint.\n\nCopilot Chat (Basic) has no Copilot in the Office apps: those participants draft in chat and paste with Keep Text Only.", I);
+  "About 50 minutes. Sample files: Module 06 ZIP. Needs desktop Word and PowerPoint.\n\nCopilot Chat (Basic) has no Copilot in the Office apps, but in chat it returns the filled .docx and .pptx to OneDrive. Paste with Keep Text Only only if a tool can't return a file.", I);
 
   sec("07 Evaluating output");
   divider("07", "Evaluating AI Output", "Stage: Measure", "45 minutes",
@@ -607,7 +607,7 @@ async function finalise(file) {
   sec("10 n8n workflow");
   divider("10", "Building an AI Agent Workflow in n8n", "Stage: Automate", "90 minutes",
     "a working n8n workflow that checks a quotation, routes it, and waits for your approval by email.",
-    "The longest lab. Check before class that the starter imports into your trial account and that everyone has a working AI credential.");
+    "The longest lab. Check before class that the starter imports into your trial account and that the trial shows Gateway credits (or the class credential works).");
   {
     const s = content("Module 10", "The workflow you'll build",
       "The first three nodes come in the starter file. Participants build the AI check, the vendor rule, the Switch and the approval.\n\nThe Code node checks the vendor list with a rule, not AI: a lookup is right every time.");
@@ -655,7 +655,7 @@ async function finalise(file) {
     ["11.3", "Add the defence and re-test"],
     ["11.4", "Swap attacks with a partner"],
     ["11.5", "Sort data by which AI tool it may go into"],
-  ], "After your fix, the poisoned quotation gets the right verdict and the hidden instruction is reported, and the original case still passes its re-test.",
+  ], "After your fix, the poisoned quotation gets the right verdict and the hidden instruction is reported, and case 09 still gets REVISE for the load alone, with no instruction finding.",
   "About 40 minutes. Needs Word and the Module 07 files.\n\nCheckers react differently: some obey, some ignore it silently, some report it. Collect a few results across tools for the debrief. The expected behaviour is in the Module 11 boxes.", I);
 
   sec("12 AI governance");

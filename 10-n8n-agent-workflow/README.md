@@ -27,7 +27,7 @@ On Day 1 you checked quotations by uploading them to your Quotation Checker one 
 You need:
 
 - the n8n access your trainer sent you before Day 2 (a trial account or a class workspace)
-- your **Quotation Checker** instructions from Module 03 (and your improvements from Module 07)
+- your **Quotation Checker** instructions from Module 03, for reference: the Part 1 prompt is the same checks, adapted for n8n
 - an email account you can send test messages to yourself from
 - **[sample-files.zip](./sample-files.zip)**, extracted
 

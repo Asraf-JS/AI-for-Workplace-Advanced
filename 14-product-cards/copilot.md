@@ -35,7 +35,7 @@ Look for the green shield at the top right of the chat. Hover over it: it should
 | 03 | Build the Quotation Checker | **Agent Builder**: instructions only, so upload the policy in each chat | Agent Builder, with the policy as agent knowledge |
 | 04 | Grounded research with citations | A **Notebook** with the policy files | Same, or Researcher |
 | 05 | Analyse the purchase history | Upload the spreadsheet in a chat | **Analyst**, or Copilot in Excel |
-| 06 | Memo and deck from templates | Draft in chat or a Page, then paste into the template | Copilot in Word and PowerPoint, from the template |
+| 06 | Memo and deck from templates | Upload the template; Copilot returns the filled .docx or .pptx to OneDrive | Copilot in Word and PowerPoint, from the template |
 | 07 | Score the Checker | Run each test quotation with your agent | Same |
 | 08 | Connectors and MCP | Look at what your agents can reach | Copilot connectors and Copilot Studio (admin-managed) |
 | 09 | Diagnose a wrong citation | A Notebook with both policy versions | Same |
@@ -100,7 +100,7 @@ On **Premium**, **Researcher** can also search your organisation's files and the
 
 ## Word and PowerPoint (Module 06)
 
-- **Basic:** draft the memo in chat, select **Edit in Pages**, and export it with **More actions** > **Export** > **Document**. Then copy the text into `sinar-maju-memo.docx`.
+- **Basic:** upload `sinar-maju-memo.docx` or a deck template in a chat and ask for the finished file. Copilot returns a filled .docx or .pptx saved to OneDrive; open it from the file card. If it only gives text, paste each section into the template with **Paste** > **Keep Text Only**.
 - **Premium:** open `sinar-maju-memo.docx` in Word and use Copilot there. In PowerPoint, Copilot can create a deck from a file or template. It follows a template best when the layouts have clear names, which is the difference between `sinar-maju-deck.pptx` and `sinar-maju-deck-bad.pptx`.
 
 > **Caution:** in PowerPoint, creating a presentation from a file can replace the open presentation. Work on a copy.

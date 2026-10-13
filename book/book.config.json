@@ -165,7 +165,7 @@
         "color": "#5b6cf0",
         "stage": "Measure",
         "desc": "Score the Checker on ten test cases",
-        "output": "Scorecard"
+        "output": "Scoresheet"
       },
       {
         "n": 8,
@@ -182,8 +182,8 @@
         "icon": "doc",
         "color": "#0f6cbd",
         "stage": "Diagnose",
-        "desc": "Find out why a citation went wrong",
-        "output": "Diagnosis"
+        "desc": "Find and fix a wrong citation",
+        "output": "Diagnosis and fix"
       },
       {
         "n": 10,
@@ -200,8 +200,8 @@
         "icon": "chat",
         "color": "#c2410c",
         "stage": "Attack",
-        "desc": "Break it with hidden instructions",
-        "output": "Break-it findings"
+        "desc": "Attack the Checker, then defend it",
+        "output": "Hardened Checker"
       },
       {
         "n": 12,
@@ -210,7 +210,7 @@
         "color": "#0e7490",
         "stage": "Govern",
         "desc": "Department AI rules and use-case register",
-        "output": "AI register"
+        "output": "Rules and register"
       },
       {
         "n": 13,

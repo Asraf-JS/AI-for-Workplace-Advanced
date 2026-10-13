@@ -201,7 +201,7 @@ Duduk Selesa's total must show **RM46,548.00**, the printed figure. If your Chec
 1. In the same chat, send:
 
    ```
-   Using your checks, recommend one supplier. Give the correct total including tax, the verdict and the clause for each supplier, what must happen before we can issue a purchase order, and who must approve it under Clause 3.1.
+   Check each of the three quotations, then tell me which one is closest to a purchase order. I'll make the choice. Give the correct total including tax, the verdict and the clause for each supplier, what must happen before we can issue a purchase order, and who must approve it under Clause 3.1.
    ```
 
    ![The Checker's Recommendation Summary heading, with the recommendation and the table blurred](./images/03-11-same-chat-send.png)

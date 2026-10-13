@@ -133,7 +133,7 @@ The wording is almost certainly different. Neither is wrong: the model picked di
 
 The quotation prints a grand total of **RM46,548.00**, but it should be **RM47,628.00**.
 
-Line 1 is 120 chairs at RM365.00, which is RM43,800.00. The quotation prints RM42,800.00, and the subtotal, tax and grand total all carry that RM1,000.00 gap. The amount in words matches the wrong figure, so the page looks consistent.
+Line 1 is 120 chairs at RM365.00, which is RM43,800.00. The quotation prints RM42,800.00, so the subtotal is RM1,000.00 short, and with 8% tax the grand total is RM1,080.00 short. The amount in words matches the wrong figure, so the page looks consistent.
 
 A fast model often repeats the printed total without checking it. A reasoning model is more likely to work out 120 x 365.00 and find the gap. Either can miss it, which is what you'll discuss.
 
