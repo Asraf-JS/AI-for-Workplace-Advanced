@@ -134,12 +134,12 @@ If every answer came from Version 3.0, your notebook retrieved well this time. I
 In the same notebook, send:
 
 ```
-For your answer about advance payments, list every passage you retrieved from the sources, with the document name, page and clause for each. Then explain why a passage from Version 2.1 could look relevant to the question.
+For your answer about advance payments, show the passages from the sources that you based it on, with the document name, page and clause for each. Then explain why a passage from Version 2.1 could look relevant to the question.
 ```
 
 ![The diagnosis, with Passages Retrieved on Advance Payments highlighted, listing Clause 6.2 from both versions](./images/09-06-diagnose-why.png)
 
-*The notebook lists the passages it retrieved: Clause 6.2 from both versions.*
+*The notebook lists the passages it used: Clause 6.2 from both versions. This is the notebook's own account, not a technical log of its search, so check each passage in the PDF.*
 
 Then, with the person next to you, write one sentence for each:
 

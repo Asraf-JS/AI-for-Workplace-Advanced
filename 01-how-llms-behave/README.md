@@ -32,7 +32,7 @@ You need one AI tool open and signed in (see the [product cards](../14-product-c
 
 Download both at once with **[sample-files.zip](./sample-files.zip)**, then right-click the ZIP and choose **Extract All**.
 
-> **Note:** every company, person and figure in the course files is fictional. Sinar Maju Sdn Bhd is an office supplies distributor in Petaling Jaya, and in this course you work in its Procurement Department.
+> **Note:** every company, person and figure in the course files is fictional. Sinar Maju Sdn Bhd is an office supplies distributor in Petaling Jaya, and in this course you work in its Procurement Department. The course treats **10 November 2026** as today's date: every quotation is judged as at that date, whatever the date of your class.
 
 New words are explained in the [glossary](../14-product-cards/glossary.md).
 

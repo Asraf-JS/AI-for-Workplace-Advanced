@@ -30,7 +30,7 @@ Make a Markdown table with these columns: Use case, AI tool, Data used, Personal
 
 ```
 Add a Risk column (Low, Medium or High) using these rules:
-- High: uses personal data, or its output is sent outside the company or commits money without a person checking it first
+- High: uses customers' or staff members' personal data beyond names and work contact details, or its output is sent outside the company or commits money without a person checking it first
 - Medium: uses confidential company data, or a person relies on it to make a decision
 - Low: uses public or fictional data, and a person always checks the output
 Give one sentence explaining each rating. Then sort the table from High to Low.
