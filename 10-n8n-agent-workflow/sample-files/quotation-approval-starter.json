@@ -127,7 +127,7 @@
     },
     {
       "parameters": {
-        "content": "## Step 1: Check the quotation\nAdd an AI node here (**Basic LLM Chain** or **AI Agent**) and connect it to **Policy limits**. Use your Quotation Checker instructions from Module 03. Ask it to reply in JSON with: supplier, total_incl_tax, valid_until, advance_percent, problems (with clause numbers) and verdict (pass, revise, reject or escalate).",
+        "content": "## Step 1: Check the quotation\nAdd an AI node here (**Basic LLM Chain** or **AI Agent**) and connect it to **Policy limits**. Use your Quotation Checker instructions from Module 03. Ask it to reply in JSON with: supplier, quotation_no, printed_total, correct_total, valid_until, advance_percent, problems (with clause numbers) and verdict (pass, revise, reject or escalate).",
         "height": 400,
         "width": 420,
         "color": 5

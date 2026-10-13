@@ -41,7 +41,7 @@ For each email in brief-b-enquiries.csv, decide one of: "Answer" (a sales execut
 **Session:** same chat | **Grounding:** `brief-c-purchase-history.csv`, `brief-c-department-budgets-2026.csv`
 
 ```
-Using Total (RM), leaving out cancelled orders and counting each duplicated row once, work out each department's spend from January to September 2026, and compare it with its annual budget in brief-c-department-budgets-2026.csv. Flag any department above 75% of its budget. Show rows with no department separately. Then list the 2026 orders that break the procurement rules: orders of RM5,000 or more with fewer than 3 quotations and no Contract Ref, and orders from one department to one supplier within 30 days, each below RM5,000, that add up to RM5,000 or more. Show your method.
+Using Total (RM), leaving out cancelled orders and counting each duplicated row once, work out each department's spend from January to September 2026, and compare it with its annual budget in brief-c-department-budgets-2026.csv. Flag any department above 75% of its budget. Show rows with no department separately. Then list the 2026 orders that break the procurement rules: orders of RM5,000 or more with fewer than 3 quotations and no Contract Ref, and orders from one department to one supplier within 30 days, each below RM5,000 and with no Contract Ref, that add up to RM5,000 or more. Show your method.
 ```
 
 ---

@@ -48,10 +48,10 @@ Now clean the data: count each duplicated row once, group suppliers by Vendor ID
 
 ```
 Look for anything the Finance Director should know about. In particular:
-1. Any supplier whose monthly spend changed sharply. When did it change, and by how much?
-2. Orders from the same department to the same supplier within 30 days that are each below RM5,000 but add up to RM5,000 or more.
+1. Any supplier whose average monthly spend changed sharply and stayed at the new level. When did it change, and by how much?
+2. Orders from the same department to the same supplier within 30 days that are each below RM5,000, have no Contract Ref, and add up to RM5,000 or more.
 3. Orders of RM5,000 or more (Total) with fewer than 3 quotations and no Contract Ref.
-4. Orders of RM5,000 or more approved only by a department head, not the Head of Procurement.
+4. Orders of RM5,000 to RM50,000 approved by anyone other than the Head of Procurement, Rozita binti Mohd Ariff (the About this file sheet lists who is who).
 5. Any seasonal pattern in paper purchases.
 For each finding, list the PO numbers and the figures.
 ```
