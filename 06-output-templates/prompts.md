@@ -20,7 +20,7 @@ Facts:
 - Kerusi Nadira Trading, KNT-2610-077, 22 October 2026, valid until 6 December 2026, RM43,416.00. Warranty is 3 years on the frame and 1 year on the mechanism and gas lift; the RFQ asks for 5 years on all three (Clause 4.3).
 - Ergoluma Seating Sdn Bhd, ELS/Q/2026/0388, 23 October 2026, valid until 22 November 2026, RM48,481.20. Asks for a 50% deposit; the limit is 30% (Clause 6.2).
 - Recommendation: Duduk Selesa, subject to a revised quotation at RM47,628.00.
-- Approval: RM5,000 to RM50,000 band under Clause 3.1, so the HOD and the Head of Procurement approve.
+- Approval: RM5,000 to RM50,000 band under Clause 3.1, so the HOD and the Head of Procurement approve. For resale stock the Procurement HOD is the Head of Procurement, so Rozita binti Mohd Ariff reviews and approves. CC: Hafiz bin Kamarudin, Finance Director, for information.
 
 Give me the finished memo as a Word file I can download.
 ```

@@ -159,10 +159,10 @@ In the same chat, send:
 
 ```
 Look for anything the Finance Director should know about. In particular:
-1. Any supplier whose monthly spend changed sharply. When did it change, and by how much?
-2. Orders from the same department to the same supplier within 30 days that are each below RM5,000 but add up to RM5,000 or more.
+1. Any supplier whose average monthly spend changed sharply and stayed at the new level. When did it change, and by how much?
+2. Orders from the same department to the same supplier within 30 days that are each below RM5,000, have no Contract Ref, and add up to RM5,000 or more.
 3. Orders of RM5,000 or more (Total) with fewer than 3 quotations and no Contract Ref.
-4. Orders of RM5,000 or more approved only by a department head, not the Head of Procurement.
+4. Orders of RM5,000 to RM50,000 approved by anyone other than the Head of Procurement, Rozita binti Mohd Ariff (the About this file sheet lists who is who).
 5. Any seasonal pattern in paper purchases.
 For each finding, list the PO numbers and the figures.
 ```
@@ -177,7 +177,7 @@ Check at least one finding yourself: filter the spreadsheet to the PO numbers th
 <summary>Show the answers</summary>
 
 - **Courier spend jumped in May 2026.** Kilat Merbok Express averaged RM2,388.10 a month until April 2026, then RM7,792.98 a month from May (about 3.3 times). It's under a contract, so no new quotations were needed (3.3), but it's worth asking why.
-- **Split purchases.** Admin bought from Duduk Selesa three times in a week (PO-2026-0028, PO-2026-0032 and PO-2026-0036, RM14,547.60 together). IT bought from Kodbar Nusa on 18 and 19 August 2026 (PO-2026-0125 and PO-2026-0126, RM9,882.00 together). Each order was just under RM5,000 with one quotation (7.1 and 7.2).
+- **Split purchases.** Admin bought from Duduk Selesa three times in a week (PO-2026-0028, PO-2026-0032 and PO-2026-0036, RM14,547.60 together). IT bought from Kodbar Nusa on 18 and 19 August 2026 (PO-2026-0125 and PO-2026-0126, RM9,882.00 together). Each order was just under RM5,000 with one quotation (7.1). The August pair would also be caught by the monthly review in 7.2, which started on 1 July 2026. Contract charges, such as Kilau Embun's monthly cleaning, aren't split purchases.
 - **Too few quotations.** PO-2025-0167 (RM8,640.00, 2 quotations) and PO-2026-0071 (RM12,409.20, 1 quotation). Both needed three (3.1).
 - **Wrong approver.** PO-2026-0071 was approved by the Marketing HOD alone. It also needed the Head of Procurement.
 - **Seasonal paper.** A4 paper orders in November, December and January average 4,720 reams a month, against 2,471 in other months.

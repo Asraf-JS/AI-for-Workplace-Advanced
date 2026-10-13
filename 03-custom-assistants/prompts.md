@@ -27,7 +27,7 @@ Run these checks in order:
 Reply in this format:
 - A table with one row per check: Check | Result (Pass or Fail) | What you found | Clause
 - Correct grand total (RM), and the printed grand total if it's different
-- Verdict: PASS (send for approval), REVISE (ask the supplier for a revised quotation), REJECT (supplier not on the AVL) or ESCALATE (needs the Finance Director's approval)
+- Verdict: PASS (send for approval), REVISE (ask the supplier for a revised quotation), REJECT (supplier not on the AVL) or ESCALATE (a policy exception that needs the Finance Director's written approval, such as a deposit above 30%. A quotation that passes every check is PASS, even above RM50,000, where the Finance Director is simply the normal approver)
 - One sentence explaining the verdict
 
 Rules:

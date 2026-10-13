@@ -88,7 +88,7 @@ Open the [product card](../14-product-cards/) for your AI tool. It shows where t
    Reply in this format:
    - A table with one row per check: Check | Result (Pass or Fail) | What you found | Clause
    - Correct grand total (RM), and the printed grand total if it's different
-   - Verdict: PASS (send for approval), REVISE (ask the supplier for a revised quotation), REJECT (supplier not on the AVL) or ESCALATE (needs the Finance Director's approval)
+   - Verdict: PASS (send for approval), REVISE (ask the supplier for a revised quotation), REJECT (supplier not on the AVL) or ESCALATE (a policy exception that needs the Finance Director's written approval, such as a deposit above 30%. A quotation that passes every check is PASS, even above RM50,000, where the Finance Director is simply the normal approver)
    - One sentence explaining the verdict
 
    Rules:
@@ -188,7 +188,7 @@ Figures as printed in each quotation:
 | Grand total | RM46,548.00 | RM43,416.00 | RM48,481.20 |
 | Warranty | 5 years frame, mechanism and gas lift | 3 years frame, 1 year mechanism and gas lift | 5 years frame, mechanism and gas lift |
 | Payment | 30 days | 30 days | 50% deposit, balance 30 days |
-| Delivery lead time | 14 to 18 days | Within 21 days | Within 21 days of deposit |
+| Delivery lead time | 14 to 18 days | Within 21 days | Within 21 days of purchase order |
 
 Duduk Selesa's total must show **RM46,548.00**, the printed figure. If your Checker shows RM47,628.00 without saying why, it has quietly corrected the supplier's figure.
 
@@ -223,7 +223,7 @@ Duduk Selesa's total must show **RM46,548.00**, the printed figure. If your Chec
 | Kerusi Nadira | Warranty is 3 years on the frame and 1 year on the mechanism and gas lift; the RFQ asks for 5 years on all three | 4.3 | Non-compliant. Ask for a revised quotation or exclude it |
 | Ergoluma | 50% deposit; the limit is 30% | 6.2 | Needs the Finance Director's written approval, or ask for standard terms |
 
-Under your instructions, Ergoluma's verdict is **ESCALATE**: its only problem is the deposit, and ESCALATE is the verdict for anything that needs the Finance Director. If your Checker says REVISE, it has picked the other way forward (asking for standard terms) instead of following its own verdict list. Note it: you'll test the verdicts properly in Module 07.
+Under your instructions, Ergoluma's verdict is **ESCALATE**: its only problem is the deposit, and ESCALATE is the verdict for a policy exception that needs the Finance Director's written approval. If your Checker says REVISE, it has picked the other way forward (asking for standard terms) instead of following its own verdict list. Note it: you'll test the verdicts properly in Module 07.
 
 Recommended: **Duduk Selesa**, once it sends a revised quotation at RM47,628.00. That falls in the RM5,000 to RM50,000 band (3.1): three quotations and a comparison, approved by the HOD and the Head of Procurement.
 

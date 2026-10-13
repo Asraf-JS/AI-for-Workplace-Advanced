@@ -691,7 +691,7 @@ def build_rfq_doc(path, rfqs, issued, closing, title):
         "Your registered company name, SSM registration number and, if you charge SST, your SST registration number",
         "A quotation number, the date of issue and a validity period of at least 30 days",
         "Quantity, unit price and amount for each line, the subtotal, tax as a separate line, and the grand total",
-        "Payment terms, delivery lead time and warranty (or, for services, the scope and term)",
+        "Payment terms and delivery lead time, plus the warranty where the requirements ask for one (or, for services, the scope and term)",
         "The name and signature of an authorised person",
     ]:
         story.append(Paragraph(item, s["bullet"], bulletText="•"))
@@ -1126,13 +1126,19 @@ def write_history(rows, out_dir):
         ["Total (RM)", "Amount plus tax. Policy limits use this figure."],
         ["Quotations", "Number of written quotations received before the PO was issued"],
         ["Contract Ref", "Filled in for monthly charges under an approved contract (Policy Clause 3.3)"],
+        ["Approved By", "The final approver. From RM5,000 to RM50,000 this must be the Head of Procurement, after the HOD"],
         ["Status", "Received, Open or Cancelled"],
-    ]:
+        [],
+        ["Name", "Role"],
+        [HEAD_OF_PROCUREMENT, "Head of Procurement (also the Procurement HOD)"],
+        [FINANCE_DIRECTOR, "Finance Director (also the Finance HOD)"],
+    ] + [[HODS[dep], f"Head of Department (HOD), {dep}"] for dep in sorted(HODS) if HODS[dep] not in (HEAD_OF_PROCUREMENT, FINANCE_DIRECTOR)]:
         info.append(line)
     info["A1"].font = Font(bold=True, size=13)
     info["A4"].font = Font(bold=True)
     info["A7"].font = info["B7"].font = Font(bold=True)
-    info.column_dimensions["A"].width = 16
+    info["A15"].font = info["B15"].font = Font(bold=True)
+    info.column_dimensions["A"].width = 30
     info.column_dimensions["B"].width = 80
     wb.properties.creator = CLIENT_NAME
     wb.properties.created = wb.properties.modified = datetime(*FIXED_TIME)
@@ -1300,7 +1306,7 @@ def history_key(rows):
          f"from January 2025 to April 2026, then RM{rm(sum(after) / len(after))} a month from May to September 2026 "
          f"(about {sum(after) / len(after) / (sum(before) / len(before)):.1f} times). These are contract charges, "
          "so no quotations are needed (3.3), but the jump is worth asking about.",
-         "", "### 2. Split purchases (Clause 7.1 and 7.2)", ""]
+         "", "### 2. Split purchases (Clause 7.1; 7.2 from 1 July 2026)", ""]
     for c in splits:
         L.append(f"- {c[0]['dept']}, {c[0]['vendor']}: " + ", ".join(
             f"{r['po']} ({d(r['date'])}, RM{rm(r['total'])})" for r in c) +
@@ -1481,7 +1487,7 @@ def n8n_starter():
         ("step1", [720, -220], 420, 400, 5,
          "## Step 1: Check the quotation\nAdd an AI node here (**Basic LLM Chain** or **AI Agent**) and connect it to "
          "**Policy limits**. Use your Quotation Checker instructions from Module 03. Ask it to reply in JSON with: "
-         "supplier, total_incl_tax, valid_until, advance_percent, problems (with clause numbers) and verdict "
+         "supplier, quotation_no, printed_total, correct_total, valid_until, advance_percent, problems (with clause numbers) and verdict "
          "(pass, revise, reject or escalate)."),
         ("step2", [1180, -220], 400, 400, 5,
          "## Step 2: Check the supplier\nLook the supplier up in `approved-vendors.csv` (a Google Sheet, or a Code "

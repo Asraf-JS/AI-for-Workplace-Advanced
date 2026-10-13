@@ -95,7 +95,7 @@ For each case, 01 to 10:
 
 ## 7.3 Score the Checker
 
-Open the box only once all ten rows are filled in. Give 1 point for each right verdict and 1 for each right clause.
+Open the box only once all ten rows are filled in. Give 1 point for each right verdict and 1 for each right clause. For a case that should pass, the clause point is for not inventing a problem: give it if the Checker marks no check as Fail.
 
 <details markdown="1">
 <summary>Show the answers</summary>
