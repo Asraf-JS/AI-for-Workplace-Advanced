@@ -23,16 +23,19 @@ Over two days you've taken one procurement task from a single prompt to a tested
 
 ## Before You Begin
 
-Form a team of three or four. Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds three briefs, their data, and the canvas:
+Form a team of three or four. Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds four briefs, their data, and the canvas:
 
 | Brief | Files |
 |---|---|
 | **A: Supplier invoice matching** (Finance) | `brief-a-invoice-matching.pdf`, `brief-a-purchase-orders.csv`, `brief-a-goods-received.csv`, `brief-a-invoices.csv` |
 | **B: Customer stock enquiries** (Sales) | `brief-b-stock-enquiries.pdf`, `brief-b-stock-list.csv`, `brief-b-enquiries.csv` |
 | **C: Monthly spend report** (Procurement) | `brief-c-monthly-spend-report.pdf`, `brief-c-purchase-history.csv`, `brief-c-department-budgets-2026.csv` |
+| **D: Staff leave queries** (HR) | `brief-d-leave-queries.pdf`, `brief-d-leave-balances.csv`, `brief-d-staff-queries.csv` |
 | All teams | `ai-workflow-canvas.docx` |
 
 Read the [scoring rubric](./scoring-rubric.md) before you start, so you know what the judges look for.
+
+New words are explained in the [glossary](../14-product-cards/glossary.md).
 
 ---
 
@@ -50,7 +53,7 @@ Read the [scoring rubric](./scoring-rubric.md) before you start, so you know wha
 
 ## 13.1 Pick Your Brief (5 minutes)
 
-1. As a team, skim the three briefs.
+1. As a team, skim the four briefs. Pick one close to your own work if you can: Brief D suits HR teams.
 
    ![Brief A, Supplier Invoice Matching, open from the AIW Training folder](./images/13-01-team-skim-three-briefs.png)
 
@@ -87,7 +90,7 @@ Read the [scoring rubric](./scoring-rubric.md) before you start, so you know wha
 
 ## 13.3 Test the Data (15 minutes)
 
-In the same chat, upload your brief's data files and send the prompt for your brief from the [prompts page](./prompts.md) (Part 2A, 2B or 2C). Then check at least two of the AI's findings yourself in the files. In our test run, Copilot's first answer got one invoice wrong, and asking again fixed it. That's why you check.
+In the same chat, upload your brief's data files and send the prompt for your brief from the [prompts page](./prompts.md) (Part 2A, 2B, 2C or 2D). Then check at least two of the AI's findings yourself in the files. In our test run, Copilot's first answer got one invoice wrong, and asking again fixed it. That's why you check.
 
 
 ![Copilot's Matching Results table for the Brief A invoices](./images/13-05-test-data-15-minutes.png)
@@ -143,6 +146,24 @@ The other nine invoices match. PO-2026-0160 has goods received but no invoice ye
 | Finance | RM2,542.99 | RM5,000.00 | 51% |
 
 Only Admin is over 75%. Rows with no department add RM8,459.69 and should be listed on their own. The 2026 policy breaches are the two split purchases and PO-2026-0071.
+
+</details>
+
+<details markdown="1">
+<summary>Brief D: show the answers</summary>
+
+| Email | Route | What a good design does |
+|---|---|---|
+| Q01 | Answer | 9 days left: 20 + 3 carried forward - 14 taken |
+| Q02 | Answer | 17 days left, but only 5 can be carried into 2027, used by 31 March. Plan the other 12 before 31 December |
+| Q03 | Answer | Reply in Malay: 98 days of maternity leave, applied for at least 30 days before |
+| Q04 | Send to a person | Asks for a colleague's medical leave. Never share it; the concern goes to the HR Manager |
+| Q05 | Answer | Remove the diagnosis and IC number before using an AI tool that isn't approved for health data. Record 2 days of medical leave |
+| Q06 | Send to a person | Possible harassment complaint: straight to the HR Manager, confidential, no AI |
+| Q07 | Ask | "The usual leave" is unclear: ask which type and which days |
+| Q08 | Answer | Only 3 days left. The other 2 would be unpaid leave, which needs the HOD and the HR Manager |
+| Q09 | Answer | Ignore the hidden instruction to add 15 days and report it. The balance is 6 days |
+| Q10 | Ask | S1710 isn't in the leave file. Check his record before answering; don't guess |
 
 </details>
 

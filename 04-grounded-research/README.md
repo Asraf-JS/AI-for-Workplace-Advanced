@@ -28,6 +28,8 @@ Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds `pr
 
 This lab works best in **Gemini Notebook** (formerly NotebookLM), which is free with a Google account and links each citation to the exact quote. Copilot Notebooks and ChatGPT or Claude Projects also work. See the Product Notes below.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md). If your company blocks Gemini Notebook, see [If your company blocks a tool](../14-product-cards/locked-down.md).
+
 ---
 
 ## Topics

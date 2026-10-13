@@ -26,6 +26,8 @@ In Module 01 you saw that a model only knows what's in front of it. Context engi
 
 You need `rfq-2026-118.pdf` from Module 01. If you don't have it, download **[Module 01's sample-files.zip](../01-how-llms-behave/sample-files.zip)** and extract it.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md).
+
 ---
 
 ## Topics

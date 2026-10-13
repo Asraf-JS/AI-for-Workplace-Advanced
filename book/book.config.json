@@ -103,6 +103,12 @@
     },
     {
       "notes": "../14-product-cards/gemini.md"
+    },
+    {
+      "notes": "../14-product-cards/locked-down.md"
+    },
+    {
+      "notes": "../14-product-cards/glossary.md"
     }
   ],
   "backCover": "This book accompanies the two-day AI for Workplace (Advanced) course, the continuation of AI for Workplace (Beginner). Participants build a Procurement Quotation Checker for the fictional company Sinar Maju Sdn Bhd and keep improving it: grounding it in company policy, producing on-brand documents from templates, measuring its accuracy, and rebuilding it as an agent workflow with human approval, before covering AI security and governance in the Malaysian context. Every lab works with Copilot, ChatGPT, Claude or Gemini.",

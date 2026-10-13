@@ -32,6 +32,8 @@ Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds:
 
 Use a source-grounded notebook, as in Module 04. Gemini Notebook (formerly NotebookLM) shows its citations most clearly.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md). If your company blocks Gemini Notebook, see [If your company blocks a tool](../14-product-cards/locked-down.md).
+
 ---
 
 ## Topics

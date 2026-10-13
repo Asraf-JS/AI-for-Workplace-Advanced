@@ -26,6 +26,8 @@ Day 1's Quotation Checker reads what you give it and writes a report. It can't o
 
 No files to download. Open your AI tool, and the [product card](../14-product-cards/) for it, which shows where its connectors are.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md).
+
 ---
 
 ## Topics

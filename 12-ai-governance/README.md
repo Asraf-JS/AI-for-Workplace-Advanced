@@ -28,6 +28,8 @@ No files to download. Bring your notes from Day 1 and this morning: you'll list 
 
 > **Note:** this module explains the rules in general terms for training. It isn't legal advice. For a real decision, talk to your organisation's Data Protection Officer or legal team.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md).
+
 ---
 
 ## Topics

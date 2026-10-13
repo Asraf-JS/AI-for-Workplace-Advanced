@@ -36,6 +36,8 @@ Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds:
 
 Open the [product card](../14-product-cards/) for your AI tool. It shows where to build a custom assistant in that tool.
 
+New words are explained in the [glossary](../14-product-cards/glossary.md).
+
 ---
 
 ## Topics
