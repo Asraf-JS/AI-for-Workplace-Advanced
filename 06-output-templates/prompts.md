@@ -43,6 +43,11 @@ Slide 1 (SM Title): "Approval: 120 Ergonomic Chairs for Resale", subtitle "RFQ-2
 Slide 2 (SM Title Only, with a table): the three quotations compared: supplier, correct total (RM), warranty, payment terms, verdict.
 Slide 3 (SM Content): the recommendation, Duduk Selesa at RM47,628.00 after a revised quotation, in up to four bullets.
 Slide 4 (SM Closing): the decision needed from the Head of Procurement, and by when.
+Facts for slide 2:
+- Duduk Selesa Furnishings: correct total RM47,628.00 (printed RM46,548.00); warranty 5 years on frame, mechanism and gas lift; payment 30 days from invoice; verdict REVISE (arithmetic, Clause 4.4).
+- Kerusi Nadira Trading: RM43,416.00; warranty 3 years on frame, 1 year on mechanism and gas lift; payment 30 days from invoice; verdict REVISE (warranty short of the RFQ, Clause 4.3).
+- Ergoluma Seating: RM48,481.20; warranty 5 years on frame, mechanism and gas lift; 50% deposit with the purchase order; verdict ESCALATE (deposit above 30%, Clause 6.2).
+Decision needed by 17 November 2026.
 Remove the template's example slides. Give me the finished deck as a PowerPoint file.
 ```
 

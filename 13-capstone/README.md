@@ -93,6 +93,7 @@ In the same chat, upload your brief's data files and send the prompt for your br
 ![Copilot's Matching Results table for the Brief A invoices](./images/13-05-test-data-15-minutes.png)
 
 *Copilot matched each invoice to its PO and goods received note. The results are blurred: check yours against the box below.*
+
 These are the cases your workflow must handle. Open your brief's box only after you've tried.
 
 <details markdown="1">
@@ -188,7 +189,7 @@ Only Admin is over 75%. Rows with no department add RM8,459.69 and should be lis
 
 | Copilot Chat (Basic) | M365 Copilot (Premium) | ChatGPT | Claude | Gemini |
 |---|---|---|---|---|
-| At most three files per message: send the brief first, then the data files. Copilot reads CSVs as text, so ask it to show its matching | **Analyst** runs code on the CSVs. A Notebook can hold the brief and the data | Runs code on the CSVs. On Free, watch the upload limit | Turn on file creation under **Settings** > **Capabilities** so Claude can run code on the CSVs | Upload the CSVs in a chat and ask for its working |
+| At most three files per message: send the brief first, then the data files. Copilot can run Python on the CSVs: ask it to show its matching | **Analyst** runs code on the CSVs. A Notebook can hold the brief and the data | Runs code on the CSVs. On Free, watch the upload limit | Turn on file creation under **Settings** > **Capabilities** so Claude can run code on the CSVs | Upload the CSVs in a chat and ask for its working |
 
 ---
 

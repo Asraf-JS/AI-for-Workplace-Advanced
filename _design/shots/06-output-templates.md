@@ -27,5 +27,4 @@ Capture each shot right after its step: for a step that sends a prompt, when the
 
 ## Check while you're there
 
-- the Check Accessibility command location in current PowerPoint for Windows, and that it reports missing slide titles for the bad deck. The web version (Accessibility tab) reported none in the Module 06 capture.
 - whether ChatGPT, Claude and Gemini return a .pptx that keeps the uploaded template's layouts, October 2026. Copilot (Basic) did, in the Module 06 capture.

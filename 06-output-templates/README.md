@@ -131,6 +131,24 @@ In desktop PowerPoint, the bad deck's check lists **Missing slide title** for al
 
    *The six headings survived, and the placeholders are replaced.*
 
+<details markdown="1">
+<summary>What should you see?</summary>
+
+The memo should fill the template without changing its look: the same headings, tables and fonts, with every grey placeholder replaced.
+
+| Field | Expected |
+|---|---|
+| Subject | Approval to purchase 120 ergonomic mesh office chairs for resale |
+| Reference | RFQ-2026-118 |
+| Quotations received | Duduk Selesa (DSF/QT/26/1043), Kerusi Nadira (KNT-2610-077), Ergoluma (ELS/Q/2026/0388) |
+| Recommended supplier | Duduk Selesa, subject to a revised quotation |
+| Total including tax | RM47,628.00 (the corrected figure, not the printed RM46,548.00) |
+| Approval required | HOD and Head of Procurement (Clause 3.1, RM5,000 to RM50,000) |
+
+The evaluation should name the three problems: Duduk Selesa's arithmetic (4.4), Kerusi Nadira's shorter warranty (4.3) and Ergoluma's 50% deposit (6.2).
+
+</details>
+
 > **If you don't see this:** if your tool can't return a Word file, ask for the memo text section by section, and paste each section into the template yourself with **Paste** > **Keep Text Only**. That keeps the template's styles.
 
 ---
@@ -150,6 +168,11 @@ In desktop PowerPoint, the bad deck's check lists **Missing slide title** for al
    Slide 2 (SM Title Only, with a table): the three quotations compared: supplier, correct total (RM), warranty, payment terms, verdict.
    Slide 3 (SM Content): the recommendation, Duduk Selesa at RM47,628.00 after a revised quotation, in up to four bullets.
    Slide 4 (SM Closing): the decision needed from the Head of Procurement, and by when.
+   Facts for slide 2:
+   - Duduk Selesa Furnishings: correct total RM47,628.00 (printed RM46,548.00); warranty 5 years on frame, mechanism and gas lift; payment 30 days from invoice; verdict REVISE (arithmetic, Clause 4.4).
+   - Kerusi Nadira Trading: RM43,416.00; warranty 3 years on frame, 1 year on mechanism and gas lift; payment 30 days from invoice; verdict REVISE (warranty short of the RFQ, Clause 4.3).
+   - Ergoluma Seating: RM48,481.20; warranty 5 years on frame, mechanism and gas lift; 50% deposit with the purchase order; verdict ESCALATE (deposit above 30%, Clause 6.2).
+   Decision needed by 17 November 2026.
    Remove the template's example slides. Give me the finished deck as a PowerPoint file.
    ```
 
@@ -167,7 +190,7 @@ In desktop PowerPoint, the bad deck's check lists **Missing slide title** for al
 
 ## 6.5 Do It Again with the Bad Template
 
-1. Start a new chat, upload `sinar-maju-deck-bad.pptx`, and send the same prompt as in 6.4 (it still names the layouts, which this file doesn't have).
+1. Start a new chat, upload `sinar-maju-deck-bad.pptx`, and send the same prompt as in 6.4, facts included (it still names the layouts, which this file doesn't have).
 
    ![Copilot's file card Approval_Deck_120_Chairs.pptx, previewing a title slide where the new title is squeezed into a narrow column over the old Presentation title text, highlighted](./images/06-14-start-new-chat-upload.png)
 
@@ -177,20 +200,7 @@ In desktop PowerPoint, the bad deck's check lists **Missing slide title** for al
 <details markdown="1">
 <summary>What should you see?</summary>
 
-The memo should fill the template without changing its look: the same headings, tables and fonts, with every grey placeholder replaced.
-
-| Field | Expected |
-|---|---|
-| Subject | Approval to purchase 120 ergonomic mesh office chairs for resale |
-| Reference | RFQ-2026-118 |
-| Quotations received | Duduk Selesa (DSF/QT/26/1043), Kerusi Nadira (KNT-2610-077), Ergoluma (ELS/Q/2026/0388) |
-| Recommended supplier | Duduk Selesa, subject to a revised quotation |
-| Total including tax | RM47,628.00 (the corrected figure, not the printed RM46,548.00) |
-| Approval required | HOD and Head of Procurement (Clause 3.1, RM5,000 to RM50,000) |
-
-The evaluation should name the three problems: Duduk Selesa's arithmetic (4.4), Kerusi Nadira's shorter warranty (4.3) and Ergoluma's 50% deposit (6.2).
-
-For the deck: new slides made from `sinar-maju-deck.pptx` should use its layouts and keep its fonts and colours. Slides made from `sinar-maju-deck-bad.pptx` usually drift: titles move, fonts change, and the slides have no real titles.
+New slides made from `sinar-maju-deck.pptx` should use its layouts and keep its fonts and colours. Slides made from `sinar-maju-deck-bad.pptx` usually drift: titles move, fonts change, and the slides have no real titles.
 
 In our test with Copilot, the good template came back with SM Title, SM Title Only, SM Content and SM Closing on slides 1 to 4. The bad template came back on a blank DEFAULT layout on every slide, with the new title squeezed into a narrow box and the template's example title still there, even though Copilot's answer said it had used the SM layouts. Check the file, not the AI's description of it.
 

@@ -70,5 +70,5 @@ Build a side-by-side comparison of the three quotations, one column per supplier
 **Session:** same chat | **Grounding:** the same files
 
 ```
-Using your checks, recommend one supplier. Give the correct total including tax, the verdict and the clause for each supplier, what must happen before we can issue a purchase order, and who must approve it under Clause 3.1.
+Check each of the three quotations, then tell me which one is closest to a purchase order. I'll make the choice. Give the correct total including tax, the verdict and the clause for each supplier, what must happen before we can issue a purchase order, and who must approve it under Clause 3.1.
 ```

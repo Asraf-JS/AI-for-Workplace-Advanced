@@ -482,7 +482,7 @@ CHAIR_VENDORS = [
         terms=[
             ("Validity", "30 days from the date of this quotation."),
             ("Payment", "50% deposit with purchase order. Balance 30 days from date of invoice."),
-            ("Delivery", "Within 21 days of receipt of deposit."),
+            ("Delivery", "Within 21 days of purchase order."),
             ("Warranty", "5 years on frame, mechanism and gas lift."),
             ("Prices", PRICES_TERM),
         ],
@@ -661,7 +661,7 @@ TEST_CASES = [
                 items=[("Boltless steel shelving bay, 2.0 m (H) x 1.5 m (W) x 0.6 m (D), 5 levels, "
                         "350 kg per level", 40, "bay", 615.00),
                        ("Delivery and installation, Petaling Jaya", 1, "lot", 1500.00)],
-                terms=STD_TERMS("14 days from the date of this quotation.", "21 days from receipt of deposit.",
+                terms=STD_TERMS("14 days from the date of this quotation.", "21 days from purchase order.",
                                 "2 years on workmanship.",
                                 payment="50% deposit with purchase order. Balance on completion of installation."),
                 signer="Tan Kok Wai", signer_title="General Manager")),

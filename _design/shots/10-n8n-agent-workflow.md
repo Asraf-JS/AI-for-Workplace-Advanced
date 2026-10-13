@@ -39,7 +39,3 @@ Capture each shot right after its step: for a step that sends a prompt, when the
 | `10-27-upload-four-quotations-turn.png` | 10.7 Run All Four Quotations | Form Submitted after uploading a quotation | Yes |
 | `10-28-after-check-inbox-open.png` | 10.7 Run All Four Quotations | The workflow's Executions tab with a list of succeeded runs and the selected run's path on the canvas | Yes |
 | `10-29-approval-emails-click-approve.png` | 10.7 Run All Four Quotations | An execution marked Waiting in the Executions list, ID 13 | Yes |
-
-## Check while you're there
-
-- in the capture run, the Approve links in the Cendana emails (executions 7 and 13) opened blank pages and the executions stayed Waiting. Click Approve by hand on a trial and check the execution finishes as Succeeded, and what the page after clicking shows.
