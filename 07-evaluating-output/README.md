@@ -115,7 +115,7 @@ Open the box only once all ten rows are filled in. Give 1 point for each right v
 | 09 | Rakmas | Fail | 4.3 | 250 kg per level; the RFQ asks for 300 kg |
 | 10 | Rangka Waja | Fail | 4.2 and 6.2 | Valid only 14 days (expired 30 October 2026) and asks for a 50% deposit |
 
-Four pass, six fail. Score 1 point for each right verdict and 1 for each right clause, out of 20. Case 10 needs both problems for both points.
+Four pass, six fail. Score 1 point for each right verdict and 1 for each right clause, out of 20. For case 10, Fail earns the verdict point, and the clause point needs both 4.2 and 6.2.
 
 </details>
 

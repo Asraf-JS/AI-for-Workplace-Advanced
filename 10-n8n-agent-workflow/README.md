@@ -83,7 +83,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md). If y
    ![The starter's three connected nodes and four sticky notes, Step 1 to Step 4](./images/10-04-ll-see-three-connected.png)
 
    *Three connected nodes on the left, and the four steps you'll build on the sticky notes.*
-5. Save the workflow (**Ctrl+S**). You don't need **Publish** for this lab.
+5. Select the workflow name at the top and rename it `AIW Quotation approval`. Then save it (**Ctrl+S**). You don't need **Publish** for this lab.
 
    ![The workflow saved as AIW Quotation approval](./images/10-05-save-workflow.png)
 
@@ -93,7 +93,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md). If y
 
 ## 10.2 Test the First Three Nodes
 
-1. Double-click **Upload quotation** and select **Execute step** (or open the test form URL). A form opens in your browser.
+1. Select **Execute workflow** at the bottom of the canvas. The workflow waits for the form, and the test form opens in your browser. (Execute step on **Upload quotation** opens the form too, but runs only that node, so the next two nodes would stay empty.)
 
    ![The test form Sinar Maju: check a quotation, with Quotation PDF and RFQ number fields](./images/10-06-double-click-upload-quotation.png)
 
@@ -160,7 +160,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md). If y
    ![Code node with Mode Run Once for Each Item and Language JavaScript](./images/10-16-set-mode-run-once.png)
 
    ***Run Once for Each Item** and **JavaScript**.*
-3. Replace the code with the **Part 3** code from the prompts page. It holds the names from `approved-vendors.csv`, and it changes the verdict to `reject` if the supplier isn't on the list, whatever the AI said.
+3. Replace the code with the **Part 3** code from the prompts page. It holds the names from `approved-vendors.csv`, and it changes the verdict to `reject` if the supplier isn't on the list, whatever the AI said. It compares whole names, so "Alat Tulis Cendana Sdn Bhd Subsidiary" doesn't count as Alat Tulis Cendana. At work, match on the vendor ID from your procurement system rather than a name the AI read from a PDF.
 
    ![The Part 3 code in the Code node, ending with the rule that changes the verdict to reject](./images/10-17-replace-code-part-3.png)
 
@@ -232,12 +232,12 @@ New words are explained in the [glossary](../14-product-cards/glossary.md). If y
 
 ## 10.7 Run All Four Quotations
 
-1. Save the workflow. Open the form again (**Upload quotation** > **Execute step**).
+1. Save the workflow. Select **Execute workflow** again to open the form.
 
    ![The test form opened again to upload the next quotation](./images/10-26-save-workflow-open-form.png)
 
    *The same test form, once for each quotation.*
-2. Upload each of the four quotations in turn, submitting the form once for each.
+2. Upload each of the four quotations in turn, submitting the form once for each. Before each new upload, select **Execute workflow** again so the whole workflow runs.
 
    ![Form Submitted after uploading a quotation](./images/10-27-upload-four-quotations-turn.png)
 

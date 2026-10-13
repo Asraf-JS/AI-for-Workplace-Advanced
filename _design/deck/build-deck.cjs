@@ -664,9 +664,9 @@ async function finalise(file) {
     "This module explains rules for training, not legal advice. Before each class, check the status of the AI Governance Bill.");
   {
     const s = content("Module 12", "Malaysia's AI landscape",
-      "PDPA amendments: in force from 1 June 2025 (Data Protection Officer, breach notification, data portability).\n\nAIGE: MOSTI, September 2024, voluntary.\n\nAI Governance Bill: public consultation by the National AI Office in July 2026, a risk-based draft. Not law as of October 2026: check before class.");
+      "PDPA amendments: in force from 1 June 2025 (a Data Protection Officer where the Commissioner's criteria apply, breach notification, data portability).\n\nAIGE: MOSTI, September 2024, voluntary.\n\nAI Governance Bill: public consultation by the National AI Office in July 2026, a risk-based draft. Not law as of October 2026: check before class.");
     columns(s, [
-      [I.lock, "PDPA 2010 and the 2024 amendments", "Personal data in AI tools. A DPO, breach notification and data portability from 1 June 2025"],
+      [I.lock, "PDPA 2010 and the 2024 amendments", "Personal data in AI tools. A DPO where the criteria apply, breach notification and data portability from 1 June 2025"],
       [I.scale, "National AI principles (AIGE)", "Seven voluntary principles from MOSTI, September 2024"],
       [I.file, "AI Governance Bill", "A proposed, risk-based law. Consulted on in July 2026. Not law yet"],
     ], 2.2, { size: 18, textH: 2.2 });

@@ -87,7 +87,7 @@ Using only the requirements table above, make a blank comparison table in Markdo
 
 Some tools split a combined requirement into several rows, for example "Breathable mesh, with adjustable lumbar support" into two. That's fine, as long as every row still comes from your Step 1 table.
 
-Copy the table into Word or Excel to see that it pastes cleanly. You'll fill a table like this with real quotations in Module 03.
+Copy the table into Word or Excel to see that it pastes cleanly. If it pastes as lines of text full of | characters, you copied the raw Markdown: ask the AI to show the table normally instead of in a code box, then select the table and copy it. You'll fill a table like this with real quotations in Module 03.
 
 ---
 

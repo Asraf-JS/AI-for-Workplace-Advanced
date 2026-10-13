@@ -81,7 +81,7 @@ Plain-language meanings for the words this course uses. The module in brackets i
 | Word | What it means |
 |---|---|
 | **PDPA** | Malaysia's Personal Data Protection Act 2010, amended in 2024. It governs how organisations handle personal data. (12) |
-| **DPO** (Data Protection Officer) | The person an organisation appoints to oversee personal data, required under the PDPA amendments. (12) |
+| **DPO** (Data Protection Officer) | The person an organisation appoints to oversee personal data. The PDPA amendments require one for organisations that meet the Commissioner's criteria. (12) |
 | **AIGE** | Malaysia's National Guidelines on AI Governance and Ethics, with seven principles such as fairness and transparency. (12) |
 | **Use-case register** | A list of every way a team uses AI, with its data, risk rating, human check and owner. (12) |
 | **Enterprise data protection** | The green shield in Copilot: your work data stays inside your organisation and isn't used to train the model. (11) |

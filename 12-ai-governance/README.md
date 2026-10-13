@@ -36,7 +36,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md).
 
 **Why the department.** IT can approve a tool. Only the people who use it know what data goes in, what the output is used for, and where a mistake would hurt. Good AI governance is a short set of rules the team actually follows, and a list of what the team uses AI for.
 
-**Personal data: the PDPA.** The Personal Data Protection Act 2010 applies whenever you process personal data in a commercial transaction, including pasting it into an AI tool. The Personal Data Protection (Amendment) Act 2024 added, from 1 June 2025: the duty to appoint a Data Protection Officer, the duty to notify the Personal Data Protection Commissioner of a personal data breach as soon as practicable (and the people affected, if it's likely to cause them significant harm), and a right to data portability.
+**Personal data: the PDPA.** The Personal Data Protection Act 2010 applies whenever you process personal data in a commercial transaction, including pasting it into an AI tool. The Personal Data Protection (Amendment) Act 2024 added, from 1 June 2025: the duty to appoint a Data Protection Officer (for organisations that meet the Commissioner's criteria, such as processing large volumes of personal data; check with your legal team whether yours does), the duty to notify the Personal Data Protection Commissioner of a personal data breach as soon as practicable (and the people affected, if it's likely to cause them significant harm), and a right to data portability.
 
 **The national AI principles.** In September 2024 the Ministry of Science, Technology and Innovation (MOSTI) published the **National Guidelines on AI Governance and Ethics (AIGE)**. They're voluntary, and set seven principles:
 
@@ -91,7 +91,7 @@ In the same chat, send:
 
 ```
 Add a Risk column (Low, Medium or High) using these rules:
-- High: uses personal data, or its output is sent outside the company or commits money without a person checking it first
+- High: uses customers' or staff members' personal data beyond names and work contact details, or its output is sent outside the company or commits money without a person checking it first
 - Medium: uses confidential company data, or a person relies on it to make a decision
 - Low: uses public or fictional data, and a person always checks the output
 Give one sentence explaining each rating. Then sort the table from High to Low.
@@ -115,11 +115,9 @@ Your ratings may differ: this is a judgement, and the reason matters more than t
 | Quotation Checker | Medium | Confidential supplier prices; people rely on it to decide |
 | Purchase history analysis | Medium | Confidential spend data; the Finance Director acts on it |
 | Approval memos and decks | Medium | Confidential figures, checked by the author before sending |
-| Policy notebook | Low | Internal policy, and staff check the cited clause |
+| Policy notebook | Medium | Internal policy is confidential company data, and staff rely on its answers |
 
-In our test run, Copilot rated the policy notebook Medium, because staff rely on its answers. That's defensible too: it stays Low only if staff always check the cited clause.
-
-The customer enquiry use moves to Medium if replies are only drafts that a sales executive checks and sends, and the tool is approved for personal data.
+None of the six is Low: Low is for public or fictional data only. Controls such as an approved tool and a person checking every draft reduce the risk of the customer enquiry use, but they don't change its rating. Record them in the **Human check before use** column instead.
 
 </details>
 

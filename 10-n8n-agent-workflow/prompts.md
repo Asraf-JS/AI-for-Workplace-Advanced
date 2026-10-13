@@ -80,9 +80,11 @@ const approved = [
   "Cetak Pelangi Kenanga Sdn Bhd",
 ];
 
+// Compare names exactly, ignoring case, dots and spaces ("Sdn. Bhd." = "Sdn Bhd")
+const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 const result = $json.output;
-const supplier = (result.supplier || "").toLowerCase();
-const onList = approved.some((name) => supplier.includes(name.toLowerCase()));
+const supplier = norm(result.supplier);
+const onList = approved.some((name) => norm(name) === supplier);
 
 // Not on the list means reject, whatever the AI said (Clause 5.1)
 return {

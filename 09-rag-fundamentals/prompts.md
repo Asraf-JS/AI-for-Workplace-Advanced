@@ -39,7 +39,7 @@ Which version of the policy did that come from? Check the page header.
 **Session:** same notebook | **Grounding:** sources
 
 ```
-For your answer about advance payments, list every passage you retrieved from the sources, with the document name, page and clause for each. Then explain why a passage from Version 2.1 could look relevant to the question.
+For your answer about advance payments, show the passages from the sources that you based it on, with the document name, page and clause for each. Then explain why a passage from Version 2.1 could look relevant to the question.
 ```
 
 ---
