@@ -89,7 +89,7 @@ For each case, 01 to 10:
 
    *Case 01's report. Score the verdict and the clause, not how tidy it looks.*
 
-3. Fill in the Checker verdict, Pass or Fail, and the clause it gives.
+3. Fill in the Checker verdict, Pass or Fail, and the clause it gives. The report lists every check, so write the clause of each check it marked **Fail** (for a Pass, leave the clause blank).
 
 > **Tip:** working in pairs, split the cases: one person runs 01 to 05, the other 06 to 10. Then swap scoresheets to check.
 

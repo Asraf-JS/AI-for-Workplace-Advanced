@@ -41,7 +41,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md). If y
 **RAG in four steps.** Notebooks and Projects with files work like this:
 
 1. **Split:** each document is cut into small chunks, often a few paragraphs each.
-2. **Index:** each chunk is turned into a list of numbers that captures its meaning, so similar chunks can be found quickly.
+2. **Index:** the tool files each chunk by its meaning, a bit like a librarian shelving books by topic rather than by title. That's how it finds chunks about "deposits" even when you ask about "advance payments".
 3. **Retrieve:** when you ask a question, the tool finds the chunks whose meaning is closest to it.
 4. **Answer:** the model writes an answer from those chunks only, and cites them.
 

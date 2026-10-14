@@ -26,7 +26,7 @@ Your Quotation Checker quotes the procurement policy. But when a colleague asks 
 
 Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds `procurement-policy-v3.0.pdf` and `approved-vendor-list.pdf`.
 
-This lab works best in **Gemini Notebook** (formerly NotebookLM), which is free with a Google account and links each citation to the exact quote. Copilot Notebooks and ChatGPT or Claude Projects also work. See the Product Notes below.
+This lab works best in **Gemini Notebook** (formerly NotebookLM), which is free with a Google account and links each citation to the exact quote. If you only have Copilot, a Copilot Notebook works just as well: the screenshots show Gemini, but the steps are the same. ChatGPT or Claude Projects also work. See the Product Notes below.
 
 New words are explained in the [glossary](../14-product-cards/glossary.md). If your company blocks Gemini Notebook, see [If your company blocks a tool](../14-product-cards/locked-down.md).
 
@@ -104,7 +104,7 @@ What happens if one department places several small orders with the same supplie
 
 ## 4.3 Check Every Citation
 
-1. For each answer, open the policy PDF and find the clause it names.
+1. For each answer, open the policy PDF and find the clause it names. In Gemini Notebook, click the citation number. In Copilot, select **Sources** under the answer to see which file it used, then open that PDF yourself and find the clause.
 
    ![A citation preview for Clause 7.2, with the cited passage highlighted in the policy and View source highlighted](./images/04-05-answer-open-policy-pdf.png)
 

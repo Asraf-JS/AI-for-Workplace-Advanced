@@ -115,3 +115,21 @@ Problems found:
 
 Approve to continue, or disapprove to stop.
 ```
+
+---
+
+## Part 5: The Revise and Reject email
+
+**Session:** the plain **Send a message** email nodes on the **Revise** and **Reject** outputs | **Grounding:** the output of **Check the vendor list**
+
+```
+Quotation from {{ $json.supplier }} ({{ $json.quotation_no }}) for RFQ-2026-131.
+Verdict: {{ $json.verdict }}
+Correct total including tax: RM{{ $json.correct_total }}
+On the Approved Vendor List: {{ $json.on_avl }}
+
+Problems found:
+{{ $json.problems.map(p => p.clause + ": " + p.finding).join("\n") }}
+
+No action was taken. A person decides what to tell the supplier.
+```

@@ -1785,7 +1785,7 @@ def build_canvas(path):
 
     head = doc.add_table(rows=1, cols=4)
     head.style = "Table Grid"
-    for i, txt in enumerate(["Team", "", "Brief (A, B or C)", ""]):
+    for i, txt in enumerate(["Team", "", "Brief (A, B, C or D)", ""]):
         c = head.rows[0].cells[i]
         c.text = txt
         if txt:

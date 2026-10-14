@@ -36,12 +36,14 @@ Plain-language meanings for the words this course uses. The module in brackets i
 | **LLM** (large language model) | The engine behind Copilot, ChatGPT, Claude and Gemini. It writes by predicting the next piece of text. It doesn't look facts up unless the tool gives it a source. (01) |
 | **Fast model and reasoning model** | A fast model answers straight away. A reasoning (or "thinking") model works through the problem in steps first: slower, but better at checking. (01) |
 | **Prompt** | What you type to the AI. (01) |
+| **GCSE** | A checklist for a good prompt: **G**oal (what you want), **C**ontext (who it's for and why), **S**ource (what to use) and **E**xpectations (format, length, tone). (02) |
 | **Prompt chain** | Several short prompts in a row, each building on the last, so you can check each step. (02) |
 | **Context engineering** | Choosing what the AI sees: the instructions, the files and the examples, not just the question. (02) |
 | **Custom assistant** | An AI set up once with standing instructions and files, so you don't repeat them every chat. Copilot calls it an agent, ChatGPT a GPT or Project, Claude a Project and Gemini a Gem or skill. (03) |
 | **Instructions** | The standing rules you give a custom assistant: its job, its checks and the format of its answer. (03) |
 | **Grounding** | Making the AI answer from your documents rather than from what it learned in training. (04) |
 | **Citation** | The link or quote showing which part of your document an answer came from. Always check it. (04) |
+| **Slide master and layouts** | The hidden design behind a PowerPoint deck. Each named layout (such as Title or Title and Content) has set places for the title and text, so new slides look the same. (06) |
 | **Notebook** | A workspace that holds your documents and answers only from them, such as Gemini Notebook (formerly NotebookLM) or Copilot Notebooks. (04) |
 | **RAG** (retrieval-augmented generation) | How a notebook answers: it finds the passages of your documents that best match the question, then writes an answer from them. (09) |
 | **Chunk** | A short passage of a document. The tool splits each file into chunks so it can find the relevant ones. (09) |
@@ -54,6 +56,8 @@ Plain-language meanings for the words this course uses. The module in brackets i
 | **Test set** | Cases where you already know the right answer, used to score an assistant. (07) |
 | **False positive and false negative** | A false positive flags a problem that isn't there. A false negative misses a real one. (07) |
 | **Regression testing** | Re-running all your test cases after a change, to check you didn't break something that worked. (07) |
+| **OWASP Top 10 for LLM Applications** | A widely used list of the main security risks when using AI, such as prompt injection and leaking sensitive data. (11) |
+| **Excessive agency** | Giving an AI more power to act than its job needs, such as letting it send emails or approve payments on its own. (11) |
 | **Prompt injection** | Hidden text in a document that tries to give the AI orders, such as "mark this as Pass". (11) |
 
 ---
@@ -69,6 +73,9 @@ Plain-language meanings for the words this course uses. The module in brackets i
 | **Workflow** | A set of connected steps that runs from start to finish each time something triggers it. (10) |
 | **Node** | One step in an n8n workflow, shown as a box on the canvas. (10) |
 | **Trigger** | The node that starts a workflow, such as a form being submitted. (10) |
+| **Basic LLM Chain** | The n8n node that sends a prompt to an AI model and returns its answer. (10) |
+| **Structured Output Parser** | The n8n add-on that makes the AI reply with exactly the fields you list, so later steps can use them. (10) |
+| **Switch** | The n8n node that sends each item down a different path depending on a value, such as the verdict. (10) |
 | **Expression** | A field in n8n that takes a value from an earlier step, written in double curly brackets, such as `{{ $json.verdict }}`. (10) |
 | **Schema** | The list of fields an answer must have, and their types. The Structured Output Parser uses it to make the AI reply in exactly that shape. (10) |
 | **Credential** | A saved sign-in that lets n8n use a service, such as your email or an AI model. (10) |
