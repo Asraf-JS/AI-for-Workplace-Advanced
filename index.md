@@ -33,7 +33,7 @@ To read offline or print: download the **[course book (PDF)](./AI-for-Workplace-
 
 ## Course Scenario
 
-This is the continuation of **AI for Workplace (Beginner)**. Participants build one assistant on Day 1 and keep improving it: grounding it in company policy, producing on-brand documents from templates, measuring its accuracy, and on Day 2 rebuilding it as an agent workflow with human approval.
+This is the continuation of **AI for Workplace (Beginner)**. If you didn't take the Beginner course, you can still join: Day 1 starts from how AI models behave, and the [glossary](./14-product-cards/glossary.md) explains every new word. Participants build one assistant on Day 1 and keep improving it: grounding it in company policy, producing on-brand documents from templates, measuring its accuracy, and on Day 2 rebuilding it as an agent workflow with human approval.
 
 ---
 

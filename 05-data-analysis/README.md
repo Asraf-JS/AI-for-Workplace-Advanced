@@ -116,12 +116,12 @@ Then check one figure yourself:
    ![The Insert PivotTable pane, with the source range Purchase Orders!A1:Q355 and New sheet highlighted](./images/05-05-excel-select-data-choose.png)
 
    *Check the source covers the whole table, then choose **New sheet**.*
-2. Put **Vendor ID** in Rows and **Total (RM)** in Values.
+2. In the **PivotTable Fields** pane on the right, tick **Vendor ID** (it goes to **Rows**) and tick **Total (RM)** (it goes to **Values**). Values should say **Sum of Total (RM)**.
 
    ![The PivotTable Fields pane with Vendor ID in Rows and Sum of Total (RM) in Values, highlighted, and the totals blurred](./images/05-06-put-vendor-id-rows.png)
 
    *Vendor ID in **Rows**, Total (RM) in **Values**.*
-3. Filter **Status** to leave out Cancelled.
+3. Drag **Status** from the field list into the **Filters** box. A **Status** filter appears above the PivotTable. Open it, tick **Select Multiple Items**, untick **Cancelled**, and select **OK**.
 
    ![Status in the Filters area and the Multiple Items filter highlighted, with the totals blurred](./images/05-07-filter-status-leave-out.png)
 

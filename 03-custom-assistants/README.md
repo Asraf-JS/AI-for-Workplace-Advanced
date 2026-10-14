@@ -104,6 +104,8 @@ New words are explained in the [glossary](../14-product-cards/glossary.md).
 
    *The instructions in place. The counter shows about 2,000 of 8,000 characters used.*
 
+   > **Tip:** the four verdicts in plain words. **PASS**: everything is fine, send it for approval. **REVISE**: something is wrong that the supplier can fix, so ask for a new quotation. **REJECT**: the supplier isn't on the approved list. **ESCALATE**: the quotation breaks a policy limit that only the Finance Director can allow, such as a bigger deposit.
+
 4. Save the assistant.
 
    ![The message Your agent was created successfully, with Start chat highlighted](./images/03-04-save-assistant.png)
@@ -125,7 +127,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md).
 
 ## 3.3 Check One Quotation at a Time
 
-1. Start a new chat with your Quotation Checker. If your assistant has no files, upload the policy and the vendor list first. It should reply "Ready" and wait for the quotation.
+1. Start a new chat with your Quotation Checker (in Copilot, select **Agents** in the left pane, then **Quotation Checker**). If your assistant has no files, upload the policy and the vendor list first, type `Here are the policy and the vendor list.` and send. It should reply "Ready" and wait for the quotation.
 
    ![The policy and vendor list sent to the Quotation Checker, which replies Ready. Send the RFQ and the quotation.](./images/03-05-start-new-chat-quotation.png)
 
@@ -203,7 +205,7 @@ Duduk Selesa's total must show **RM46,548.00**, the printed figure. If your Chec
 1. In the same chat, send:
 
    ```
-   Check each of the three quotations, then tell me which one is closest to a purchase order. I'll make the choice. Give the correct total including tax, the verdict and the clause for each supplier, what must happen before we can issue a purchase order, and who must approve it under Clause 3.1.
+   Check each of the three quotations, then tell me which one is closest to being ready to order. I'll make the choice. Give the correct total including tax, the verdict and the clause for each supplier, what must happen before we can issue a purchase order, and who must approve it under Clause 3.1.
    ```
 
    ![The Checker's Recommendation Summary heading, with the recommendation and the table blurred](./images/03-11-same-chat-send.png)

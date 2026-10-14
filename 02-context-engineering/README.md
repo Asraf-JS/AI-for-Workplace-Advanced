@@ -34,7 +34,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md).
 
 **Context is everything the model sees.** That's your prompt, any files, the earlier messages in the chat, your custom instructions and anything the tool remembers about you. The model can't tell which parts matter most unless you say so. A long chat full of earlier tasks can confuse it, which is why a fresh chat often gives a better answer.
 
-**GCSE, one level up.** From the Beginner course: **G**oal (what you want), **C**ontext (who it's for and why), **S**ource (what to use) and **E**xpectations (format, length, tone). At this level, add boundaries: tell the model to use only the source, and say what to do when the source doesn't answer the question.
+**GCSE, one level up.** From the Beginner course: **G**oal (what you want), **C**ontext (who it's for and why), **S**ource (what to use) and **E**xpectations (format, length, tone). At this level, add boundaries: tell the model to use only the source, and say what to do when the source doesn't answer the question. For example: "List the requirements in this RFQ (goal) for a buyer comparing three quotations (context). Use only the attached PDF (source). Give a table with one row per requirement, and write 'Not stated' if something is missing (expectations)." The prompts in this module follow that pattern.
 
 **Prompt chains.** One huge prompt asks the model to do everything at once, and mistakes are hard to spot. A chain does one step per prompt. You check each result before the next step uses it.
 

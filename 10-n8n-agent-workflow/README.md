@@ -135,7 +135,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md). If y
    ![Check the quotation with Source for Prompt set to Define below and the Part 1 prompt pasted in](./images/10-12-set-prompt-source-define.png)
 
    ***Define below**, then the Part 1 prompt. The output on the right is blurred.*
-4. Turn on **Require Specific Output Format**. Add a **Structured Output Parser**, set **Schema Type** to **Generate From JSON Example**, and paste the **Part 2** example from the prompts page.
+4. Turn on **Require Specific Output Format**. A new **Output Parser** slot appears under the node on the canvas, next to **Model**. Select its **+**, choose **Structured Output Parser**, set **Schema Type** to **Generate From JSON Example**, and paste the **Part 2** example from the prompts page.
 
    ![Structured Output Parser with Schema Type Generate From JSON Example and the Part 2 example](./images/10-13-turn-require-specific-output.png)
 
@@ -180,7 +180,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md). If y
    ![A new Switch node named Route with one empty routing rule](./images/10-19-add-switch-node-after.png)
 
    *The Switch starts with one empty rule.*
-2. Add four rules, each checking the value `{{ $json.verdict }}`:
+2. Add four rules (**Add Routing Rule**). In each rule, type `{{ $json.verdict }}` in the left box, choose **String** > **is equal to**, and type the value in the right box. Turn on **Rename Output** and type the output name:
 
    | Rule | Value equals | Rename the output to |
    |---|---|---|
@@ -203,7 +203,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md). If y
 
 ## 10.6 Ask a Person to Approve
 
-1. On the **Approve** output, add a **Gmail** (or **Microsoft Outlook**) node and pick the action **Send message and wait for response** (the node then shows the operation **Send and Wait for Response**). Connect your email account.
+1. On the **Approve** output, add a **Gmail** (or **Microsoft Outlook**) node and pick the action **Send message and wait for response** (the node then shows the operation **Send and Wait for Response**). Under **Credential**, select **Create new credential** and sign in with your email account. If your company blocks this, see [If your company blocks a tool](../14-product-cards/locked-down.md).
 
    ![Microsoft Outlook node with Operation Send and Wait for Response and Response Type Approval](./images/10-22-approve-output-add-gmail.png)
 
@@ -222,7 +222,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md). If y
    ![Ask Finance Director node with the subject AIW TRAINING Finance Director approval](./images/10-24-do-same-escalate-output.png)
 
    *The same settings, with the Finance Director subject.*
-4. On the **Revise** and **Reject** outputs, add a plain email to yourself (action **Send a message**, operation **Send**) saying what happened. (At work, Revise would draft an email to the supplier, and a person would send it.)
+4. On the **Revise** and **Reject** outputs, add a plain email to yourself (action **Send a message**, operation **Send**), with the subject `[AIW TRAINING] Revise: {{ $json.supplier }}` or `[AIW TRAINING] Reject: {{ $json.supplier }}` and the **Part 5** message from the prompts page. (At work, Revise would draft an email to the supplier, and a person would send it.)
 
    ![Report reject node with Operation Send and the AIW TRAINING Reject subject](./images/10-25-revise-reject-outputs-add.png)
 

@@ -81,7 +81,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md).
 
    *Copilot's first table. Here it listed the customer enquiry use twice: delete the copy so there's one row per use.*
 
-3. Replace every "To confirm" with your own answer. You know the process; the AI is guessing. Check the table has one row per use: AI tools sometimes split or repeat a row (in our test run, Copilot listed the customer enquiry drafting twice).
+3. Replace every "To confirm" with your own answer. You know the process; the AI is guessing. (If procurement isn't your field, use what you saw in the course: for example, the Head of Procurement owns the Quotation Checker.) Check the table has one row per use: AI tools sometimes split or repeat a row (in our test run, Copilot listed the customer enquiry drafting twice).
 
 ---
 

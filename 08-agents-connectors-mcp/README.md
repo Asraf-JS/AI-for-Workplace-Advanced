@@ -90,7 +90,7 @@ Now go through the table yourself and change anything you disagree with. This is
 
 ## 8.3 Name the Connectors
 
-1. Open your AI tool's connector list (see the [product card](../14-product-cards/)) and look at what it can connect to today.
+1. Open your AI tool's connector list (see the [product card](../14-product-cards/)) and look at what it can connect to today. In Copilot, select **Agents**, open your **Quotation Checker**, select **Edit**, and scroll to **Knowledge**.
 
    ![The Knowledge section of a Copilot agent, with Add knowledge and the Enter a link box highlighted](./images/08-04-open-ai-tool-s.png)
 
@@ -105,7 +105,7 @@ Now go through the table yourself and change anything you disagree with. This is
 
    *Each step's connector, with read or write.*
 
-3. Compare the list with what your tool actually offers. Which connectors exist? Which would IT have to build, for example as an MCP server for the procurement system?
+3. Compare the list with what your tool actually offers. Which connectors exist? Which would IT have to build, for example as an MCP server for the procurement system? (That means IT sets up a small service that lets an approved AI tool look up the procurement system, under rules IT controls. You only need to say which systems the agent would need.)
 
 <details markdown="1">
 <summary>What should you see?</summary>

@@ -90,7 +90,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md).
 
 ## 13.3 Test the Data (15 minutes)
 
-In the same chat, upload your brief's data files and send the prompt for your brief from the [prompts page](./prompts.md) (Part 2A, 2B, 2C or 2D). Then check at least two of the AI's findings yourself in the files. In our test run, Copilot's first answer got one invoice wrong, and asking again fixed it. That's why you check.
+In the same chat, upload your brief's data files and send the prompt for your brief from the [prompts page](./prompts.md) (Part 2A, 2B, 2C or 2D). The brief files are fictional, so they're safe to upload to any AI tool. At work, a brief's rule about personal data would apply to the real files. Then check at least two of the AI's findings yourself in the files. In our test run, Copilot's first answer got one invoice wrong, and asking again fixed it. That's why you check.
 
 
 ![Copilot's Matching Results table for the Brief A invoices](./images/13-05-test-data-15-minutes.png)
