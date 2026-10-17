@@ -1,0 +1,13 @@
+{%- comment -%} One sidebar link from _data/nav.yml. On a Malay page it points to the
+     Malay version of the page when one exists, and to the English page otherwise. {%- endcomment -%}
+{%- assign item = include.item -%}
+{%- assign key = item.match | default: item.url | remove: "/" -%}
+{%- assign active = false -%}
+{%- if page.url contains key -%}{%- assign active = true -%}{%- endif -%}
+{%- if item.except and page.url contains item.except -%}{%- assign active = false -%}{%- endif -%}
+{%- assign href = item.url | remove: ".html" -%}
+{%- if is_ms -%}
+  {%- assign item_probe = "|/ms" | append: item.url | append: "|" -%}
+  {%- if pageurls contains item_probe -%}{%- assign href = href | prepend: "/ms" -%}{%- endif -%}
+{%- endif %}
+    <a class="nav-item{% if active %} active{% endif %}" href="{{ base }}{{ href }}"><span class="nav-num">{{ item.num }}</span><span class="nav-name">{% if is_ms %}{{ item.ms }}{% else %}{{ item.en }}{% endif %}</span></a>

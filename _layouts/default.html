@@ -1,5 +1,21 @@
+{%- comment -%} Bahasa Malaysia pages live under /ms/, mirroring the English ones. {%- endcomment -%}
+{%- assign base = "/AI-for-Workplace-Advanced" -%}
+{%- assign pageurls = site.pages | map: "url" | join: "|" | prepend: "|" | append: "|" -%}
+{%- assign url_head = page.url | slice: 0, 4 -%}
+{%- if url_head == "/ms/" -%}
+  {%- assign is_ms = true -%}
+  {%- assign en_url = page.url | remove_first: "/ms" -%}
+  {%- assign ms_url = page.url -%}
+{%- else -%}
+  {%- assign is_ms = false -%}
+  {%- assign en_url = page.url -%}
+  {%- assign ms_url = page.url | prepend: "/ms" -%}
+{%- endif -%}
+{%- assign probe = "|" | append: ms_url | append: "|" -%}
+{%- if pageurls contains probe -%}{%- assign has_ms = true -%}{%- else -%}{%- assign has_ms = false -%}{%- endif -%}
+{%- if is_ms -%}{%- assign home = base | append: "/ms/" -%}{%- else -%}{%- assign home = base | append: "/" -%}{%- endif -%}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{% if is_ms %}ms{% else %}en{% endif %}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -223,6 +239,16 @@ body{
   padding:52px 60px 80px 0;
 }
 
+/* EN | BM language switch, top right of the page. */
+.lang-switch{
+  display:flex;justify-content:flex-end;margin:0 0 14px;font-size:13px;font-weight:600;
+}
+.lang-switch > *{padding:5px 12px;border:1px solid var(--teal);line-height:1.3;}
+.lang-switch > :first-child{border-radius:999px 0 0 999px;}
+.lang-switch > :last-child{border-radius:0 999px 999px 0;border-left:none;}
+.lang-switch span{background:var(--teal);color:var(--bg);}
+.lang-switch a{color:var(--teal);text-decoration:none;}
+.lang-switch a:hover{background:var(--teal-light);text-decoration:none;}
 .breadcrumb{
   font-size:12px;
   color:var(--text-muted);
@@ -623,44 +649,40 @@ body{
 
 <div class="sidebar">
   <div class="sidebar-header">
-    <a class="sidebar-logo" href="/AI-for-Workplace-Advanced/">
+    <a class="sidebar-logo" href="{{ home }}">
       <img src="/AI-for-Workplace-Advanced/logo.png" alt="Asraf">
       <span class="sidebar-logo-name">Asraf JS</span>
     </a>
     <div class="sidebar-subtitle">AI for Workplace (Advanced) &nbsp;·&nbsp; 2026</div>
   </div>
 
- <div class="sidebar-nav">
-    <div class="nav-section-label">Modules</div>
-    <a class="nav-item{% if page.url contains '01-how-llms-behave' %} active{% endif %}" href="/AI-for-Workplace-Advanced/01-how-llms-behave/"><span class="nav-num">01</span><span class="nav-name">How LLMs Behave</span></a>
-    <a class="nav-item{% if page.url contains '02-context-engineering' %} active{% endif %}" href="/AI-for-Workplace-Advanced/02-context-engineering/"><span class="nav-num">02</span><span class="nav-name">Context Engineering</span></a>
-    <a class="nav-item{% if page.url contains '03-custom-assistants' %} active{% endif %}" href="/AI-for-Workplace-Advanced/03-custom-assistants/"><span class="nav-num">03</span><span class="nav-name">Custom Assistants</span></a>
-    <a class="nav-item{% if page.url contains '04-grounded-research' %} active{% endif %}" href="/AI-for-Workplace-Advanced/04-grounded-research/"><span class="nav-num">04</span><span class="nav-name">Grounded Research</span></a>
-    <a class="nav-item{% if page.url contains '05-data-analysis' %} active{% endif %}" href="/AI-for-Workplace-Advanced/05-data-analysis/"><span class="nav-num">05</span><span class="nav-name">Data Analysis</span></a>
-    <a class="nav-item{% if page.url contains '06-output-templates' %} active{% endif %}" href="/AI-for-Workplace-Advanced/06-output-templates/"><span class="nav-num">06</span><span class="nav-name">Output Templates</span></a>
-    <a class="nav-item{% if page.url contains '07-evaluating-output' %} active{% endif %}" href="/AI-for-Workplace-Advanced/07-evaluating-output/"><span class="nav-num">07</span><span class="nav-name">Evaluating Output</span></a>
-    <a class="nav-item{% if page.url contains '08-agents-connectors-mcp' %} active{% endif %}" href="/AI-for-Workplace-Advanced/08-agents-connectors-mcp/"><span class="nav-num">08</span><span class="nav-name">Agents, Connectors and MCP</span></a>
-    <a class="nav-item{% if page.url contains '09-rag-fundamentals' %} active{% endif %}" href="/AI-for-Workplace-Advanced/09-rag-fundamentals/"><span class="nav-num">09</span><span class="nav-name">RAG Fundamentals</span></a>
-    <a class="nav-item{% if page.url contains '10-n8n-agent-workflow' %} active{% endif %}" href="/AI-for-Workplace-Advanced/10-n8n-agent-workflow/"><span class="nav-num">10</span><span class="nav-name">Agent Workflow in n8n</span></a>
-    <a class="nav-item{% if page.url contains '11-ai-security' %} active{% endif %}" href="/AI-for-Workplace-Advanced/11-ai-security/"><span class="nav-num">11</span><span class="nav-name">AI Security</span></a>
-    <a class="nav-item{% if page.url contains '12-ai-governance' %} active{% endif %}" href="/AI-for-Workplace-Advanced/12-ai-governance/"><span class="nav-num">12</span><span class="nav-name">AI Governance</span></a>
-    <a class="nav-item{% if page.url contains '13-capstone' %} active{% endif %}" href="/AI-for-Workplace-Advanced/13-capstone/"><span class="nav-num">13</span><span class="nav-name">Capstone</span></a>
-    <div class="nav-section-label">Reference</div>
-    <a class="nav-item{% if page.url contains '14-product-cards' %}{% unless page.url contains 'glossary' %} active{% endunless %}{% endif %}" href="/AI-for-Workplace-Advanced/14-product-cards/"><span class="nav-num">14</span><span class="nav-name">Product Cards</span></a>
-    <a class="nav-item{% if page.url contains 'glossary' %} active{% endif %}" href="/AI-for-Workplace-Advanced/14-product-cards/glossary"><span class="nav-num">A&ndash;Z</span><span class="nav-name">Glossary</span></a>
+  <div class="sidebar-nav">
+    <div class="nav-section-label">{% if is_ms %}Modul{% else %}Modules{% endif %}</div>
+    {%- for item in site.data.nav.modules %}{% include nav-item.html item=item %}{% endfor %}
+    <div class="nav-section-label">{% if is_ms %}Rujukan{% else %}Reference{% endif %}</div>
+    {%- for item in site.data.nav.reference %}{% include nav-item.html item=item %}{% endfor %}
   </div>
 
   <div class="sidebar-footer">
-    <a href="/AI-for-Workplace-Advanced/">Home</a>
-    <a href="https://github.com/Asraf-JS/AI-for-Workplace-Advanced" target="_blank">GitHub Repo</a>
+    <a href="{{ home }}">{% if is_ms %}Laman Utama{% else %}Home{% endif %}</a>
+    <a href="https://github.com/Asraf-JS/AI-for-Workplace-Advanced" target="_blank">{% if is_ms %}Repo GitHub{% else %}GitHub Repo{% endif %}</a>
   </div>
 </div>
 
 <div class="main-wrap">
   <div class="main-inner">
-    {% unless page.url == "/" or page.url == "/AI-for-Workplace-Advanced/" %}
+    {% if is_ms or has_ms %}
+    <div class="lang-switch" aria-label="Language / Bahasa">
+      {%- if is_ms %}
+      <a href="{{ base }}{{ en_url | remove: '.html' }}" lang="en" hreflang="en">English</a><span aria-current="true">Bahasa Malaysia</span>
+      {%- else %}
+      <span aria-current="true">English</span><a href="{{ base }}{{ ms_url | remove: '.html' }}" lang="ms" hreflang="ms">Bahasa Malaysia</a>
+      {%- endif %}
+    </div>
+    {% endif %}
+    {% unless page.url == "/" or page.url == "/ms/" or page.url == "/AI-for-Workplace-Advanced/" %}
     <div class="breadcrumb">
-      <a href="/AI-for-Workplace-Advanced/">Course Home</a>
+      <a href="{{ home }}">{% if is_ms %}Laman Kursus{% else %}Course Home{% endif %}</a>
       <span class="breadcrumb-sep">/</span>
       <span>{{ page.title }}</span>
     </div>
@@ -672,13 +694,17 @@ body{
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   // A blockquote that starts with a bold "Warning", "Stop" or "Caution" label gets the red style.
+  // Bahasa Malaysia labels count too: Amaran, Berhenti, Awas and Muat turun.
   document.querySelectorAll(".main-inner blockquote").forEach(function (q) {
     const first = q.querySelector("p > strong:first-child");
-    if (first && /^(warning|stop|caution)/i.test(first.textContent.trim())) q.classList.add("warn");
+    if (first && /^(warning|stop|caution|amaran|berhenti|awas)/i.test(first.textContent.trim())) q.classList.add("warn");
     // A blockquote that starts with a bold "Download" label gets the download box.
-    if (first && /^download/i.test(first.textContent.trim())) q.classList.add("dl");
+    if (first && /^(download|muat turun)/i.test(first.textContent.trim())) q.classList.add("dl");
   });
 
+  const BM = document.documentElement.lang === "ms";
+  const T = BM ? { copy: "Salin", copied: "Disalin", failed: "Gagal", click: "Klik untuk salin" }
+               : { copy: "Copy", copied: "Copied", failed: "Failed", click: "Click to copy" };
   const codeBlocks = document.querySelectorAll(".main-inner pre");
 
   codeBlocks.forEach(function (pre) {
@@ -694,21 +720,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const button = document.createElement("button");
     button.className = "copy-code-btn";
     button.type = "button";
-    button.textContent = "Copy";
+    button.textContent = T.copy;
 
     button.addEventListener("click", async function () {
       const text = code.innerText;
       try {
         await navigator.clipboard.writeText(text);
-        button.textContent = "Copied";
+        button.textContent = T.copied;
         button.classList.add("copied");
         setTimeout(function () {
-          button.textContent = "Copy";
+          button.textContent = T.copy;
           button.classList.remove("copied");
         }, 1500);
       } catch (err) {
-        button.textContent = "Failed";
-        setTimeout(function () { button.textContent = "Copy"; }, 1500);
+        button.textContent = T.failed;
+        setTimeout(function () { button.textContent = T.copy; }, 1500);
       }
     });
 
@@ -719,7 +745,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".main-inner code").forEach(function (code) {
     if (code.closest("pre")) return;
     code.classList.add("click-copy");
-    code.title = "Click to copy";
+    code.title = T.click;
     code.addEventListener("click", async function () {
       try {
         await navigator.clipboard.writeText(code.textContent);
@@ -779,9 +805,13 @@ document.addEventListener("DOMContentLoaded", function () {
   box.className = "lightbox";
   box.setAttribute("role", "dialog");
   box.setAttribute("aria-modal", "true");
-  box.setAttribute("aria-label", "Enlarged image");
-  box.innerHTML = '<button type="button" class="lightbox-popout" title="Open the image in its own window, to move beside your work or to another screen">Open in new window &#8599;</button>' +
-                  '<button type="button" class="lightbox-close" aria-label="Close">&times;</button>' +
+  const BM = document.documentElement.lang === "ms";
+  box.setAttribute("aria-label", BM ? "Imej dibesarkan" : "Enlarged image");
+  box.innerHTML = (BM
+    ? '<button type="button" class="lightbox-popout" title="Buka imej dalam tetingkapnya sendiri, untuk diletakkan di sebelah kerja anda atau di skrin lain">Buka dalam tetingkap baharu &#8599;</button>' +
+      '<button type="button" class="lightbox-close" aria-label="Tutup">&times;</button>'
+    : '<button type="button" class="lightbox-popout" title="Open the image in its own window, to move beside your work or to another screen">Open in new window &#8599;</button>' +
+      '<button type="button" class="lightbox-close" aria-label="Close">&times;</button>') +
                   '<img alt=""><div class="lightbox-caption"></div>';
   document.body.appendChild(box);
   const big = box.querySelector("img");
@@ -831,7 +861,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (img.closest("a")) return;
     img.classList.add("zoomable");
     img.tabIndex = 0;
-    img.title = "Click to open in a new window";
+    img.title = BM ? "Klik untuk buka dalam tetingkap baharu" : "Click to open in a new window";
     function show() {
       const from = img.ownerDocument.defaultView || window;
       if (!popOut(img.currentSrc || img.src, img.alt, img.naturalWidth, img.naturalHeight, from)) open(img);
@@ -913,8 +943,9 @@ document.addEventListener("DOMContentLoaded", function () {
     el.querySelector(".page-nav-topic").textContent = topic;
     nav.appendChild(el);
   }
-  if (prev) link(prev, "prev", "← Previous chapter: ", name(prev));
-  if (next) link(next, "next", current < 0 ? "Start with: " : "Next chapter: ", name(next) + " →");
+  const BM = document.documentElement.lang === "ms";
+  if (prev) link(prev, "prev", BM ? "← Modul sebelumnya: " : "← Previous chapter: ", name(prev));
+  if (next) link(next, "next", current < 0 ? (BM ? "Mula dengan: " : "Start with: ") : (BM ? "Modul seterusnya: " : "Next chapter: "), name(next) + " →");
   main.appendChild(nav);
 });
 </script>
@@ -993,8 +1024,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const btn = document.createElement("button");
   btn.type = "button";
   btn.className = "side-pop";
-  btn.title = "Open this page in a narrow window on the right, to follow while you work";
-  btn.textContent = "Pop out ↗";
+  const BM = document.documentElement.lang === "ms";
+  btn.title = BM ? "Buka halaman ini dalam tetingkap sempit di sebelah kanan, untuk diikuti semasa anda bekerja" : "Open this page in a narrow window on the right, to follow while you work";
+  btn.textContent = BM ? "Tetingkap sisi ↗" : "Pop out ↗";
   const h1 = main.querySelector("h1");
   main.insertBefore(btn, h1 || main.firstChild);
 
@@ -1015,7 +1047,7 @@ document.addEventListener("DOMContentLoaded", function () {
           doc.head.appendChild(c);
         });
         const fit = doc.createElement("style");
-        fit.textContent = "body{display:block;min-height:0;} .main-inner{padding:20px 18px 40px !important;max-width:none;} .side-pop,.breadcrumb{display:none;}";
+        fit.textContent = "body{display:block;min-height:0;} .main-inner{padding:20px 18px 40px !important;max-width:none;} .side-pop,.breadcrumb,.lang-switch{display:none;}";
         doc.head.appendChild(fit);
 
         // Links and images keep working once moved: make their addresses absolute.
@@ -1025,7 +1057,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Leave a note in the page, then move the content (with its buttons) to the side window.
         const away = document.createElement("div");
         away.className = "side-away";
-        away.innerHTML = 'This page is open in the side window. <button type="button">Bring it back</button>';
+        away.innerHTML = BM ? 'Halaman ini dibuka dalam tetingkap sisi. <button type="button">Bawa balik</button>'
+                            : 'This page is open in the side window. <button type="button">Bring it back</button>';
         main.parentNode.insertBefore(away, main);
         doc.body.appendChild(main);
 
