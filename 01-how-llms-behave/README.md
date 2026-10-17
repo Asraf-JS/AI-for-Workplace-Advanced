@@ -30,7 +30,7 @@ You need one AI tool open and signed in (see the [product cards](../14-product-c
 | `rfq-2026-118.pdf` | Sinar Maju's request for quotation for 120 ergonomic mesh chairs |
 | `quotation-duduk-selesa.pdf` | One supplier's reply to that request |
 
-Download both at once with **[sample-files.zip](./sample-files.zip)**, then right-click the ZIP and choose **Extract All**.
+> **Download:** **[sample-files.zip](./sample-files.zip)** (both files at once), then right-click it and choose **Extract All** before you start.
 
 > **Note:** every company, person and figure in the course files is fictional. Sinar Maju Sdn Bhd is an office supplies distributor in Petaling Jaya, and in this course you work in its Procurement Department. The course treats **10 November 2026** as today's date: every quotation is judged as at that date, whatever the date of your class.
 

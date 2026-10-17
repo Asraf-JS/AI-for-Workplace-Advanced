@@ -24,7 +24,9 @@ The Finance Director wants to know where Sinar Maju's money goes, and whether an
 
 ## Before You Begin
 
-Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds the same data twice: `purchase-history.xlsx` (two sheets: the data, and **About this file**) and `purchase-history.csv`. Use the `.xlsx` unless your tool asks for CSV.
+> **Download:** **[sample-files.zip](./sample-files.zip)**, then right-click it and choose **Extract All** before you start.
+
+It holds the same data twice: `purchase-history.xlsx` (two sheets: the data, and **About this file**) and `purchase-history.csv`. Use the `.xlsx` unless your tool asks for CSV.
 
 Have Excel open too. You'll use it to check one figure.
 
