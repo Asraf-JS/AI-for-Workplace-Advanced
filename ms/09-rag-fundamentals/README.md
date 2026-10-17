@@ -32,7 +32,7 @@ Kandungannya:
 
 Guna notebook berasaskan sumber, seperti dalam Modul 04. Gemini Notebook (dahulunya NotebookLM) menunjukkan citation dengan paling jelas.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris). Jika syarikat anda menyekat Gemini Notebook, lihat [If your company blocks a tool](../../14-product-cards/locked-down.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jika syarikat anda menyekat Gemini Notebook, lihat [If your company blocks a tool](../../14-product-cards/locked-down.md) (dalam bahasa Inggeris).
 
 ---
 

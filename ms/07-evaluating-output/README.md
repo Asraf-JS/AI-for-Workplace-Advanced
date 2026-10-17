@@ -35,7 +35,7 @@ Kandungannya:
 
 Sebahagian daripada sepuluh sebut harga itu mematuhi polisi dan sebahagian lagi tidak. Jangan buka fail itu untuk mencari masalahnya dahulu: tujuannya ialah melihat apa yang ditemui oleh Checker dengan sendirinya.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ---
 

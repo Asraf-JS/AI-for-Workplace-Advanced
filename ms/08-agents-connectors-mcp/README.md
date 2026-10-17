@@ -24,7 +24,7 @@ Quotation Checker anda dari Modul 03 membaca apa yang anda berikan dan menulis l
 
 Tiada fail untuk dimuat turun. Buka alat AI anda, dan [kad produk](../../14-product-cards/) (dalam bahasa Inggeris) baginya, yang menunjukkan di mana connector alat itu berada.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ---
 

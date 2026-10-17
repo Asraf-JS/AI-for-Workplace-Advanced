@@ -26,7 +26,7 @@ Anda perlukan `rfq-2026-118.pdf` dari Modul 01.
 
 > **Muat turun:** **[sample-files.zip Modul 01](../../01-how-llms-behave/sample-files.zip)** jika anda belum ada, kemudian klik kanan fail itu dan pilih **Extract All**.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ---
 
