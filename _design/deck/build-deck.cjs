@@ -390,7 +390,7 @@ async function finalise(file) {
   }
   {
     const s = content("Module 02", "Chain short prompts. Ask for the format you need.",
-      "Chaining: check each step before the next depends on it. One big prompt makes mistakes hard to find.\n\nJSON matters on Day 2: the n8n workflow needs the AI's answer as fields, not a paragraph.");
+      "Chaining: check each step before the next depends on it. One big prompt makes mistakes hard to find. That doesn't make long prompts bad: once a chain works, its steps become standing instructions (Module 03).\n\nJSON matters on Day 2: the n8n workflow needs the AI's answer as fields, not a paragraph.");
     twoPanels(s,
       [I.link, "A prompt chain", ["Step 1: extract the requirements", "Step 2: turn them into a comparison table", "Step 3: give them as JSON", "Check each result before the next step"]],
       [I.braces, "Structured output", ["Markdown tables for people: they paste cleanly into Word and Excel", "JSON for software: named fields another system can read", "Ask for exact field names, and \"only the JSON\""]], I);
@@ -401,7 +401,7 @@ async function finalise(file) {
     ["2.3", "Turn them into JSON"],
     ["2.4", "Compare with one big prompt"],
   ], "Every row of your checklist quotes the RFQ, and the JSON has the field names you asked for.",
-  "About 40 minutes. Uses the RFQ from Module 01's ZIP.\n\nThere's no single right answer here: outputs vary. Check that rows can be quoted from the RFQ, and that steps 1 to 3 ran in the same chat.", I);
+  "About 40 minutes. Uses the RFQ from Module 01's ZIP.\n\nThere's no single right answer here: outputs vary. Check that rows can be quoted from the RFQ, and that steps 1 to 3 ran in the same chat.\n\nDebrief 2.4 with the Key point: chain a new job, or one where a mistake matters. One prompt is fine for a quick task, and a long prompt with numbered steps, a source boundary and a set format beats the 2.4 one-liner. Once each step works reliably, fold the steps into standing instructions: that's the Quotation Checker in Module 03.", I);
 
   sec("03 Custom assistants");
   divider("03", "Building Custom AI Assistants", "Stage: Build", "70 minutes",
