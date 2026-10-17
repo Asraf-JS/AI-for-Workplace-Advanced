@@ -49,22 +49,22 @@ Labs that need extra tools use free options: Gemini Notebook, formerly NotebookL
 
 ## Modules
 
-| Day | # | Module | Prompts | Lab | Time |
-|---|---|---|---|---|---|
-| 1 | 01 | [How Large Language Models Really Behave](./01-how-llms-behave/) | [Prompts](./01-how-llms-behave/prompts.md) | Compare a quotation analysis on two model types | 40 min |
-| 1 | 02 | [Context Engineering and Structured Output](./02-context-engineering/) | [Prompts](./02-context-engineering/prompts.md) | Three-step prompt chain with Markdown output | 50 min |
-| 1 | 03 | [Building Custom AI Assistants](./03-custom-assistants/) | [Prompts](./03-custom-assistants/prompts.md) | Procurement Quotation Checker | 70 min |
-| 1 | 04 | [Grounded Research and Source-Based Answers](./04-grounded-research/) | [Prompts](./04-grounded-research/prompts.md) | Policy knowledge notebook with citation checks | 55 min |
-| 1 | 05 | [Advanced Data Analysis with AI](./05-data-analysis/) | [Prompts](./05-data-analysis/prompts.md) | Purchase history analysis | 55 min |
-| 1 | 06 | [Controlling Output with Word and PowerPoint Templates](./06-output-templates/) | [Prompts](./06-output-templates/prompts.md) | Approval memo and deck from company templates | 60 min |
-| 1 | 07 | [Evaluating AI Output](./07-evaluating-output/) | [Prompts](./07-evaluating-output/prompts.md) | Score the Quotation Checker on ten test cases | 45 min |
-| 2 | 08 | [AI Agents, Connectors and MCP](./08-agents-connectors-mcp/) | [Prompts](./08-agents-connectors-mcp/prompts.md) | Map the systems an assistant needs to act | 45 min |
-| 2 | 09 | [Retrieval-Augmented Generation (RAG) Fundamentals](./09-rag-fundamentals/) | [Prompts](./09-rag-fundamentals/prompts.md) | Diagnose a wrong citation | 50 min |
-| 2 | 10 | [Building an AI Agent Workflow in n8n](./10-n8n-agent-workflow/) | [Prompts](./10-n8n-agent-workflow/prompts.md) | Quotation approval workflow with human approval | 90 min |
-| 2 | 11 | [AI Security for Practitioners](./11-ai-security/) | [Prompts](./11-ai-security/prompts.md) | Break-it round: hidden instructions | 45 min |
-| 2 | 12 | [AI Governance in the Malaysian Context](./12-ai-governance/) | [Prompts](./12-ai-governance/prompts.md) | Department AI rules and use-case register | 45 min |
-| 2 | 13 | [Capstone Project](./13-capstone/) | [Prompts](./13-capstone/prompts.md) | Design and pitch an AI workflow | 90 min |
-| Ref | 14 | [Product Cards](./14-product-cards/) |  | How to do the common steps in Copilot, ChatGPT, Claude and Gemini | Self-paced |
+| # | Module | Prompts | Lab | Time |
+|---|---|---|---|---|
+| 01 | [How Large Language Models Really Behave](./01-how-llms-behave/) | [Prompts](./01-how-llms-behave/prompts.md) | Compare a quotation analysis on two model types | 40 min |
+| 02 | [Context Engineering and Structured Output](./02-context-engineering/) | [Prompts](./02-context-engineering/prompts.md) | Three-step prompt chain with Markdown output | 50 min |
+| 03 | [Building Custom AI Assistants](./03-custom-assistants/) | [Prompts](./03-custom-assistants/prompts.md) | Procurement Quotation Checker | 70 min |
+| 04 | [Grounded Research and Source-Based Answers](./04-grounded-research/) | [Prompts](./04-grounded-research/prompts.md) | Policy knowledge notebook with citation checks | 55 min |
+| 05 | [Advanced Data Analysis with AI](./05-data-analysis/) | [Prompts](./05-data-analysis/prompts.md) | Purchase history analysis | 55 min |
+| 06 | [Controlling Output with Word and PowerPoint Templates](./06-output-templates/) | [Prompts](./06-output-templates/prompts.md) | Approval memo and deck from company templates | 60 min |
+| 07 | [Evaluating AI Output](./07-evaluating-output/) | [Prompts](./07-evaluating-output/prompts.md) | Score the Quotation Checker on ten test cases | 45 min |
+| 08 | [AI Agents, Connectors and MCP](./08-agents-connectors-mcp/) | [Prompts](./08-agents-connectors-mcp/prompts.md) | Map the systems an assistant needs to act | 45 min |
+| 09 | [Retrieval-Augmented Generation (RAG) Fundamentals](./09-rag-fundamentals/) | [Prompts](./09-rag-fundamentals/prompts.md) | Diagnose a wrong citation | 50 min |
+| 10 | [Building an AI Agent Workflow in n8n](./10-n8n-agent-workflow/) | [Prompts](./10-n8n-agent-workflow/prompts.md) | Quotation approval workflow with human approval | 90 min |
+| 11 | [AI Security for Practitioners](./11-ai-security/) | [Prompts](./11-ai-security/prompts.md) | Break-it round: hidden instructions | 45 min |
+| 12 | [AI Governance in the Malaysian Context](./12-ai-governance/) | [Prompts](./12-ai-governance/prompts.md) | Department AI rules and use-case register | 45 min |
+| 13 | [Capstone Project](./13-capstone/) | [Prompts](./13-capstone/prompts.md) | Design and pitch an AI workflow | 90 min |
+| 14 | [Product Cards](./14-product-cards/) |  | How to do the common steps in Copilot, ChatGPT, Claude and Gemini | Self-paced |
 
 ---
 
