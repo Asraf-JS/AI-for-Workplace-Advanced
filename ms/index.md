@@ -7,7 +7,7 @@ title: Laman Utama
 
 Kursus praktikal dua hari yang membawa peserta daripada sekadar menggunakan pembantu AI kepada membina, mengasaskan pada sumber, menguji dan melindungi penyelesaian AI mereka sendiri.
 
-> **Nota:** versi Bahasa Malaysia sedang disediakan. Modul 01 dan 02 sudah dalam Bahasa Malaysia. Modul lain masih dalam bahasa Inggeris buat masa ini, dan pautannya akan bertukar sendiri apabila terjemahan siap.
+> **Nota:** versi Bahasa Malaysia sedang disediakan. Modul 01 hingga 03 sudah dalam Bahasa Malaysia. Modul lain masih dalam bahasa Inggeris buat masa ini, dan pautannya akan bertukar sendiri apabila terjemahan siap.
 
 Anda tidak perlukan akaun GitHub untuk menggunakan apa-apa di halaman ini.
 
@@ -58,7 +58,7 @@ Lab yang memerlukan alat tambahan menggunakan pilihan percuma: Gemini Notebook, 
 |---|---|---|---|---|
 | 01 | [Cara Large Language Model Sebenarnya Berfungsi](./01-how-llms-behave/) | [Prompt](./01-how-llms-behave/prompts.md) | Bandingkan analisis sebut harga pada dua jenis model | 40 min |
 | 02 | [Context Engineering dan Structured Output](./02-context-engineering/) | [Prompt](./02-context-engineering/prompts.md) | Prompt chain tiga langkah dengan output Markdown | 50 min |
-| 03 | [Membina Custom AI Assistant](../03-custom-assistants/) (EN) | [Prompts](../03-custom-assistants/prompts.md) | Procurement Quotation Checker | 70 min |
+| 03 | [Membina Custom AI Assistant](./03-custom-assistants/) | [Prompt](./03-custom-assistants/prompts.md) | Procurement Quotation Checker | 70 min |
 | 04 | [Grounded Research dan Jawapan Berasaskan Sumber](../04-grounded-research/) (EN) | [Prompts](../04-grounded-research/prompts.md) | Buku nota pengetahuan polisi dengan semakan petikan | 55 min |
 | 05 | [Analisis Data Lanjutan dengan AI](../05-data-analysis/) (EN) | [Prompts](../05-data-analysis/prompts.md) | Analisis sejarah pembelian | 55 min |
 | 06 | [Mengawal Output dengan Templat Word dan PowerPoint](../06-output-templates/) (EN) | [Prompts](../06-output-templates/prompts.md) | Memo kelulusan dan dek daripada templat syarikat | 60 min |
