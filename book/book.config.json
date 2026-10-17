@@ -9,7 +9,7 @@
   ],
   "runningTitle": "AI for Workplace (Advanced)",
   "subtitle": "Two-day participant guide",
-  "blurb": "Build one assistant on Day 1 and keep improving it: ground it in company policy, produce on-brand documents from templates, measure its accuracy, then rebuild it as an agent workflow with human approval. Works with Copilot, ChatGPT, Claude and Gemini.",
+  "blurb": "Build one assistant and keep improving it: ground it in company policy, produce on-brand documents from templates, measure its accuracy, then rebuild it as an agent workflow with human approval. Works with Copilot, ChatGPT, Claude and Gemini.",
   "coverIcons": [
     "chat",
     "doc",
@@ -114,7 +114,7 @@
   "backCover": "This book accompanies the two-day AI for Workplace (Advanced) course, the continuation of AI for Workplace (Beginner). Participants build a Procurement Quotation Checker for the fictional company Sinar Maju Sdn Bhd and keep improving it: grounding it in company policy, producing on-brand documents from templates, measuring its accuracy, and rebuilding it as an agent workflow with human approval, before covering AI security and governance in the Malaysian context. Every lab works with Copilot, ChatGPT, Claude or Gemini.",
   "programFlow": {
     "title": "Your Advanced AI training journey",
-    "lead": "One assistant, built on Day 1 and improved on Day 2: grounded, tested, automated and governed.",
+    "lead": "One assistant, built once and improved module by module: grounded, tested, automated and governed.",
     "foundations": [
       {
         "n": 1,

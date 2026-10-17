@@ -1,6 +1,6 @@
 # 12 - AI Governance in the Malaysian Context
 
-Over two days you've built a Quotation Checker, a policy notebook, a data analysis, templates and an approval workflow. If the whole Procurement Department started using them tomorrow, who decides which tools are allowed, what data goes in, and who checks the output? In this module you write the rules for your department, and a register of the AI uses those rules cover.
+Over this course you've built a Quotation Checker, a policy notebook, a data analysis, templates and an approval workflow. If the whole Procurement Department started using them tomorrow, who decides which tools are allowed, what data goes in, and who checks the output? In this module you write the rules for your department, and a register of the AI uses those rules cover.
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
@@ -22,7 +22,7 @@ Over two days you've built a Quotation Checker, a policy notebook, a data analys
 
 ## Before You Begin
 
-No files to download. Bring your notes from Day 1 and this morning: you'll list the AI uses you built.
+No files to download. Bring your notes from the earlier modules: you'll list the AI uses you built.
 
 > **Note:** this module explains the rules in general terms for training. It isn't legal advice. For a real decision, talk to your organisation's Data Protection Officer or legal team.
 

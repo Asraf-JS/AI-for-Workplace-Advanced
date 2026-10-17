@@ -38,7 +38,7 @@ New words are explained in the [glossary](../14-product-cards/glossary.md).
 
 **Prompt chains.** One huge prompt asks the model to do everything at once, and mistakes are hard to spot. A chain does one step per prompt. You check each result before the next step uses it.
 
-**Structured output.** A Markdown table is easy for people to read and paste into Word or Excel. JSON is a format other software can read, field by field. On Day 2 your n8n workflow will need JSON.
+**Structured output.** A Markdown table is easy for people to read and paste into Word or Excel. JSON is a format other software can read, field by field. In Module 10 your n8n workflow will need JSON.
 
 ---
 
@@ -103,7 +103,7 @@ Now give me the same requirements as JSON, so another system can read them. Use 
 
 *Step 3's JSON: one object per requirement, with the four fields you asked for.*
 
-Check that each object matches a row of your Step 1 table. On Day 2, your n8n workflow will ask the AI for a JSON answer in the same way.
+Check that each object matches a row of your Step 1 table. In Module 10, your n8n workflow will ask the AI for a JSON answer in the same way.
 
 > **Note:** the exact JSON will differ from one person to the next, as you saw in Module 01. What should match is the content: the same requirements, in fields with the names you asked for.
 

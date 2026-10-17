@@ -1,6 +1,6 @@
 # 13 - Capstone Project
 
-Over two days you've taken one procurement task from a single prompt to a tested, secured, governed workflow with human approval. Now you do it again for a different Sinar Maju process, as a team, with less help. You pick a brief, test its data with AI, design the workflow on one page, and pitch it.
+Over this course you've taken one procurement task from a single prompt to a tested, secured, governed workflow with human approval. Now you do it again for a different Sinar Maju process, as a team, with less help. You pick a brief, test its data with AI, design the workflow on one page, and pitch it.
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
