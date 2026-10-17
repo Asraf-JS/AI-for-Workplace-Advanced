@@ -128,6 +128,8 @@ Check that each object matches a row of your Step 1 table. In Module 10, your n8
 
 3. Compare the result with your three-step chain. Which one missed a requirement, or mixed the formats up? Which would you trust to build on?
 
+> **Key point:** use a chain for a new job, or one where a mistake matters: you check each step before the next one builds on it. One prompt is fine for a quick, simple task, and a long prompt with numbered steps, a source boundary and a set format does far better than the one-liner above. Once every step of a chain works reliably, fold the steps into standing instructions so you don't repeat them. That's what you do with the Quotation Checker in Module 03.
+
 ---
 
 ## Product Notes
