@@ -23,7 +23,11 @@ Over two days you've taken one procurement task from a single prompt to a tested
 
 ## Before You Begin
 
-Form a team of three or four. Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds four briefs, their data, and the canvas:
+Form a team of three or four.
+
+> **Download:** **[sample-files.zip](./sample-files.zip)**, then right-click it and choose **Extract All** before you start.
+
+It holds four briefs, their data, and the canvas:
 
 | Brief | Files |
 |---|---|

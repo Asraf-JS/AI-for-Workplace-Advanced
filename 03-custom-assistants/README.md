@@ -23,7 +23,9 @@ Sinar Maju has three quotations back for its chair RFQ, and more RFQs every week
 
 ## Before You Begin
 
-Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds:
+> **Download:** **[sample-files.zip](./sample-files.zip)**, then right-click it and choose **Extract All** before you start.
+
+It holds:
 
 | File | What it is |
 |---|---|

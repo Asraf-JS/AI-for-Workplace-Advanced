@@ -23,7 +23,9 @@ The Quotation Checker has done its job: Duduk Selesa is the recommended supplier
 
 ## Before You Begin
 
-Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds:
+> **Download:** **[sample-files.zip](./sample-files.zip)**, then right-click it and choose **Extract All** before you start.
+
+It holds:
 
 | File | What it is |
 |---|---|

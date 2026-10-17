@@ -24,7 +24,9 @@ Your Quotation Checker quotes the procurement policy. But when a colleague asks 
 
 ## Before You Begin
 
-Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds `procurement-policy-v3.0.pdf` and `approved-vendor-list.pdf`.
+> **Download:** **[sample-files.zip](./sample-files.zip)**, then right-click it and choose **Extract All** before you start.
+
+It holds `procurement-policy-v3.0.pdf` and `approved-vendor-list.pdf`.
 
 This lab works best in **Gemini Notebook** (formerly NotebookLM), which is free with a Google account and links each citation to the exact quote. If you only have Copilot, a Copilot Notebook works just as well: the screenshots show Gemini, but the steps are the same. ChatGPT or Claude Projects also work. See the Product Notes below.
 

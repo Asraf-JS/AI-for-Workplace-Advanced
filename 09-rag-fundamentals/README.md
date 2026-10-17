@@ -23,7 +23,9 @@ In Module 04 your policy notebook gave good answers with citations. Then someone
 
 ## Before You Begin
 
-Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds:
+> **Download:** **[sample-files.zip](./sample-files.zip)**, then right-click it and choose **Extract All** before you start.
+
+It holds:
 
 | File | What it is |
 |---|---|

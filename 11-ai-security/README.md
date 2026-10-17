@@ -24,7 +24,9 @@ Your Quotation Checker and your n8n workflow both read documents written by supp
 
 ## Before You Begin
 
-You need your **Quotation Checker** and Word. From Module 07's **[sample-files.zip](../07-evaluating-output/sample-files.zip)** you need `open-rfqs.pdf` and `case-09-rakmas.pdf`.
+You need your **Quotation Checker** and Word, plus `open-rfqs.pdf` and `case-09-rakmas.pdf` from Module 07.
+
+> **Download:** **[Module 07's sample-files.zip](../07-evaluating-output/sample-files.zip)** if you don't have them, then right-click it and choose **Extract All**.
 
 > **Important:** this is a test of your own assistant with fictional data. Never try prompt injection on a tool or system you don't own or haven't been asked to test.
 

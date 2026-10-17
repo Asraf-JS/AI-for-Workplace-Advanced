@@ -23,7 +23,11 @@ Your Quotation Checker gave sensible reports on three chair quotations. Is that 
 
 ## Before You Begin
 
-You need your **Quotation Checker** from Module 03. Download **[sample-files.zip](./sample-files.zip)** and extract it. It holds:
+You need your **Quotation Checker** from Module 03.
+
+> **Download:** **[sample-files.zip](./sample-files.zip)**, then right-click it and choose **Extract All** before you start.
+
+It holds:
 
 | File | What it is |
 |---|---|
