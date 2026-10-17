@@ -23,7 +23,7 @@ Anda tidak perlukan akaun GitHub untuk menggunakan apa-apa di halaman ini.
 
 Setiap modul ada halaman **Nota** dengan objektif, topik dan lab, dan halaman **Prompt** dengan setiap prompt yang anda taip semasa lab. Nota memberitahu anda prompt mana yang perlu digunakan dan bila.
 
-Untuk menyalin prompt: buka halaman prompt modul itu, cari prompt tersebut, dan klik ikon salin di penjuru kanan atas kotak kelabu. Kemudian tampal ke dalam alat AI anda.
+Untuk menyalin prompt: buka halaman prompt modul itu, cari prompt tersebut, dan klik ikon salin di penjuru kanan atas kotak kelabu. Kemudian paste dalam alat AI anda.
 
 > **Muat turun:** **[semua fail kursus (ZIP)](https://github.com/Asraf-JS/AI-for-Workplace-Advanced/archive/refs/heads/main.zip)**. Simpan fail ZIP itu, kemudian klik kanan dan pilih **Extract All** sebelum anda membuka mana-mana fail.
 

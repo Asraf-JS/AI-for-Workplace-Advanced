@@ -14,9 +14,9 @@ Tulis satu baris subjek e-mel untuk meminta pembekal menghantar sebut harga yang
 
 ---
 
-## Bahagian 2: Model pantas
+## Bahagian 2: Quick response
 
-**Sesi:** new chat, model pantas | **Sumber:** fail yang dimuat naik (`rfq-2026-118.pdf`, `quotation-duduk-selesa.pdf`)
+**Sesi:** new chat, Quick response (fast model) | **Sumber:** fail yang dimuat naik (`rfq-2026-118.pdf`, `quotation-duduk-selesa.pdf`)
 
 ```
 Saya bekerja di bahagian perolehan Sinar Maju Sdn Bhd. Saya telah memuat naik permintaan sebut harga kami (RFQ-2026-118) dan sebut harga daripada seorang pembekal. Ringkaskan sebut harga itu dalam lima poin: pembekal, grand total, tempoh sah, jaminan dan terma pembayaran. Kemudian beritahu saya dalam satu ayat sama ada sebut harga itu memenuhi RFQ.
@@ -24,9 +24,9 @@ Saya bekerja di bahagian perolehan Sinar Maju Sdn Bhd. Saya telah memuat naik pe
 
 ---
 
-## Bahagian 3: Model penaakulan
+## Bahagian 3: Think deeper
 
-**Sesi:** new chat, model penaakulan | **Sumber:** fail yang dimuat naik (dua fail yang sama)
+**Sesi:** new chat, Think deeper (reasoning model) | **Sumber:** fail yang dimuat naik (dua fail yang sama)
 
 Hantar prompt Bahagian 2 dahulu, kemudian:
 
