@@ -7,7 +7,7 @@ title: Laman Utama
 
 Kursus praktikal dua hari yang membawa peserta daripada sekadar menggunakan pembantu AI kepada membina, mengasaskan pada sumber, menguji dan melindungi penyelesaian AI mereka sendiri.
 
-> **Nota:** versi Bahasa Malaysia sedang disediakan. Modul 01 hingga 03 sudah dalam Bahasa Malaysia. Modul lain masih dalam bahasa Inggeris buat masa ini, dan pautannya akan bertukar sendiri apabila terjemahan siap.
+> **Nota:** semua 13 modul ada dalam Bahasa Malaysia. Kad produk, glosari dan buku kursus masih dalam bahasa Inggeris. Fail sampel dan tangkapan skrin kekal dalam bahasa Inggeris.
 
 Anda tidak perlukan akaun GitHub untuk menggunakan apa-apa di halaman ini.
 
@@ -59,16 +59,16 @@ Lab yang memerlukan alat tambahan menggunakan pilihan percuma: Gemini Notebook, 
 | 01 | [Cara Large Language Model Sebenarnya Berfungsi](./01-how-llms-behave/) | [Prompt](./01-how-llms-behave/prompts.md) | Bandingkan analisis sebut harga pada dua jenis model | 40 min |
 | 02 | [Context Engineering dan Structured Output](./02-context-engineering/) | [Prompt](./02-context-engineering/prompts.md) | Prompt chain tiga langkah dengan output Markdown | 50 min |
 | 03 | [Membina Custom AI Assistant](./03-custom-assistants/) | [Prompt](./03-custom-assistants/prompts.md) | Procurement Quotation Checker | 70 min |
-| 04 | [Grounded Research dan Jawapan Berasaskan Sumber](../04-grounded-research/) (EN) | [Prompts](../04-grounded-research/prompts.md) | Buku nota pengetahuan polisi dengan semakan petikan | 55 min |
-| 05 | [Analisis Data Lanjutan dengan AI](../05-data-analysis/) (EN) | [Prompts](../05-data-analysis/prompts.md) | Analisis sejarah pembelian | 55 min |
-| 06 | [Mengawal Output dengan Templat Word dan PowerPoint](../06-output-templates/) (EN) | [Prompts](../06-output-templates/prompts.md) | Memo kelulusan dan dek daripada templat syarikat | 60 min |
-| 07 | [Menilai Output AI](../07-evaluating-output/) (EN) | [Prompts](../07-evaluating-output/prompts.md) | Beri skor kepada Quotation Checker pada sepuluh kes ujian | 45 min |
-| 08 | [AI Agents, Connectors dan MCP](../08-agents-connectors-mcp/) (EN) | [Prompts](../08-agents-connectors-mcp/prompts.md) | Petakan sistem yang diperlukan oleh pembantu AI untuk bertindak | 45 min |
-| 09 | [Asas Retrieval-Augmented Generation (RAG)](../09-rag-fundamentals/) (EN) | [Prompts](../09-rag-fundamentals/prompts.md) | Kenal pasti punca petikan yang salah | 50 min |
-| 10 | [Membina AI Agent Workflow dalam n8n](../10-n8n-agent-workflow/) (EN) | [Prompts](../10-n8n-agent-workflow/prompts.md) | Workflow kelulusan sebut harga dengan kelulusan manusia | 90 min |
-| 11 | [Keselamatan AI untuk Pengamal](../11-ai-security/) (EN) | [Prompts](../11-ai-security/prompts.md) | Pusingan cuba pecahkan: arahan tersembunyi | 45 min |
-| 12 | [Tadbir Urus AI dalam Konteks Malaysia](../12-ai-governance/) (EN) | [Prompts](../12-ai-governance/prompts.md) | Peraturan AI jabatan dan daftar penggunaan AI | 45 min |
-| 13 | [Capstone Project](../13-capstone/) (EN) | [Prompts](../13-capstone/prompts.md) | Reka bentuk dan bentangkan AI workflow | 90 min |
+| 04 | [Grounded Research dan Jawapan Berasaskan Sumber](./04-grounded-research/) | [Prompt](./04-grounded-research/prompts.md) | Notebook pengetahuan polisi dengan semakan citation | 55 min |
+| 05 | [Analisis Data Lanjutan dengan AI](./05-data-analysis/) | [Prompt](./05-data-analysis/prompts.md) | Analisis sejarah pembelian | 55 min |
+| 06 | [Mengawal Output dengan Templat Word dan PowerPoint](./06-output-templates/) | [Prompt](./06-output-templates/prompts.md) | Memo kelulusan dan dek daripada templat syarikat | 60 min |
+| 07 | [Menilai Output AI](./07-evaluating-output/) | [Prompt](./07-evaluating-output/prompts.md) | Beri skor kepada Quotation Checker pada sepuluh kes ujian | 45 min |
+| 08 | [AI Agents, Connectors dan MCP](./08-agents-connectors-mcp/) | [Prompt](./08-agents-connectors-mcp/prompts.md) | Petakan sistem yang diperlukan oleh pembantu AI untuk bertindak | 45 min |
+| 09 | [Asas Retrieval-Augmented Generation (RAG)](./09-rag-fundamentals/) | [Prompt](./09-rag-fundamentals/prompts.md) | Kenal pasti punca citation yang salah | 50 min |
+| 10 | [Membina AI Agent Workflow dalam n8n](./10-n8n-agent-workflow/) | [Prompt](./10-n8n-agent-workflow/prompts.md) | Workflow kelulusan sebut harga dengan kelulusan manusia | 90 min |
+| 11 | [Keselamatan AI untuk Pengamal](./11-ai-security/) | [Prompt](./11-ai-security/prompts.md) | Pusingan cuba pecahkan: arahan tersembunyi | 45 min |
+| 12 | [Tadbir Urus AI dalam Konteks Malaysia](./12-ai-governance/) | [Prompt](./12-ai-governance/prompts.md) | Peraturan AI jabatan dan use-case register | 45 min |
+| 13 | [Capstone Project](./13-capstone/) | [Prompt](./13-capstone/prompts.md) | Reka bentuk dan bentangkan AI workflow | 90 min |
 | 14 | [Kad Produk](../14-product-cards/) (EN) |  | Cara membuat langkah biasa dalam Copilot, ChatGPT, Claude dan Gemini | Kendiri |
 
 ---
