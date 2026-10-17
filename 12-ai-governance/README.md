@@ -4,8 +4,6 @@ Over two days you've built a Quotation Checker, a policy notebook, a data analys
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 2
-
 **Estimated time:** 45 minutes
 
 **Your result:** A one-page set of AI rules for Sinar Maju's Procurement Department, and an AI use-case register with a risk rating and an owner for each use.

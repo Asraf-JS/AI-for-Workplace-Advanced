@@ -4,8 +4,6 @@ Sinar Maju has three quotations back for its chair RFQ, and more RFQs every week
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 1
-
 **Estimated time:** 70 minutes
 
 **Your result:** A working Quotation Checker in your AI tool, its report on each of the three chair quotations, and a recommendation you've checked yourself.

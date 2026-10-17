@@ -4,8 +4,6 @@ Your Quotation Checker gave sensible reports on three chair quotations. Is that 
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 1
-
 **Estimated time:** 45 minutes
 
 **Your result:** A completed scoresheet for your Quotation Checker on ten test cases, its score out of 20, and an improved version of its instructions.

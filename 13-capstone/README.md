@@ -4,8 +4,6 @@ Over two days you've taken one procurement task from a single prompt to a tested
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 2
-
 **Estimated time:** 90 minutes
 
 **Your result:** A completed AI Workflow Canvas for one Sinar Maju process, tested on its sample data, and a five-minute pitch scored with the rubric.

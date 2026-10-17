@@ -4,8 +4,6 @@ Your Quotation Checker and your n8n workflow both read documents written by supp
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 2
-
 **Estimated time:** 45 minutes
 
 **Your result:** A quotation with a hidden instruction, a record of how your Checker handled it before and after your fix, and an improved set of Checker instructions.
