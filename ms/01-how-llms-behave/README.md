@@ -50,11 +50,11 @@ Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (
 
 ## 1.1 Tanya Soalan yang Sama Dua Kali
 
-1. Buka alat AI anda dan mulakan sembang baharu.
+1. Buka alat AI anda dan mulakan new chat.
 
-   ![Sembang baharu dalam aplikasi Microsoft 365 Copilot, dengan New chat diserlahkan di anak tetingkap kiri](../../01-how-llms-behave/images/01-01-open-ai-tool-start.png)
+   ![New chat dalam aplikasi Microsoft 365 Copilot, dengan New chat diserlahkan di anak tetingkap kiri](../../01-how-llms-behave/images/01-01-open-ai-tool-start.png)
 
-   *Sembang baharu dalam Copilot. Dalam alat lain, cari **New chat** di bahagian atas sebelah kiri.*
+   *New chat dalam Copilot. Dalam alat lain, cari **New chat** di bahagian atas sebelah kiri.*
 2. Hantar prompt ini:
 
    ```
@@ -65,11 +65,11 @@ Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (
 
    *Jawapan pertama: satu baris subjek, seperti yang diminta.*
 
-3. Mulakan satu lagi sembang baharu dan hantar prompt yang sama, tanpa mengubah apa-apa.
+3. Mulakan satu lagi new chat dan hantar prompt yang sama, tanpa mengubah apa-apa.
 
-   ![Prompt yang sama dalam sembang kedua, dengan baris subjek yang berlainan diserlahkan](../../01-how-llms-behave/images/01-03-start-another-new-chat.png)
+   ![Prompt yang sama dalam new chat kedua, dengan baris subjek yang berlainan diserlahkan](../../01-how-llms-behave/images/01-03-start-another-new-chat.png)
 
-   *Prompt sama, sembang baharu, ayat berbeza.*
+   *Prompt sama, new chat, ayat berbeza.*
 4. Bandingkan kedua-dua baris subjek.
 
 Susunan katanya hampir pasti berbeza. Kedua-duanya tidak salah: model cuma memilih perkataan lain yang juga sesuai. Ingat perkara ini apabila anda memerlukan angka yang tepat.
@@ -78,9 +78,9 @@ Susunan katanya hampir pasti berbeza. Kedua-duanya tidak salah: model cuma memil
 
 ## 1.2 Semak Sebut Harga dengan Model Pantas
 
-1. Mulakan sembang baharu dan pilih model pantas ([kad produk](../../14-product-cards/) menunjukkan di mana).
+1. Mulakan new chat dan pilih model pantas ([kad produk](../../14-product-cards/) menunjukkan di mana).
 
-   ![Sembang Copilot baharu dengan Quick response dipilih dalam menu model di bahagian atas](../../01-how-llms-behave/images/01-04-start-new-chat-choose.png)
+   ![New chat Copilot dengan Quick response dipilih dalam menu model di bahagian atas](../../01-how-llms-behave/images/01-04-start-new-chat-choose.png)
 
    *Dalam Copilot, **Quick response** ialah pilihan pantas dalam menu model.*
 2. Muat naik `rfq-2026-118.pdf` dan `quotation-duduk-selesa.pdf`.
@@ -91,33 +91,33 @@ Susunan katanya hampir pasti berbeza. Kedua-duanya tidak salah: model cuma memil
 3. Hantar prompt ini:
 
    ```
-   Saya bekerja di bahagian perolehan Sinar Maju Sdn Bhd. Saya telah memuat naik permintaan sebut harga kami (RFQ-2026-118) dan sebut harga daripada seorang pembekal. Ringkaskan sebut harga itu dalam lima poin: pembekal, jumlah besar, tempoh sah, jaminan dan terma pembayaran. Kemudian beritahu saya dalam satu ayat sama ada sebut harga itu memenuhi RFQ.
+   Saya bekerja di bahagian perolehan Sinar Maju Sdn Bhd. Saya telah memuat naik permintaan sebut harga kami (RFQ-2026-118) dan sebut harga daripada seorang pembekal. Ringkaskan sebut harga itu dalam lima poin: pembekal, grand total, tempoh sah, jaminan dan terma pembayaran. Kemudian beritahu saya dalam satu ayat sama ada sebut harga itu memenuhi RFQ.
    ```
 
-   ![Ringkasan lima poin model pantas bagi sebut harga Duduk Selesa, dengan baris jumlah besar diserlahkan](../../01-how-llms-behave/images/01-06-send-prompt.png)
+   ![Ringkasan lima poin model pantas bagi sebut harga Duduk Selesa, dengan baris grand total diserlahkan](../../01-how-llms-behave/images/01-06-send-prompt.png)
 
-   *Ringkasan model pantas. Perhatikan jumlah besar yang diberikannya.*
+   *Ringkasan model pantas. Perhatikan grand total yang diberikannya.*
 
-4. Catat jumlah besar yang diberikan oleh model, dan sama ada model itu kata sebut harga memenuhi RFQ.
+4. Catat grand total yang diberikan oleh model, dan sama ada model itu kata sebut harga memenuhi RFQ.
 
 ---
 
 ## 1.3 Semak Sekali Lagi dengan Model Penaakulan
 
-1. Mulakan sembang baharu dan tukar kepada model penaakulan (thinking).
+1. Mulakan new chat dan tukar kepada model penaakulan (thinking).
 
-   ![Sembang Copilot baharu dengan Think deeper dipilih dalam menu model](../../01-how-llms-behave/images/01-07-start-new-chat-switch.png)
+   ![New chat Copilot dengan Think deeper dipilih dalam menu model](../../01-how-llms-behave/images/01-07-start-new-chat-switch.png)
 
    *Dalam Copilot, **Think deeper** ialah pilihan penaakulan.*
 2. Muat naik dua fail yang sama.
 
-   ![Dua PDF yang sama dilampirkan dalam kotak mesej sembang Think deeper](../../01-how-llms-behave/images/01-08-upload-same-two-files.png)
+   ![Dua PDF yang sama dilampirkan dalam kotak mesej chat Think deeper](../../01-how-llms-behave/images/01-08-upload-same-two-files.png)
 
    *Dua fail yang sama, sedia untuk dihantar.*
 3. Hantar prompt yang sama seperti dalam 1.2, kemudian hantar prompt ini:
 
    ```
-   Sekarang semak aritmetiknya. Kira semula setiap amaun baris sebagai kuantiti x harga seunit, kemudian subjumlah, cukai dan jumlah besar. Tunjukkan jalan kira dalam jadual dan bandingkan setiap angka dengan angka yang tercetak dalam sebut harga.
+   Sekarang semak aritmetiknya. Kira semula setiap amaun baris sebagai kuantiti x harga seunit, kemudian subjumlah, cukai dan grand total. Tunjukkan jalan kira dalam jadual dan bandingkan setiap angka dengan angka yang tercetak dalam sebut harga.
    ```
 
    ![Tajuk Arithmetic Check daripada model penaakulan, dengan jadual dan kesimpulan di bawahnya dikaburkan](../../01-how-llms-behave/images/01-09-send-same-prompt-1.png)
@@ -131,9 +131,9 @@ Susunan katanya hampir pasti berbeza. Kedua-duanya tidak salah: model cuma memil
 <details markdown="1">
 <summary>Apa yang patut anda lihat?</summary>
 
-Sebut harga itu mencetak jumlah besar **RM46,548.00**, sedangkan jumlah yang betul ialah **RM47,628.00**.
+Sebut harga itu mencetak grand total **RM46,548.00**, sedangkan grand total yang betul ialah **RM47,628.00**.
 
-Baris 1 ialah 120 kerusi pada harga RM365.00, iaitu RM43,800.00. Sebut harga itu mencetak RM42,800.00, jadi subjumlahnya kurang RM1,000.00, dan selepas cukai 8%, jumlah besarnya kurang RM1,080.00. Amaun dalam perkataan sepadan dengan angka yang salah, jadi halaman itu nampak konsisten.
+Baris 1 ialah 120 kerusi pada harga RM365.00, iaitu RM43,800.00. Sebut harga itu mencetak RM42,800.00, jadi subjumlahnya kurang RM1,000.00, dan selepas cukai 8%, grand totalnya kurang RM1,080.00. Amaun dalam perkataan sepadan dengan angka yang salah, jadi halaman itu nampak konsisten.
 
 Model pantas selalunya mengulang jumlah yang tercetak tanpa menyemaknya. Model penaakulan lebih cenderung mengira 120 x 365.00 dan menemui perbezaan itu. Kedua-duanya boleh terlepas pandang, dan itulah yang akan anda bincangkan.
 
@@ -157,7 +157,7 @@ Bersama rakan di sebelah anda, jawab tiga soalan ini:
 
 | Copilot Chat (Basic) | M365 Copilot (Premium) | ChatGPT | Claude | Gemini |
 |---|---|---|---|---|
-| Dalam menu model di bahagian atas sembang (asalnya menunjukkan **Auto**), pilih **Quick response** untuk 1.2 dan **Think deeper** untuk 1.3. Maksimum tiga fail bagi setiap mesej | Sama seperti Basic | Pilih model pantas atau model thinking dalam menu model. Pelan percuma mungkin hanya menawarkan satu model | Pilih model, atau hidupkan extended thinking, dalam menu model di bawah kotak mesej | Pilih model pantas atau model thinking dalam menu model |
+| Dalam menu model di bahagian atas chat (asalnya menunjukkan **Auto**), pilih **Quick response** untuk 1.2 dan **Think deeper** untuk 1.3. Maksimum tiga fail bagi setiap mesej | Sama seperti Basic | Pilih model pantas atau model thinking dalam menu model. Pelan percuma mungkin hanya menawarkan satu model | Pilih model, atau hidupkan extended thinking, dalam menu model di bawah kotak mesej | Pilih model pantas atau model thinking dalam menu model |
 
 ---
 
@@ -172,7 +172,7 @@ Beri model pantas satu soalan daripada kerja anda sendiri yang anda sudah tahu j
 | Masalah | Apa yang perlu disemak |
 |---|---|
 | Anda tidak jumpa menu model | Sesetengah pelan percuma hanya ada satu model. Berpasangan dengan rakan yang menggunakan alat atau pelan lain |
-| Model kata ia tidak boleh membaca PDF | Muat naik semula. Jika masih gagal, buka PDF itu, salin semua teks dan tampal ke dalam sembang |
+| Model kata ia tidak boleh membaca PDF | Muat naik semula. Jika masih gagal, buka PDF itu, salin semua teks dan tampal ke dalam chat |
 | Kedua-dua model memberi jawapan yang sama | Bagus. Tetap semak satu baris dengan kalkulator: tujuannya ialah menyemak, bukan mempercayai model yang lebih perlahan |
 | Jawapan terhenti separuh jalan | Alat itu sibuk. Tunggu seminit dan hantar prompt sekali lagi |
 
@@ -180,6 +180,6 @@ Beri model pantas satu soalan daripada kerja anda sendiri yang anda sudah tahu j
 
 ## Ringkasan Pelajaran
 
-LLM meramal teks, jadi ia sangat baik dengan perkataan tetapi kurang boleh dipercayai untuk pengiraan, tarikh dan fakta yang mesti tepat. Model penaakulan menyelesaikan masalah langkah demi langkah dan menangkap lebih banyak kesilapan, tetapi masih boleh terlepas pandang. Mulai sekarang, setiap makmal ada semakan yang anda buat sendiri.
+LLM meramal teks, jadi ia sangat baik dengan perkataan tetapi kurang boleh dipercayai untuk pengiraan, tarikh dan fakta yang mesti tepat. Model penaakulan menyelesaikan masalah langkah demi langkah dan menangkap lebih banyak kesilapan, tetapi masih boleh terlepas pandang. Mulai sekarang, setiap lab ada semakan yang anda buat sendiri.
 
 **Uji diri:** Mengapa model pantas mungkin mengulang jumlah salah yang tercetak dalam sebut harga tanpa menyedarinya?

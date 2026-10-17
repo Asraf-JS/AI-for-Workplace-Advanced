@@ -21,7 +21,7 @@ Anda tidak perlukan akaun GitHub untuk menggunakan apa-apa di halaman ini.
 
 ## Cara Menggunakan Laman Ini
 
-Setiap modul ada halaman **Nota** dengan objektif, topik dan makmal, dan halaman **Prompt** dengan setiap prompt yang anda taip semasa makmal. Nota memberitahu anda prompt mana yang perlu digunakan dan bila.
+Setiap modul ada halaman **Nota** dengan objektif, topik dan lab, dan halaman **Prompt** dengan setiap prompt yang anda taip semasa lab. Nota memberitahu anda prompt mana yang perlu digunakan dan bila.
 
 Untuk menyalin prompt: buka halaman prompt modul itu, cari prompt tersebut, dan klik ikon salin di penjuru kanan atas kotak kelabu. Kemudian tampal ke dalam alat AI anda.
 
@@ -39,7 +39,7 @@ Ini ialah sambungan kepada **AI for Workplace (Beginner)**. Jika anda tidak meng
 
 ## Sesuai dengan Langganan AI Anda
 
-Setiap makmal ditulis sebagai tugasan yang tidak terikat pada satu alat, dengan nota produk untuk:
+Setiap lab ditulis sebagai tugasan yang tidak terikat pada satu alat, dengan nota produk untuk:
 
 | Alat | Peringkat yang diliputi |
 |---|---|
@@ -48,17 +48,17 @@ Setiap makmal ditulis sebagai tugasan yang tidak terikat pada satu alat, dengan 
 | Claude | Pelan percuma dan berbayar |
 | Gemini | Percuma dan Google Workspace |
 
-Makmal yang memerlukan alat tambahan menggunakan pilihan percuma: Gemini Notebook, dahulunya NotebookLM (akaun Google), dan n8n (akaun percubaan). [Kad produk](../14-product-cards/) menerangkan cara membuat setiap makmal dalam alat anda.
+Lab yang memerlukan alat tambahan menggunakan pilihan percuma: Gemini Notebook, dahulunya NotebookLM (akaun Google), dan n8n (akaun percubaan). [Kad produk](../14-product-cards/) menerangkan cara membuat setiap lab dalam alat anda.
 
 ---
 
 ## Modul
 
-| # | Modul | Prompt | Makmal | Masa |
+| # | Modul | Prompt | Lab | Masa |
 |---|---|---|---|---|
 | 01 | [Cara Model Bahasa Besar Sebenarnya Berfungsi](./01-how-llms-behave/) | [Prompt](./01-how-llms-behave/prompts.md) | Bandingkan analisis sebut harga pada dua jenis model | 40 min |
 | 02 | [Kejuruteraan Konteks dan Output Berstruktur](../02-context-engineering/) (EN) | [Prompts](../02-context-engineering/prompts.md) | Rantaian prompt tiga langkah dengan output Markdown | 50 min |
-| 03 | [Membina Pembantu AI Tersuai](../03-custom-assistants/) (EN) | [Prompts](../03-custom-assistants/prompts.md) | Pengesah Sebut Harga Perolehan | 70 min |
+| 03 | [Membina Custom AI Assistant](../03-custom-assistants/) (EN) | [Prompts](../03-custom-assistants/prompts.md) | Pengesah Sebut Harga Perolehan | 70 min |
 | 04 | [Penyelidikan Bersumber dan Jawapan Berasaskan Sumber](../04-grounded-research/) (EN) | [Prompts](../04-grounded-research/prompts.md) | Buku nota pengetahuan polisi dengan semakan petikan | 55 min |
 | 05 | [Analisis Data Lanjutan dengan AI](../05-data-analysis/) (EN) | [Prompts](../05-data-analysis/prompts.md) | Analisis sejarah pembelian | 55 min |
 | 06 | [Mengawal Output dengan Templat Word dan PowerPoint](../06-output-templates/) (EN) | [Prompts](../06-output-templates/prompts.md) | Memo kelulusan dan dek daripada templat syarikat | 60 min |
@@ -68,14 +68,14 @@ Makmal yang memerlukan alat tambahan menggunakan pilihan percuma: Gemini Noteboo
 | 10 | [Membina Aliran Kerja Ejen AI dalam n8n](../10-n8n-agent-workflow/) (EN) | [Prompts](../10-n8n-agent-workflow/prompts.md) | Aliran kerja kelulusan sebut harga dengan kelulusan manusia | 90 min |
 | 11 | [Keselamatan AI untuk Pengamal](../11-ai-security/) (EN) | [Prompts](../11-ai-security/prompts.md) | Pusingan cuba pecahkan: arahan tersembunyi | 45 min |
 | 12 | [Tadbir Urus AI dalam Konteks Malaysia](../12-ai-governance/) (EN) | [Prompts](../12-ai-governance/prompts.md) | Peraturan AI jabatan dan daftar penggunaan AI | 45 min |
-| 13 | [Projek Akhir](../13-capstone/) (EN) | [Prompts](../13-capstone/prompts.md) | Reka bentuk dan bentangkan aliran kerja AI | 90 min |
+| 13 | [Capstone Project](../13-capstone/) (EN) | [Prompts](../13-capstone/prompts.md) | Reka bentuk dan bentangkan aliran kerja AI | 90 min |
 | 14 | [Kad Produk](../14-product-cards/) (EN) |  | Cara membuat langkah biasa dalam Copilot, ChatGPT, Claude dan Gemini | Kendiri |
 
 ---
 
 ## Data Sampel
 
-Semua data makmal dalam repositori ini adalah rekaan. Setiap modul yang memerlukan fail ada `sample-files.zip` dalam foldernya, dibuat daripada data sintetik untuk syarikat rekaan Sinar Maju Sdn Bhd. [Fail sampel](../06-output-templates/sample-files/) Modul 06 mengandungi templat Word dan PowerPoint.
+Semua data lab dalam repositori ini adalah rekaan. Setiap modul yang memerlukan fail ada `sample-files.zip` dalam foldernya, dibuat daripada data sintetik untuk syarikat rekaan Sinar Maju Sdn Bhd. [Fail sampel](../06-output-templates/sample-files/) Modul 06 mengandungi templat Word dan PowerPoint.
 
 Tolong jangan muat naik data sebenar syarikat, pelanggan atau peribadi ke dalam mana-mana alat AI semasa kelas, melainkan organisasi anda telah meluluskan alat itu untuk tujuan tersebut.
 

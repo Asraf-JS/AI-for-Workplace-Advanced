@@ -3,7 +3,7 @@
 modules:
   - { url: "/01-how-llms-behave/", num: "01", en: "How LLMs Behave", ms: "Cara LLM Berfungsi" }
   - { url: "/02-context-engineering/", num: "02", en: "Context Engineering", ms: "Kejuruteraan Konteks" }
-  - { url: "/03-custom-assistants/", num: "03", en: "Custom Assistants", ms: "Pembantu AI Tersuai" }
+  - { url: "/03-custom-assistants/", num: "03", en: "Custom Assistants", ms: "Custom Assistants" }
   - { url: "/04-grounded-research/", num: "04", en: "Grounded Research", ms: "Penyelidikan Bersumber" }
   - { url: "/05-data-analysis/", num: "05", en: "Data Analysis", ms: "Analisis Data" }
   - { url: "/06-output-templates/", num: "06", en: "Output Templates", ms: "Templat Output" }
@@ -13,7 +13,7 @@ modules:
   - { url: "/10-n8n-agent-workflow/", num: "10", en: "Agent Workflow in n8n", ms: "Aliran Kerja Ejen dalam n8n" }
   - { url: "/11-ai-security/", num: "11", en: "AI Security", ms: "Keselamatan AI" }
   - { url: "/12-ai-governance/", num: "12", en: "AI Governance", ms: "Tadbir Urus AI" }
-  - { url: "/13-capstone/", num: "13", en: "Capstone", ms: "Projek Akhir" }
+  - { url: "/13-capstone/", num: "13", en: "Capstone", ms: "Capstone" }
 reference:
   - { url: "/14-product-cards/", num: "14", en: "Product Cards", ms: "Kad Produk", except: "glossary" }
   - { url: "/14-product-cards/glossary.html", num: "A&ndash;Z", en: "Glossary", ms: "Glosari", match: "glossary" }
