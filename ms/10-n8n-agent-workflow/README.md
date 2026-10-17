@@ -1,6 +1,6 @@
 # 10 - Membina AI Agent Workflow dalam n8n
 
-Dalam Modul 03 dan 07, anda menyemak sebut harga dengan memuat naiknya kepada Quotation Checker anda satu demi satu. Dalam modul ini, anda membinanya semula sebagai workflow dalam **n8n**: sebut harga masuk, AI menyemaknya, workflow menghantarnya ke salah satu daripada empat laluan, dan tiada apa-apa yang bergerak lebih jauh sehingga seseorang mengklik **Approve**. Inilah peta sistem dari Modul 08, dibina dengan sebenar.
+Dalam Modul 03 dan 07, anda menyemak sebut harga dengan memuat naiknya kepada Quotation Checker anda satu demi satu. Dalam modul ini, anda membinanya semula sebagai workflow dalam **n8n**: sebut harga masuk, AI menyemaknya, workflow menghantarnya ke salah satu daripada empat laluan, dan tiada apa-apa yang bergerak lebih jauh sehingga seseorang mengklik **Approve**. Inilah peta sistem dari Modul 08, dibina betul-betul.
 
 > **Prompt:** setiap prompt yang anda perlukan ada dalam langkah-langkah di bawah, dengan butang Salin. [Halaman prompt](./prompts.md) juga mengumpulkan semuanya dalam satu halaman.
 
