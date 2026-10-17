@@ -1,6 +1,6 @@
-# 01 - Cara Model Bahasa Besar Sebenarnya Berfungsi
+# 01 - Cara Large Language Model Sebenarnya Berfungsi
 
-Sebelum anda membina apa-apa, elok faham dahulu apa yang berlaku di dalam alat AI. Pembantu AI tidak mencari jawapan atau mengira seperti hamparan elektronik. Ia meramal teks. Itulah sebabnya ia pandai dalam banyak perkara, dan itu juga punca kebanyakan kesilapannya. Dalam modul ini, anda beri sebut harga pembekal yang sama kepada dua jenis model dan bandingkan apa yang setiap satu perasan.
+Sebelum anda membina apa-apa, elok faham dahulu apa yang berlaku di dalam alat AI. Pembantu AI tidak mencari jawapan atau mengira seperti spreadsheet. Ia meramal teks. Itulah sebabnya ia pandai dalam banyak perkara, dan itu juga punca kebanyakan kesilapannya. Dalam modul ini, anda beri sebut harga pembekal yang sama kepada dua jenis model dan bandingkan apa yang setiap satu perasan.
 
 > **Prompt:** setiap prompt yang anda perlukan ada dalam langkah-langkah di bawah, dengan butang Salin. [Halaman prompt](./prompts.md) juga mengumpulkan semuanya dalam satu halaman.
 
@@ -12,7 +12,7 @@ Sebelum anda membina apa-apa, elok faham dahulu apa yang berlaku di dalam alat A
 
 ## Apa yang Anda Akan Pelajari
 
-- Terangkan dengan bahasa mudah bagaimana model bahasa besar menghasilkan jawapan
+- Terangkan dengan bahasa mudah bagaimana large language model menghasilkan jawapan
 - Nyatakan mengapa prompt yang sama boleh memberi jawapan berbeza setiap kali
 - Bezakan Quick response dengan Think deeper (fast model dan reasoning model), dan bila hendak menggunakan setiap satu
 - Namakan jenis kesilapan yang perlu disemak: aritmetik, tarikh dan butiran rekaan
@@ -38,7 +38,7 @@ Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (
 
 ## Topik
 
-**Meramal, bukan mencari.** Model bahasa besar (large language model, LLM) menulis sedikit demi sedikit. Setiap kali, ia memilih cebisan teks seterusnya yang paling mungkin berdasarkan semua teks sebelumnya. Ia tidak ada kalkulator atau pangkalan data melainkan alat itu menyediakannya. Bagi model, jumlah yang tercetak dalam sebut harga hanyalah teks biasa.
+**Meramal, bukan mencari.** Large language model (LLM) menulis sedikit demi sedikit. Setiap kali, ia memilih cebisan teks seterusnya yang paling mungkin berdasarkan semua teks sebelumnya. Ia tidak ada kalkulator atau database melainkan alat itu menyediakannya. Bagi model, jumlah yang tercetak dalam sebut harga hanyalah teks biasa.
 
 **Mengapa jawapan berbeza.** Model memilih antara beberapa perkataan seterusnya yang mungkin, dengan sedikit unsur rawak. Jadi prompt yang sama boleh memberi jawapan berbeza setiap kali. Itu berguna semasa merangka teks, dan menjadi sebab untuk menyemak apa-apa yang mesti tepat.
 

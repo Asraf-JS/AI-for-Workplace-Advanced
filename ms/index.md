@@ -33,7 +33,7 @@ Untuk membaca di luar talian atau mencetak: muat turun **[buku kursus (PDF, dala
 
 ## Senario Kursus
 
-Ini ialah sambungan kepada **AI for Workplace (Beginner)**. Jika anda tidak mengikuti kursus Asas, anda masih boleh menyertai kursus ini: ia bermula dengan cara model AI berfungsi, dan [glosari](../14-product-cards/glossary.md) menerangkan setiap istilah baharu. Peserta membina satu pembantu AI pada awal kursus dan terus menambah baiknya: mengasaskannya pada polisi syarikat, menghasilkan dokumen mengikut jenama syarikat daripada templat, mengukur ketepatannya, dan kemudian membinanya semula sebagai aliran kerja ejen (agent workflow) dengan kelulusan manusia.
+Ini ialah sambungan kepada **AI for Workplace (Beginner)**. Jika anda tidak mengikuti kursus Asas, anda masih boleh menyertai kursus ini: ia bermula dengan cara model AI berfungsi, dan [glosari](../14-product-cards/glossary.md) menerangkan setiap istilah baharu. Peserta membina satu pembantu AI pada awal kursus dan terus menambah baiknya: mengasaskannya pada polisi syarikat, menghasilkan dokumen mengikut jenama syarikat daripada templat, mengukur ketepatannya, dan kemudian membinanya semula sebagai agent workflow dengan kelulusan manusia.
 
 ---
 
@@ -56,19 +56,19 @@ Lab yang memerlukan alat tambahan menggunakan pilihan percuma: Gemini Notebook, 
 
 | # | Modul | Prompt | Lab | Masa |
 |---|---|---|---|---|
-| 01 | [Cara Model Bahasa Besar Sebenarnya Berfungsi](./01-how-llms-behave/) | [Prompt](./01-how-llms-behave/prompts.md) | Bandingkan analisis sebut harga pada dua jenis model | 40 min |
-| 02 | [Kejuruteraan Konteks dan Output Berstruktur](../02-context-engineering/) (EN) | [Prompts](../02-context-engineering/prompts.md) | Rantaian prompt tiga langkah dengan output Markdown | 50 min |
-| 03 | [Membina Custom AI Assistant](../03-custom-assistants/) (EN) | [Prompts](../03-custom-assistants/prompts.md) | Pengesah Sebut Harga Perolehan | 70 min |
-| 04 | [Penyelidikan Bersumber dan Jawapan Berasaskan Sumber](../04-grounded-research/) (EN) | [Prompts](../04-grounded-research/prompts.md) | Buku nota pengetahuan polisi dengan semakan petikan | 55 min |
+| 01 | [Cara Large Language Model Sebenarnya Berfungsi](./01-how-llms-behave/) | [Prompt](./01-how-llms-behave/prompts.md) | Bandingkan analisis sebut harga pada dua jenis model | 40 min |
+| 02 | [Context Engineering dan Structured Output](../02-context-engineering/) (EN) | [Prompts](../02-context-engineering/prompts.md) | Prompt chain tiga langkah dengan output Markdown | 50 min |
+| 03 | [Membina Custom AI Assistant](../03-custom-assistants/) (EN) | [Prompts](../03-custom-assistants/prompts.md) | Procurement Quotation Checker | 70 min |
+| 04 | [Grounded Research dan Jawapan Berasaskan Sumber](../04-grounded-research/) (EN) | [Prompts](../04-grounded-research/prompts.md) | Buku nota pengetahuan polisi dengan semakan petikan | 55 min |
 | 05 | [Analisis Data Lanjutan dengan AI](../05-data-analysis/) (EN) | [Prompts](../05-data-analysis/prompts.md) | Analisis sejarah pembelian | 55 min |
 | 06 | [Mengawal Output dengan Templat Word dan PowerPoint](../06-output-templates/) (EN) | [Prompts](../06-output-templates/prompts.md) | Memo kelulusan dan dek daripada templat syarikat | 60 min |
-| 07 | [Menilai Output AI](../07-evaluating-output/) (EN) | [Prompts](../07-evaluating-output/prompts.md) | Beri skor kepada Pengesah Sebut Harga pada sepuluh kes ujian | 45 min |
-| 08 | [Ejen AI, Penyambung dan MCP](../08-agents-connectors-mcp/) (EN) | [Prompts](../08-agents-connectors-mcp/prompts.md) | Petakan sistem yang diperlukan oleh pembantu AI untuk bertindak | 45 min |
+| 07 | [Menilai Output AI](../07-evaluating-output/) (EN) | [Prompts](../07-evaluating-output/prompts.md) | Beri skor kepada Quotation Checker pada sepuluh kes ujian | 45 min |
+| 08 | [AI Agents, Connectors dan MCP](../08-agents-connectors-mcp/) (EN) | [Prompts](../08-agents-connectors-mcp/prompts.md) | Petakan sistem yang diperlukan oleh pembantu AI untuk bertindak | 45 min |
 | 09 | [Asas Retrieval-Augmented Generation (RAG)](../09-rag-fundamentals/) (EN) | [Prompts](../09-rag-fundamentals/prompts.md) | Kenal pasti punca petikan yang salah | 50 min |
-| 10 | [Membina Aliran Kerja Ejen AI dalam n8n](../10-n8n-agent-workflow/) (EN) | [Prompts](../10-n8n-agent-workflow/prompts.md) | Aliran kerja kelulusan sebut harga dengan kelulusan manusia | 90 min |
+| 10 | [Membina AI Agent Workflow dalam n8n](../10-n8n-agent-workflow/) (EN) | [Prompts](../10-n8n-agent-workflow/prompts.md) | Workflow kelulusan sebut harga dengan kelulusan manusia | 90 min |
 | 11 | [Keselamatan AI untuk Pengamal](../11-ai-security/) (EN) | [Prompts](../11-ai-security/prompts.md) | Pusingan cuba pecahkan: arahan tersembunyi | 45 min |
 | 12 | [Tadbir Urus AI dalam Konteks Malaysia](../12-ai-governance/) (EN) | [Prompts](../12-ai-governance/prompts.md) | Peraturan AI jabatan dan daftar penggunaan AI | 45 min |
-| 13 | [Capstone Project](../13-capstone/) (EN) | [Prompts](../13-capstone/prompts.md) | Reka bentuk dan bentangkan aliran kerja AI | 90 min |
+| 13 | [Capstone Project](../13-capstone/) (EN) | [Prompts](../13-capstone/prompts.md) | Reka bentuk dan bentangkan AI workflow | 90 min |
 | 14 | [Kad Produk](../14-product-cards/) (EN) |  | Cara membuat langkah biasa dalam Copilot, ChatGPT, Claude dan Gemini | Kendiri |
 
 ---

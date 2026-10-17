@@ -1,4 +1,4 @@
-# 01 - Cara Model Bahasa Besar Sebenarnya Berfungsi: Prompt
+# 01 - Cara Large Language Model Sebenarnya Berfungsi: Prompt
 
 Prompt untuk membandingkan dua jenis model pada sebut harga yang sama. Halakan tetikus ke atas kotak kelabu dan klik ikon salin di penjuru kanan atasnya.
 
