@@ -1,6 +1,6 @@
 # 10 - Building an AI Agent Workflow in n8n
 
-On Day 1 you checked quotations by uploading them to your Quotation Checker one at a time. In this module you rebuild it as a workflow in **n8n**: a quotation comes in, AI checks it, the workflow sends it down one of four routes, and nothing goes further until a person clicks **Approve**. This is the systems map from Module 08, built for real.
+In Modules 03 and 07 you checked quotations by uploading them to your Quotation Checker one at a time. In this module you rebuild it as a workflow in **n8n**: a quotation comes in, AI checks it, the workflow sends it down one of four routes, and nothing goes further until a person clicks **Approve**. This is the systems map from Module 08, built for real.
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
@@ -24,7 +24,7 @@ On Day 1 you checked quotations by uploading them to your Quotation Checker one 
 
 You need:
 
-- the n8n access your trainer sent you before Day 2 (a trial account or a class workspace)
+- the n8n access your trainer sent you before class (a trial account or a class workspace)
 - your **Quotation Checker** instructions from Module 03, for reference: the Part 1 prompt is the same checks, adapted for n8n
 - an email account you can send test messages to yourself from
 - the sample files below

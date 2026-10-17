@@ -1,6 +1,6 @@
 # 08 - AI Agents, Connectors and MCP
 
-Day 1's Quotation Checker reads what you give it and writes a report. It can't open the procurement mailbox, look up the vendor list in the procurement system or email a supplier. An **agent** can, through **connectors**. Before you build one later today, you map exactly which systems it would need, what it would do in each, and where a person must say yes.
+Your Quotation Checker from Module 03 reads what you give it and writes a report. It can't open the procurement mailbox, look up the vendor list in the procurement system or email a supplier. An **agent** can, through **connectors**. Before you build one later today, you map exactly which systems it would need, what it would do in each, and where a person must say yes.
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 

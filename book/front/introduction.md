@@ -1,6 +1,6 @@
 ## How to use this book
 
-This book collects the notes and prompts from the two-day AI for Workplace (Advanced) course in one place, so you can follow along offline and keep it at your desk afterwards.
+This book collects the notes and prompts from the AI for Workplace (Advanced) course in one place, so you can follow along offline and keep it at your desk afterwards.
 
 Each chapter matches one module of the course and has two parts:
 
@@ -17,7 +17,7 @@ Prefer to copy prompts rather than retype them? Everything in this book is also 
 
 ## Course scenario
 
-This is the continuation of **AI for Workplace (Beginner)**. You build one assistant on Day 1 and keep improving it: grounding it in company policy, producing on-brand documents from templates, measuring its accuracy, and on Day 2 rebuilding it as an agent workflow with human approval.
+This is the continuation of **AI for Workplace (Beginner)**. You build one assistant early on and keep improving it: grounding it in company policy, producing on-brand documents from templates, measuring its accuracy, and then rebuilding it as an agent workflow with human approval.
 
 All lab data is for the fictional company Sinar Maju Sdn Bhd.
 

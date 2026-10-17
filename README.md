@@ -28,7 +28,7 @@ To read offline or print: download the **[course book (PDF)](./AI-for-Workplace-
 
 ## Course Scenario
 
-This is the continuation of **AI for Workplace (Beginner)**. If you didn't take the Beginner course, you can still join: Day 1 starts from how AI models behave, and the [glossary](./14-product-cards/glossary.md) explains every new word. Participants build one assistant on Day 1 and keep improving it: grounding it in company policy, producing on-brand documents from templates, measuring its accuracy, and on Day 2 rebuilding it as an agent workflow with human approval.
+This is the continuation of **AI for Workplace (Beginner)**. If you didn't take the Beginner course, you can still join: the course starts from how AI models behave, and the [glossary](./14-product-cards/glossary.md) explains every new word. Participants build one assistant early on and keep improving it: grounding it in company policy, producing on-brand documents from templates, measuring its accuracy, and then rebuilding it as an agent workflow with human approval.
 
 ---
 
@@ -78,7 +78,7 @@ Please do not upload real company, customer or personal data into any AI tool du
 
 ## Before You Start
 
-You will need a laptop with desktop Word, Excel and PowerPoint, access to at least one of the AI tools above, and a Google account for Gemini Notebook (formerly NotebookLM). Your trainer will share n8n access details before Day 2. If your company blocks any of these tools, see [If your company blocks a tool](./14-product-cards/locked-down.md). New words are explained in the [glossary](./14-product-cards/glossary.md).
+You will need a laptop with desktop Word, Excel and PowerPoint, access to at least one of the AI tools above, and a Google account for Gemini Notebook (formerly NotebookLM). Your trainer will share n8n access details before Module 10. If your company blocks any of these tools, see [If your company blocks a tool](./14-product-cards/locked-down.md). New words are explained in the [glossary](./14-product-cards/glossary.md).
 
 ---
 
