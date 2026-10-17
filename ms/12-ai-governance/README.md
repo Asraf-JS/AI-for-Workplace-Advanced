@@ -26,7 +26,7 @@ Tiada fail untuk dimuat turun. Bawa nota anda daripada modul-modul sebelum ini: 
 
 > **Nota:** modul ini menerangkan peraturan secara umum untuk tujuan latihan. Ia bukan nasihat undang-undang. Untuk keputusan sebenar, berbincang dengan Pegawai Perlindungan Data (Data Protection Officer) atau pasukan undang-undang organisasi anda.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ---
 

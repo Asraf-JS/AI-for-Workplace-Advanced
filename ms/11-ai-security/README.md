@@ -28,7 +28,7 @@ Anda perlukan **Quotation Checker** anda dan Word, serta `open-rfqs.pdf` dan `ca
 
 > **Penting:** ini ujian ke atas assistant anda sendiri dengan data rekaan. Jangan sekali-kali mencuba prompt injection pada alat atau sistem yang bukan milik anda atau yang anda tidak diminta untuk menguji.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ---
 

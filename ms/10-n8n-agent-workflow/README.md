@@ -43,7 +43,7 @@ Anda perlukan:
 
 > **Nota:** baru dengan alat workflow? Jurulatih anda mungkin membina 10.1 hingga 10.6 pada skrin sementara anda mengikutinya. Kemudian anda meramal laluan bagi setiap sebut harga sebelum ia dijalankan dalam 10.7. Membinanya sendiri ialah latihan yang lebih baik, tetapi memahami reka bentuknya ialah perkara yang anda perlukan untuk Modul 13.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris). Jika syarikat anda menyekat n8n atau sambungan peti mel, lihat [If your company blocks a tool](../../14-product-cards/locked-down.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jika syarikat anda menyekat n8n atau sambungan peti mel, lihat [If your company blocks a tool](../../14-product-cards/locked-down.md) (dalam bahasa Inggeris).
 
 ---
 
