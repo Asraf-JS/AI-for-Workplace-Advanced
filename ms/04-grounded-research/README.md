@@ -12,7 +12,7 @@ Quotation Checker anda memetik polisi perolehan. Tetapi apabila rakan sekerja be
 
 ## Apa yang Anda Akan Pelajari
 
-- Terangkan beza antara jawapan daripada ingatan model dengan jawapan yang di-ground pada sumber anda
+- Terangkan beza antara jawapan daripada ingatan model dengan jawapan yang berasaskan sumber anda (grounded)
 - Sediakan notebook berasaskan sumber dalam alat AI anda
 - Semak citation dengan cepat, dan kenal pasti citation yang tidak menyokong jawapan
 - Tanya soalan dengan cara yang menjadikan jawapan mudah disemak
