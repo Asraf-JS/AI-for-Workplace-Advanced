@@ -4,8 +4,6 @@ On Day 1 you checked quotations by uploading them to your Quotation Checker one 
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 2
-
 **Estimated time:** 90 minutes
 
 **Your result:** A working n8n workflow that reads a quotation PDF, checks it with AI, routes it to approve, revise, reject or escalate, and waits for your approval by email.

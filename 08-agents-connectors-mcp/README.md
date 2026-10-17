@@ -4,8 +4,6 @@ Day 1's Quotation Checker reads what you give it and writes a report. It can't o
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 2
-
 **Estimated time:** 45 minutes
 
 **Your result:** A systems map for Sinar Maju's quotation approval process: every step, the system it touches, whether an agent would read or write there, and where a person approves.

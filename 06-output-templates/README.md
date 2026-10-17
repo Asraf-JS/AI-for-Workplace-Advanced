@@ -4,8 +4,6 @@ The Quotation Checker has done its job: Duduk Selesa is the recommended supplier
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 1
-
 **Estimated time:** 60 minutes
 
 **Your result:** An approval memo on the Sinar Maju template, a four-slide approval deck, and a side-by-side comparison of what happened with the good and the bad deck template.

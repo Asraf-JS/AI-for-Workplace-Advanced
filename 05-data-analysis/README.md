@@ -4,8 +4,6 @@ The Finance Director wants to know where Sinar Maju's money goes, and whether an
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 1
-
 **Estimated time:** 55 minutes
 
 **Your result:** A cleaned view of the purchase history, a spend summary you've checked in Excel, a list of findings for the Finance Director, and one chart.

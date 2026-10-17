@@ -4,8 +4,6 @@ Your Quotation Checker quotes the procurement policy. But when a colleague asks 
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 1
-
 **Estimated time:** 55 minutes
 
 **Your result:** A policy notebook that answers from the Procurement Policy, five checked answers with their clause numbers, and one question it correctly says it can't answer.

@@ -4,8 +4,6 @@ Before you build anything, it helps to know what's going on inside the tool. An 
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 1
-
 **Estimated time:** 40 minutes
 
 **Your result:** Two analyses of the same quotation, one from a fast model and one from a reasoning model, and a short note on how they differ.

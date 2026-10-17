@@ -4,8 +4,6 @@ In Module 01 you saw that a model only knows what's in front of it. Context engi
 
 > **Prompts:** every prompt you need is in the steps, with a Copy button. The [prompts page](./prompts.md) has them all on one page too.
 
-**Day:** 1
-
 **Estimated time:** 50 minutes
 
 **Your result:** A requirements checklist, a blank comparison table and a JSON version of the same requirements, all from Sinar Maju's chair RFQ.
