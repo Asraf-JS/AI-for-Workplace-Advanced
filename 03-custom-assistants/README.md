@@ -59,7 +59,10 @@ New words are explained in the [glossary](../14-product-cards/glossary.md).
 
 ## 3.1 Create the Assistant
 
-1. Open your AI tool and create a new custom assistant (Project, agent, Gem or skill). The [product card](../14-product-cards/) for your tool has the clicks.
+1. Open your AI tool and create a new custom assistant (Project, agent, Gem or skill). The [product card](../14-product-cards/) for your tool has the clicks. In Copilot:
+   - Open the Microsoft 365 Copilot app at [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat), signed in with your work account.
+   - Select **Agents** in the left pane. If the pane shows only a column of icons, select the panel icon at the top left to open it.
+   - Select **New agent**. Agent Builder offers to build the agent by chat: select **Skip**, so you fill in each field yourself.
 
    ![A new agent in Copilot's Agent Builder, with the name New Agent and the empty Instructions box highlighted](./images/03-01-open-ai-tool-create.png)
 
