@@ -6,7 +6,7 @@ Sinar Maju sudah menerima tiga sebut harga untuk RFQ kerusinya, dan RFQ baharu m
 
 **Anggaran masa:** 70 minit
 
-**Hasil anda:** Quotation Checker yang berfungsi dalam alat AI anda, laporannya bagi setiap satu daripada tiga sebut harga kerusi, dan cadangan yang sudah anda semak sendiri.
+**Hasil anda:** Quotation Checker yang berfungsi dalam AI tool anda, laporannya bagi setiap satu daripada tiga sebut harga kerusi, dan cadangan yang sudah anda semak sendiri.
 
 ---
 
@@ -14,7 +14,7 @@ Sinar Maju sudah menerima tiga sebut harga untuk RFQ kerusinya, dan RFQ baharu m
 
 - Terangkan bahagian-bahagian custom assistant: instructions, knowledge, suggested prompts dan tools
 - Tulis instructions untuk assistant dengan peranan, langkah, format output dan peraturan
-- Bina assistant itu dalam alat AI anda sendiri
+- Bina assistant itu dalam AI tool anda sendiri
 - Uji pada kes sebenar, dan semak kerjanya, jangan terus percaya
 
 ---
@@ -34,7 +34,7 @@ Kandungannya:
 | `procurement-policy-v3.0.pdf` | Polisi Perolehan Sinar Maju, Versi 3.0 |
 | `approved-vendor-list.pdf` | Pembekal yang dibenarkan untuk Sinar Maju membeli |
 
-Buka [kad produk](../../14-product-cards/) (dalam bahasa Inggeris) bagi alat AI anda. Ia menunjukkan di mana anda boleh membina custom assistant dalam alat itu.
+Buka [kad produk](../../14-product-cards/) (dalam bahasa Inggeris) bagi AI tool anda. Ia menunjukkan di mana anda boleh membina custom assistant dalam tool itu.
 
 Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
@@ -42,9 +42,9 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## Topik
 
-**Apa itu custom assistant.** Satu set instructions yang disimpan, dan selalunya fail, yang diikuti oleh AI setiap kali anda menggunakannya. Setiap alat ada nama sendiri untuknya:
+**Apa itu custom assistant.** Satu set instructions yang disimpan, dan selalunya fail, yang diikuti oleh AI setiap kali anda menggunakannya. Setiap tool ada nama sendiri untuknya:
 
-| Alat | Nama | Boleh simpan fail? |
+| Tool | Nama | Boleh simpan fail? |
 |---|---|---|
 | Copilot | Agent (Agent Builder) | Premium sahaja. Pada Basic, muat naik fail dalam setiap chat |
 | ChatGPT | Project (pelan peribadi) atau GPT (Business dan Enterprise) | Ya |
@@ -59,7 +59,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## 3.1 Cipta Assistant
 
-1. Buka alat AI anda dan cipta custom assistant baharu (Project, agent, Gem atau skill). [Kad produk](../../14-product-cards/) bagi alat anda menunjukkan langkah kliknya. Dalam Copilot:
+1. Buka AI tool anda dan cipta custom assistant baharu (Project, agent, Gem atau skill). [Kad produk](../../14-product-cards/) bagi tool anda menunjukkan langkah kliknya. Dalam Copilot:
    - Buka aplikasi Microsoft 365 Copilot di [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat), dengan log masuk menggunakan akaun kerja anda.
    - Pilih **Agents** di anak tetingkap kiri. Jika anak tetingkap itu hanya menunjukkan satu lajur ikon, pilih ikon panel di bahagian atas sebelah kiri untuk membukanya.
    - Pilih **New agent**. Agent Builder menawarkan untuk membina agent melalui chat: pilih **Skip**, supaya anda mengisi setiap field sendiri.
@@ -67,7 +67,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
    ![Agent baharu dalam Agent Builder Copilot, dengan nama New Agent dan kotak Instructions yang kosong diserlahkan](../../03-custom-assistants/images/03-01-open-ai-tool-create.png)
 
    *Dalam Copilot: **Agents** > **New agent** > **Skip** membuka borang ini.*
-2. Namakan ia `Quotation Checker`. Jika alat anda meminta penerangan, tambah satu baris, contohnya `Menyemak sebut harga pembekal berdasarkan polisi perolehan kami`.
+2. Namakan ia `Quotation Checker`. Jika tool anda meminta penerangan, tambah satu baris, contohnya `Menyemak sebut harga pembekal berdasarkan polisi perolehan kami`.
 
    ![Agent yang dinamakan Quotation Checker, dengan nama dan baris Describe your agent diserlahkan](../../03-custom-assistants/images/03-02-name-quotation-checker.png)
 
@@ -115,13 +115,13 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
    *Sudah dicipta dan peribadi kepada anda. **Start chat** membuka chat pertama anda dengannya.*
 
-> **Nota:** instructions ini sekitar 2,500 aksara. Agent Copilot menerima sehingga 8,000, dengan pembilang di bawah kotak. Jika alat anda memotongnya, buang contoh "Balas dalam format ini" paling akhir, bukan semakannya.
+> **Nota:** instructions ini sekitar 2,500 aksara. Agent Copilot menerima sehingga 8,000, dengan pembilang di bawah kotak. Jika tool anda memotongnya, buang contoh "Balas dalam format ini" paling akhir, bukan semakannya.
 
 ---
 
 ## 3.2 Beri Polisi dan Senarai Vendor
 
-1. Jika alat anda membenarkan assistant menyimpan fail, tambah `procurement-policy-v3.0.pdf` dan `approved-vendor-list.pdf` ke dalam knowledge (atau project files) assistant itu.
+1. Jika tool anda membenarkan assistant menyimpan fail, tambah `procurement-policy-v3.0.pdf` dan `approved-vendor-list.pdf` ke dalam knowledge (atau project files) assistant itu.
 2. Jika tidak (Copilot Basic, skill Gemini), anda akan memuat naik dua fail itu pada permulaan setiap chat dengan assistant.
 
 ---

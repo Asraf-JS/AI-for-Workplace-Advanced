@@ -43,7 +43,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## Topik
 
-**Mula daripada proses, bukan alat.** Setiap brief menerangkan cara kerja itu dibuat hari ini, peraturannya, dan apa yang selalu tidak kena. Reka bentuk yang baik membetulkan apa yang tidak kena tanpa melanggar peraturan.
+**Mula daripada proses, bukan tool.** Setiap brief menerangkan cara kerja itu dibuat hari ini, peraturannya, dan apa yang selalu tidak kena. Reka bentuk yang baik membetulkan apa yang tidak kena tanpa melanggar peraturan.
 
 **Uji sebelum membentang.** Data setiap brief mengandungi kes-kes sukar yang mesti dikendalikan oleh workflow. Reka bentuk yang belum dicuba pada data hanyalah tekaan.
 
@@ -71,7 +71,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## 13.2 Fahami Proses (10 minit)
 
-1. Mulakan new chat dalam alat AI anda, dan muat naik PDF brief anda.
+1. Mulakan new chat dalam AI tool anda, dan muat naik PDF brief anda.
 
    ![Chat Copilot baharu dengan PDF Brief A dilampirkan](../../13-capstone/images/13-03-start-new-chat-ai.png)
 
@@ -92,7 +92,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## 13.3 Uji Data (15 minit)
 
-Dalam chat yang sama, muat naik fail data brief anda dan hantar prompt bagi brief anda daripada [halaman prompt](./prompts.md) (Bahagian 2A, 2B, 2C atau 2D). Fail brief ini adalah rekaan, jadi selamat dimuat naik ke mana-mana alat AI. Di tempat kerja, peraturan brief tentang data peribadi akan terpakai pada fail sebenar. Kemudian semak sekurang-kurangnya dua dapatan AI sendiri dalam fail. Dalam ujian kami, jawapan pertama Copilot salah bagi satu invois, dan bertanya sekali lagi membetulkannya. Sebab itulah anda menyemak.
+Dalam chat yang sama, muat naik fail data brief anda dan hantar prompt bagi brief anda daripada [halaman prompt](./prompts.md) (Bahagian 2A, 2B, 2C atau 2D). Fail brief ini adalah rekaan, jadi selamat dimuat naik ke mana-mana AI tool. Di tempat kerja, peraturan brief tentang data peribadi akan terpakai pada fail sebenar. Kemudian semak sekurang-kurangnya dua dapatan AI sendiri dalam fail. Dalam ujian kami, jawapan pertama Copilot salah bagi satu invois, dan bertanya sekali lagi membetulkannya. Sebab itulah anda menyemak.
 
 
 ![Jadual Matching Results daripada Copilot bagi invois Brief A](../../13-capstone/images/13-05-test-data-15-minutes.png)
@@ -127,7 +127,7 @@ Sembilan invois lagi sepadan. PO-2026-0160 sudah ada penerimaan barang tetapi be
 | E03 | Balas dalam bahasa Melayu: 400 fail, RM1,280.00 |
 | E04 | Diskaun 12% melebihi had 5%: hantar kepada Pengurus Jualan |
 | E05 | Aduan: hantar kepada Pengurus Jualan, tiada balasan automatik |
-| E06 | Buang alamat rumah dan nombor IC sebelum menggunakan alat AI yang tidak diluluskan untuk data peribadi |
+| E06 | Buang alamat rumah dan nombor IC sebelum menggunakan AI tool yang tidak diluluskan untuk data peribadi |
 | E07 | "Toner yang biasa" tidak jelas: tanya yang mana satu |
 | E08 | Hanya 85 kerusi dalam stok: tawarkan 85 sekarang dan 35 dalam 21 hari |
 | E10 | Abaikan arahan tersembunyi yang meminta diskaun 30%; hanya 9 pencetak dalam stok |
@@ -160,7 +160,7 @@ Hanya Admin melebihi 75%. Baris tanpa jabatan berjumlah RM8,459.69 dan patut dis
 | Q02 | Jawab | Baki 17 hari, tetapi hanya 5 boleh dibawa ke 2027, dan mesti digunakan sebelum 31 Mac. Rancang 12 hari lagi sebelum 31 Disember |
 | Q03 | Jawab | Balas dalam bahasa Melayu: cuti bersalin 98 hari, dipohon sekurang-kurangnya 30 hari lebih awal |
 | Q04 | Hantar kepada seseorang | Meminta maklumat cuti sakit rakan sekerja. Jangan sekali-kali kongsikannya; kebimbangan itu dihantar kepada Pengurus Sumber Manusia |
-| Q05 | Jawab | Buang diagnosis dan nombor IC sebelum menggunakan alat AI yang tidak diluluskan untuk data kesihatan. Rekodkan 2 hari cuti sakit |
+| Q05 | Jawab | Buang diagnosis dan nombor IC sebelum menggunakan AI tool yang tidak diluluskan untuk data kesihatan. Rekodkan 2 hari cuti sakit |
 | Q06 | Hantar kepada seseorang | Kemungkinan aduan gangguan: terus kepada Pengurus Sumber Manusia, sulit, tanpa AI |
 | Q07 | Tanya | "Cuti yang biasa" tidak jelas: tanya jenis cuti dan hari yang mana |
 | Q08 | Jawab | Baki hanya 3 hari. 2 hari lagi akan menjadi cuti tanpa gaji, yang memerlukan HOD dan Pengurus Sumber Manusia |

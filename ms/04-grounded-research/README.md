@@ -13,7 +13,7 @@ Quotation Checker anda memetik polisi perolehan. Tetapi apabila rakan sekerja be
 ## Apa yang Anda Akan Pelajari
 
 - Terangkan beza antara jawapan daripada ingatan model dengan jawapan yang berasaskan sumber anda (grounded)
-- Sediakan notebook berasaskan sumber dalam alat AI anda
+- Sediakan notebook berasaskan sumber dalam AI tool anda
 - Semak citation dengan cepat, dan kenal pasti citation yang tidak menyokong jawapan
 - Tanya soalan dengan cara yang menjadikan jawapan mudah disemak
 - Kenali jawapan "Saya tidak jumpa perkara itu dalam sumber" yang baik
@@ -28,7 +28,7 @@ Kandungannya ialah `procurement-policy-v3.0.pdf` dan `approved-vendor-list.pdf`.
 
 Lab ini paling sesuai dalam **Gemini Notebook** (dahulunya NotebookLM), yang percuma dengan akaun Google dan memautkan setiap citation kepada petikan tepatnya. Jika anda hanya ada Copilot, Copilot Notebook juga sama baiknya: tangkapan skrin menunjukkan Gemini, tetapi langkahnya sama. Project ChatGPT atau Claude juga boleh digunakan. Lihat Nota Produk di bawah.
 
-Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jika syarikat anda menyekat Gemini Notebook, lihat [Jika syarikat anda menyekat sesuatu alat](../../14-product-cards/locked-down.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jika syarikat anda menyekat Gemini Notebook, lihat [Jika syarikat anda menyekat sesuatu tool](../../14-product-cards/locked-down.md) (dalam bahasa Inggeris).
 
 ---
 
@@ -36,9 +36,9 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jik
 
 **Jawapan grounded dan tidak grounded.** Tanya chat biasa "berapakah deposit biasa untuk perabot pejabat?" dan model menjawab daripada apa yang dipelajarinya semasa latihan: munasabah, tetapi bukan polisi sesiapa. Jawapan grounded datang daripada dokumen yang anda berikan, dan merujuk kembali kepadanya.
 
-**Alat berasaskan sumber.** Notebook (Gemini Notebook, Copilot Notebooks) atau Project menyimpan sumber anda bersama dan menjawab daripadanya. Sesetengah alat berpegang ketat pada sumber; yang lain mencampurkan pengetahuan umum melainkan anda menyuruhnya jangan.
+**Tool berasaskan sumber.** Notebook (Gemini Notebook, Copilot Notebooks) atau Project menyimpan sumber anda bersama dan menjawab daripadanya. Sesetengah tool berpegang ketat pada sumber; yang lain mencampurkan pengetahuan umum melainkan anda menyuruhnya jangan.
 
-**Citation juga satu dakwaan.** Nombor citation menunjukkan dari mana alat itu berkata jawapan itu datang. Ia masih boleh merujuk kepada klausa yang salah, atau klausa yang berkata sesuatu yang sedikit berbeza. Menyemaknya hanya mengambil beberapa saat jika anda meminta nombor klausa dan ayat yang tepat.
+**Citation juga satu dakwaan.** Nombor citation menunjukkan dari mana tool itu berkata jawapan itu datang. Ia masih boleh merujuk kepada klausa yang salah, atau klausa yang berkata sesuatu yang sedikit berbeza. Menyemaknya hanya mengambil beberapa saat jika anda meminta nombor klausa dan ayat yang tepat.
 
 **"Saya tidak tahu" ialah jawapan yang baik.** Apabila sumber tidak meliputi sesuatu soalan, jawapan yang betul ialah menyatakannya. Assistant yang sentiasa ada jawapan sebenarnya meneka pada sesetengah masa.
 
@@ -46,7 +46,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jik
 
 ## 4.1 Sediakan Notebook Polisi
 
-1. Buka alat notebook anda dan cipta notebook (atau Project) baharu bernama `Sinar Maju procurement policy`.
+1. Buka notebook tool anda dan cipta notebook (atau Project) baharu bernama `Sinar Maju procurement policy`.
 
    ![Gemini Notebook baharu bernama Sinar Maju procurement policy, dengan nama dan Add sources diserlahkan](../../04-grounded-research/images/04-01-open-notebook-tool-create.png)
 
@@ -148,9 +148,9 @@ Jawab daripada sumber sahaja. Apakah polisi kami tentang membeli daripada pembek
 
 Jawapan yang baik menyatakan bahawa sumber tidak meliputi pembelian daripada pembekal luar negara, dan mungkin merujuk anda kepada Jabatan Perolehan (polisi menyenaraikan procurement@sinarmaju.example). Polisi dan senarai vendor tidak menyebutnya langsung.
 
-Jika alat itu memberi anda peraturan tentang pembekal luar negara, ia menjawab daripada pengetahuan umum, bukan sumber anda. Tanya: `Petik klausa yang menyatakan perkara itu.` Ia tidak akan dapat berbuat demikian.
+Jika tool itu memberi anda peraturan tentang pembekal luar negara, ia menjawab daripada pengetahuan umum, bukan sumber anda. Tanya: `Petik klausa yang menyatakan perkara itu.` Ia tidak akan dapat berbuat demikian.
 
-Perhatikan juga versi yang lebih halus. Alat itu boleh berkata sumber tidak meliputinya, kemudian menambah peraturan berkaitan yang memang ada dalam sumber (seperti Klausa 5.1 tentang senarai vendor) dan kesimpulannya sendiri, seperti "semua vendor yang disenaraikan ialah syarikat Malaysia". Peraturan itu tidak mengapa; kesimpulan itu tidak ditulis di mana-mana. Tanya ayat mana yang menyatakannya.
+Perhatikan juga versi yang lebih halus. Tool itu boleh berkata sumber tidak meliputinya, kemudian menambah peraturan berkaitan yang memang ada dalam sumber (seperti Klausa 5.1 tentang senarai vendor) dan kesimpulannya sendiri, seperti "semua vendor yang disenaraikan ialah syarikat Malaysia". Peraturan itu tidak mengapa; kesimpulan itu tidak ditulis di mana-mana. Tanya ayat mana yang menyatakannya.
 
 </details>
 
@@ -175,14 +175,14 @@ Cari satu dokumen awam yang anda gunakan di tempat kerja, seperti polisi yang di
 | Masalah | Apa yang perlu disemak |
 |---|---|
 | Jawapan tiada nombor klausa | Mulakan setiap soalan dengan "Jawab daripada sumber sahaja" dan minta klausa serta petikannya |
-| Petikan itu tiada dalam PDF | Alat itu mereka-rekanya atau memparafrasanya. Tandakan sebagai salah, dan minta ia mencari ayat yang tepat |
+| Petikan itu tiada dalam PDF | Tool itu mereka-rekanya atau memparafrasanya. Tandakan sebagai salah, dan minta ia mencari ayat yang tepat |
 | Notebook kata ia tidak dapat membaca PDF | Buang sumber itu dan tambah semula. Jika masih gagal, copy teks PDF itu ke dalam sumber teks |
-| Jawapan menyebut peraturan yang anda tidak jumpa dalam polisi | Alat itu mencampurkan pengetahuan umum. Guna alat yang berasaskan sumber sahaja seperti Gemini Notebook, atau minta ia berkata "tiada dalam sumber" apabila ia tidak dapat memetik satu |
+| Jawapan menyebut peraturan yang anda tidak jumpa dalam polisi | Tool itu mencampurkan pengetahuan umum. Guna tool yang berasaskan sumber sahaja seperti Gemini Notebook, atau minta ia berkata "tiada dalam sumber" apabila ia tidak dapat memetik satu |
 
 ---
 
 ## Ringkasan Pelajaran
 
-Grounding AI pada dokumen anda sendiri memberi jawapan yang boleh dijejaki. Tetapi citation hanya berguna jika seseorang menyemaknya, dan menyemak menjadi cepat apabila anda meminta klausa dan ayat yang tepat setiap kali. Alat yang berkata "itu tiada dalam sumber" sedang berfungsi dengan betul.
+Grounding AI pada dokumen anda sendiri memberi jawapan yang boleh dijejaki. Tetapi citation hanya berguna jika seseorang menyemaknya, dan menyemak menjadi cepat apabila anda meminta klausa dan ayat yang tepat setiap kali. Tool yang berkata "itu tiada dalam sumber" sedang berfungsi dengan betul.
 
 **Uji diri:** Satu jawapan merujuk Klausa 6.2, tetapi ayat yang dipetik tiada dalam PDF. Apa yang anda buat dengan jawapan itu?

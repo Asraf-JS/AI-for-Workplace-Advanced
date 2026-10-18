@@ -44,7 +44,7 @@ Bagi jawapan anda tentang bayaran pendahuluan, tunjukkan petikan daripada sumber
 
 ---
 
-## Bahagian 3: Cara A, beritahu alat itu versi mana yang diguna pakai
+## Bahagian 3: Cara A, beritahu tool itu versi mana yang diguna pakai
 
 **Sesi:** notebook yang sama | **Sumber:** sumber notebook
 

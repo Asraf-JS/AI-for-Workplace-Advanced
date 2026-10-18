@@ -1,6 +1,6 @@
 # 12 - Tadbir Urus AI dalam Konteks Malaysia
 
-Sepanjang kursus ini anda telah membina Quotation Checker, notebook polisi, analisis data, templat dan workflow kelulusan. Jika seluruh Jabatan Perolehan mula menggunakannya esok, siapa yang menentukan alat mana yang dibenarkan, data apa yang dimasukkan, dan siapa yang menyemak output? Dalam modul ini, anda menulis peraturan untuk jabatan anda, dan use-case register bagi penggunaan AI yang diliputi oleh peraturan itu.
+Sepanjang kursus ini anda telah membina Quotation Checker, notebook polisi, analisis data, templat dan workflow kelulusan. Jika seluruh Jabatan Perolehan mula menggunakannya esok, siapa yang menentukan tool mana yang dibenarkan, data apa yang dimasukkan, dan siapa yang menyemak output? Dalam modul ini, anda menulis peraturan untuk jabatan anda, dan use-case register bagi penggunaan AI yang diliputi oleh peraturan itu.
 
 > **Prompt:** setiap prompt yang anda perlukan ada dalam langkah-langkah di bawah, dengan butang Salin. [Halaman prompt](./prompts.md) juga mengumpulkan semuanya dalam satu halaman.
 
@@ -32,9 +32,9 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## Topik
 
-**Mengapa jabatan.** IT boleh meluluskan sesuatu alat. Hanya orang yang menggunakannya tahu data apa yang dimasukkan, untuk apa output itu digunakan, dan di mana kesilapan akan mendatangkan kesan. Tadbir urus AI yang baik ialah satu set peraturan ringkas yang benar-benar diikuti oleh pasukan, dan senarai perkara yang pasukan gunakan AI untuknya.
+**Mengapa jabatan.** IT boleh meluluskan sesuatu tool. Hanya orang yang menggunakannya tahu data apa yang dimasukkan, untuk apa output itu digunakan, dan di mana kesilapan akan mendatangkan kesan. Tadbir urus AI yang baik ialah satu set peraturan ringkas yang benar-benar diikuti oleh pasukan, dan senarai perkara yang pasukan gunakan AI untuknya.
 
-**Data peribadi: PDPA.** Personal Data Protection Act 2010 (Akta Perlindungan Data Peribadi 2010) terpakai setiap kali anda memproses data peribadi dalam transaksi komersial, termasuk apabila anda paste data itu ke dalam alat AI. Personal Data Protection (Amendment) Act 2024 (Akta Perlindungan Data Peribadi (Pindaan) 2024) menambah, mulai 1 Jun 2025: kewajipan melantik Pegawai Perlindungan Data (Data Protection Officer) (bagi organisasi yang memenuhi kriteria Pesuruhjaya, seperti memproses data peribadi dalam jumlah yang besar; semak dengan pasukan undang-undang anda sama ada organisasi anda termasuk), kewajipan memberitahu Pesuruhjaya Perlindungan Data Peribadi tentang pelanggaran data peribadi secepat yang dapat dilaksanakan (dan orang yang terjejas, jika pelanggaran itu mungkin menyebabkan mereka mengalami kemudaratan yang ketara), dan hak mudah alih data (data portability).
+**Data peribadi: PDPA.** Personal Data Protection Act 2010 (Akta Perlindungan Data Peribadi 2010) terpakai setiap kali anda memproses data peribadi dalam transaksi komersial, termasuk apabila anda paste data itu ke dalam AI tool. Personal Data Protection (Amendment) Act 2024 (Akta Perlindungan Data Peribadi (Pindaan) 2024) menambah, mulai 1 Jun 2025: kewajipan melantik Pegawai Perlindungan Data (Data Protection Officer) (bagi organisasi yang memenuhi kriteria Pesuruhjaya, seperti memproses data peribadi dalam jumlah yang besar; semak dengan pasukan undang-undang anda sama ada organisasi anda termasuk), kewajipan memberitahu Pesuruhjaya Perlindungan Data Peribadi tentang pelanggaran data peribadi secepat yang dapat dilaksanakan (dan orang yang terjejas, jika pelanggaran itu mungkin menyebabkan mereka mengalami kemudaratan yang ketara), dan hak mudah alih data (data portability).
 
 **Prinsip AI kebangsaan.** Pada September 2024, Kementerian Sains, Teknologi dan Inovasi (MOSTI) menerbitkan **National Guidelines on AI Governance and Ethics (AIGE)**. Garis panduan ini bersifat sukarela, dan menetapkan tujuh prinsip:
 
@@ -54,7 +54,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## 12.1 Senaraikan Penggunaan AI Jabatan
 
-1. Mulakan new chat dalam alat AI anda.
+1. Mulakan new chat dalam AI tool anda.
 
    ![Chat Copilot baharu yang kosong](../../12-ai-governance/images/12-01-start-new-chat-ai.png)
 
@@ -70,14 +70,14 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
    5. Workflow n8n yang menyemak sebut harga yang masuk dan meminta Ketua Perolehan meluluskannya
    6. Merangka balasan kepada pertanyaan stok pelanggan (Bahagian Jualan meminta untuk meminjam idea ini)
 
-   Buat jadual Markdown dengan lajur ini: Kes penggunaan, Alat AI, Data yang digunakan, Data peribadi? (Ya atau Tidak), Siapa yang melihat output, Semakan manusia sebelum digunakan, Pemilik. Isi apa yang anda boleh daripada senarai ini, dan tulis "Untuk disahkan" di mana anda meneka.
+   Buat jadual Markdown dengan lajur ini: Kes penggunaan, AI tool, Data yang digunakan, Data peribadi? (Ya atau Tidak), Siapa yang melihat output, Semakan manusia sebelum digunakan, Pemilik. Isi apa yang anda boleh daripada senarai ini, dan tulis "Untuk disahkan" di mana anda meneka.
    ```
 
    ![Jadual register daripada Copilot, dengan Customer Stock Enquiry Reply Drafting disenaraikan dua kali](../../12-ai-governance/images/12-02-send.png)
 
    *Jadual pertama Copilot (tangkapan skrin daripada versi bahasa Inggeris). Di sini ia menyenaraikan penggunaan pertanyaan pelanggan dua kali: padam salinannya supaya ada satu baris bagi setiap penggunaan.*
 
-3. Gantikan setiap "Untuk disahkan" dengan jawapan anda sendiri. Anda tahu prosesnya; AI hanya meneka. (Jika perolehan bukan bidang anda, guna apa yang anda lihat dalam kursus ini: contohnya, Ketua Perolehan ialah pemilik Quotation Checker.) Semak jadual itu ada satu baris bagi setiap penggunaan: alat AI kadang-kadang memecahkan atau mengulang baris (dalam ujian kami, Copilot menyenaraikan perangkaan balasan pertanyaan pelanggan dua kali).
+3. Gantikan setiap "Untuk disahkan" dengan jawapan anda sendiri. Anda tahu prosesnya; AI hanya meneka. (Jika perolehan bukan bidang anda, guna apa yang anda lihat dalam kursus ini: contohnya, Ketua Perolehan ialah pemilik Quotation Checker.) Semak jadual itu ada satu baris bagi setiap penggunaan: AI tool kadang-kadang memecahkan atau mengulang baris (dalam ujian kami, Copilot menyenaraikan perangkaan balasan pertanyaan pelanggan dua kali).
 
 ---
 
@@ -113,7 +113,7 @@ Penarafan anda mungkin berbeza: ini satu pertimbangan, dan sebabnya lebih pentin
 | Memo dan deck kelulusan | Sederhana | Angka sulit, disemak oleh penulis sebelum dihantar |
 | Notebook polisi | Sederhana | Polisi dalaman ialah data sulit syarikat, dan kakitangan bergantung pada jawapannya |
 
-Tiada satu pun daripada enam ini Rendah: Rendah hanya untuk data awam atau rekaan. Kawalan seperti alat yang diluluskan dan seseorang yang menyemak setiap draf mengurangkan risiko penggunaan pertanyaan pelanggan, tetapi tidak mengubah penarafannya. Rekodkan kawalan itu dalam lajur **Semakan manusia sebelum digunakan**.
+Tiada satu pun daripada enam ini Rendah: Rendah hanya untuk data awam atau rekaan. Kawalan seperti tool yang diluluskan dan seseorang yang menyemak setiap draf mengurangkan risiko penggunaan pertanyaan pelanggan, tetapi tidak mengubah penarafannya. Rekodkan kawalan itu dalam lajur **Semakan manusia sebelum digunakan**.
 
 </details>
 
@@ -124,7 +124,7 @@ Tiada satu pun daripada enam ini Rendah: Rendah hanya untuk data awam atau rekaa
 Dalam chat yang sama, hantar:
 
 ```
-Sekarang rangka satu halaman peraturan AI untuk Jabatan Perolehan. Guna enam tajuk ini: Alat yang diluluskan; Data yang boleh anda gunakan; Menyemak output AI; Bersikap terbuka tentang penggunaan AI; Use-case register; Melaporkan masalah. Tulis dalam bahasa yang mudah dan terus terang, dengan tidak lebih daripada empat peraturan pendek di bawah setiap tajuk. Ambil kira Personal Data Protection Act 2010 (Akta Perlindungan Data Peribadi 2010) Malaysia dan pindaannya pada 2024 (Pegawai Perlindungan Data, pemberitahuan pelanggaran), serta penarafan risiko dalam jadual di atas. Jangan reka undang-undang atau tarikh akhir: jika anda tidak pasti, tulis "Semak dengan DPO kami".
+Sekarang rangka satu halaman peraturan AI untuk Jabatan Perolehan. Guna enam tajuk ini: Tool yang diluluskan; Data yang boleh anda gunakan; Menyemak output AI; Bersikap terbuka tentang penggunaan AI; Use-case register; Melaporkan masalah. Tulis dalam bahasa yang mudah dan terus terang, dengan tidak lebih daripada empat peraturan pendek di bawah setiap tajuk. Ambil kira Personal Data Protection Act 2010 (Akta Perlindungan Data Peribadi 2010) Malaysia dan pindaannya pada 2024 (Pegawai Perlindungan Data, pemberitahuan pelanggaran), serta penarafan risiko dalam jadual di atas. Jangan reka undang-undang atau tarikh akhir: jika anda tidak pasti, tulis "Semak dengan DPO kami".
 ```
 
 ![Draf AI Rules for the Procurement Department daripada Copilot, bermula dengan Approved tools, Data you may use dan Checking AI output](../../12-ai-governance/images/12-04-write-department-s-ai.png)
@@ -178,6 +178,6 @@ Senaraikan tiga cara pasukan anda sendiri menggunakan AI hari ini, termasuk yang
 
 ## Ringkasan Pelajaran
 
-Tadbir urus ialah senarai pendek peraturan yang diikuti oleh pasukan dan register tentang apa yang pasukan gunakan AI untuknya, setiap satu dengan penarafan risiko, semakan manusia dan pemilik. Di Malaysia, PDPA sudah pun terpakai kepada data peribadi dalam alat AI, dan prinsip AI kebangsaan memberi anda senarai semak untuk melihat apa yang masih tiada. Pantau perkembangan AI Governance Bill.
+Tadbir urus ialah senarai pendek peraturan yang diikuti oleh pasukan dan register tentang apa yang pasukan gunakan AI untuknya, setiap satu dengan penarafan risiko, semakan manusia dan pemilik. Di Malaysia, PDPA sudah pun terpakai kepada data peribadi dalam AI tool, dan prinsip AI kebangsaan memberi anda senarai semak untuk melihat apa yang masih tiada. Pantau perkembangan AI Governance Bill.
 
-**Uji diri:** Kes penggunaan mana dalam register anda yang akan berubah penarafan risikonya jika alat itu ditukar kepada alat yang belum diluluskan oleh syarikat anda, dan mengapa?
+**Uji diri:** Kes penggunaan mana dalam register anda yang akan berubah penarafan risikonya jika tool itu ditukar kepada tool yang belum diluluskan oleh syarikat anda, dan mengapa?

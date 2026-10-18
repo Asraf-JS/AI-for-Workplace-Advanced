@@ -32,7 +32,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## Topik
 
-**Context ialah semua yang dilihat oleh model.** Itu termasuk prompt anda, fail yang dimuat naik, mesej sebelumnya dalam chat, custom instructions anda dan apa-apa yang alat itu ingat tentang anda (memory). Model tidak tahu bahagian mana yang paling penting melainkan anda beritahu. Chat yang panjang dan penuh dengan tugas lain boleh mengelirukan model, sebab itulah new chat selalunya memberi jawapan yang lebih baik.
+**Context ialah semua yang dilihat oleh model.** Itu termasuk prompt anda, fail yang dimuat naik, mesej sebelumnya dalam chat, custom instructions anda dan apa-apa yang tool itu ingat tentang anda (memory). Model tidak tahu bahagian mana yang paling penting melainkan anda beritahu. Chat yang panjang dan penuh dengan tugas lain boleh mengelirukan model, sebab itulah new chat selalunya memberi jawapan yang lebih baik.
 
 **GCSE, satu tahap lebih tinggi.** Dari kursus Beginner: **G**oal (apa yang anda mahu), **C**ontext (untuk siapa dan mengapa), **S**ource (apa yang perlu digunakan) dan **E**xpectations (format, panjang, nada). Pada tahap ini, tambah sempadan: suruh model guna sumber itu sahaja, dan beritahu apa yang perlu dibuat jika sumber tidak menjawab soalan. Contohnya: "Senaraikan keperluan dalam RFQ ini (goal) untuk pegawai perolehan yang membandingkan tiga sebut harga (context). Guna PDF yang dilampirkan sahaja (source). Beri jadual dengan satu baris bagi setiap keperluan, dan tulis 'Tidak dinyatakan' jika ada yang tiada (expectations)." Prompt dalam modul ini mengikut corak itu.
 
@@ -44,7 +44,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## 2.1 Langkah 1: Keluarkan Keperluan
 
-1. Mulakan new chat dalam alat AI anda.
+1. Mulakan new chat dalam AI tool anda.
 
    ![New chat dalam aplikasi Microsoft 365 Copilot, dengan New chat diserlahkan](../../02-context-engineering/images/02-01-start-new-chat-ai.png)
 
@@ -85,7 +85,7 @@ Guna jadual keperluan di atas sahaja, buat jadual perbandingan kosong dalam Mark
 
 *Copilot meletakkan jadual dalam kotak **Markdown**. Guna butang copy kotak itu untuk paste ke dalam Word atau Excel.*
 
-Sesetengah alat memecahkan satu keperluan gabungan kepada beberapa baris, contohnya "Jaring yang telap udara, dengan sokongan lumbar boleh laras" menjadi dua baris. Itu tidak mengapa, asalkan setiap baris masih datang daripada jadual Langkah 1 anda.
+Sesetengah tool memecahkan satu keperluan gabungan kepada beberapa baris, contohnya "Jaring yang telap udara, dengan sokongan lumbar boleh laras" menjadi dua baris. Itu tidak mengapa, asalkan setiap baris masih datang daripada jadual Langkah 1 anda.
 
 Copy jadual itu ke dalam Word atau Excel untuk melihat sama ada ia di-paste dengan kemas. Jika ia keluar sebagai baris-baris teks yang penuh dengan aksara |, anda telah copy Markdown mentah: minta AI tunjukkan jadual itu seperti biasa, bukan dalam code box, kemudian pilih jadual itu dan copy. Anda akan mengisi jadual seperti ini dengan sebut harga sebenar dalam Modul 03.
 
@@ -142,7 +142,7 @@ Semak bahawa setiap objek sepadan dengan satu baris jadual Langkah 1 anda. Nama 
 
 ## Latihan Kendiri
 
-Ambil satu borang atau senarai semak daripada kerja anda sendiri (tanpa data sebenar). Minta alat AI anda menukarnya kepada JSON dengan nama field yang anda pilih. Kemudian minta ia menukar JSON itu kembali kepada jadual Markdown. Adakah apa-apa yang hilang?
+Ambil satu borang atau senarai semak daripada kerja anda sendiri (tanpa data sebenar). Minta AI tool anda menukarnya kepada JSON dengan nama field yang anda pilih. Kemudian minta ia menukar JSON itu kembali kepada jadual Markdown. Adakah apa-apa yang hilang?
 
 ---
 

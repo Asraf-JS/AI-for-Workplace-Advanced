@@ -35,13 +35,13 @@ Anda perlukan:
 |---|---|
 | `quotation-approval-starter.json` | Workflow separuh siap untuk diimport |
 | `rfq-2026-131.pdf` | RFQ untuk 60 mesin pencarik kertas |
-| `quotation-alat-tulis-cendana.pdf`, `quotation-kodbar-nusa.pdf`, `quotation-hancur-rapi.pdf`, `quotation-imbas-teraju.pdf` | Empat sebut harga bagi RFQ itu |
+| `quotation-tool-tulis-cendana.pdf`, `quotation-kodbar-nusa.pdf`, `quotation-hancur-rapi.pdf`, `quotation-imbas-teraju.pdf` | Empat sebut harga bagi RFQ itu |
 | `approved-vendors.csv`, `policy-limits.csv` | Senarai vendor dan had polisi, sebagai data |
 | `procurement-policy-v3.0.pdf` | Polisi, sebagai rujukan |
 
 > **Penting:** hantar e-mel ujian kepada diri sendiri sahaja. Mulakan subjek setiap e-mel latihan dengan `[AIW TRAINING]`.
 
-> **Nota:** baru dengan alat workflow? Jurulatih anda mungkin membina 10.1 hingga 10.6 pada skrin sementara anda mengikutinya. Kemudian anda meramal laluan bagi setiap sebut harga sebelum ia dijalankan dalam 10.7. Membinanya sendiri ialah latihan yang lebih baik, tetapi memahami reka bentuknya ialah perkara yang anda perlukan untuk Modul 13.
+> **Nota:** baru dengan tool workflow? Jurulatih anda mungkin membina 10.1 hingga 10.6 pada skrin sementara anda mengikutinya. Kemudian anda meramal laluan bagi setiap sebut harga sebelum ia dijalankan dalam 10.7. Membinanya sendiri ialah latihan yang lebih baik, tetapi memahami reka bentuknya ialah perkara yang anda perlukan untuk Modul 13.
 
 Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jika syarikat anda menyekat n8n atau sambungan peti mel, lihat [If your company blocks a tool](../../14-product-cards/locked-down.md) (dalam bahasa Inggeris).
 
@@ -98,9 +98,9 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jik
    ![Borang ujian Sinar Maju: check a quotation, dengan field Quotation PDF dan RFQ number](../../10-n8n-agent-workflow/images/10-06-double-click-upload-quotation.png)
 
    *Borang ujian dibuka dalam tab baharu. Nota kuning mengatakan ia versi ujian.*
-2. Muat naik `quotation-alat-tulis-cendana.pdf`, taip `RFQ-2026-131`, dan hantar.
+2. Muat naik `quotation-tool-tulis-cendana.pdf`, taip `RFQ-2026-131`, dan hantar.
 
-   ![Form Submitted, Your response has been recorded](../../10-n8n-agent-workflow/images/10-07-upload-quotation-alat-tulis.png)
+   ![Form Submitted, Your response has been recorded](../../10-n8n-agent-workflow/images/10-07-upload-quotation-tool-tulis.png)
 
    *Selepas anda menghantar, kembali ke tab n8n.*
 3. Kembali dalam n8n, buka **Read the PDF text**. Outputnya sepatutnya menunjukkan field bernama `text` yang mengandungi perkataan dalam sebut harga.
@@ -195,7 +195,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jik
 
 3. Pilih **Execute step**. Alat Tulis Cendana sepatutnya keluar melalui **Approve**.
 
-   ![Output Route dengan tab Approve (1 item), Revise, Reject dan Escalate](../../10-n8n-agent-workflow/images/10-21-select-test-step-alat.png)
+   ![Output Route dengan tab Approve (1 item), Revise, Reject dan Escalate](../../10-n8n-agent-workflow/images/10-21-select-test-step-tool.png)
 
    *Alat Tulis Cendana keluar melalui **Approve**.*
 
@@ -275,7 +275,7 @@ Tiada apa-apa yang patut sampai kepada pembekal, atau diluluskan, sehingga seseo
 
 ## Nota Produk
 
-n8n berfungsi sama walau apa pun alat AI yang anda gunakan pada masa lain. Model AI di dalam workflow datang daripada Gateway credits percubaan atau credential yang diberikan oleh jurulatih anda.
+n8n berfungsi sama walau apa pun AI tool yang anda gunakan pada masa lain. Model AI di dalam workflow datang daripada Gateway credits percubaan atau credential yang diberikan oleh jurulatih anda.
 
 | Copilot Chat (Basic) | M365 Copilot (Premium) | ChatGPT | Claude | Gemini |
 |---|---|---|---|---|

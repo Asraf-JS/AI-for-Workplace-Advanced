@@ -22,7 +22,7 @@ Quotation Checker anda dari Modul 03 membaca apa yang anda berikan dan menulis l
 
 ## Sebelum Anda Mula
 
-Tiada fail untuk dimuat turun. Buka alat AI anda, dan [kad produk](../../14-product-cards/) (dalam bahasa Inggeris) baginya, yang menunjukkan di mana connector alat itu berada.
+Tiada fail untuk dimuat turun. Buka AI tool anda, dan [kad produk](../../14-product-cards/) (dalam bahasa Inggeris) baginya, yang menunjukkan di mana connector tool itu berada.
 
 Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
@@ -32,9 +32,9 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 **Assistant dan agent.** Assistant menjawab dan membuat draf. Agent juga **bertindak**: ia boleh mencari dalam peti mel, mengemas kini spreadsheet atau menghantar e-mel, menggunakan tools yang anda berikan kepadanya. Lebih banyak yang boleh dibuatnya, lebih teliti anda perlu menentukan apa yang boleh dibuatnya sendirian.
 
-**Connector.** Connector menghubungkan alat AI kepada sistem lain, seperti Outlook, Google Drive atau SharePoint, supaya ia boleh membaca daripadanya atau menulis kepadanya dengan kebenaran anda. Setiap alat menamakannya secara berbeza: connectors dalam Copilot dan Claude, apps dalam ChatGPT, connected apps dalam Gemini.
+**Connector.** Connector menghubungkan AI tool kepada sistem lain, seperti Outlook, Google Drive atau SharePoint, supaya ia boleh membaca daripadanya atau menulis kepadanya dengan kebenaran anda. Setiap tool menamakannya secara berbeza: connectors dalam Copilot dan Claude, apps dalam ChatGPT, connected apps dalam Gemini.
 
-**MCP.** Model Context Protocol ialah standard biasa untuk connector. Sistem yang menawarkan **MCP server** boleh disambungkan kepada mana-mana alat AI yang menyokong MCP, sedikit seperti USB-C untuk AI. Ia menerangkan **tools** yang boleh dipanggil oleh AI (seperti "search vendors" atau "create draft purchase order") dan data yang boleh dibacanya.
+**MCP.** Model Context Protocol ialah standard biasa untuk connector. Sistem yang menawarkan **MCP server** boleh disambungkan kepada mana-mana AI tool yang menyokong MCP, sedikit seperti USB-C untuk AI. Ia menerangkan **tools** yang boleh dipanggil oleh AI (seperti "search vendors" atau "create draft purchase order") dan data yang boleh dibacanya.
 
 **Baca dan tulis.** Membaca senarai vendor berisiko rendah. Mencipta pesanan belian atau menghantar e-mel kepada pembekal mengubah sesuatu di dunia sebenar. Beri agent akses paling sedikit yang diperlukannya (least privilege), dan letakkan seseorang di antara agent dan sebarang tindakan tulis yang penting.
 
@@ -42,7 +42,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## 8.1 Terangkan Proses Hari Ini
 
-1. Mulakan new chat dalam alat AI anda.
+1. Mulakan new chat dalam AI tool anda.
 
    ![New chat dalam aplikasi Microsoft 365 Copilot, dengan New chat diserlahkan](../../08-agents-connectors-mcp/images/08-01-start-new-chat-ai.png)
 
@@ -88,7 +88,7 @@ Sekarang semak jadual itu sendiri dan ubah apa-apa yang anda tidak setuju. Di si
 
 ## 8.3 Namakan Connector
 
-1. Buka senarai connector alat AI anda (lihat [kad produk](../../14-product-cards/)) dan lihat apa yang boleh disambungkannya hari ini. Dalam Copilot, pilih **Agents**, buka **Quotation Checker** anda, pilih **Edit**, dan tatal ke **Knowledge**.
+1. Buka senarai connector AI tool anda (lihat [kad produk](../../14-product-cards/)) dan lihat apa yang boleh disambungkannya hari ini. Dalam Copilot, pilih **Agents**, buka **Quotation Checker** anda, pilih **Edit**, dan tatal ke **Knowledge**.
 
    ![Bahagian Knowledge bagi agent Copilot, dengan Add knowledge dan kotak Enter a link diserlahkan](../../08-agents-connectors-mcp/images/08-04-open-ai-tool-s.png)
 
@@ -103,7 +103,7 @@ Sekarang semak jadual itu sendiri dan ubah apa-apa yang anda tidak setuju. Di si
 
    *Connector bagi setiap langkah, dengan baca atau tulis.*
 
-3. Bandingkan senarai itu dengan apa yang sebenarnya ditawarkan oleh alat anda. Connector mana yang sudah ada? Yang mana perlu dibina oleh IT, contohnya sebagai MCP server untuk sistem perolehan? (Maksudnya IT menyediakan satu perkhidmatan kecil yang membolehkan alat AI yang diluluskan mencari maklumat dalam sistem perolehan, di bawah peraturan yang dikawal oleh IT. Anda hanya perlu menyatakan sistem mana yang diperlukan oleh agent.)
+3. Bandingkan senarai itu dengan apa yang sebenarnya ditawarkan oleh tool anda. Connector mana yang sudah ada? Yang mana perlu dibina oleh IT, contohnya sebagai MCP server untuk sistem perolehan? (Maksudnya IT menyediakan satu perkhidmatan kecil yang membolehkan AI tool yang diluluskan mencari maklumat dalam sistem perolehan, di bawah peraturan yang dikawal oleh IT. Anda hanya perlu menyatakan sistem mana yang diperlukan oleh agent.)
 
 <details markdown="1">
 <summary>Apa yang patut anda lihat?</summary>
@@ -154,7 +154,7 @@ Petakan satu proses daripada kerja anda sendiri dengan cara yang sama: langkah, 
 |---|---|
 | AI kata agent boleh melakukan setiap langkah | Tanya: "Langkah mana yang menghantar sesuatu ke luar syarikat atau melibatkan komitmen wang? Tandakan langkah itu sebagai memerlukan kelulusan seseorang." |
 | Jadual kehilangan lajur | Minta ia tunjukkan semula seluruh jadual dengan semua lajur |
-| Anda tidak jumpa connector dalam alat anda | Pelan atau admin anda mungkin tidak membenarkannya. Guna kad produk dan bekerja daripada apa yang disenaraikan oleh alat itu |
+| Anda tidak jumpa connector dalam tool anda | Pelan atau admin anda mungkin tidak membenarkannya. Guna kad produk dan bekerja daripada apa yang disenaraikan oleh tool itu |
 
 ---
 

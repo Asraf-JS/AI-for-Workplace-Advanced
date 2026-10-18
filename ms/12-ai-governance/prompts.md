@@ -19,7 +19,7 @@ Saya sedang membina use-case register AI untuk Jabatan Perolehan Sinar Maju Sdn 
 5. Workflow n8n yang menyemak sebut harga yang masuk dan meminta Ketua Perolehan meluluskannya
 6. Merangka balasan kepada pertanyaan stok pelanggan (Bahagian Jualan meminta untuk meminjam idea ini)
 
-Buat jadual Markdown dengan lajur ini: Kes penggunaan, Alat AI, Data yang digunakan, Data peribadi? (Ya atau Tidak), Siapa yang melihat output, Semakan manusia sebelum digunakan, Pemilik. Isi apa yang anda boleh daripada senarai ini, dan tulis "Untuk disahkan" di mana anda meneka.
+Buat jadual Markdown dengan lajur ini: Kes penggunaan, AI tool, Data yang digunakan, Data peribadi? (Ya atau Tidak), Siapa yang melihat output, Semakan manusia sebelum digunakan, Pemilik. Isi apa yang anda boleh daripada senarai ini, dan tulis "Untuk disahkan" di mana anda meneka.
 ```
 
 ---
@@ -43,7 +43,7 @@ Beri satu ayat yang menerangkan setiap penarafan. Kemudian susun jadual daripada
 **Sesi:** chat yang sama | **Sumber:** tiada
 
 ```
-Sekarang rangka satu halaman peraturan AI untuk Jabatan Perolehan. Guna enam tajuk ini: Alat yang diluluskan; Data yang boleh anda gunakan; Menyemak output AI; Bersikap terbuka tentang penggunaan AI; Use-case register; Melaporkan masalah. Tulis dalam bahasa yang mudah dan terus terang, dengan tidak lebih daripada empat peraturan pendek di bawah setiap tajuk. Ambil kira Personal Data Protection Act 2010 (Akta Perlindungan Data Peribadi 2010) Malaysia dan pindaannya pada 2024 (Pegawai Perlindungan Data, pemberitahuan pelanggaran), serta penarafan risiko dalam jadual di atas. Jangan reka undang-undang atau tarikh akhir: jika anda tidak pasti, tulis "Semak dengan DPO kami".
+Sekarang rangka satu halaman peraturan AI untuk Jabatan Perolehan. Guna enam tajuk ini: Tool yang diluluskan; Data yang boleh anda gunakan; Menyemak output AI; Bersikap terbuka tentang penggunaan AI; Use-case register; Melaporkan masalah. Tulis dalam bahasa yang mudah dan terus terang, dengan tidak lebih daripada empat peraturan pendek di bawah setiap tajuk. Ambil kira Personal Data Protection Act 2010 (Akta Perlindungan Data Peribadi 2010) Malaysia dan pindaannya pada 2024 (Pegawai Perlindungan Data, pemberitahuan pelanggaran), serta penarafan risiko dalam jadual di atas. Jangan reka undang-undang atau tarikh akhir: jika anda tidak pasti, tulis "Semak dengan DPO kami".
 ```
 
 Jika ia memetik undang-undang atau tarikh akhir yang anda tidak jumpa:
