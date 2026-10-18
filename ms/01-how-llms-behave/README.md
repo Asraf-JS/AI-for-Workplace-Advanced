@@ -1,6 +1,6 @@
 # 01 - Cara Large Language Model Sebenarnya Berfungsi
 
-Sebelum anda membina apa-apa, elok faham dahulu apa yang berlaku di dalam alat AI. Pembantu AI tidak mencari jawapan atau mengira seperti spreadsheet. Ia meramal teks. Itulah sebabnya ia pandai dalam banyak perkara, dan itu juga punca kebanyakan kesilapannya. Dalam modul ini, anda beri sebut harga pembekal yang sama kepada dua jenis model dan bandingkan apa yang setiap satu perasan.
+Sebelum anda membina apa-apa, elok faham dahulu apa yang berlaku di dalam AI tool. Pembantu AI tidak mencari jawapan atau mengira seperti spreadsheet. Ia meramal teks. Itulah sebabnya ia pandai dalam banyak perkara, dan itu juga punca kebanyakan kesilapannya. Dalam modul ini, anda beri sebut harga pembekal yang sama kepada dua jenis model dan bandingkan apa yang setiap satu perasan.
 
 > **Prompt:** setiap prompt yang anda perlukan ada dalam langkah-langkah di bawah, dengan butang Salin. [Halaman prompt](./prompts.md) juga mengumpulkan semuanya dalam satu halaman.
 
@@ -21,7 +21,7 @@ Sebelum anda membina apa-apa, elok faham dahulu apa yang berlaku di dalam alat A
 
 ## Sebelum Anda Mula
 
-Anda perlukan satu alat AI yang sudah dibuka dan log masuk (lihat [kad produk](../../14-product-cards/), dalam bahasa Inggeris), dan fail sampel:
+Anda perlukan satu AI tool yang sudah dibuka dan log masuk (lihat [kad produk](../../14-product-cards/), dalam bahasa Inggeris), dan fail sampel:
 
 | Fail | Kandungan |
 |---|---|
@@ -38,11 +38,11 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## Topik
 
-**Meramal, bukan mencari.** Large language model (LLM) menulis sedikit demi sedikit. Setiap kali, ia memilih cebisan teks seterusnya yang paling mungkin berdasarkan semua teks sebelumnya. Ia tidak ada kalkulator atau database melainkan alat itu menyediakannya. Bagi model, jumlah yang tercetak dalam sebut harga hanyalah teks biasa.
+**Meramal, bukan mencari.** Large language model (LLM) menulis sedikit demi sedikit. Setiap kali, ia memilih cebisan teks seterusnya yang paling mungkin berdasarkan semua teks sebelumnya. Ia tidak ada kalkulator atau database melainkan tool itu menyediakannya. Bagi model, jumlah yang tercetak dalam sebut harga hanyalah teks biasa.
 
 **Mengapa jawapan berbeza.** Model memilih antara beberapa perkataan seterusnya yang mungkin, dengan sedikit unsur rawak. Jadi prompt yang sama boleh memberi jawapan berbeza setiap kali. Itu berguna semasa merangka teks, dan menjadi sebab untuk menyemak apa-apa yang mesti tepat.
 
-**Quick response dan Think deeper.** Quick response ialah fast model: ia menjawab serta-merta. Think deeper ialah reasoning model (atau "thinking"): ia menyelesaikan masalah langkah demi langkah sebelum menjawab. Ia lebih lambat, tetapi lebih banyak menangkap kesilapan dalam tugas seperti menyemak angka. Ini nama pilihan dalam Copilot. Kebanyakan alat lain ada pilihan yang sama dengan nama berbeza (lihat Nota Produk).
+**Quick response dan Think deeper.** Quick response ialah fast model: ia menjawab serta-merta. Think deeper ialah reasoning model (atau "thinking"): ia menyelesaikan masalah langkah demi langkah sebelum menjawab. Ia lebih lambat, tetapi lebih banyak menangkap kesilapan dalam tugas seperti menyemak angka. Ini nama pilihan dalam Copilot. Kebanyakan tool lain ada pilihan yang sama dengan nama berbeza (lihat Nota Produk).
 
 **Apa yang perlu disemak.** LLM kuat dalam membaca, meringkaskan dan menulis semula. Ia lebih lemah dalam aritmetik, tarikh, dan mengaku "saya tidak tahu". Ia juga boleh menyatakan sesuatu butiran dengan yakin walaupun butiran itu tiada dalam sumber. Setiap modul dalam kursus ini membina tabiat menyemak perkara-perkara ini.
 
@@ -50,11 +50,11 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## 1.1 Tanya Soalan yang Sama Dua Kali
 
-1. Buka alat AI anda dan mulakan new chat.
+1. Buka AI tool anda dan mulakan new chat.
 
    ![New chat dalam aplikasi Microsoft 365 Copilot, dengan New chat diserlahkan di anak tetingkap kiri](../../01-how-llms-behave/images/01-01-open-ai-tool-start.png)
 
-   *New chat dalam Copilot. Dalam alat lain, cari **New chat** di bahagian atas sebelah kiri.*
+   *New chat dalam Copilot. Dalam tool lain, cari **New chat** di bahagian atas sebelah kiri.*
 2. Hantar prompt ini:
 
    ```
@@ -78,7 +78,7 @@ Susunan katanya hampir pasti berbeza. Kedua-duanya tidak salah: model cuma memil
 
 ## 1.2 Semak Sebut Harga dengan Quick Response
 
-1. Mulakan new chat dan pilih **Quick response**, atau fast model dalam alat lain ([kad produk](../../14-product-cards/) menunjukkan di mana).
+1. Mulakan new chat dan pilih **Quick response**, atau fast model dalam tool lain ([kad produk](../../14-product-cards/) menunjukkan di mana).
 
    ![New chat Copilot dengan Quick response dipilih dalam menu model di bahagian atas](../../01-how-llms-behave/images/01-04-start-new-chat-choose.png)
 
@@ -104,7 +104,7 @@ Susunan katanya hampir pasti berbeza. Kedua-duanya tidak salah: model cuma memil
 
 ## 1.3 Semak Sekali Lagi dengan Think Deeper
 
-1. Mulakan new chat dan tukar kepada **Think deeper**, atau reasoning model (thinking) dalam alat lain.
+1. Mulakan new chat dan tukar kepada **Think deeper**, atau reasoning model (thinking) dalam tool lain.
 
    ![New chat Copilot dengan Think deeper dipilih dalam menu model](../../01-how-llms-behave/images/01-07-start-new-chat-switch.png)
 
@@ -171,10 +171,10 @@ Beri Quick response satu soalan daripada kerja anda sendiri yang anda sudah tahu
 
 | Masalah | Apa yang perlu disemak |
 |---|---|
-| Anda tidak jumpa menu model | Sesetengah pelan percuma hanya ada satu model. Berpasangan dengan rakan yang menggunakan alat atau pelan lain |
+| Anda tidak jumpa menu model | Sesetengah pelan percuma hanya ada satu model. Berpasangan dengan rakan yang menggunakan tool atau pelan lain |
 | Model kata ia tidak boleh membaca PDF | Muat naik semula. Jika masih gagal, buka PDF itu, copy semua teks dan paste dalam chat |
 | Kedua-dua model memberi jawapan yang sama | Bagus. Tetap semak satu baris dengan kalkulator: tujuannya ialah menyemak, bukan mempercayai model yang lebih perlahan |
-| Jawapan terhenti separuh jalan | Alat itu sibuk. Tunggu seminit dan hantar prompt sekali lagi |
+| Jawapan terhenti separuh jalan | Tool itu sibuk. Tunggu seminit dan hantar prompt sekali lagi |
 
 ---
 

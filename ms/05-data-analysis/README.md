@@ -12,7 +12,7 @@ Pengarah Kewangan mahu tahu ke mana wang Sinar Maju dibelanjakan, dan sama ada a
 
 ## Apa yang Anda Akan Pelajari
 
-- Terangkan bagaimana alat AI menganalisis data: dengan menjalankan kod, atau dengan membaca teks
+- Terangkan bagaimana AI tool menganalisis data: dengan menjalankan kod, atau dengan membaca teks
 - Cari dan tangani masalah data sebelum anda menganalisis
 - Takrifkan ukuran anda supaya AI mengira apa yang anda maksudkan
 - Minta kaedahnya sekali, bukan jawapan sahaja
@@ -24,11 +24,11 @@ Pengarah Kewangan mahu tahu ke mana wang Sinar Maju dibelanjakan, dan sama ada a
 
 > **Muat turun:** **[sample-files.zip](../../05-data-analysis/sample-files.zip)**, kemudian klik kanan fail itu dan pilih **Extract All** sebelum anda mula.
 
-Kandungannya ialah data yang sama dalam dua bentuk: `purchase-history.xlsx` (dua sheet: data, dan **About this file**) dan `purchase-history.csv`. Guna `.xlsx` melainkan alat anda meminta CSV.
+Kandungannya ialah data yang sama dalam dua bentuk: `purchase-history.xlsx` (dua sheet: data, dan **About this file**) dan `purchase-history.csv`. Guna `.xlsx` melainkan tool anda meminta CSV.
 
 Buka Excel juga. Anda akan menggunakannya untuk menyemak satu angka.
 
-> **Penting:** data ini rekaan. Di tempat kerja, semak bahawa organisasi anda membenarkan alat AI yang anda gunakan membaca data kewangan sebelum anda memuat naik apa-apa.
+> **Penting:** data ini rekaan. Di tempat kerja, semak bahawa organisasi anda membenarkan AI tool yang anda gunakan membaca data kewangan sebelum anda memuat naik apa-apa.
 
 Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
@@ -36,7 +36,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## Topik
 
-**Dua cara menganalisis.** Sesetengah alat menulis dan menjalankan kod (biasanya Python) pada fail anda, kemudian melaporkan hasilnya: ChatGPT, Claude, Gemini dan Copilot (Basic dan Premium) berfungsi dengan cara ini. Yang lain membaca fail sebagai teks dan menganggarkan. Kod jauh lebih boleh dipercayai untuk jumlah dan kiraan. Jika alat anda menunjukkan kod atau jalan kiranya, ia telah menjalankan kod.
+**Dua cara menganalisis.** Sesetengah tool menulis dan menjalankan kod (biasanya Python) pada fail anda, kemudian melaporkan hasilnya: ChatGPT, Claude, Gemini dan Copilot (Basic dan Premium) berfungsi dengan cara ini. Yang lain membaca fail sebagai teks dan menganggarkan. Kod jauh lebih boleh dipercayai untuk jumlah dan kiraan. Jika tool anda menunjukkan kod atau jalan kiranya, ia telah menjalankan kod.
 
 **Bersihkan dahulu.** Eksport sebenar ada baris pendua, sel kosong, ejaan yang berbeza-beza dan pesanan yang dibatalkan. Jumlah yang dikira pada data kotor adalah salah, walau seyakin mana pun rupanya.
 
@@ -216,7 +216,7 @@ Semak bahawa lonjakan dalam carta sepadan dengan bulan dalam dapatan anda. Jika 
 
 ## Latihan Kendiri
 
-Tanya satu lagi soalan yang anda mahu jawapannya tentang data ini, seperti "Jabatan mana yang paling banyak berbelanja untuk alat tulis?" Kemudian semak jawapannya dengan PivotTable sebelum anda mempercayainya.
+Tanya satu lagi soalan yang anda mahu jawapannya tentang data ini, seperti "Jabatan mana yang paling banyak berbelanja untuk tool tulis?" Kemudian semak jawapannya dengan PivotTable sebelum anda mempercayainya.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Maksud ringkas bagi istilah yang digunakan dalam kursus ini. Modul dalam kurungan ialah tempat istilah itu mula-mula penting.
 
-> **Nota:** anda tidak perlu menghafalnya. Biarkan halaman ini terbuka dalam tab kedua dan rujuk apabila anda berjumpa sesuatu istilah. Kebanyakan istilah teknikal kekal dalam bahasa Inggeris dalam kursus ini, kerana itulah yang anda akan lihat dalam alat AI.
+> **Nota:** anda tidak perlu menghafalnya. Biarkan halaman ini terbuka dalam tab kedua dan rujuk apabila anda berjumpa sesuatu istilah. Kebanyakan istilah teknikal kekal dalam bahasa Inggeris dalam kursus ini, kerana itulah yang anda akan lihat dalam AI tool.
 
 ---
 
@@ -33,7 +33,7 @@ Maksud ringkas bagi istilah yang digunakan dalam kursus ini. Modul dalam kurunga
 
 | Istilah | Maksudnya |
 |---|---|
-| **LLM** (large language model) | Enjin di sebalik Copilot, ChatGPT, Claude dan Gemini. Ia menulis dengan meramal cebisan teks seterusnya. Ia tidak mencari fakta melainkan alat itu memberinya sumber. (01) |
+| **LLM** (large language model) | Enjin di sebalik Copilot, ChatGPT, Claude dan Gemini. Ia menulis dengan meramal cebisan teks seterusnya. Ia tidak mencari fakta melainkan tool itu memberinya sumber. (01) |
 | **Fast model dan reasoning model** | Fast model menjawab serta-merta (dalam Copilot, **Quick response**). Reasoning model (atau "thinking") menyelesaikan masalah langkah demi langkah dahulu: lebih perlahan, tetapi lebih baik untuk menyemak (dalam Copilot, **Think deeper**). (01) |
 | **Prompt** | Apa yang anda taip kepada AI. (01) |
 | **GCSE** | Senarai semak untuk prompt yang baik: **G**oal (apa yang anda mahu), **C**ontext (untuk siapa dan mengapa), **S**ource (apa yang perlu digunakan) dan **E**xpectations (format, panjang, nada). (02) |
@@ -46,11 +46,11 @@ Maksud ringkas bagi istilah yang digunakan dalam kursus ini. Modul dalam kurunga
 | **Slide master dan layout** | Reka bentuk tersembunyi di sebalik dek PowerPoint. Setiap layout yang bernama (seperti Title atau Title and Content) ada tempat tetap untuk tajuk dan teks, supaya slaid baharu kelihatan sama. (06) |
 | **Notebook** | Ruang kerja yang menyimpan dokumen anda dan menjawab berdasarkan dokumen itu sahaja, seperti Gemini Notebook (dahulunya NotebookLM) atau Copilot Notebooks. (04) |
 | **RAG** (retrieval-augmented generation) | Cara notebook menjawab: ia mencari petikan dalam dokumen anda yang paling sepadan dengan soalan, kemudian menulis jawapan berdasarkannya. (09) |
-| **Chunk** | Petikan pendek daripada dokumen. Alat itu memecahkan setiap fail kepada chunk supaya ia boleh mencari yang berkaitan. (09) |
-| **Index** | Katalog chunk dalam alat itu, disusun mengikut maksud supaya ia boleh mencari yang paling hampir dengan soalan anda, walaupun perkataannya berbeza. (09) |
+| **Chunk** | Petikan pendek daripada dokumen. Tool itu memecahkan setiap fail kepada chunk supaya ia boleh mencari yang berkaitan. (09) |
+| **Index** | Katalog chunk dalam tool itu, disusun mengikut maksud supaya ia boleh mencari yang paling hampir dengan soalan anda, walaupun perkataannya berbeza. (09) |
 | **Agent** | AI yang boleh mengambil tindakan dalam sistem lain, seperti membaca peti mel atau merangka e-mel, bukan sekadar menjawab dalam chat. (08) |
-| **Connector** | Pautan yang membolehkan alat AI membaca daripada atau menulis ke sistem lain, seperti Outlook atau SharePoint, dengan kebenaran anda. (08) |
-| **MCP** (Model Context Protocol) | Piawaian biasa untuk connector, supaya satu sambungan boleh berfungsi dengan banyak alat AI. (08) |
+| **Connector** | Pautan yang membolehkan AI tool membaca daripada atau menulis ke sistem lain, seperti Outlook atau SharePoint, dengan kebenaran anda. (08) |
+| **MCP** (Model Context Protocol) | Piawaian biasa untuk connector, supaya satu sambungan boleh berfungsi dengan banyak AI tool. (08) |
 | **Least privilege** | Memberi agent akses yang diperlukan untuk tugasnya sahaja, tidak lebih. (08) |
 | **Human in the loop** | Langkah di mana seseorang mesti meluluskan sebelum apa-apa keluar dari syarikat, wang bergerak atau data peribadi digunakan. (10) |
 | **Test set** | Kes yang anda sudah tahu jawapan betulnya, digunakan untuk memberi markah kepada assistant. (07) |
@@ -66,10 +66,10 @@ Maksud ringkas bagi istilah yang digunakan dalam kursus ini. Modul dalam kurunga
 
 | Istilah | Maksudnya |
 |---|---|
-| **Markdown** | Teks biasa dengan tanda mudah untuk tajuk dan jadual. Alat AI menggunakannya untuk menyusun jawapan. (02) |
+| **Markdown** | Teks biasa dengan tanda mudah untuk tajuk dan jadual. AI tool menggunakannya untuk menyusun jawapan. (02) |
 | **JSON** | Format teks yang ketat dengan field berlabel, seperti `"verdict": "pass"`, yang boleh dibaca oleh program lain. Anda tidak perlu menulisnya, cuma menyemaknya. (02) |
 | **CSV** | Spreadsheet yang disimpan sebagai teks biasa, satu baris bagi setiap rekod, dengan koma di antara lajur. (05) |
-| **n8n** | Alat untuk membina workflow: rangkaian langkah yang berjalan sendiri, seperti "baca PDF, tanya AI, e-melkan hasilnya". (10) |
+| **n8n** | Tool untuk membina workflow: rangkaian langkah yang berjalan sendiri, seperti "baca PDF, tanya AI, e-melkan hasilnya". (10) |
 | **Workflow** | Satu set langkah yang bersambung dan berjalan dari mula hingga akhir setiap kali sesuatu mencetuskannya. (10) |
 | **Node** | Satu langkah dalam workflow n8n, dipaparkan sebagai kotak pada canvas. (10) |
 | **Trigger** | Node yang memulakan workflow, seperti apabila borang dihantar. (10) |

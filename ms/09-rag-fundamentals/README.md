@@ -13,9 +13,9 @@ Dalam Modul 04, notebook polisi anda memberi jawapan yang baik dengan citation. 
 ## Apa yang Anda Akan Pelajari
 
 - Terangkan retrieval-augmented generation (RAG) dalam empat langkah: split, index, retrieve, answer
-- Nyatakan mengapa alat RAG boleh memetik dokumen yang salah dengan penuh yakin
+- Nyatakan mengapa RAG tool boleh memetik dokumen yang salah dengan penuh yakin
 - Diagnosis citation yang salah dengan menyemak apa yang diambil (retrieved)
-- Betulkannya, dengan menyusun semula sumber atau dengan memberitahu alat itu versi mana yang diguna pakai
+- Betulkannya, dengan menyusun semula sumber atau dengan memberitahu tool itu versi mana yang diguna pakai
 
 ---
 
@@ -41,13 +41,13 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jik
 **RAG dalam empat langkah.** Notebook dan Project yang ada fail berfungsi seperti ini:
 
 1. **Split (pecahkan):** setiap dokumen dipotong kepada chunk kecil, selalunya beberapa perenggan setiap satu.
-2. **Index:** alat itu memfailkan setiap chunk mengikut maknanya, sedikit seperti pustakawan yang menyusun buku di rak mengikut topik, bukan mengikut tajuk. Begitulah ia menemui chunk tentang "deposit" walaupun anda bertanya tentang "bayaran pendahuluan".
-3. **Retrieve (ambil):** apabila anda bertanya soalan, alat itu mencari chunk yang maknanya paling hampir dengan soalan itu.
+2. **Index:** tool itu memfailkan setiap chunk mengikut maknanya, sedikit seperti pustakawan yang menyusun buku di rak mengikut topik, bukan mengikut tajuk. Begitulah ia menemui chunk tentang "deposit" walaupun anda bertanya tentang "bayaran pendahuluan".
+3. **Retrieve (ambil):** apabila anda bertanya soalan, tool itu mencari chunk yang maknanya paling hampir dengan soalan itu.
 4. **Answer (jawab):** model menulis jawapan daripada chunk itu sahaja, dan memetiknya.
 
-**Mengapa citation tersilap.** Alat itu mengambil chunk mengikut makna, bukan mengikut tarikh atau versi. Dua versi polisi dengan nombor klausa yang sama dan perkataan yang hampir sama kelihatan sama relevan. Chunk dari halaman 2 tidak membawa cop "SUPERSEDED" dari halaman 1 bersamanya. Jadi AI boleh memetik klausa yang sudah lapuk, dengan tepat, daripada dokumen yang salah.
+**Mengapa citation tersilap.** Tool itu mengambil chunk mengikut makna, bukan mengikut tarikh atau versi. Dua versi polisi dengan nombor klausa yang sama dan perkataan yang hampir sama kelihatan sama relevan. Chunk dari halaman 2 tidak membawa cop "SUPERSEDED" dari halaman 1 bersamanya. Jadi AI boleh memetik klausa yang sudah lapuk, dengan tepat, daripada dokumen yang salah.
 
-**Cara membetulkan.** Cara terbaik ialah membuang dokumen yang telah dibatalkan (superseded) daripada sumber. Jika tidak boleh, letakkan versi dan status dalam setiap chunk (pengepala pada setiap halaman membantu), dan beritahu alat itu versi mana yang diguna pakai.
+**Cara membetulkan.** Cara terbaik ialah membuang dokumen yang telah dibatalkan (superseded) daripada sumber. Jika tidak boleh, letakkan versi dan status dalam setiap chunk (pengepala pada setiap halaman membantu), dan beritahu tool itu versi mana yang diguna pakai.
 
 ---
 
@@ -150,7 +150,7 @@ Kemudian, bersama orang di sebelah anda, tulis satu ayat bagi setiap soalan:
 
 ## 9.5 Betulkan dengan Dua Cara
 
-**Cara A: beritahu alat itu versi mana yang diguna pakai.** Dalam notebook yang sama, hantar:
+**Cara A: beritahu tool itu versi mana yang diguna pakai.** Dalam notebook yang sama, hantar:
 
 ```
 Mulai sekarang, guna Polisi Perolehan Version 3.0 sahaja, berkuat kuasa 1 Julai 2026. Version 2.1 telah dibatalkan (superseded): abaikannya kecuali saya bertanya tentangnya dengan menyebut namanya. Sekarang jawab semula: berapakah jumlah maksimum yang boleh kami bayar secara pendahuluan sebelum Pengarah Kewangan perlu meluluskannya?

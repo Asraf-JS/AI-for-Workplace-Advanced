@@ -39,7 +39,7 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## Topik
 
-**Mengapa template.** Template memastikan setiap memo dan deck mengikut jenama syarikat tanpa sesiapa perlu memikirkan fon. Ia juga memberitahu alat AI di mana setiap perkara diletakkan, jika template itu dibina dengan betul.
+**Mengapa template.** Template memastikan setiap memo dan deck mengikut jenama syarikat tanpa sesiapa perlu memikirkan fon. Ia juga memberitahu AI tool di mana setiap perkara diletakkan, jika template itu dibina dengan betul.
 
 **Apa yang ada dalam template yang dibina dengan baik.** Dalam PowerPoint: slide master dengan **named layouts**, dan **placeholders** untuk tajuk dan kandungan, supaya slaid baharu tahu di mana tajuknya diletakkan. Dalam Word: **styles** (Title, Heading 1, Normal), bukan teks yang diformat secara manual, dan teks placeholder yang jelas bertujuan untuk diganti.
 
@@ -101,7 +101,7 @@ Dalam PowerPoint desktop, semakan deck yang buruk menyenaraikan **Missing slide 
 
 ## 6.3 Isi Memo
 
-1. Mulakan new chat dalam alat AI anda dan muat naik `sinar-maju-memo.docx`.
+1. Mulakan new chat dalam AI tool anda dan muat naik `sinar-maju-memo.docx`.
 
    ![sinar-maju-memo.docx dilampirkan dalam new chat Copilot](../../06-output-templates/images/06-08-start-new-chat-ai.png)
 
@@ -151,7 +151,7 @@ Penilaian itu sepatutnya menamakan tiga masalah: aritmetik Duduk Selesa (4.4), j
 
 </details>
 
-> **Jika anda tidak nampak ini:** jika alat anda tidak dapat memulangkan fail Word, minta teks memo bahagian demi bahagian, dan paste setiap bahagian ke dalam template sendiri dengan **Paste** > **Keep Text Only**. Cara itu mengekalkan styles template.
+> **Jika anda tidak nampak ini:** jika tool anda tidak dapat memulangkan fail Word, minta teks memo bahagian demi bahagian, dan paste setiap bahagian ke dalam template sendiri dengan **Paste** > **Keep Text Only**. Cara itu mengekalkan styles template.
 
 ---
 
@@ -222,7 +222,7 @@ Dalam ujian kami dengan Copilot, template yang baik dipulangkan dengan SM Title,
 
 ## Latihan Kendiri
 
-Buka template yang anda guna di tempat kerja (atau satu daripada **File** > **New** dalam PowerPoint). Semak layout dan tajuknya dengan Outline View dan Check Accessibility. Adakah alat AI akan menemui apa yang diperlukannya di dalamnya?
+Buka template yang anda guna di tempat kerja (atau satu daripada **File** > **New** dalam PowerPoint). Semak layout dan tajuknya dengan Outline View dan Check Accessibility. Adakah AI tool akan menemui apa yang diperlukannya di dalamnya?
 
 ---
 
@@ -230,7 +230,7 @@ Buka template yang anda guna di tempat kerja (atau satu daripada **File** > **Ne
 
 | Masalah | Apa yang perlu disemak |
 |---|---|
-| Memo dipulangkan dalam fon yang berbeza | Alat itu membina semula dokumen, bukan mengisinya. Paste teks ke dalam template dengan **Keep Text Only** |
+| Memo dipulangkan dalam fon yang berbeza | Tool itu membina semula dokumen, bukan mengisinya. Paste teks ke dalam template dengan **Keep Text Only** |
 | Teks placeholder kelabu masih ada dalam memo | Tanya: "Senaraikan setiap placeholder yang anda tidak ganti, kemudian gantikannya." |
 | Deck mengabaikan layout template | Namakan layout bagi setiap slaid dalam prompt, seperti dalam 6.4 |
 | Teks terkeluar dari slaid | Minta poin yang lebih sedikit dan lebih pendek, atau pindahkan butiran ke speaker notes |

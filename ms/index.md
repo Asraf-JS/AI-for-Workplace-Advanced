@@ -23,7 +23,7 @@ Anda tidak perlukan akaun GitHub untuk menggunakan apa-apa di halaman ini.
 
 Setiap modul ada halaman **Nota** dengan objektif, topik dan lab, dan halaman **Prompt** dengan setiap prompt yang anda taip semasa lab. Nota memberitahu anda prompt mana yang perlu digunakan dan bila.
 
-Untuk menyalin prompt: buka halaman prompt modul itu, cari prompt tersebut, dan klik ikon salin di penjuru kanan atas kotak kelabu. Kemudian paste dalam alat AI anda.
+Untuk menyalin prompt: buka halaman prompt modul itu, cari prompt tersebut, dan klik ikon salin di penjuru kanan atas kotak kelabu. Kemudian paste dalam AI tool anda.
 
 > **Muat turun:** **[semua fail kursus (ZIP)](https://github.com/Asraf-JS/AI-for-Workplace-Advanced/archive/refs/heads/main.zip)**. Simpan fail ZIP itu, kemudian klik kanan dan pilih **Extract All** sebelum anda membuka mana-mana fail.
 
@@ -39,16 +39,16 @@ Ini ialah sambungan kepada **AI for Workplace (Beginner)**. Jika anda tidak meng
 
 ## Sesuai dengan Langganan AI Anda
 
-Setiap lab ditulis sebagai tugasan yang tidak terikat pada satu alat, dengan nota produk untuk:
+Setiap lab ditulis sebagai tugasan yang tidak terikat pada satu tool, dengan nota produk untuk:
 
-| Alat | Peringkat yang diliputi |
+| Tool | Peringkat yang diliputi |
 |---|---|
 | Microsoft 365 Copilot | Copilot Chat (Basic) dan M365 Copilot (Premium) |
 | ChatGPT | Pelan percuma dan berbayar |
 | Claude | Pelan percuma dan berbayar |
 | Gemini | Percuma dan Google Workspace |
 
-Lab yang memerlukan alat tambahan menggunakan pilihan percuma: Gemini Notebook, dahulunya NotebookLM (akaun Google), dan n8n (akaun percubaan). [Kad produk](../14-product-cards/) menerangkan cara membuat setiap lab dalam alat anda.
+Lab yang memerlukan tool tambahan menggunakan pilihan percuma: Gemini Notebook, dahulunya NotebookLM (akaun Google), dan n8n (akaun percubaan). [Kad produk](../14-product-cards/) menerangkan cara membuat setiap lab dalam tool anda.
 
 ---
 
@@ -77,13 +77,13 @@ Lab yang memerlukan alat tambahan menggunakan pilihan percuma: Gemini Notebook, 
 
 Semua data lab dalam repositori ini adalah rekaan. Setiap modul yang memerlukan fail ada `sample-files.zip` dalam foldernya, dibuat daripada data sintetik untuk syarikat rekaan Sinar Maju Sdn Bhd. [Fail sampel](../06-output-templates/sample-files/) Modul 06 mengandungi templat Word dan PowerPoint.
 
-Tolong jangan muat naik data sebenar syarikat, pelanggan atau peribadi ke dalam mana-mana alat AI semasa kelas, melainkan organisasi anda telah meluluskan alat itu untuk tujuan tersebut.
+Tolong jangan muat naik data sebenar syarikat, pelanggan atau peribadi ke dalam mana-mana AI tool semasa kelas, melainkan organisasi anda telah meluluskan tool itu untuk tujuan tersebut.
 
 ---
 
 ## Sebelum Anda Mula
 
-Anda perlukan komputer riba dengan Word, Excel dan PowerPoint versi desktop, akses kepada sekurang-kurangnya satu alat AI di atas, dan akaun Google untuk Gemini Notebook (dahulunya NotebookLM). Jurulatih anda akan berkongsi butiran akses n8n sebelum Modul 10. Jika syarikat anda menyekat mana-mana alat ini, lihat [If your company blocks a tool](../14-product-cards/locked-down.md) (dalam bahasa Inggeris). Istilah baharu diterangkan dalam [glosari](./14-product-cards/glossary.md).
+Anda perlukan komputer riba dengan Word, Excel dan PowerPoint versi desktop, akses kepada sekurang-kurangnya satu AI tool di atas, dan akaun Google untuk Gemini Notebook (dahulunya NotebookLM). Jurulatih anda akan berkongsi butiran akses n8n sebelum Modul 10. Jika syarikat anda menyekat mana-mana tool ini, lihat [If your company blocks a tool](../14-product-cards/locked-down.md) (dalam bahasa Inggeris). Istilah baharu diterangkan dalam [glosari](./14-product-cards/glossary.md).
 
 ---
 
