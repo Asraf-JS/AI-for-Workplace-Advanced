@@ -59,7 +59,10 @@ Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ## 3.1 Cipta Assistant
 
-1. Buka alat AI anda dan cipta custom assistant baharu (Project, agent, Gem atau skill). [Kad produk](../../14-product-cards/) bagi alat anda menunjukkan langkah kliknya.
+1. Buka alat AI anda dan cipta custom assistant baharu (Project, agent, Gem atau skill). [Kad produk](../../14-product-cards/) bagi alat anda menunjukkan langkah kliknya. Dalam Copilot:
+   - Buka aplikasi Microsoft 365 Copilot di [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat), dengan log masuk menggunakan akaun kerja anda.
+   - Pilih **Agents** di anak tetingkap kiri. Jika anak tetingkap itu hanya menunjukkan satu lajur ikon, pilih ikon panel di bahagian atas sebelah kiri untuk membukanya.
+   - Pilih **New agent**. Agent Builder menawarkan untuk membina agent melalui chat: pilih **Skip**, supaya anda mengisi setiap field sendiri.
 
    ![Agent baharu dalam Agent Builder Copilot, dengan nama New Agent dan kotak Instructions yang kosong diserlahkan](../../03-custom-assistants/images/03-01-open-ai-tool-create.png)
 
