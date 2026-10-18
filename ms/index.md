@@ -7,7 +7,7 @@ title: Laman Utama
 
 Kursus praktikal dua hari yang membawa peserta daripada sekadar menggunakan pembantu AI kepada membina, mengasaskan pada sumber, menguji dan melindungi penyelesaian AI mereka sendiri.
 
-> **Nota:** semua 13 modul ada dalam Bahasa Malaysia. Kad produk, glosari dan buku kursus masih dalam bahasa Inggeris. Fail sampel dan tangkapan skrin kekal dalam bahasa Inggeris.
+> **Nota:** semua 13 modul dan glosari ada dalam Bahasa Malaysia. Kad produk dan buku kursus masih dalam bahasa Inggeris. Fail sampel dan tangkapan skrin kekal dalam bahasa Inggeris.
 
 Anda tidak perlukan akaun GitHub untuk menggunakan apa-apa di halaman ini.
 
@@ -33,7 +33,7 @@ Untuk membaca di luar talian atau mencetak: muat turun **[buku kursus (PDF, dala
 
 ## Senario Kursus
 
-Ini ialah sambungan kepada **AI for Workplace (Beginner)**. Jika anda tidak mengikuti kursus Asas, anda masih boleh menyertai kursus ini: ia bermula dengan cara model AI berfungsi, dan [glosari](../14-product-cards/glossary.md) menerangkan setiap istilah baharu. Peserta membina satu pembantu AI pada awal kursus dan terus menambah baiknya: mengasaskannya pada polisi syarikat, menghasilkan dokumen mengikut jenama syarikat daripada templat, mengukur ketepatannya, dan kemudian membinanya semula sebagai agent workflow dengan kelulusan manusia.
+Ini ialah sambungan kepada **AI for Workplace (Beginner)**. Jika anda tidak mengikuti kursus Asas, anda masih boleh menyertai kursus ini: ia bermula dengan cara model AI berfungsi, dan [glosari](./14-product-cards/glossary.md) menerangkan setiap istilah baharu. Peserta membina satu pembantu AI pada awal kursus dan terus menambah baiknya: mengasaskannya pada polisi syarikat, menghasilkan dokumen mengikut jenama syarikat daripada templat, mengukur ketepatannya, dan kemudian membinanya semula sebagai agent workflow dengan kelulusan manusia.
 
 ---
 
@@ -83,7 +83,7 @@ Tolong jangan muat naik data sebenar syarikat, pelanggan atau peribadi ke dalam 
 
 ## Sebelum Anda Mula
 
-Anda perlukan komputer riba dengan Word, Excel dan PowerPoint versi desktop, akses kepada sekurang-kurangnya satu alat AI di atas, dan akaun Google untuk Gemini Notebook (dahulunya NotebookLM). Jurulatih anda akan berkongsi butiran akses n8n sebelum Modul 10. Jika syarikat anda menyekat mana-mana alat ini, lihat [If your company blocks a tool](../14-product-cards/locked-down.md) (dalam bahasa Inggeris). Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
+Anda perlukan komputer riba dengan Word, Excel dan PowerPoint versi desktop, akses kepada sekurang-kurangnya satu alat AI di atas, dan akaun Google untuk Gemini Notebook (dahulunya NotebookLM). Jurulatih anda akan berkongsi butiran akses n8n sebelum Modul 10. Jika syarikat anda menyekat mana-mana alat ini, lihat [If your company blocks a tool](../14-product-cards/locked-down.md) (dalam bahasa Inggeris). Istilah baharu diterangkan dalam [glosari](./14-product-cards/glossary.md).
 
 ---
 

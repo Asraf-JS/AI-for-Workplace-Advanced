@@ -28,7 +28,7 @@ Kandungannya ialah `procurement-policy-v3.0.pdf` dan `approved-vendor-list.pdf`.
 
 Lab ini paling sesuai dalam **Gemini Notebook** (dahulunya NotebookLM), yang percuma dengan akaun Google dan memautkan setiap citation kepada petikan tepatnya. Jika anda hanya ada Copilot, Copilot Notebook juga sama baiknya: tangkapan skrin menunjukkan Gemini, tetapi langkahnya sama. Project ChatGPT atau Claude juga boleh digunakan. Lihat Nota Produk di bawah.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris). Jika syarikat anda menyekat Gemini Notebook, lihat [Jika syarikat anda menyekat sesuatu alat](../../14-product-cards/locked-down.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md). Jika syarikat anda menyekat Gemini Notebook, lihat [Jika syarikat anda menyekat sesuatu alat](../../14-product-cards/locked-down.md) (dalam bahasa Inggeris).
 
 ---
 

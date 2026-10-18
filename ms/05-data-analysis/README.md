@@ -30,7 +30,7 @@ Buka Excel juga. Anda akan menggunakannya untuk menyemak satu angka.
 
 > **Penting:** data ini rekaan. Di tempat kerja, semak bahawa organisasi anda membenarkan alat AI yang anda gunakan membaca data kewangan sebelum anda memuat naik apa-apa.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ---
 

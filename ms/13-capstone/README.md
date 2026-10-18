@@ -37,7 +37,7 @@ Kandungannya ialah empat brief, data setiap satu, dan canvas:
 
 Baca [rubrik pemarkahan](./scoring-rubric.md) sebelum anda mula, supaya anda tahu apa yang dicari oleh juri.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ---
 

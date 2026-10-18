@@ -32,7 +32,7 @@ Anda perlukan satu alat AI yang sudah dibuka dan log masuk (lihat [kad produk](.
 
 > **Nota:** semua syarikat, orang dan angka dalam fail kursus adalah rekaan. Sinar Maju Sdn Bhd ialah pengedar bekalan pejabat di Petaling Jaya, dan dalam kursus ini anda bekerja di Jabatan Perolehannya. Kursus ini menganggap **10 November 2026** sebagai tarikh hari ini: setiap sebut harga dinilai pada tarikh itu, walau apa pun tarikh kelas anda. Fail sampel dan tangkapan skrin kekal dalam bahasa Inggeris, seperti kebanyakan dokumen perolehan dan paparan Microsoft 365 di tempat kerja.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ---
 

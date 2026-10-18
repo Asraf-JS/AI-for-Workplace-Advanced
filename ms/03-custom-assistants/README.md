@@ -36,7 +36,7 @@ Kandungannya:
 
 Buka [kad produk](../../14-product-cards/) (dalam bahasa Inggeris) bagi alat AI anda. Ia menunjukkan di mana anda boleh membina custom assistant dalam alat itu.
 
-Istilah baharu diterangkan dalam [glosari](../../14-product-cards/glossary.md) (dalam bahasa Inggeris).
+Istilah baharu diterangkan dalam [glosari](../14-product-cards/glossary.md).
 
 ---
 
