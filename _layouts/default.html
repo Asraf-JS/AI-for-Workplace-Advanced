@@ -365,6 +365,11 @@ body{
   text-align:center;
 }
 .main-inner blockquote.warn strong{color:#a4262c;}
+@media (prefers-color-scheme: dark){
+  .main-inner blockquote.warn{background:#3a1a1e;border-left-color:#f1707a;}
+  .main-inner blockquote.warn::before{background:#e5484d;}
+  .main-inner blockquote.warn strong{color:#ff9aa2;}
+}
 .main-inner blockquote.dl{
   position:relative;
   background:var(--purple-light);
